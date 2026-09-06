@@ -23,7 +23,7 @@
     "aria": "Filter by prefecture"
   },
   "hint": {
-    "cacheDots": "Green dots are dates already on disk. Orange dots are fetching on the server (two dates at a time; extra clicks wait in a queue)."
+    "cacheDots": "Green dots are cached on disk. Opening them does not keep hitting prefecture websites. Orange means that date is being scraped for the first time."
   },
   "events": {
     "scrapingChip": "Scraping in a server thread…",

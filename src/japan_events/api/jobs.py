@@ -10,7 +10,7 @@ from japan_events.models import CombinedOutput, SiteResult
 from japan_events.progress import JobProgress
 from japan_events.registry import load_sites
 from japan_events.scan import cache_age_seconds, load_scan, save_scan, scan_age_seconds, scan_sites
-from japan_events.settings import SCAN_CONCURRENCY, deep_refresh_seconds, scan_ttl_seconds, site_concurrency
+from japan_events.settings import SCAN_CONCURRENCY, scan_ttl_seconds, site_concurrency
 from japan_events.storage import load_combined, rebuild_combined_from_files
 
 
@@ -43,18 +43,17 @@ def _run_scrape_in_thread(
 def _refresh_due(target: date, combined: CombinedOutput) -> bool:
     if target < date.today() - timedelta(days=14):
         return False
-    age = cache_age_seconds(combined)
-    if age < scan_ttl_seconds():
+    ttl = scan_ttl_seconds()
+    if cache_age_seconds(combined) < ttl:
         return False
-    scan = load_scan(target)
-    scanned_ago = scan_age_seconds(scan)
-    if scanned_ago is not None and scanned_ago < scan_ttl_seconds() and age < deep_refresh_seconds():
+    scanned_ago = scan_age_seconds(load_scan(target))
+    if scanned_ago is not None and scanned_ago < ttl:
         return False
     return True
 
 
 def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
-    """Cheap HTTP scan first; Playwright only dirty (or all, if the cache is old)."""
+    """Cheap HTTP scan first; Playwright only for sites whose listing actually changed."""
     from japan_events.scrape import run_scrape
 
     sites = load_sites()
@@ -85,18 +84,13 @@ def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
     save_scan(target, fingerprints)
 
     combined = load_combined(target) or rebuild_combined_from_files(target)
-    age = cache_age_seconds(combined) if combined else deep_refresh_seconds()
-    deep = age >= deep_refresh_seconds()
-    if not dirty and not deep:
+    if not dirty:
         progress.handle("done", {"ok_count": len(sites), "event_count": combined.event_count if combined else 0})
         print(f"[scan] {target.isoformat()} unchanged sites={len(sites)}", flush=True)
         return
 
-    prefecture = None if deep or not dirty else ",".join(dirty)
-    print(
-        f"[scan] {target.isoformat()} dirty={len(dirty)} deep={deep} -> scrape {prefecture or 'all'}",
-        flush=True,
-    )
+    prefecture = ",".join(dirty)
+    print(f"[scan] {target.isoformat()} dirty={len(dirty)} -> scrape {prefecture}", flush=True)
 
     def on_progress(event: str, payload: dict[str, Any]) -> None:
         progress.handle(event, payload)

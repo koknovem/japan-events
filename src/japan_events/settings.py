@@ -7,9 +7,11 @@ import os
 # tourism sites will throttle or block a burst of 48 concurrent browsers.
 DEFAULT_SITE_CONCURRENCY = 8
 MAX_SITE_CONCURRENCY = 16
-SCAN_CONCURRENCY = 16
-DEFAULT_SCAN_TTL_MINUTES = 30
-DEFAULT_DEEP_REFRESH_HOURS = 12
+# Quiet HTTP freshness checks (not Playwright). Keep this low so we do not
+# look like a burst scraper against the tourism sites.
+SCAN_CONCURRENCY = 4
+DEFAULT_SCAN_TTL_MINUTES = 360
+DEFAULT_DEEP_REFRESH_HOURS = 168
 
 
 def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -38,7 +40,7 @@ def site_concurrency(override: int | None = None) -> int:
 
 
 def scan_ttl_seconds() -> int:
-    return _env_int("JAPAN_EVENTS_SCAN_TTL_MINUTES", DEFAULT_SCAN_TTL_MINUTES, 5, 24 * 60) * 60
+    return _env_int("JAPAN_EVENTS_SCAN_TTL_MINUTES", DEFAULT_SCAN_TTL_MINUTES, 30, 24 * 60) * 60
 
 
 def deep_refresh_seconds() -> int:

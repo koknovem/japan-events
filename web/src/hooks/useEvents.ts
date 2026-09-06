@@ -48,21 +48,27 @@ export function useScrapeStatus() {
 
   useEffect(() => {
     let alive = true
+    let timer: number | undefined
     const tick = async () => {
       try {
         const next = await api.scrapeStatus()
-        if (alive) setStatus(next)
+        if (!alive) return
+        setStatus(next)
+        const busy = (next.inflight_dates?.length ?? 0) > 0
+        timer = window.setTimeout(() => {
+          void tick()
+        }, busy ? 800 : 15_000)
       } catch {
-        /* status is optional; the events request still drives the selected date */
+        if (!alive) return
+        timer = window.setTimeout(() => {
+          void tick()
+        }, 15_000)
       }
     }
     void tick()
-    const id = window.setInterval(() => {
-      void tick()
-    }, 800)
     return () => {
       alive = false
-      window.clearInterval(id)
+      if (timer !== undefined) window.clearTimeout(timer)
     }
   }, [])
 

@@ -72,3 +72,29 @@ def test_maybe_refresh_does_not_steal_scrape_workers(monkeypatch):
     finally:
         release.set()
         service._executor.shutdown(wait=True)
+
+
+def test_refresh_due_recent_scan_blocks_even_if_cache_is_old(monkeypatch):
+    from japan_events.api import jobs
+
+    class Cache:
+        generated_at = "2020-01-01T00:00:00Z"
+
+    monkeypatch.setattr(jobs, "cache_age_seconds", lambda combined: 20 * 3600)
+    monkeypatch.setattr(jobs, "load_scan", lambda target: {"scanned_at": "now"})
+    monkeypatch.setattr(jobs, "scan_age_seconds", lambda scan: 60)
+    monkeypatch.setattr(jobs, "scan_ttl_seconds", lambda: 6 * 3600)
+    assert jobs._refresh_due(date.today(), Cache()) is False
+
+
+def test_refresh_due_old_scan_allows_check(monkeypatch):
+    from japan_events.api import jobs
+
+    class Cache:
+        generated_at = "2020-01-01T00:00:00Z"
+
+    monkeypatch.setattr(jobs, "cache_age_seconds", lambda combined: 20 * 3600)
+    monkeypatch.setattr(jobs, "load_scan", lambda target: {"scanned_at": "old"})
+    monkeypatch.setattr(jobs, "scan_age_seconds", lambda scan: 10 * 3600)
+    monkeypatch.setattr(jobs, "scan_ttl_seconds", lambda: 6 * 3600)
+    assert jobs._refresh_due(date.today(), Cache()) is True

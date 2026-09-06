@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "jsonld:21; html:4; none_on_date:22_parsed",
+  "notes": "site_cards:118; html:22; none_on_date:21_parsed; none_on_date:80_parsed",
   "event_count": 0,
-  "source_url": "https://visitkanagawa.jp/events",
-  "adapter": "generic",
+  "source_url": "https://visitkanagawa.jp/",
+  "adapter": "kanagawa",
   "events": []
 }

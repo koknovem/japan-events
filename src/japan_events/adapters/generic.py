@@ -12,6 +12,7 @@ from japan_events.normalize import (
     extract_eventish_dicts,
     filter_events,
     parse_date_range,
+    parse_jp_multi_days,
 )
 from japan_events.registry import register
 
@@ -37,6 +38,28 @@ def _raw_to_events(
             _, end = parse_date_range(str(data["period"]), default_year=default_year)
             if end:
                 data["end_date"] = end.isoformat()
+
+        period_text = str(data.get("period") or data.get("start_date") or "")
+        multi = parse_jp_multi_days(period_text, default_year=default_year)
+        if len(multi) > 1:
+            for day in multi:
+                day_data = dict(data)
+                day_data["start_date"] = day.isoformat()
+                day_data["end_date"] = day.isoformat()
+                event = dict_to_event(
+                    day_data, prefecture=prefecture, source=source, default_year=default_year
+                )
+                if not event:
+                    continue
+                if event.url and event.url.startswith("/"):
+                    from urllib.parse import urljoin
+
+                    event.url = urljoin(page_url, event.url)
+                if event.image_url and event.image_url.startswith("//"):
+                    event.image_url = "https:" + event.image_url
+                events.append(event)
+            continue
+
         event = dict_to_event(data, prefecture=prefecture, source=source, default_year=default_year)
         if not event:
             continue

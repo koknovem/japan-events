@@ -1,0 +1,13 @@
+id: kagoshima
+strategy: calendar
+event_url: https://www.kagoshima-kankou.com/for/events
+date_picker: true
+wait_ms: 2000
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .event
+- article
+- li
+- .card
+notes: Calendar UI on events page

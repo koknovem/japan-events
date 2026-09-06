@@ -4,10 +4,10 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "html:11",
+  "notes": "site_cards:79; html:11",
   "event_count": 8,
   "source_url": "https://osaka-info.jp/en/event/",
-  "adapter": "generic",
+  "adapter": "osaka",
   "events": [
     {
       "prefecture": "Osaka",

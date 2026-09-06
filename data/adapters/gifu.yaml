@@ -1,0 +1,10 @@
+id: gifu
+strategy: html
+event_url: https://visitgifu.com/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://visitgifu.com/things-to-do/festivals-events/
+notes: Story CMS; limited dated listings

@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "js_date_force:6; date_selects:0; search_clicked; site_cards:48; no_event_listing",
   "event_count": 0,
-  "source_url": "https://www.ibarakiguide.jp/event.php",
-  "adapter": "generic",
+  "source_url": "https://www.ibarakiguide.jp/search.php",
+  "adapter": "ibaraki",
   "events": []
 }

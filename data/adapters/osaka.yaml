@@ -1,0 +1,12 @@
+id: osaka
+strategy: html
+event_url: https://osaka-info.jp/en/event/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .event
+- .card
+- li

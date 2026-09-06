@@ -1,0 +1,10 @@
+id: mie
+strategy: html
+event_url: https://visitmie-japan.travel/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.kanko-mie.or.jp/event/
+notes: English marketing site; JP kanko-mie has event index

@@ -1,0 +1,11 @@
+id: saga
+strategy: html
+event_url: https://www.saga-tripgenius.com/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.saga-tripgenius.com/event/
+- https://www.asobo-saga.jp/event/
+notes: TripGenius portal; dated events often on asobo-saga

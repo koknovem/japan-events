@@ -1,0 +1,16 @@
+id: kanagawa
+strategy: html
+event_url: https://visitkanagawa.jp/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://visitkanagawa.jp/en/events/
+- https://www.kanagawa-kankou.or.jp/
+card_selectors:
+- article
+- .event
+- li
+- .card
+notes: Festival encyclopedia style; seasonal without day-level dates

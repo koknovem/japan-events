@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "site_cards:106; no_event_listing; none_on_date:41_parsed",
   "event_count": 0,
-  "source_url": "https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events",
-  "adapter": "generic",
+  "source_url": "https://www.visitehimejapan.com/en/things-to-do/",
+  "adapter": "ehime",
   "events": []
 }

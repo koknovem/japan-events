@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "site_cards:54; html:10; none_on_date:6_parsed; none_on_date:41_parsed",
   "event_count": 0,
-  "source_url": "https://akita-fun.jp/featured_contents/festival",
-  "adapter": "generic",
+  "source_url": "https://akita-fun.jp/",
+  "adapter": "akita",
   "events": []
 }

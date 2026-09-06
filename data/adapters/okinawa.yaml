@@ -1,0 +1,16 @@
+id: okinawa
+strategy: html
+event_url: https://www.okinawastory.jp/event/
+listing_urls:
+  - https://visitokinawajapan.com/events/
+  - https://visitokinawajapan.com/
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+  - article
+  - .event
+  - .card
+  - li.event
+notes: Prefer okinawastory event index; visitokinawa home is brochure-like

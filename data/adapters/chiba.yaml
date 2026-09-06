@@ -1,0 +1,11 @@
+id: chiba
+strategy: html
+event_url: https://www.visitchiba.jp/events/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.visitchiba.jp/en/
+- https://www.visitchiba.jp/
+notes: Events path may 404; harvest home as fallback

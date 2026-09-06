@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "no_event_listing; no_event_listing; html:20; none_on_date:19_parsed",
   "event_count": 0,
-  "source_url": "https://discovertokushima.net/en/",
-  "adapter": "generic",
+  "source_url": "https://www.awanavi.jp/event",
+  "adapter": "tokushima",
   "events": []
 }

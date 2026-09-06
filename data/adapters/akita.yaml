@@ -1,0 +1,25 @@
+id: akita
+strategy: html
+event_url: https://akita-fun.jp/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://akita-fun.jp/featured_contents/festival
+card_selectors:
+- .news-list li
+- li
+- article
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  period:
+  - time
+  - .date
+  - li
+  url:
+  - a
+notes: Japanese home listing more reliable than /en/

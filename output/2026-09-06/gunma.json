@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "xhr:20; xhr:40; xhr:20; xhr:40; none_on_date:40_parsed",
+  "notes": "xhr:40; xhr:20; none_on_date:40_parsed; xhr:40; xhr:20; none_on_date:40_parsed; xhr:40; xhr:20; none_on_date:40_parsed",
   "event_count": 0,
-  "source_url": "https://www.visit-gunma.jp/en/search/?tags=tag_039",
-  "adapter": "generic",
+  "source_url": "https://www.visit-gunma.jp/en/discover/",
+  "adapter": "gunma",
   "events": []
 }

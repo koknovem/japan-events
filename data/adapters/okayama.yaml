@@ -1,0 +1,27 @@
+id: okayama
+strategy: html
+event_url: https://www.okayama-japan.jp/en/event
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .spot_list_item
+- .ejs-tabs-content-item
+- article
+- li
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  - .title
+  period:
+  - .date
+  - time
+  - .month
+  category:
+  - .category
+  url:
+  - a
+notes: Month-grouped traditional festivals

@@ -1,0 +1,26 @@
+id: aichi
+strategy: html
+event_url: https://aichinow.pref.aichi.jp/en/events/
+date_picker: false
+wait_ms: 2000
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- div.list
+fields:
+  title:
+  - h2 a
+  - h2
+  - a
+  period:
+  - .left
+  - div.list
+  area:
+  - h2 span
+  url:
+  - h2 a
+  - a[href*='/events/detail/']
+  image:
+  - img
+wait_for: div.list
+notes: Dates sit as text after h2 inside .list (e.g. Sep 2,2026 ～ Sep 6)

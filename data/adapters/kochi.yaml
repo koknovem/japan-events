@@ -1,0 +1,11 @@
+id: kochi
+strategy: html
+event_url: https://visitkochijapan.com/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://visitkochijapan.com/en/see-and-do/events/
+- https://visitkochijapan.com/
+notes: English marketing; may lack dated calendar

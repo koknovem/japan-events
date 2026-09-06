@@ -1,0 +1,13 @@
+id: toyama
+strategy: html
+event_url: https://visit-toyama-japan.com/en/festivals
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .festival
+- .event
+- li
+notes: Annual festival guide

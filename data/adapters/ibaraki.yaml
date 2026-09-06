@@ -1,0 +1,31 @@
+id: ibaraki
+strategy: html
+event_url: https://www.ibarakiguide.jp/event.php
+date_picker: false
+wait_ms: 2000
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .eventList li
+- .event_list li
+- li
+- .listBox
+- .resultList li
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  - .title
+  period:
+  - .date
+  - time
+  - li
+  - p
+  url:
+  - a[href*='detail']
+  - a
+  area:
+  - .area
+wait_for: .eventSearchBox, .eventList, body
+notes: JP event search with date dropdowns

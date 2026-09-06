@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "no_event_listing; goto_error:Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.kanko-mie.or.jp/event/\nCall log:\n  - navigating to \"https://www.kanko-mie.or.jp/event/\", waiting until \"domcontentloaded\"\n",
   "event_count": 0,
-  "source_url": "https://visitmie-japan.travel/en/",
-  "adapter": "generic",
+  "source_url": "chrome-error://chromewebdata/",
+  "adapter": "mie",
   "events": []
 }

@@ -58,7 +58,23 @@ def filter_sites(sites: list[SiteConfig], prefecture: str | None) -> list[SiteCo
 def get_adapter(site: SiteConfig) -> BaseAdapter:
     # Imported here so adapter modules can register themselves.
     from japan_events.adapters import load_adapters
+    from japan_events.adapters.configured import ConfigurableAdapter
+    from japan_events.adapters.loader import load_adapter_yaml
 
     load_adapters()
+    if site.adapter in ADAPTERS and site.adapter not in {"configured", "generic"}:
+        return ADAPTERS[site.adapter](site)
+
+    # Prefer declarative YAML model for this site id / adapter name.
+    for key in (site.adapter, site.id):
+        if key in {"configured", "generic"}:
+            continue
+        cfg = load_adapter_yaml(key)
+        if cfg is not None:
+            return ConfigurableAdapter(site, cfg)
+
+    if site.adapter == "configured":
+        return ConfigurableAdapter(site, load_adapter_yaml(site.id))
+
     cls = ADAPTERS.get(site.adapter) or ADAPTERS["generic"]
     return cls(site)

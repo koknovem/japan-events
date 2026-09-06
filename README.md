@@ -2,7 +2,7 @@
 
 Expandable Playwright + Python pipeline that discovers each official prefecture tourism site’s event API or rendered listing, then scrapes events that occur on a single date.
 
-Sites do **not** share one public events API. The registry in `data/sites.yaml` maps all 47 prefectures plus JNTO to an adapter. New sites are YAML plus an optional adapter class — no core rewrite.
+Every site has a **dedicated adapter model**: declarative YAML in `data/adapters/{id}.yaml`, optional custom Python in `src/japan_events/adapters/sites/{id}.py`, registered from `data/sites.yaml`. The generic HTML harvester remains a shared fallback — not the only parser.
 
 ## Install (Windows / PowerShell)
 
@@ -59,25 +59,78 @@ Each prefecture file:
 
 A broken site never aborts the run. Failures appear in `all.json` as `{ "prefecture", "ok": false, "error" }`. Sites with no calendar return `[]` plus a short `notes` field.
 
-## How to add a site
+## Architecture
 
-1. Append a block to `data/sites.yaml` (`id`, `name`, `region`, `home_url`, optional `event_url` / `adapter` / `api_url` / `date_picker`).
-2. Run `japan-events discover --prefecture <id>` and inspect `discoveries/<id>.json`.
-3. If a stable JSON API appears, set `api_url` and/or add `src/japan_events/adapters/<id>.py` decorated with `@register("<id>")`.
-4. Point `adapter:` at that name. Everything else can stay on `generic`.
+| Layer | Role |
+| --- | --- |
+| `data/sites.yaml` | Registry: id, home/event URLs, `adapter: <id>` |
+| `data/adapters/{id}.yaml` | Per-site scrape model: selectors, API URL templates, wait/date-picker |
+| `adapters/configured.py` | Loads YAML → site-specific card/API harvest |
+| `adapters/sites/{id}.py` | Custom Python when YAML is not enough (API quirks, calendars, form filters) |
+| `adapters/generic.py` | Shared JSON-LD / XHR / HTML harvester used as fallback |
 
-The generic adapter visits `event_url` (or follows `/event|/events|/calendar` from the home page), accepts cookie banners, optionally clicks a calendar date, then harvests **JSON XHR → Schema.org JSON-LD → HTML cards**. Events match if `start_date <= --date <= end_date` (a single date is treated as a one-day range). Dates are parsed from English and Japanese strings.
+Resolution order for `adapter: aichi`:
 
-## Discovery notes (2026-09-06)
+1. `@register("aichi")` class under `adapters/sites/` (or legacy top-level module)
+2. Else `data/adapters/aichi.yaml` via `ConfigurableAdapter`
+3. Else `generic`
 
-Most official sites render HTML calendars rather than a public JSON API. Named adapters were added where discovery found a stable feed:
+## How to add a site-specific adapter
 
-- **Hiroshima** — `cms.dive-hiroshima.com/.../wp-json/api/v1/events-index/filter/data/`
-- **Nara** — `visitnara.jp/travel-directory/api/data/`
-- **Hokkaido / Tokyo / Kyoto / JNTO** — HTML calendar or listing pages (date picker on Hokkaido and GO TOKYO)
+### A. YAML-only (most CMS HTML listings)
 
-A few listed hostnames no longer resolve (`visit-iwate.com`, `tokyodaytrip.com`, `visit-fukuoka-japan.com`, `visitokinawa.jp`, `tourismtokushima.jp`). The registry now points at the current official replacements (`iwatetabi.jp`, `visitkanagawa.jp`, `crossroadfukuoka.jp`, `visitokinawajapan.com`, `discovertokushima.net`). JNTO’s events page is often blocked by CloudFront from automated browsers; the site stays in the registry and returns `[]` plus notes rather than failing the run.
+1. Add/update the site block in `data/sites.yaml` (`adapter: <id>`).
+2. Create `data/adapters/<id>.yaml`:
+
+```yaml
+id: aichi
+strategy: html
+event_url: https://aichinow.pref.aichi.jp/en/events/
+card_selectors:
+  - "div.list"
+fields:
+  title: ["h2 a", "h2"]
+  period: [".left"]
+  area: ["h2 span"]
+  url: ["h2 a"]
+use_card_text_as_period: true
+wait_for: "div.list"
+wait_ms: 2000
+harvest_fallback: true
+```
+
+3. Run `japan-events discover --prefecture <id>` and refine `event_url` / `card_selectors` from `discoveries/<id>.json`.
+4. Test: `japan-events scrape --date 2026-09-06 --prefecture <id>`
+
+Useful YAML fields: `api_url` (supports `{date}` / `{start}` / `{end}`), `api_date_keys`, `date_picker`, `listing_urls`, `notes`.
+
+### B. Custom Python (APIs, calendars, search forms)
+
+1. Add `src/japan_events/adapters/sites/<id>.py`:
+
+```python
+from japan_events.adapters.base import BaseAdapter
+from japan_events.registry import register
+
+@register("mypref")
+class MyPrefAdapter(BaseAdapter):
+    name = "mypref"
+
+    async def scrape(self, target, session):
+        ...
+```
+
+2. Keep a YAML model for URLs/selectors even when Python owns the flow.
+3. Point `adapter: mypref` in `sites.yaml`. Modules under `adapters/sites/` are auto-imported.
+
+Existing custom adapters: **hiroshima**, **nara**, **hokkaido**, **tokyo**, **kyoto**, **jnto**, **ibaraki**.
+
+## Discovery notes
+
+Most official sites render HTML calendars rather than a public JSON API. Named/YAML adapters encode the CMS shape found by discovery + live probing.
+
+A few hostnames historically failed DNS; the registry uses current official domains (`iwatetabi.jp`, `visitkanagawa.jp`, `crossroadfukuoka.jp`, `visitokinawajapan.com`, `discovertokushima.net`). JNTO’s events page is often blocked by CloudFront from automated browsers — it stays in the registry and returns `[]` plus notes.
 
 ## Limits
 
-A single generic adapter will not perfectly parse every CMS. v1 is a complete, expandable pipeline over every listed official site, plus named adapters where discovery finds a stable pattern. Be polite: default concurrency is 3. Sites with no calendar for `--date` write `[]` and a short `notes` field.
+Be polite: default concurrency is 3. Sites that only publish seasonal festival guides (no day-level calendar for `--date`) correctly return `[]`. Per-site failures never abort the full run.

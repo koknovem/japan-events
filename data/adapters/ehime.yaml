@@ -1,0 +1,12 @@
+id: ehime
+strategy: html
+event_url: https://www.visitehimejapan.com/en/things-to-do/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .c-card-b1
+- article
+- .card
+notes: Festival & events spot cards; seasonal

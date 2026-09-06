@@ -1,0 +1,8 @@
+id: hokkaido
+strategy: calendar
+event_url: https://www.visit-hokkaido.jp/en/event/
+date_picker: true
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+notes: JS calendar; custom Python adapter preferred

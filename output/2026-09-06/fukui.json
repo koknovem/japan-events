@@ -4,11 +4,26 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "html:20",
-  "event_count": 1,
+  "notes": "site_cards:66; html:20",
+  "event_count": 2,
   "source_url": "https://www.fuku-e.com/en/events/index.html",
-  "adapter": "generic",
+  "adapter": "fukui",
   "events": [
+    {
+      "prefecture": "Fukui",
+      "title": "Autumn (September to November)",
+      "start_date": "2026-09-01",
+      "end_date": "2026-11-01",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Autumn (September to November)",
+      "url": null,
+      "image_url": null,
+      "source": "https://www.fuku-e.com/en/events/index.html#site-card"
+    },
     {
       "prefecture": "Fukui",
       "title": "In the Kamicho district, by car from the castle town of Ono City, you can witness the fantastical sight of fireflies dancing in the air throughout the early to",
@@ -19,7 +34,7 @@
       "venue": null,
       "area": null,
       "category": null,
-      "description": "In the Kamicho district, located 5 to 10 minutes by car from the castle town of Ono City, you can witness the fantastical sight of fireflies dancing in the air throughout the early to mid-June period, amidst the rural landscape surrounded by satoya… Eiheiji, Okuetsu My page detail_5345.html",
+      "description": "In the Kamicho district, located 5 to 10 minutes by car from the castle town of Ono City, you can witness the fantastical sight of fireflies dancing in the air throughout the early to mid-June period, amidst the rural landscape surrounded by satoya… Eiheiji, Okuetsu Add to Favourites detail_5345.html",
       "url": "https://www.fuku-e.com/en/events/detail_5345.html",
       "image_url": null,
       "source": "https://www.fuku-e.com/en/events/index.html#html"

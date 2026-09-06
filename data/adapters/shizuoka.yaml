@@ -1,0 +1,23 @@
+id: shizuoka
+strategy: html
+event_url: https://www.visit-shizuoka.com/event/index.html
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .event-list li
+- li
+- article
+- .post
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  period:
+  - .date
+  - time
+  - li
+  url:
+  - a

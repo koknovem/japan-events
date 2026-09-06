@@ -18,7 +18,17 @@ _ISOISH = re.compile(
 _REIWA = re.compile(
     r"令和\s*(?P<y>\d{1,2})\s*年\s*(?P<m>\d{1,2})\s*月\s*(?P<d>\d{1,2})\s*日?"
 )
-_RANGE_SEP = re.compile(r"\s*(?:~|～|〜|–|—|-|to|thru|through|until|至)\s*", re.I)
+# e.g. 2026年9月5・6・13・19日  or  9月5・6日
+_JP_MULTI_DAYS = re.compile(
+    r"(?:(?P<y>\d{4})\s*年\s*)?(?P<m>\d{1,2})\s*月\s*"
+    r"(?P<days>\d{1,2}(?:\s*[・･/,、]\s*\d{1,2})+)\s*日"
+)
+_RANGE_SEP = re.compile(
+    r"(?:\s*[~～〜–—]\s*|(?<=\d)\s*-\s*(?=\d)|\s+-\s+|\s+(?:to|thru|through|until|至)\s+)",
+    re.I,
+)
+# Strip weekday annotations like (Wed) / （土） before parsing.
+_WEEKDAY_PAREN = re.compile(r"[（(][^）)]{0,8}[）)]")
 
 TITLE_KEYS = (
     "title",
@@ -99,6 +109,10 @@ def _as_date(value: Any, default_year: int | None = None) -> date | None:
     text = str(value).strip()
     if not text or text.lower() in {"none", "null", "undefined"}:
         return None
+    text = _WEEKDAY_PAREN.sub(" ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    # Normalize "Sep 2,2026" → "Sep 2, 2026"
+    text = re.sub(r"([A-Za-z]{3,9}\s+\d{1,2}),(\d{4})", r"\1, \2", text)
     if text[:10].isdigit() is False and "T" in text:
         try:
             return date_parser.parse(text, fuzzy=True).date()
@@ -135,6 +149,25 @@ def _as_date(value: Any, default_year: int | None = None) -> date | None:
         return None
 
 
+def parse_jp_multi_days(text: str, *, default_year: int | None = None) -> list[date]:
+    """Parse 2026年9月5・6・13・19日 into discrete dates."""
+    match = _JP_MULTI_DAYS.search(text)
+    if not match:
+        return []
+    year = int(match.group("y")) if match.group("y") else default_year
+    if not year:
+        return []
+    month = int(match.group("m"))
+    days = [int(x) for x in re.findall(r"\d{1,2}", match.group("days"))]
+    out: list[date] = []
+    for day in days:
+        try:
+            out.append(date(year, month, day))
+        except ValueError:
+            continue
+    return out
+
+
 def parse_date_range(
     text: Any,
     *,
@@ -148,10 +181,24 @@ def parse_date_range(
     raw = text.strip()
     if not raw:
         return None, None
+    multi = parse_jp_multi_days(raw, default_year=default_year)
+    if multi:
+        return min(multi), max(multi)
     parts = _RANGE_SEP.split(raw, maxsplit=1)
     if len(parts) == 2 and parts[0] and parts[1]:
         start = _as_date(parts[0], default_year)
         end = _as_date(parts[1], default_year or (start.year if start else None))
+        # When the left side is a long title+date blob, search for a date token
+        if start is None:
+            for match in re.finditer(
+                r"([A-Z][a-z]{2,9}\s+\d{1,2}(?:st|nd|rd|th)?,?\s*\d{4}"
+                r"|\d{4}\s*[年./-]\s*\d{1,2}\s*[月./-]\s*\d{1,2}"
+                r"|\d{4}[-/.]\d{1,2}[-/.]\d{1,2})",
+                parts[0],
+            ):
+                start = _as_date(match.group(1), default_year)
+                if start:
+                    break
         if start and end and end < start and end.year == start.year:
             # e.g. 2026/12/20-1/5
             try:
@@ -241,10 +288,40 @@ def dict_to_event(
     elif isinstance(nested, dict):
         start = start or _as_date(nested.get("start_date") or nested.get("startDate"), default_year)
         end = end or _as_date(nested.get("end_date") or nested.get("endDate"), default_year)
+    # start_date fields often contain a full range string from HTML extractors
+    raw_start = first_value(obj, DATE_START_KEYS)
+    if not (start and end) and isinstance(raw_start, str) and _RANGE_SEP.search(raw_start):
+        p_start, p_end = parse_date_range(raw_start, default_year=default_year)
+        start = start or p_start
+        end = end or p_end
     if period and not (start and end):
         p_start, p_end = parse_date_range(period, default_year=default_year)
         start = start or p_start
         end = end or p_end
+    # Last resort: scan title/description for a date range
+    if not (start and end):
+        for blob_key in ("description", "title", "name"):
+            blob = obj.get(blob_key)
+            if isinstance(blob, str) and _RANGE_SEP.search(blob):
+                p_start, p_end = parse_date_range(blob, default_year=default_year)
+                if p_start or p_end:
+                    start = start or p_start
+                    end = end or p_end
+                    break
+            elif isinstance(blob, str):
+                # Try to extract a recognizable range substring first
+                import re as _re
+                m = _re.search(
+                    r"([A-Z][a-z]{2,9}\s+\d{1,2},?\s*\d{4}.*?[~～〜–-].*?[A-Z][a-z]{2,9}\s+\d{1,2}"
+                    r"|\d{4}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日?.*?[~～〜–-].*?\d{1,2}\s*月?\s*\d{1,2}\s*日?)",
+                    blob,
+                )
+                if m:
+                    p_start, p_end = parse_date_range(m.group(0), default_year=default_year)
+                    start = start or p_start
+                    end = end or p_end
+                    if start or end:
+                        break
     if start and not end:
         end = start
     if end and not start:

@@ -1,0 +1,28 @@
+id: hyogo
+strategy: html
+event_url: https://www.hyogo-tourism.jp/event/index.html
+date_picker: false
+wait_ms: 2500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+  - ".event_list > li"
+  - ".eventList > li"
+  - "ul.list > li"
+  - "[class*='event'] li"
+  - "a[href*='detail_']"
+fields:
+  title:
+    - ".title"
+    - "h2"
+    - "h3"
+    - "a"
+  period:
+    - "time"
+    - ".date"
+    - ".period"
+    - ".day"
+  url:
+    - "a[href*='detail_']"
+    - "a"
+notes: JP listing; prefer detail_ anchors over broad li

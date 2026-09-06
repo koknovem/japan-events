@@ -1,0 +1,11 @@
+id: miyazaki
+strategy: html
+event_url: https://www.visit-miyazaki.com/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.kanko-miyazaki.jp/event/
+- https://www.miyazaki-city.tourism.or.jp/
+notes: English site thin on calendars

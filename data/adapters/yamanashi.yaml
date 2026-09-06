@@ -1,0 +1,10 @@
+id: yamanashi
+strategy: html
+event_url: https://www.yamanashi-kankou.jp/english/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.yamanashi-kankou.jp/event/
+notes: Salesforce English top; JP event index preferred when available

@@ -1,0 +1,11 @@
+id: kagawa
+strategy: html
+event_url: https://www.my-kagawa.jp/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.my-kagawa.jp/event/
+- https://www.my-kagawa.jp/
+notes: English site is brochure-like

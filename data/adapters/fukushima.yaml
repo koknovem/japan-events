@@ -1,0 +1,11 @@
+id: fukushima
+strategy: html
+event_url: https://fukushima.travel/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://fukushima.travel/en/
+- https://www.tif.ne.jp/all/event.html
+notes: Official portal is destination-led; limited dated event index

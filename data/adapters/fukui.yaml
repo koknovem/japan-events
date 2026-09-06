@@ -1,0 +1,12 @@
+id: fukui
+strategy: html
+event_url: https://www.fuku-e.com/en/events/index.html
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .event
+- article
+- li
+- .list-item

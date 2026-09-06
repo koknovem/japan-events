@@ -1,0 +1,23 @@
+id: wakayama
+strategy: html
+event_url: https://visitwakayama.jp/en/events/index.html
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .event
+- li
+- .card
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  period:
+  - time
+  - .date
+  url:
+  - a
+notes: Many relative dates (Early August / every year)

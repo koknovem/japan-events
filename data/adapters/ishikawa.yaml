@@ -1,0 +1,13 @@
+id: ishikawa
+strategy: html
+event_url: https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .c-card
+- article
+- .spot
+- li
+notes: Seasonal festival anchors; rarely day-specific

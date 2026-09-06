@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "no_event_listing; no_event_listing; no_event_listing",
   "event_count": 0,
   "source_url": "https://www.visitchiba.jp/",
-  "adapter": "generic",
+  "adapter": "chiba",
   "events": []
 }

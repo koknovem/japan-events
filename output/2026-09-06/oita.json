@@ -4,10 +4,10 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "html:28",
+  "notes": "site_cards:75; html:28",
   "event_count": 4,
   "source_url": "https://www.visit-oita.jp/events/",
-  "adapter": "generic",
+  "adapter": "oita",
   "events": [
     {
       "prefecture": "Oita",
@@ -17,12 +17,12 @@
       "start_time": null,
       "end_time": null,
       "venue": null,
-      "area": null,
+      "area": "九重町",
       "category": null,
       "description": "九重町 自然景観 レジャー・体験 グルメ・飲食店 やまなみ感謝祭2026 ※台風接近に伴う天候不良を考慮して中止となりました 2026年9月6日（日）",
       "url": "https://www.visit-oita.jp/events/detail/14425",
       "image_url": "https://www.visit-oita.jp/files/cimage/CCCxjax235x176x0xEvent_14425_image.jpg",
-      "source": "https://www.visit-oita.jp/events/#html"
+      "source": "https://www.visit-oita.jp/events/#site-card"
     },
     {
       "prefecture": "Oita",
@@ -32,12 +32,12 @@
       "start_time": null,
       "end_time": null,
       "venue": null,
-      "area": null,
+      "area": "竹田市",
       "category": null,
       "description": "竹田市 芸術・文化・街並 グランツ音楽館\"ジャズ\"vol.3 ブルームーントリオ・ジャズライブ＆セッション 2026年9月6日（日）",
       "url": "https://www.visit-oita.jp/events/detail/14452",
       "image_url": "https://www.visit-oita.jp/files/cimage/CCCxjax235x176x0xEvent_14452_image.jpg",
-      "source": "https://www.visit-oita.jp/events/#html"
+      "source": "https://www.visit-oita.jp/events/#site-card"
     },
     {
       "prefecture": "Oita",
@@ -47,12 +47,12 @@
       "start_time": null,
       "end_time": null,
       "venue": null,
-      "area": null,
+      "area": "中津市",
       "category": null,
       "description": "中津市 物産・道の駅 漁師さんの朝市 2026年9月6日（日）、20日（日）",
       "url": "https://www.visit-oita.jp/events/detail/14451",
       "image_url": "https://www.visit-oita.jp/files/cimage/CCCxjax235x176x0xEvent_14451_image.jpg",
-      "source": "https://www.visit-oita.jp/events/#html"
+      "source": "https://www.visit-oita.jp/events/#site-card"
     },
     {
       "prefecture": "Oita",
@@ -62,12 +62,12 @@
       "start_time": null,
       "end_time": null,
       "venue": null,
-      "area": null,
+      "area": "由布市",
       "category": null,
       "description": "由布市 歴史・神社・仏閣 芸術・文化・街並 由布院温泉神楽「月一の奉」 2026年9月6日（日）",
       "url": "https://www.visit-oita.jp/events/detail/14448",
       "image_url": "https://www.visit-oita.jp/files/cimage/CCCxjax235x176x0xEvent_14448_image.jpg",
-      "source": "https://www.visit-oita.jp/events/#html"
+      "source": "https://www.visit-oita.jp/events/#site-card"
     }
   ]
 }

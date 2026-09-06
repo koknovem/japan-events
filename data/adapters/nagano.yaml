@@ -1,0 +1,11 @@
+id: nagano
+strategy: html
+event_url: https://www.go-nagano.net/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.go-nagano.net/en/events
+- https://www.go-nagano.net/event/
+notes: HubSpot marketing site; dated event feed limited

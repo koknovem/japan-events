@@ -1,0 +1,12 @@
+id: yamagata
+strategy: html
+event_url: https://yamagatakanko.com/en/festivals/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .festival
+- .event
+- li

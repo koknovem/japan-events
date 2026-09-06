@@ -1,0 +1,13 @@
+id: kyoto
+strategy: html
+event_url: https://kyoto.travel/en/events/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .event
+- li
+- .card
+notes: Custom Python adapter preferred

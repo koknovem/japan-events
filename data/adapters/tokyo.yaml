@@ -1,0 +1,10 @@
+id: tokyo
+strategy: calendar
+event_url: https://www.gotokyo.org/en/calendar/index.html
+date_picker: true
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.gotokyo.org/en/event-calendar/index.html
+notes: Custom Python adapter preferred

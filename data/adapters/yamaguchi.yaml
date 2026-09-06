@@ -1,0 +1,13 @@
+id: yamaguchi
+strategy: html
+event_url: https://visit-jy.com/en/spots?category=166
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .spot
+- article
+- .card
+- li
+notes: Festival category spots; seasonal

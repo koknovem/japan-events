@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "site_cards:151; no_event_listing; none_on_date:104_parsed",
   "event_count": 0,
   "source_url": "https://global.biwako-visitors.jp/annual-events/",
-  "adapter": "generic",
+  "adapter": "shiga",
   "events": []
 }

@@ -1,0 +1,12 @@
+id: hiroshima
+strategy: api
+event_url: https://dive-hiroshima.com/en/events/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+api_url: https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date={date}&end_date={date}&order=date&site=en&page_status=production
+api_date_keys:
+  start: start_date
+  end: end_date
+notes: Custom Python adapter preferred

@@ -1,0 +1,32 @@
+id: aomori
+strategy: html
+event_url: https://aomori-tourism.com/en/event/index.html
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .event-list li
+- li.event
+- article
+- .c-event-item
+- .eventBox
+- section .list li
+fields:
+  title:
+  - h2
+  - h3
+  - .title
+  - a
+  period:
+  - time
+  - .date
+  - .period
+  - dd
+  url:
+  - a[href*='detail']
+  - a[href]
+  area:
+  - .area
+  - .category
+notes: Seasonal/relative dates common; absolute ISO rare

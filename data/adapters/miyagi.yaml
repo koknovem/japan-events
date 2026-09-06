@@ -1,0 +1,12 @@
+id: miyagi
+strategy: html
+event_url: https://visitmiyagi.com/dosee/events-festivals/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .event
+- a[href*='festival']
+notes: Festival guide pages; often single calendar dates in link text

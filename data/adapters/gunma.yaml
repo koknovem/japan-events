@@ -1,0 +1,11 @@
+id: gunma
+strategy: html
+event_url: https://www.visit-gunma.jp/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.visit-gunma.jp/en/things-to-do/events/
+- https://www.visit-gunma.jp/en/discover/
+notes: Algolia search site; dedicated events index thin

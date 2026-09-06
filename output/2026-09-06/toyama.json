@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "links:1; none_on_date:1_parsed",
+  "notes": "site_cards:141; links:1; none_on_date:1_parsed; none_on_date:83_parsed",
   "event_count": 0,
   "source_url": "https://visit-toyama-japan.com/en/festivals",
-  "adapter": "generic",
+  "adapter": "toyama",
   "events": []
 }

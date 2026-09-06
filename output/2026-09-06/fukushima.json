@@ -4,9 +4,9 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
+  "notes": "no_event_listing; no_event_listing; no_event_listing",
   "event_count": 0,
-  "source_url": "https://book.fukushima.travel/products/ddd8100f-38f9-5dca-b6df-98c5591b6d04?lng=en",
-  "adapter": "generic",
+  "source_url": "https://www.tif.ne.jp/all/event.html",
+  "adapter": "fukushima",
   "events": []
 }

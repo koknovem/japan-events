@@ -1,0 +1,8 @@
+id: jnto
+strategy: html
+event_url: https://www.japan.travel/en/events/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+notes: Often CloudFront-blocked for bots; custom adapter

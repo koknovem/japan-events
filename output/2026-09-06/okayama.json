@@ -4,9 +4,25 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing",
-  "event_count": 0,
+  "notes": "site_cards:122; no_event_listing",
+  "event_count": 1,
   "source_url": "https://www.okayama-japan.jp/en/event",
-  "adapter": "generic",
-  "events": []
+  "adapter": "okayama",
+  "events": [
+    {
+      "prefecture": "Okayama",
+      "title": "Okayama Korakuen Moon Viewing Ceremony",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "September Okayama Korakuen Moon Viewing Ceremony Traditional Festivals Fukiya Bengara Lantern Festival Traditional Festivals October Okayama Momotaro Matsuri (Festival) in Autumn Traditional Festivals Dogeza Matsuri (Festival)/Daimyo (feudal lord) Procession Traditional Festivals Katsuyama Kenka Danjiri Festival Traditional Festivals Bizen Pottery Festival Traditional Festivals Achi-jinja Shrine A",
+      "url": "https://www.okayama-japan.jp/en/spot/13477",
+      "image_url": "https://place.matcha-jp.com/resize/200x2000/2024/03/14-16-04-05-10071af7acbd5a00638c905bb602312b91fe.webp",
+      "source": "https://www.okayama-japan.jp/en/event#site-card"
+    }
+  ]
 }

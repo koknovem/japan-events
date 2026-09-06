@@ -1,0 +1,16 @@
+id: fukuoka
+strategy: html
+event_url: https://www.crossroadfukuoka.jp/en/event
+listing_urls:
+  - https://www.crossroadfukuoka.jp/en
+  - https://www.crossroadfukuoka.jp/event
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+  - article
+  - .event
+  - li.event
+  - .o-main-special-contents__list-item
+notes: Prefer /en/event listing; follow links if empty

@@ -1,0 +1,11 @@
+id: tottori
+strategy: html
+event_url: https://www.tottori-tour.jp/en/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+listing_urls:
+- https://www.tottori-tour.jp/event/
+- https://www.tottori-tour.jp/
+notes: English home lacks event index

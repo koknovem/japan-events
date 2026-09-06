@@ -1,0 +1,9 @@
+id: nara
+strategy: api
+event_url: https://www.visitnara.jp/event-calendar/
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+api_url: https://www.visitnara.jp/travel-directory/api/data/
+notes: Custom Python adapter preferred

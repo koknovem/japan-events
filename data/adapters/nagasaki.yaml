@@ -1,0 +1,26 @@
+id: nagasaki
+strategy: html
+event_url: https://www.nagasaki-tabinet.com/event
+date_picker: false
+wait_ms: 1500
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- .o-digest--list__item
+- li
+- article
+- .event
+fields:
+  title:
+  - a
+  - h2
+  - h3
+  - .title
+  period:
+  - .o-digest--list__date
+  - time
+  - .date
+  - dl
+  url:
+  - a
+notes: JP event index (/en/event 404)

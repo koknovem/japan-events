@@ -1,0 +1,12 @@
+id: shimane
+strategy: html
+event_url: https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival
+date_picker: false
+wait_ms: 1200
+harvest_fallback: true
+use_card_text_as_period: true
+card_selectors:
+- article
+- .destination
+- .card
+- li

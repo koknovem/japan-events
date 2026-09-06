@@ -4,10 +4,10 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "html:20",
+  "notes": "site_cards:70; html:20",
   "event_count": 2,
   "source_url": "https://yamagatakanko.com/en/festivals/",
-  "adapter": "generic",
+  "adapter": "yamagata",
   "events": [
     {
       "prefecture": "Yamagata",

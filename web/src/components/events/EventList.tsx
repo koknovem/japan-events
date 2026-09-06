@@ -38,9 +38,12 @@ export function EventList({
   }
 
   return (
-    <div className="event-list" role="list">
+    <div className="event-grid" role="list">
       {events.map((event, index) => (
-        <div key={`${event.site_id}-${event.title}-${event.url ?? index}`} role="listitem">
+        <div
+          key={`${event.site_id}-${event.lang ?? ''}-${event.title}-${event.url ?? index}`}
+          role="listitem"
+        >
           <EventCard event={event} index={index} />
         </div>
       ))}

@@ -14,6 +14,8 @@ dependencies = [
     "pydantic>=2.7.0",
     "pyyaml>=6.0.1",
     "python-dateutil>=2.9.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
 ]
 
 [project.optional-dependencies]
@@ -21,6 +23,7 @@ dev = ["pytest>=8.0"]
 
 [project.scripts]
 japan-events = "japan_events.cli:main"
+japan-events-api = "japan_events.api.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

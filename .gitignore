@@ -1,15 +1,22 @@
-.venv/
-venv/
 __pycache__/
 *.py[cod]
 *.egg-info/
-.pytest_cache/
-.mypy_cache/
+.eggs/
 dist/
 build/
+.venv/
+venv/
+.env
+
+# Playwright / scrapes
+discoveries/_debug/
+
+# Node
+web/node_modules/
+web/dist/
+
+# IDE
 .idea/
 .vscode/
-*.log
+*.swp
 .DS_Store
-Thumbs.db
-discoveries/_debug/

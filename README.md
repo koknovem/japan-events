@@ -12,7 +12,46 @@ python -m pip install -e .
 python -m playwright install chromium
 ```
 
-## Commands
+## API server (FastAPI)
+
+```powershell
+cd C:\Users\brian\Downloads\japan_tourist_web
+python -m pip install -e .
+japan-events-api
+# or: python -m japan_events.api.main
+```
+
+Open docs at http://127.0.0.1:8000/docs
+
+| Method | Path | Purpose |
+| --- | --- | --- |
+| GET | `/api/health` | Health check |
+| GET | `/api/sites` | Registry of prefectures |
+| GET | `/api/dates` | Cached scrape dates under `output/` |
+| GET | `/api/events?date=YYYY-MM-DD` | Events for a date (optional `prefecture=tokyo,kyoto`) |
+| POST | `/api/scrape` | Start async Playwright scrape `{ "date": "2026-09-06" }` |
+| GET | `/api/scrape/{job_id}` | Scrape job status |
+
+Cached JSON is served immediately; `POST /api/scrape` refreshes data in the background.
+
+## Web UI (React + TypeScript)
+
+```powershell
+cd web
+npm install
+npm run dev
+```
+
+UI: http://127.0.0.1:5173 (Vite proxies `/api` → FastAPI `:8000`)
+
+Structure:
+
+- `web/src/components/calendar/` — month calendar for date selection
+- `web/src/components/events/` — list, card, prefecture filter, scrape controls
+- `web/src/hooks/useEvents.ts` — data loading + scrape polling
+- `web/src/api/client.ts` — typed API client
+
+## CLI commands
 
 Discover event pages and JSON/XHR endpoints (writes `discoveries/{id}.json` and `discoveries/summary.json`):
 

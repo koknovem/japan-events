@@ -371,7 +371,16 @@ a {
   color: inherit;
 }
 
-a.event-card-link {
+.event-card-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.event-card-main {
   cursor: pointer;
 }
 
@@ -466,6 +475,27 @@ a.event-card-link {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.event-card-source {
+  display: block;
+  margin-top: auto;
+  padding: 0.5rem 0.9rem 0.7rem;
+  border-top: 1px solid var(--line);
+  color: var(--sunset);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-card-source:hover,
+.event-card-source:focus-visible {
+  text-decoration: underline;
+  color: #ffb347;
 }
 
 @media (max-width: 640px) {

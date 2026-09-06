@@ -49,6 +49,7 @@
     "emptyMessage": "{{date}} 沒有找到活動。請試試其他都道府縣或日期。",
     "dateTbd": "日期未定",
     "open": "開啟 →",
+    "source": "來源",
     "loadError": "載入活動失敗"
   },
   "regions": {

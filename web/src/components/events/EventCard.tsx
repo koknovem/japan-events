@@ -12,6 +12,31 @@ function formatRange(start: string | null, end: string | null, tbd: string) {
   return start ?? end ?? tbd
 }
 
+function httpUrl(raw: string | null | undefined): string | null {
+  if (!raw) return null
+  try {
+    const url = new URL(raw.trim())
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return null
+    url.hash = ''
+    return url.toString()
+  } catch {
+    return null
+  }
+}
+
+function sourceLink(event: EventItem): { href: string; label: string } | null {
+  const href = httpUrl(event.source) ?? httpUrl(event.url)
+  if (!href) return null
+  try {
+    const url = new URL(href)
+    const host = url.hostname.replace(/^www\./, '')
+    const path = url.pathname === '/' ? '' : url.pathname.replace(/\/$/, '')
+    return { href, label: path ? `${host}${path}` : host }
+  } catch {
+    return { href, label: href }
+  }
+}
+
 export function EventCard({ event, index }: EventCardProps) {
   const { t } = useTranslation()
   const [imgFailed, setImgFailed] = useState(false)
@@ -19,7 +44,10 @@ export function EventCard({ event, index }: EventCardProps) {
     ? t(`prefectures.${event.site_id}`, { defaultValue: event.prefecture })
     : event.prefecture
   const showImage = Boolean(event.image_url) && !imgFailed
-  const body = (
+  const source = sourceLink(event)
+  const detailHref = httpUrl(event.url)
+
+  const main = (
     <>
       <div className={`event-card-media${showImage ? '' : ' is-placeholder'}`}>
         {showImage ? (
@@ -48,26 +76,30 @@ export function EventCard({ event, index }: EventCardProps) {
     </>
   )
 
-  if (event.url) {
-    return (
-      <a
-        className="event-card event-card-link"
-        href={event.url}
-        target="_blank"
-        rel="noreferrer"
-        style={{ animationDelay: `${Math.min(index, 16) * 0.03}s` }}
-      >
-        {body}
-      </a>
-    )
-  }
-
   return (
     <article
       className="event-card"
       style={{ animationDelay: `${Math.min(index, 16) * 0.03}s` }}
     >
-      {body}
+      {detailHref ? (
+        <a className="event-card-main" href={detailHref} target="_blank" rel="noreferrer">
+          {main}
+        </a>
+      ) : (
+        <div className="event-card-main">{main}</div>
+      )}
+      {source ? (
+        <a
+          className="event-card-source"
+          href={source.href}
+          target="_blank"
+          rel="noreferrer"
+          title={source.href}
+          aria-label={`${t('events.source')}: ${source.label}`}
+        >
+          {source.label}
+        </a>
+      ) : null}
     </article>
   )
 }

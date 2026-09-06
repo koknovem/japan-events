@@ -49,6 +49,7 @@
     "emptyMessage": "No events found for {{date}}. Try another prefecture or date.",
     "dateTbd": "Date TBD",
     "open": "Open →",
+    "source": "Source",
     "loadError": "Failed to load events"
   },
   "regions": {

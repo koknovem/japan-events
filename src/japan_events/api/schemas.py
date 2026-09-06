@@ -66,6 +66,34 @@ class HealthResponse(BaseModel):
     version: str
 
 
+class ScrapeSiteProgressOut(BaseModel):
+    id: str
+    prefecture: str
+    status: str
+    event_count: int = 0
+    error: str | None = None
+
+
+class ScrapeJobOut(BaseModel):
+    date: str
+    phase: str
+    total: int = 0
+    done: int = 0
+    ok_count: int = 0
+    events_so_far: int = 0
+    percent: int = 0
+    running: list[str] = Field(default_factory=list)
+    sites: list[ScrapeSiteProgressOut] = Field(default_factory=list)
+    error: str | None = None
+
+
+class ScrapeStatusOut(BaseModel):
+    inflight_dates: list[str] = Field(default_factory=list)
+    workers: int = 0
+    job: ScrapeJobOut | None = None
+    jobs: list[ScrapeJobOut] = Field(default_factory=list)
+
+
 class ErrorBody(BaseModel):
     detail: str
     extras: dict[str, Any] | None = None

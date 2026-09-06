@@ -49,3 +49,46 @@ export interface EventsResponse {
   sites: SiteStatus[]
   message: string | null
 }
+
+export interface ScrapeSiteProgress {
+  id: string
+  prefecture: string
+  status: 'pending' | 'running' | 'ok' | 'error' | string
+  event_count: number
+  error: string | null
+}
+
+export interface ScrapeJob {
+  date: string
+  phase: 'starting' | 'scraping' | 'combining' | 'done' | 'error' | string
+  total: number
+  done: number
+  ok_count: number
+  events_so_far: number
+  percent: number
+  running: string[]
+  sites: ScrapeSiteProgress[]
+  error: string | null
+}
+
+export interface ScrapeStatus {
+  inflight_dates: string[]
+  workers: number
+  job: ScrapeJob | null
+  jobs: ScrapeJob[]
+}
+
+export interface LoadProgress {
+  mode: 'scrape' | 'download'
+  date?: string
+  percent: number | null
+  done: number
+  total: number
+  okCount: number
+  eventsSoFar: number
+  running: string[]
+  sites: ScrapeSiteProgress[]
+  phase: string
+  loadedBytes?: number
+  totalBytes?: number
+}

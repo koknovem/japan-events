@@ -11,6 +11,7 @@ from japan_events.api.schemas import (
     EventOut,
     EventsResponse,
     HealthResponse,
+    ScrapeStatusOut,
     SiteOut,
     SiteStatusOut,
 )
@@ -158,9 +159,11 @@ def create_app() -> FastAPI:
 
         return _build_events_response(combined, prefecture=prefecture, scraped=scraped, lang=lang)
 
-    @app.get("/api/scrape/status")
-    def scrape_status() -> dict:
-        return scrape_service.status()
+    @app.get("/api/scrape/status", response_model=ScrapeStatusOut)
+    def scrape_status(
+        date_str: str | None = Query(None, alias="date", description="YYYY-MM-DD"),
+    ) -> dict:
+        return scrape_service.status(date_str)
 
     return app
 

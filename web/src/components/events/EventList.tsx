@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import type { EventItem } from '../../types/events'
+import type { EventItem, LoadProgress } from '../../types/events'
 import { EventCard } from './EventCard'
 import { EmptyState } from '../common/EmptyState'
 import { LoadingState } from '../common/LoadingState'
@@ -8,6 +8,7 @@ interface EventListProps {
   events: EventItem[]
   loading: boolean
   scraping?: boolean
+  progress?: LoadProgress | null
   emptyMessage: string
   dateLabel: string
 }
@@ -16,6 +17,7 @@ export function EventList({
   events,
   loading,
   scraping,
+  progress,
   emptyMessage,
   dateLabel,
 }: EventListProps) {
@@ -29,6 +31,7 @@ export function EventList({
             ? t('events.scraping', { date: dateLabel })
             : t('events.loading', { date: dateLabel })
         }
+        progress={progress}
       />
     )
   }

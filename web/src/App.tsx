@@ -17,7 +17,7 @@ function defaultDate(cached: string[]): Date {
 export default function App() {
   const { t } = useTranslation()
   const { sites } = useSites()
-  const { dates, refresh: refreshDates } = useCachedDates()
+  const { dates, refresh: refreshDates, ready: datesReady } = useCachedDates()
   const cachedSet = useMemo(() => new Set(dates), [dates])
 
   const [selected, setSelected] = useState<Date>(() => new Date())
@@ -33,10 +33,11 @@ export default function App() {
     setBootstrapped(true)
   }, [dates, bootstrapped])
 
-  const { data, loading, scraping, error, dateKey } = useEventsForDate(
+  const { data, loading, scraping, progress, error, dateKey } = useEventsForDate(
     selected,
     prefecture,
     cachedSet,
+    datesReady,
   )
 
   useEffect(() => {
@@ -68,11 +69,19 @@ export default function App() {
         </aside>
 
         <main className="panel panel-events">
-          <EventsPanelHeader date={selected} data={data} error={error} scraping={scraping || loading} />
+          <EventsPanelHeader
+            date={selected}
+            data={data}
+            error={error}
+            loading={loading}
+            scraping={scraping}
+            progress={progress}
+          />
           <EventList
             events={data?.events ?? []}
             loading={loading}
             scraping={scraping}
+            progress={progress}
             dateLabel={format(selected, 'yyyy-MM-dd')}
             emptyMessage={
               data?.message ?? t('events.emptyMessage', { date: dateKey })

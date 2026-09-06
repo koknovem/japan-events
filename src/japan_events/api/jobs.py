@@ -7,21 +7,34 @@ from datetime import date
 from typing import Any
 
 from japan_events.models import CombinedOutput, SiteResult
+from japan_events.progress import JobProgress
 from japan_events.storage import load_combined, rebuild_combined_from_files
 
 
-def _run_scrape_in_thread(target: date, prefecture: str | None = None) -> list[SiteResult]:
+def _run_scrape_in_thread(
+    target: date,
+    prefecture: str | None,
+    progress: JobProgress,
+) -> list[SiteResult]:
     """Run the async Playwright scrape inside a dedicated OS thread."""
     from japan_events.scrape import run_scrape
 
-    return asyncio.run(
-        run_scrape(
-            target,
-            prefecture=prefecture,
-            headed=False,
-            concurrency=3,
+    def on_progress(event: str, payload: dict[str, Any]) -> None:
+        progress.handle(event, payload)
+
+    try:
+        return asyncio.run(
+            run_scrape(
+                target,
+                prefecture=prefecture,
+                headed=False,
+                concurrency=3,
+                on_progress=on_progress,
+            )
         )
-    )
+    except Exception as exc:
+        progress.handle("error", {"error": f"{type(exc).__name__}: {exc}"})
+        raise
 
 
 class ThreadedScrapeService:
@@ -31,6 +44,7 @@ class ThreadedScrapeService:
         self._executor = ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="japan-scrape")
         self._guard = threading.Lock()
         self._inflight: dict[str, Future[list[SiteResult]]] = {}
+        self._progress: dict[str, JobProgress] = {}
 
     def ensure_cached(
         self,
@@ -53,8 +67,10 @@ class ThreadedScrapeService:
         with self._guard:
             fut = self._inflight.get(key)
             if fut is None:
-                fut = self._executor.submit(_run_scrape_in_thread, target, None)
+                progress = JobProgress(key)
+                fut = self._executor.submit(_run_scrape_in_thread, target, None, progress)
                 self._inflight[key] = fut
+                self._progress[key] = progress
 
         try:
             fut.result()
@@ -70,12 +86,22 @@ class ThreadedScrapeService:
         combined = load_combined(target) or rebuild_combined_from_files(target)
         return combined, True
 
-    def status(self) -> dict[str, Any]:
+    def status(self, date_key: str | None = None) -> dict[str, Any]:
         with self._guard:
-            return {
-                "inflight_dates": list(self._inflight.keys()),
-                "workers": self._executor._max_workers,  # noqa: SLF001
-            }
+            inflight = list(self._inflight.keys())
+            workers = self._executor._max_workers  # noqa: SLF001
+            if date_key:
+                progress = self._progress.get(date_key)
+                job = progress.snapshot() if progress else None
+            else:
+                job = None
+            jobs = [item.snapshot() for item in self._progress.values()]
+        return {
+            "inflight_dates": inflight,
+            "workers": workers,
+            "job": job,
+            "jobs": jobs,
+        }
 
 
 scrape_service = ThreadedScrapeService()

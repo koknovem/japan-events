@@ -20,6 +20,8 @@ interface DateCalendarProps {
   month: Date
   onMonthChange: (month: Date) => void
   cachedDates: Set<string>
+  runningDates?: Set<string>
+  queuedDates?: Set<string>
 }
 
 export function DateCalendar({
@@ -28,6 +30,8 @@ export function DateCalendar({
   month,
   onMonthChange,
   cachedDates,
+  runningDates,
+  queuedDates,
 }: DateCalendarProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language as AppLang) in dateFnsLocales ? (i18n.language as AppLang) : 'en'
@@ -79,6 +83,8 @@ export function DateCalendar({
             selectedDay ? 'is-selected' : '',
             isToday(day) ? 'is-today' : '',
             cachedDates.has(key) ? 'has-cache' : '',
+            runningDates?.has(key) ? 'is-scraping' : '',
+            queuedDates?.has(key) && !runningDates?.has(key) ? 'is-queued' : '',
           ]
             .filter(Boolean)
             .join(' ')

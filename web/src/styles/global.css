@@ -351,6 +351,27 @@ a {
   background: var(--ok);
 }
 
+.day-cell.is-queued:not(.is-selected)::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.day-cell.is-scraping:not(.is-selected)::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--sunset);
+  animation: pulse-soft 1.2s ease-in-out infinite;
+}
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

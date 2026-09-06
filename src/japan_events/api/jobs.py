@@ -117,13 +117,57 @@ def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
 
 
 class ThreadedScrapeService:
-    """Serialize scrapes per date in worker threads; callers block until finished."""
+    """Queue scrapes per date in a small thread pool. HTTP handlers never wait."""
 
     def __init__(self, max_workers: int = 2) -> None:
         self._executor = ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="japan-scrape")
         self._guard = threading.Lock()
         self._inflight: dict[str, Future] = {}
         self._progress: dict[str, JobProgress] = {}
+
+    def _cleanup(self, key: str, done: Future) -> None:
+        with self._guard:
+            if self._inflight.get(key) is done:
+                self._inflight.pop(key, None)
+
+    def _is_inflight(self, key: str) -> bool:
+        with self._guard:
+            return key in self._inflight
+
+    def _load_complete_cache(self, target: date) -> CombinedOutput | None:
+        """Serve finished all.json even during a refresh; never rebuild partial files while inflight."""
+        combined = load_combined(target)
+        if combined is not None:
+            return combined
+        if self._is_inflight(target.isoformat()):
+            return None
+        return rebuild_combined_from_files(target)
+
+    def start_scrape(self, target: date) -> bool:
+        """Submit a full scrape if one is not already queued/running. Never waits."""
+        key = target.isoformat()
+        with self._guard:
+            if key in self._inflight:
+                return True
+            progress = JobProgress(key)
+            fut = self._executor.submit(_run_scrape_in_thread, target, None, progress)
+            self._inflight[key] = fut
+            self._progress[key] = progress
+            fut.add_done_callback(lambda done, k=key: self._cleanup(k, done))
+        return True
+
+    def get_or_start(self, target: date, *, force: bool = False) -> tuple[CombinedOutput | None, bool]:
+        """
+        Return (combined, scraping).
+        If cache is ready, combined is set and scraping is False.
+        Otherwise kick off a worker (or join the existing queue) and return immediately.
+        """
+        if not force:
+            combined = self._load_complete_cache(target)
+            if combined is not None:
+                return combined, False
+        self.start_scrape(target)
+        return None, True
 
     def ensure_cached(
         self,
@@ -132,38 +176,17 @@ class ThreadedScrapeService:
         prefecture: str | None = None,
         force: bool = False,
     ) -> tuple[CombinedOutput | None, bool]:
-        """
-        Return (combined, scraped_now).
-        If cache is missing (or force), scrape in a worker thread and wait.
-        Concurrent requests for the same date share one scrape future.
-        """
+        """Wait for a scrape when callers truly need the file (tests / CLI)."""
+        combined, scraping = self.get_or_start(target, force=force)
+        if combined is not None:
+            return combined, False
         key = target.isoformat()
-        if not force:
-            combined = load_combined(target) or rebuild_combined_from_files(target)
-            if combined is not None:
-                return combined, False
-
         with self._guard:
             fut = self._inflight.get(key)
-            if fut is None:
-                progress = JobProgress(key)
-                fut = self._executor.submit(_run_scrape_in_thread, target, None, progress)
-                self._inflight[key] = fut
-                self._progress[key] = progress
-
-        try:
+        if fut is not None:
             fut.result()
-        except Exception:
-            with self._guard:
-                self._inflight.pop(key, None)
-            raise
-        else:
-            with self._guard:
-                if self._inflight.get(key) is fut:
-                    self._inflight.pop(key, None)
-
         combined = load_combined(target) or rebuild_combined_from_files(target)
-        return combined, True
+        return combined, scraping or combined is not None
 
     def maybe_refresh(self, target: date) -> bool:
         """Start a background scan/refresh. Never blocks. True if a job is running."""
@@ -173,26 +196,24 @@ class ThreadedScrapeService:
             return False
 
         with self._guard:
-            if key in self._inflight:
-                return True
+            if self._inflight:
+                return key in self._inflight
             if not _refresh_due(target, combined):
                 return False
             progress = JobProgress(key)
             fut = self._executor.submit(_run_refresh_in_thread, target, progress)
             self._inflight[key] = fut
             self._progress[key] = progress
-
-            def _cleanup(done: Future) -> None:
-                with self._guard:
-                    if self._inflight.get(key) is done:
-                        self._inflight.pop(key, None)
-
-            fut.add_done_callback(_cleanup)
+            fut.add_done_callback(lambda done, k=key: self._cleanup(k, done))
         return True
 
     def status(self, date_key: str | None = None) -> dict[str, Any]:
         with self._guard:
             inflight = list(self._inflight.keys())
+            running_dates = [key for key, fut in self._inflight.items() if fut.running()]
+            queued_dates = [
+                key for key, fut in self._inflight.items() if not fut.done() and not fut.running()
+            ]
             workers = self._executor._max_workers  # noqa: SLF001
             if date_key:
                 progress = self._progress.get(date_key)
@@ -200,8 +221,18 @@ class ThreadedScrapeService:
             else:
                 job = None
             jobs = [item.snapshot() for item in self._progress.values()]
+        if job and date_key in queued_dates:
+            job["queued"] = True
+            job["phase"] = "queued"
+        for item in jobs:
+            if item["date"] in queued_dates:
+                item["queued"] = True
+                if item["phase"] == "starting":
+                    item["phase"] = "queued"
         return {
             "inflight_dates": inflight,
+            "running_dates": running_dates,
+            "queued_dates": queued_dates,
             "workers": workers,
             "job": job,
             "jobs": jobs,

@@ -32,9 +32,11 @@ export function EventsPanelHeader({ date, data, error, loading, scraping, refres
           {scrapeProgress ? (
             <span className="meta-chip">
               <strong>
-                {scrapeProgress.total > 0
-                  ? t('events.progressSites', { done: scrapeProgress.done, total: scrapeProgress.total })
-                  : t('events.scrapingChip')}
+                {scrapeProgress.queued || scrapeProgress.phase === 'queued'
+                  ? t('events.queuedChip')
+                  : scrapeProgress.total > 0
+                    ? t('events.progressSites', { done: scrapeProgress.done, total: scrapeProgress.total })
+                    : t('events.scrapingChip')}
               </strong>
               {scrapeProgress.percent != null ? ` · ${scrapeProgress.percent}%` : null}
             </span>

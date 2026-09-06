@@ -56,6 +56,7 @@ class EventsResponse(BaseModel):
     sites: list[SiteStatusOut] = Field(default_factory=list)
     message: str | None = None
     refreshing: bool = False
+    scraping: bool = False
 
 
 class DatesResponse(BaseModel):
@@ -87,10 +88,13 @@ class ScrapeJobOut(BaseModel):
     sites: list[ScrapeSiteProgressOut] = Field(default_factory=list)
     error: str | None = None
     concurrency: int = 0
+    queued: bool = False
 
 
 class ScrapeStatusOut(BaseModel):
     inflight_dates: list[str] = Field(default_factory=list)
+    running_dates: list[str] = Field(default_factory=list)
+    queued_dates: list[str] = Field(default_factory=list)
     workers: int = 0
     job: ScrapeJobOut | None = None
     jobs: list[ScrapeJobOut] = Field(default_factory=list)

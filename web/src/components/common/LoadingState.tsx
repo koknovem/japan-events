@@ -17,11 +17,18 @@ export function LoadingState({ label = 'Loading…', progress }: LoadingStatePro
   const determinate = progress?.percent != null
   const percent = determinate ? Math.max(0, Math.min(100, progress.percent ?? 0)) : 0
   const scrape = progress?.mode === 'scrape'
+  const queued = Boolean(progress?.queued || progress?.phase === 'queued')
   const runningNames = (progress?.running ?? []).map((id) => t(`prefectures.${id}`, { defaultValue: id }))
+  const otherDates = (progress?.inflightDates ?? []).filter((item) => item !== progress?.date)
 
   let detail = label
   if (scrape && progress) {
-    if (progress.phase === 'combining') detail = t('events.progressCombining')
+    if (queued) {
+      detail = t('events.progressQueued', {
+        count: otherDates.length,
+        workers: progress.workers ?? 2,
+      })
+    } else if (progress.phase === 'combining') detail = t('events.progressCombining')
     else if (progress.phase === 'starting' || progress.total === 0) detail = t('events.progressStarting')
     else detail = t('events.progressSites', { done: progress.done, total: progress.total })
   } else if (progress?.mode === 'download' && progress.totalBytes) {
@@ -68,7 +75,11 @@ export function LoadingState({ label = 'Loading…', progress }: LoadingStatePro
         <p className="load-progress-meta">{t('events.progressCurrent', { names: runningNames.join(' · ') })}</p>
       ) : null}
 
-      {scrape && progress && (progress.concurrency ?? 0) > 0 ? (
+      {scrape && otherDates.length > 0 ? (
+        <p className="load-progress-meta">{t('events.progressAlso', { dates: otherDates.join(' · ') })}</p>
+      ) : null}
+
+      {scrape && progress && !queued && (progress.concurrency ?? 0) > 0 ? (
         <p className="load-progress-meta">{t('events.progressParallel', { count: progress.concurrency })}</p>
       ) : null}
 

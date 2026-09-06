@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { format } from 'date-fns'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
-import type { EventsResponse, LoadProgress, ScrapeJob, Site } from '../types/events'
+import type { EventsResponse, LoadProgress, ScrapeJob, ScrapeStatus, Site } from '../types/events'
 
 export function useSites() {
   const [sites, setSites] = useState<Site[]>([])
@@ -43,26 +43,57 @@ export function useCachedDates() {
   return { dates, refresh, ready }
 }
 
-function jobToProgress(job: ScrapeJob): LoadProgress {
+export function useScrapeStatus() {
+  const [status, setStatus] = useState<ScrapeStatus | null>(null)
+
+  useEffect(() => {
+    let alive = true
+    const tick = async () => {
+      try {
+        const next = await api.scrapeStatus()
+        if (alive) setStatus(next)
+      } catch {
+        /* status is optional; the events request still drives the selected date */
+      }
+    }
+    void tick()
+    const id = window.setInterval(() => {
+      void tick()
+    }, 800)
+    return () => {
+      alive = false
+      window.clearInterval(id)
+    }
+  }, [])
+
+  return status
+}
+
+function jobToProgress(job: ScrapeJob, status?: ScrapeStatus | null): LoadProgress {
+  const queued = Boolean(job.queued) || job.phase === 'queued'
   return {
     mode: 'scrape',
     date: job.date,
-    percent: job.percent,
+    percent: queued ? null : job.percent,
     done: job.done,
     total: job.total,
     okCount: job.ok_count,
     eventsSoFar: job.events_so_far,
     running: job.running,
     sites: job.sites,
-    phase: job.phase,
+    phase: queued ? 'queued' : job.phase,
     concurrency: job.concurrency,
+    queued,
+    workers: status?.workers,
+    inflightDates: status?.inflight_dates ?? [],
+    runningDates: status?.running_dates ?? [],
   }
 }
 
 const scrapeStart = (date: string): LoadProgress => ({
   mode: 'scrape',
   date,
-  percent: 0,
+  percent: null,
   done: 0,
   total: 0,
   okCount: 0,
@@ -85,10 +116,13 @@ const downloadStart = (date: string): LoadProgress => ({
   phase: 'download',
 })
 
+function isAbort(err: unknown): boolean {
+  return err instanceof DOMException && err.name === 'AbortError'
+}
+
 export function useEventsForDate(
   selected: Date,
   prefectureFilter: string | null,
-  cachedDates: Set<string>,
   datesReady: boolean,
 ) {
   const { t, i18n } = useTranslation()
@@ -101,7 +135,6 @@ export function useEventsForDate(
   const [reloadToken, setReloadToken] = useState(0)
   const dateKey = format(selected, 'yyyy-MM-dd')
   const lang = i18n.language
-  const isCached = cachedDates.has(dateKey)
   const reload = useCallback(() => {
     setReloadToken((value) => value + 1)
   }, [])
@@ -110,8 +143,6 @@ export function useEventsForDate(
     if (!datesReady) return
 
     const controller = new AbortController()
-    const willScrape = !isCached
-    let pollTimer: number | undefined
     let cancelled = false
     const eventOpts = {
       prefecture: prefectureFilter ?? undefined,
@@ -121,19 +152,49 @@ export function useEventsForDate(
     setLoading(true)
     setError(null)
     setRefreshing(false)
-    setScraping(willScrape)
-    setProgress(willScrape ? scrapeStart(dateKey) : downloadStart(dateKey))
-
-    const pollStatus = async () => {
-      try {
-        const status = await api.scrapeStatus(dateKey, { signal: controller.signal })
-        if (!cancelled && status.job) setProgress(jobToProgress(status.job))
-      } catch (err) {
-        if (err instanceof DOMException && err.name === 'AbortError') return
-      }
-    }
+    setScraping(false)
+    setProgress(downloadStart(dateKey))
 
     const sleep = (ms: number) => new Promise((resolve) => window.setTimeout(resolve, ms))
+
+    const followJob = async (initial?: ScrapeStatus) => {
+      let sawInflight = Boolean(initial?.inflight_dates.includes(dateKey))
+      if (initial?.job) setProgress(jobToProgress(initial.job, initial))
+
+      while (!cancelled) {
+        try {
+          const status = await api.scrapeStatus(undefined, { signal: controller.signal })
+          const job = status.jobs.find((item) => item.date === dateKey) ?? status.job
+          const inFlight = status.inflight_dates.includes(dateKey)
+          if (inFlight) sawInflight = true
+          if (job) setProgress(jobToProgress(job, status))
+
+          if (job?.phase === 'error') {
+            throw new Error(job.error || t('events.loadError'))
+          }
+
+          const finished = (sawInflight && !inFlight) || job?.phase === 'done'
+          if (finished) {
+            const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
+            if (cancelled) return
+            if (latest.scraping) {
+              sawInflight = true
+              await sleep(700)
+              continue
+            }
+            setData(latest)
+            setScraping(false)
+            setLoading(false)
+            setProgress(null)
+            return
+          }
+        } catch (err) {
+          if (isAbort(err) || cancelled) return
+          throw err
+        }
+        await sleep(700)
+      }
+    }
 
     const followBackgroundRefresh = async () => {
       let sawJob = false
@@ -145,11 +206,11 @@ export function useEventsForDate(
           const inFlight = status.inflight_dates.includes(dateKey)
           const active =
             inFlight ||
-            (!!job && ['starting', 'scanning', 'scraping', 'combining'].includes(job.phase))
+            (!!job && ['starting', 'queued', 'scanning', 'scraping', 'combining'].includes(job.phase))
           if (active) {
             sawJob = true
             setRefreshing(true)
-            if (job) setProgress(jobToProgress(job))
+            if (job) setProgress(jobToProgress(job, status))
           } else if (sawJob) {
             const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
             if (!cancelled) {
@@ -166,7 +227,7 @@ export function useEventsForDate(
             return
           }
         } catch (err) {
-          if (err instanceof DOMException && err.name === 'AbortError') return
+          if (isAbort(err) || cancelled) return
         }
         await sleep(700)
       }
@@ -174,10 +235,10 @@ export function useEventsForDate(
 
     void (async () => {
       try {
-        const eventsPromise = api.events(dateKey, eventOpts, {
+        const res = await api.events(dateKey, eventOpts, {
           signal: controller.signal,
           onDownloadProgress: (loaded, total) => {
-            if (cancelled || willScrape) return
+            if (cancelled) return
             setProgress({
               mode: 'download',
               date: dateKey,
@@ -194,53 +255,45 @@ export function useEventsForDate(
             })
           },
         })
-
-        if (willScrape) {
-          void pollStatus()
-          pollTimer = window.setInterval(() => {
-            void pollStatus()
-          }, 700)
-        }
-
-        const res = await eventsPromise
         if (cancelled) return
-        setData(res)
-        setScraping(Boolean(res.scraped))
-        setLoading(false)
-        if (willScrape) {
-          setProgress(null)
-          setScraping(false)
+
+        if (res.scraping) {
+          setScraping(true)
+          setProgress(scrapeStart(dateKey))
+          const status = await api.scrapeStatus(undefined, { signal: controller.signal })
+          await followJob(status)
           return
         }
+
+        setData(res)
+        setScraping(false)
+        setLoading(false)
         setProgress(null)
         if (res.refreshing) {
           setRefreshing(true)
           await followBackgroundRefresh()
         }
       } catch (err) {
-        if (cancelled || (err instanceof DOMException && err.name === 'AbortError')) return
+        if (cancelled || isAbort(err)) return
         setError(err instanceof Error ? err.message : t('events.loadError'))
         setData(null)
         setLoading(false)
         setScraping(false)
         setRefreshing(false)
         setProgress(null)
-      } finally {
-        if (pollTimer !== undefined) window.clearInterval(pollTimer)
       }
     })()
 
     return () => {
       cancelled = true
       controller.abort()
-      if (pollTimer !== undefined) window.clearInterval(pollTimer)
     }
-  }, [dateKey, prefectureFilter, lang, t, reloadToken, datesReady, isCached])
+  }, [dateKey, prefectureFilter, lang, t, reloadToken, datesReady])
 
   return {
     data,
     loading,
-    scraping: scraping && !isCached,
+    scraping,
     refreshing,
     progress: progress?.date === dateKey ? progress : null,
     error,
@@ -248,4 +301,3 @@ export function useEventsForDate(
     dateKey,
   }
 }
-

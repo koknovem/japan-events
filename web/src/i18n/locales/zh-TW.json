@@ -23,10 +23,11 @@
     "aria": "依都道府縣篩選"
   },
   "hint": {
-    "cacheDots": "綠色圓點表示該日期已有快取。開啟後會立刻顯示，並在背景快速檢查各網站是否有更新。"
+    "cacheDots": "綠色圓點表示已有快取。橙色表示伺服器正在擷取（一次兩天；多點的會排隊）。"
   },
   "events": {
     "scrapingChip": "伺服器執行緒擷取中…",
+    "queuedChip": "已在伺服器排隊…",
     "waiting": "等待中…",
     "cached": "已快取",
     "justScraped": "剛擷取",
@@ -41,6 +42,8 @@
     "progressCurrent": "正在擷取：{{names}}",
     "progressParallel": "同時擷取 {{count}} 個都道府縣",
     "progressStarting": "正在開始擷取…",
+    "progressQueued": "排在另外 {{count}} 個日期後面。伺服器一次擷取 {{workers}} 個日期。",
+    "progressAlso": "同時擷取：{{dates}}",
     "progressCombining": "正在彙整結果…",
     "checkingUpdates": "正在檢查網站 {{done}}/{{total}}",
     "updatingChanged": "正在更新有變動的網站 {{done}}/{{total}}",

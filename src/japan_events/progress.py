@@ -92,10 +92,12 @@ class JobProgress:
 
     def snapshot(self) -> dict[str, Any]:
         with self._lock:
+            phase = self._state["phase"]
+            total = int(self._state["total"] or 0)
             return {
                 "date": self._state["date"],
-                "phase": self._state["phase"],
-                "total": self._state["total"],
+                "phase": phase,
+                "total": total,
                 "done": self._state["done"],
                 "ok_count": self._state["ok_count"],
                 "events_so_far": self._state["events_so_far"],
@@ -104,6 +106,7 @@ class JobProgress:
                 "sites": [dict(item) for item in self._state["sites"]],
                 "error": self._state["error"],
                 "concurrency": self._state["concurrency"],
+                "queued": phase == "starting" and total == 0,
             }
 
     def _set_site(self, site_id: str | None, **fields: Any) -> dict[str, Any] | None:

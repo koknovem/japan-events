@@ -23,10 +23,11 @@
     "aria": "Filter by prefecture"
   },
   "hint": {
-    "cacheDots": "Green dots are dates already on disk. Opening one shows cached events immediately, then a quiet background scan checks whether prefecture sites have changed."
+    "cacheDots": "Green dots are dates already on disk. Orange dots are fetching on the server (two dates at a time; extra clicks wait in a queue)."
   },
   "events": {
     "scrapingChip": "Scraping in a server thread…",
+    "queuedChip": "Queued on the server…",
     "waiting": "Waiting…",
     "cached": "cached",
     "justScraped": "just scraped",
@@ -41,6 +42,8 @@
     "progressCurrent": "Now scraping: {{names}}",
     "progressParallel": "{{count}} prefectures at a time",
     "progressStarting": "Starting scrape…",
+    "progressQueued": "Queued behind {{count}} other date(s). The server scrapes {{workers}} dates at a time.",
+    "progressAlso": "Also fetching: {{dates}}",
     "progressCombining": "Combining prefecture results…",
     "checkingUpdates": "Checking sites {{done}}/{{total}}",
     "updatingChanged": "Updating changed sites {{done}}/{{total}}",

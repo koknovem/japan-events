@@ -49,6 +49,7 @@ export interface EventsResponse {
   sites: SiteStatus[]
   message: string | null
   refreshing?: boolean
+  scraping?: boolean
 }
 
 export interface ScrapeSiteProgress {
@@ -61,7 +62,7 @@ export interface ScrapeSiteProgress {
 
 export interface ScrapeJob {
   date: string
-  phase: 'starting' | 'scraping' | 'combining' | 'done' | 'error' | string
+  phase: 'starting' | 'queued' | 'scraping' | 'combining' | 'done' | 'error' | string
   total: number
   done: number
   ok_count: number
@@ -71,10 +72,13 @@ export interface ScrapeJob {
   sites: ScrapeSiteProgress[]
   error: string | null
   concurrency?: number
+  queued?: boolean
 }
 
 export interface ScrapeStatus {
   inflight_dates: string[]
+  running_dates?: string[]
+  queued_dates?: string[]
   workers: number
   job: ScrapeJob | null
   jobs: ScrapeJob[]
@@ -94,4 +98,8 @@ export interface LoadProgress {
   concurrency?: number
   loadedBytes?: number
   totalBytes?: number
+  queued?: boolean
+  workers?: number
+  inflightDates?: string[]
+  runningDates?: string[]
 }

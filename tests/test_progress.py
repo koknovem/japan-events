@@ -1,6 +1,22 @@
 from japan_events.progress import JobProgress
 
 
+def test_new_job_is_queued_until_sites_start():
+    progress = JobProgress("2026-09-06")
+    snap = progress.snapshot()
+    assert snap["queued"] is True
+    assert snap["phase"] == "starting"
+    assert snap["percent"] == 0
+
+    progress.handle(
+        "init",
+        {"sites": [{"id": "tokyo", "prefecture": "Tokyo"}], "concurrency": 8},
+    )
+    snap = progress.snapshot()
+    assert snap["queued"] is False
+    assert snap["phase"] == "scraping"
+
+
 def test_percent_only_moves_when_sites_finish():
     progress = JobProgress("2026-09-06")
     progress.handle(
@@ -50,6 +66,7 @@ def test_percent_only_moves_when_sites_finish():
     assert snap["phase"] == "done"
     assert snap["percent"] == 100
     assert snap["events_so_far"] == 12
+    assert snap["queued"] is False
 
     from japan_events.api.schemas import ScrapeStatusOut
 
@@ -81,6 +98,8 @@ def test_status_exposes_job_snapshot():
         assert active["job"]["done"] == 1
         assert active["job"]["events_so_far"] == 3
         assert active["jobs"][0]["date"] == "2027-01-01"
+        assert "running_dates" in active
+        assert "queued_dates" in active
     finally:
         service._executor.shutdown(wait=False)
 

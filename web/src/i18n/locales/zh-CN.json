@@ -23,10 +23,11 @@
     "aria": "按都道府县筛选"
   },
   "hint": {
-    "cacheDots": "绿色圆点表示该日期已有缓存。打开后会立刻显示，并在后台快速检查各网站是否有更新。"
+    "cacheDots": "绿色圆点表示已有缓存。橙色表示服务器正在抓取（一次两天；多点的会排队）。"
   },
   "events": {
     "scrapingChip": "服务器线程抓取中…",
+    "queuedChip": "已在服务器排队…",
     "waiting": "等待中…",
     "cached": "已缓存",
     "justScraped": "刚抓取",
@@ -41,6 +42,8 @@
     "progressCurrent": "正在抓取：{{names}}",
     "progressParallel": "同时抓取 {{count}} 个都道府县",
     "progressStarting": "正在开始抓取…",
+    "progressQueued": "排在另外 {{count}} 个日期后面。服务器一次抓取 {{workers}} 个日期。",
+    "progressAlso": "同时抓取：{{dates}}",
     "progressCombining": "正在汇总结果…",
     "checkingUpdates": "正在检查网站 {{done}}/{{total}}",
     "updatingChanged": "正在更新有变动的网站 {{done}}/{{total}}",

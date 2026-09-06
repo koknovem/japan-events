@@ -142,31 +142,37 @@ def create_app() -> FastAPI:
         ),
         force: bool = Query(False, description="Force a fresh scrape even if cached"),
     ) -> EventsResponse:
-        """Return events for a date. If not cached, scrape in a worker thread and wait."""
+        """Return cached events immediately. If missing, start a server scrape and return scraping=true."""
         try:
             target = date.fromisoformat(date_str)
         except ValueError as exc:
             raise HTTPException(status_code=400, detail="date must be YYYY-MM-DD") from exc
 
         try:
-            combined, scraped = scrape_service.ensure_cached(target, force=force)
+            combined, scraping = scrape_service.get_or_start(target, force=force)
         except Exception as exc:
             raise HTTPException(
                 status_code=502,
                 detail=f"Scrape failed: {type(exc).__name__}: {exc}",
             ) from exc
 
-        if combined is None:
-            raise HTTPException(status_code=502, detail="Scrape finished but no output was written")
+        if scraping or combined is None:
+            return EventsResponse(
+                date=date_str,
+                cached=False,
+                scraped=False,
+                scraping=True,
+                message="Scrape running in a server worker. Poll /api/scrape/status until done.",
+            )
 
         refreshing = False
-        if not scraped and not force:
+        if not force:
             refreshing = scrape_service.maybe_refresh(target)
 
         return _build_events_response(
             combined,
             prefecture=prefecture,
-            scraped=scraped,
+            scraped=False,
             lang=lang,
             refreshing=refreshing,
         )

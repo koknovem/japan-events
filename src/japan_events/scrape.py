@@ -29,7 +29,7 @@ async def scrape_site(site: SiteConfig, target: date, session) -> SiteResult:
             site.event_url = url
             if config is not None:
                 config.event_url = url
-            print(f"[scrape]   {site.id} lang={lang} → {url}", flush=True)
+            print(f"[scrape]   {site.id} lang={lang} -> {url}", flush=True)
             try:
                 events = await adapter.scrape(target, session)
                 for ev in events:

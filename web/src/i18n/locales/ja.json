@@ -1,0 +1,100 @@
+{
+  "brand": {
+    "titlePrefix": "Japan",
+    "titleAccent": "Events",
+    "tagline": "カレンダーで日付を選ぶと、各都道府県の観光協会カレンダーから収集した祭り・イベントを閲覧できます。"
+  },
+  "language": {
+    "label": "言語",
+    "en": "English",
+    "zhTW": "繁體中文",
+    "ja": "日本語"
+  },
+  "calendar": {
+    "ariaLabel": "イベント日付カレンダー",
+    "prevMonth": "前の月",
+    "nextMonth": "次の月",
+    "weekdays": ["日", "月", "火", "水", "木", "金", "土"]
+  },
+  "filter": {
+    "prefecture": "都道府県",
+    "all": "すべての都道府県",
+    "aria": "都道府県で絞り込む"
+  },
+  "hint": {
+    "cacheDots": "緑の点は、すでに保存済みの日付です。未キャッシュの日付を選ぶと、サーバーが全都道府県を取得します。完了までお待ちください。"
+  },
+  "events": {
+    "scrapingChip": "サーバースレッドで取得中…",
+    "waiting": "待機中…",
+    "cached": "キャッシュ済み",
+    "justScraped": "取得直後",
+    "eventsCount": "{{count}} 件のイベント",
+    "sitesCount": "{{ok}}/{{total}} サイト",
+    "loading": "{{date}} のイベントを読み込み中…",
+    "scraping": "{{date}} の都道府県カレンダーを取得中…数分かかることがあります。",
+    "emptyTitle": "この日のイベントはありません",
+    "emptyMessage": "{{date}} のイベントは見つかりませんでした。別の都道府県または日付をお試しください。",
+    "dateTbd": "日程未定",
+    "open": "開く →",
+    "loadError": "イベントの読み込みに失敗しました"
+  },
+  "regions": {
+    "Hokkaido & Tohoku": "北海道・東北",
+    "Kanto, Koshinetsu & Hokuriku": "関東・甲信越・北陸",
+    "Tokai & Kansai": "東海・関西",
+    "Chugoku & Shikoku": "中国・四国",
+    "Kyushu & Okinawa": "九州・沖縄",
+    "Nationwide": "全国"
+  },
+  "prefectures": {
+    "hokkaido": "北海道",
+    "aomori": "青森",
+    "iwate": "岩手",
+    "miyagi": "宮城",
+    "akita": "秋田",
+    "yamagata": "山形",
+    "fukushima": "福島",
+    "ibaraki": "茨城",
+    "tochigi": "栃木",
+    "gunma": "群馬",
+    "saitama": "埼玉",
+    "chiba": "千葉",
+    "tokyo": "東京",
+    "kanagawa": "神奈川",
+    "yamanashi": "山梨",
+    "nagano": "長野",
+    "niigata": "新潟",
+    "toyama": "富山",
+    "ishikawa": "石川",
+    "fukui": "福井",
+    "gifu": "岐阜",
+    "shizuoka": "静岡",
+    "aichi": "愛知",
+    "mie": "三重",
+    "shiga": "滋賀",
+    "kyoto": "京都",
+    "osaka": "大阪",
+    "hyogo": "兵庫",
+    "nara": "奈良",
+    "wakayama": "和歌山",
+    "tottori": "鳥取",
+    "shimane": "島根",
+    "okayama": "岡山",
+    "hiroshima": "広島",
+    "yamaguchi": "山口",
+    "tokushima": "徳島",
+    "kagawa": "香川",
+    "ehime": "愛媛",
+    "kochi": "高知",
+    "fukuoka": "福岡",
+    "saga": "佐賀",
+    "nagasaki": "長崎",
+    "kumamoto": "熊本",
+    "oita": "大分",
+    "miyazaki": "宮崎",
+    "kagoshima": "鹿児島",
+    "okinawa": "沖縄",
+    "jnto": "JNTO"
+  }
+}

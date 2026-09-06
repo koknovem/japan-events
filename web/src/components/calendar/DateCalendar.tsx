@@ -11,6 +11,8 @@ import {
   startOfWeek,
   subMonths,
 } from 'date-fns'
+import { useTranslation } from 'react-i18next'
+import { dateFnsLocales, type AppLang } from '../../i18n'
 
 interface DateCalendarProps {
   selected: Date
@@ -20,8 +22,6 @@ interface DateCalendarProps {
   cachedDates: Set<string>
 }
 
-const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-
 export function DateCalendar({
   selected,
   onSelect,
@@ -29,28 +29,33 @@ export function DateCalendar({
   onMonthChange,
   cachedDates,
 }: DateCalendarProps) {
+  const { t, i18n } = useTranslation()
+  const lang = (i18n.language as AppLang) in dateFnsLocales ? (i18n.language as AppLang) : 'en'
+  const locale = dateFnsLocales[lang]
+  const weekdays = t('calendar.weekdays', { returnObjects: true }) as string[]
+
   const monthStart = startOfMonth(month)
   const days = eachDayOfInterval({
-    start: startOfWeek(monthStart),
-    end: endOfWeek(endOfMonth(monthStart)),
+    start: startOfWeek(monthStart, { locale }),
+    end: endOfWeek(endOfMonth(monthStart), { locale }),
   })
 
   return (
-    <section className="panel panel-calendar" aria-label="Event date calendar">
+    <section className="panel panel-calendar" aria-label={t('calendar.ariaLabel')}>
       <div className="calendar-nav">
         <button
           type="button"
           className="btn btn-ghost"
-          aria-label="Previous month"
+          aria-label={t('calendar.prevMonth')}
           onClick={() => onMonthChange(subMonths(month, 1))}
         >
           ‹
         </button>
-        <h3>{format(month, 'MMMM yyyy')}</h3>
+        <h3>{format(month, 'MMMM yyyy', { locale })}</h3>
         <button
           type="button"
           className="btn btn-ghost"
-          aria-label="Next month"
+          aria-label={t('calendar.nextMonth')}
           onClick={() => onMonthChange(addMonths(month, 1))}
         >
           ›
@@ -58,12 +63,12 @@ export function DateCalendar({
       </div>
 
       <div className="calendar-weekdays" aria-hidden>
-        {WEEKDAYS.map((d) => (
+        {weekdays.map((d) => (
           <span key={d}>{d}</span>
         ))}
       </div>
 
-      <div className="calendar-grid" role="grid" aria-label={format(month, 'MMMM yyyy')}>
+      <div className="calendar-grid" role="grid" aria-label={format(month, 'MMMM yyyy', { locale })}>
         {days.map((day) => {
           const key = format(day, 'yyyy-MM-dd')
           const inMonth = isSameMonth(day, month)
@@ -85,10 +90,10 @@ export function DateCalendar({
               className={classes}
               disabled={!inMonth}
               aria-pressed={selectedDay}
-              aria-label={format(day, 'MMMM d, yyyy')}
+              aria-label={format(day, 'PPP', { locale })}
               onClick={() => onSelect(day)}
             >
-              {format(day, 'd')}
+              {format(day, 'd', { locale })}
             </button>
           )
         })}

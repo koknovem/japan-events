@@ -1,0 +1,100 @@
+{
+  "brand": {
+    "titlePrefix": "日本",
+    "titleAccent": "活動",
+    "tagline": "在日曆上選擇日期，瀏覽從各都道府縣觀光協會日曆擷取的祭典與活動資訊。"
+  },
+  "language": {
+    "label": "語言",
+    "en": "English",
+    "zhTW": "繁體中文",
+    "ja": "日本語"
+  },
+  "calendar": {
+    "ariaLabel": "活動日期日曆",
+    "prevMonth": "上個月",
+    "nextMonth": "下個月",
+    "weekdays": ["日", "一", "二", "三", "四", "五", "六"]
+  },
+  "filter": {
+    "prefecture": "都道府縣",
+    "all": "全部都道府縣",
+    "aria": "依都道府縣篩選"
+  },
+  "hint": {
+    "cacheDots": "綠色圓點表示該日期已有快取。選擇尚未快取的日期時，伺服器會擷取所有都道府縣資料——請稍候完成。"
+  },
+  "events": {
+    "scrapingChip": "伺服器執行緒擷取中…",
+    "waiting": "等待中…",
+    "cached": "已快取",
+    "justScraped": "剛擷取",
+    "eventsCount": "{{count}} 場活動",
+    "sitesCount": "{{ok}}/{{total}} 個網站",
+    "loading": "正在載入 {{date}} 的活動…",
+    "scraping": "正在擷取 {{date}} 的都道府縣日曆…可能需要數分鐘。",
+    "emptyTitle": "此日期沒有活動",
+    "emptyMessage": "{{date}} 沒有找到活動。請試試其他都道府縣或日期。",
+    "dateTbd": "日期未定",
+    "open": "開啟 →",
+    "loadError": "載入活動失敗"
+  },
+  "regions": {
+    "Hokkaido & Tohoku": "北海道・東北",
+    "Kanto, Koshinetsu & Hokuriku": "關東・甲信越・北陸",
+    "Tokai & Kansai": "東海・關西",
+    "Chugoku & Shikoku": "中國・四國",
+    "Kyushu & Okinawa": "九州・沖繩",
+    "Nationwide": "全國"
+  },
+  "prefectures": {
+    "hokkaido": "北海道",
+    "aomori": "青森",
+    "iwate": "岩手",
+    "miyagi": "宮城",
+    "akita": "秋田",
+    "yamagata": "山形",
+    "fukushima": "福島",
+    "ibaraki": "茨城",
+    "tochigi": "栃木",
+    "gunma": "群馬",
+    "saitama": "埼玉",
+    "chiba": "千葉",
+    "tokyo": "東京",
+    "kanagawa": "神奈川",
+    "yamanashi": "山梨",
+    "nagano": "長野",
+    "niigata": "新潟",
+    "toyama": "富山",
+    "ishikawa": "石川",
+    "fukui": "福井",
+    "gifu": "岐阜",
+    "shizuoka": "靜岡",
+    "aichi": "愛知",
+    "mie": "三重",
+    "shiga": "滋賀",
+    "kyoto": "京都",
+    "osaka": "大阪",
+    "hyogo": "兵庫",
+    "nara": "奈良",
+    "wakayama": "和歌山",
+    "tottori": "鳥取",
+    "shimane": "島根",
+    "okayama": "岡山",
+    "hiroshima": "廣島",
+    "yamaguchi": "山口",
+    "tokushima": "德島",
+    "kagawa": "香川",
+    "ehime": "愛媛",
+    "kochi": "高知",
+    "fukuoka": "福岡",
+    "saga": "佐賀",
+    "nagasaki": "長崎",
+    "kumamoto": "熊本",
+    "oita": "大分",
+    "miyazaki": "宮崎",
+    "kagoshima": "鹿兒島",
+    "okinawa": "沖繩",
+    "jnto": "日本國家旅遊局"
+  }
+}

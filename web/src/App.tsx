@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { format, parseISO } from 'date-fns'
+import { useTranslation } from 'react-i18next'
 import { AppShell } from './components/layout/AppShell'
 import { DateCalendar } from './components/calendar/DateCalendar'
 import { EventList } from './components/events/EventList'
@@ -14,6 +15,7 @@ function defaultDate(cached: string[]): Date {
 }
 
 export default function App() {
+  const { t } = useTranslation()
   const { sites } = useSites()
   const { dates, refresh: refreshDates } = useCachedDates()
   const cachedSet = useMemo(() => new Set(dates), [dates])
@@ -60,8 +62,7 @@ export default function App() {
           <div style={{ marginTop: '0.85rem' }} className="panel panel-calendar">
             <PrefectureFilter sites={sites} value={prefecture} onChange={setPrefecture} />
             <p style={{ margin: '0.85rem 0 0', color: 'var(--muted)', fontSize: '0.8rem', lineHeight: 1.45 }}>
-              Green dots are dates already on disk. Choosing an uncached date scrapes every prefecture
-              on the server — wait until it finishes.
+              {t('hint.cacheDots')}
             </p>
           </div>
         </aside>
@@ -74,8 +75,7 @@ export default function App() {
             scraping={scraping}
             dateLabel={format(selected, 'yyyy-MM-dd')}
             emptyMessage={
-              data?.message ??
-              `No events found for ${dateKey}. Try another prefecture or date.`
+              data?.message ?? t('events.emptyMessage', { date: dateKey })
             }
           />
         </main>

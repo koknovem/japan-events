@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { format } from 'date-fns'
+import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import type { EventsResponse, Site } from '../types/events'
 
@@ -44,6 +45,7 @@ export function useEventsForDate(
   prefectureFilter: string | null,
   cachedDates: Set<string>,
 ) {
+  const { t } = useTranslation()
   const [data, setData] = useState<EventsResponse | null>(null)
   const [loading, setLoading] = useState(false)
   const [scraping, setScraping] = useState(false)
@@ -59,23 +61,17 @@ export function useEventsForDate(
       setData(res)
       setScraping(Boolean(res.scraped))
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load events')
+      setError(err instanceof Error ? err.message : t('events.loadError'))
       setData(null)
     } finally {
       setLoading(false)
       setScraping(false)
     }
-  }, [dateKey, prefectureFilter, cachedDates])
+  }, [dateKey, prefectureFilter, cachedDates, t])
 
   useEffect(() => {
     void load()
   }, [load])
-
-  useEffect(() => {
-    if (data?.cached || data?.scraped) {
-      // refresh green dots after a fresh scrape
-    }
-  }, [data])
 
   return { data, loading, scraping, error, reload: load, dateKey }
 }

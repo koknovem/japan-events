@@ -101,6 +101,37 @@ a {
   animation: rise-in 0.55s ease both;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.28rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.lang-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn:hover {
+  color: var(--mist);
+}
+
+.lang-btn.is-active {
+  background: var(--sunset);
+  color: #fff;
+}
+
 .brand-bar h1 {
   margin: 0;
   font-family: var(--font-display);

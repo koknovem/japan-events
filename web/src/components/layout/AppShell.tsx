@@ -1,22 +1,24 @@
 import type { ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from '../common/LanguageSwitcher'
 
 interface AppShellProps {
   children: ReactNode
 }
 
 export function AppShell({ children }: AppShellProps) {
+  const { t } = useTranslation()
+
   return (
     <div className="app-shell">
       <header className="brand-bar">
         <div>
           <h1>
-            Japan <span>Events</span>
+            {t('brand.titlePrefix')} <span>{t('brand.titleAccent')}</span>
           </h1>
-          <p>
-            Pick a date on the calendar to browse festivals and events scraped from prefectural
-            tourism association calendars across Japan.
-          </p>
+          <p>{t('brand.tagline')}</p>
         </div>
+        <LanguageSwitcher />
       </header>
       {children}
     </div>

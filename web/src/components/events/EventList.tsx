@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import type { EventItem } from '../../types/events'
 import { EventCard } from './EventCard'
 import { EmptyState } from '../common/EmptyState'
@@ -18,20 +19,22 @@ export function EventList({
   emptyMessage,
   dateLabel,
 }: EventListProps) {
+  const { t } = useTranslation()
+
   if (loading) {
     return (
       <LoadingState
         label={
           scraping
-            ? `Scraping prefecture calendars for ${dateLabel}… this can take several minutes.`
-            : `Loading events for ${dateLabel}…`
+            ? t('events.scraping', { date: dateLabel })
+            : t('events.loading', { date: dateLabel })
         }
       />
     )
   }
 
   if (events.length === 0) {
-    return <EmptyState title="No events for this date" message={emptyMessage} />
+    return <EmptyState title={t('events.emptyTitle')} message={emptyMessage} />
   }
 
   return (

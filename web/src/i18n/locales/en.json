@@ -1,0 +1,100 @@
+{
+  "brand": {
+    "titlePrefix": "Japan",
+    "titleAccent": "Events",
+    "tagline": "Pick a date on the calendar to browse festivals and events scraped from prefectural tourism association calendars across Japan."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "zhTW": "繁體中文",
+    "ja": "日本語"
+  },
+  "calendar": {
+    "ariaLabel": "Event date calendar",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  },
+  "filter": {
+    "prefecture": "Prefecture",
+    "all": "All prefectures",
+    "aria": "Filter by prefecture"
+  },
+  "hint": {
+    "cacheDots": "Green dots are dates already on disk. Choosing an uncached date scrapes every prefecture on the server — wait until it finishes."
+  },
+  "events": {
+    "scrapingChip": "Scraping in a server thread…",
+    "waiting": "Waiting…",
+    "cached": "cached",
+    "justScraped": "just scraped",
+    "eventsCount": "{{count}} events",
+    "sitesCount": "{{ok}}/{{total}} sites",
+    "loading": "Loading events for {{date}}…",
+    "scraping": "Scraping prefecture calendars for {{date}}… this can take several minutes.",
+    "emptyTitle": "No events for this date",
+    "emptyMessage": "No events found for {{date}}. Try another prefecture or date.",
+    "dateTbd": "Date TBD",
+    "open": "Open →",
+    "loadError": "Failed to load events"
+  },
+  "regions": {
+    "Hokkaido & Tohoku": "Hokkaido & Tohoku",
+    "Kanto, Koshinetsu & Hokuriku": "Kanto, Koshinetsu & Hokuriku",
+    "Tokai & Kansai": "Tokai & Kansai",
+    "Chugoku & Shikoku": "Chugoku & Shikoku",
+    "Kyushu & Okinawa": "Kyushu & Okinawa",
+    "Nationwide": "Nationwide"
+  },
+  "prefectures": {
+    "hokkaido": "Hokkaido",
+    "aomori": "Aomori",
+    "iwate": "Iwate",
+    "miyagi": "Miyagi",
+    "akita": "Akita",
+    "yamagata": "Yamagata",
+    "fukushima": "Fukushima",
+    "ibaraki": "Ibaraki",
+    "tochigi": "Tochigi",
+    "gunma": "Gunma",
+    "saitama": "Saitama",
+    "chiba": "Chiba",
+    "tokyo": "Tokyo",
+    "kanagawa": "Kanagawa",
+    "yamanashi": "Yamanashi",
+    "nagano": "Nagano",
+    "niigata": "Niigata",
+    "toyama": "Toyama",
+    "ishikawa": "Ishikawa",
+    "fukui": "Fukui",
+    "gifu": "Gifu",
+    "shizuoka": "Shizuoka",
+    "aichi": "Aichi",
+    "mie": "Mie",
+    "shiga": "Shiga",
+    "kyoto": "Kyoto",
+    "osaka": "Osaka",
+    "hyogo": "Hyogo",
+    "nara": "Nara",
+    "wakayama": "Wakayama",
+    "tottori": "Tottori",
+    "shimane": "Shimane",
+    "okayama": "Okayama",
+    "hiroshima": "Hiroshima",
+    "yamaguchi": "Yamaguchi",
+    "tokushima": "Tokushima",
+    "kagawa": "Kagawa",
+    "ehime": "Ehime",
+    "kochi": "Kochi",
+    "fukuoka": "Fukuoka",
+    "saga": "Saga",
+    "nagasaki": "Nagasaki",
+    "kumamoto": "Kumamoto",
+    "oita": "Oita",
+    "miyazaki": "Miyazaki",
+    "kagoshima": "Kagoshima",
+    "okinawa": "Okinawa",
+    "jnto": "JNTO"
+  }
+}

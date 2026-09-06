@@ -79,7 +79,7 @@ Scrape events whose date range includes `--date` (writes `output/{date}/{id}.jso
 ```powershell
 japan-events scrape --date 2026-09-06
 japan-events scrape --date 2026-09-06 --prefecture tokyo,kyoto,hokkaido
-japan-events scrape --date 2026-09-06 --headed --concurrency 3
+japan-events scrape --date 2026-09-06 --headed --concurrency 8
 ```
 
 `python -m japan_events` is equivalent to `japan-events`.
@@ -186,4 +186,4 @@ A few hostnames historically failed DNS; the registry uses current official doma
 
 ## Limits
 
-Be polite: default concurrency is 3. Sites that only publish seasonal festival guides (no day-level calendar for `--date`) correctly return `[]`. Per-site failures never abort the full run.
+Be polite: default concurrency is 8 parallel Playwright browser contexts (not OS threads), capped at 16. Override with `--concurrency` or `JAPAN_EVENTS_CONCURRENCY`. Opening all 48 prefectures at once would burn RAM and get tourism sites to throttle. Sites that only publish seasonal festival guides (no day-level calendar for `--date`) correctly return `[]`. Per-site failures never abort the full run.

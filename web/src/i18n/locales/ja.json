@@ -39,6 +39,7 @@
     "progressSites": "{{done}} / {{total}} 都道府県",
     "progressEvents": "これまでに {{count}} 件のイベント",
     "progressCurrent": "取得中: {{names}}",
+    "progressParallel": "同時に {{count}} 都道府県",
     "progressStarting": "取得を開始しています…",
     "progressCombining": "結果をまとめています…",
     "scraping": "{{date}} の都道府県カレンダーを取得中…数分かかることがあります。",

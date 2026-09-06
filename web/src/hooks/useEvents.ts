@@ -55,6 +55,7 @@ function jobToProgress(job: ScrapeJob): LoadProgress {
     running: job.running,
     sites: job.sites,
     phase: job.phase,
+    concurrency: job.concurrency,
   }
 }
 

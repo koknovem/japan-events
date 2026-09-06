@@ -5,6 +5,8 @@ import asyncio
 import sys
 from datetime import date, datetime
 
+from japan_events.settings import site_concurrency
+
 
 def _parse_date(value: str) -> date:
     try:
@@ -22,7 +24,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--date", type=_parse_date, help="Target date YYYY-MM-DD (required for scrape).")
     parser.add_argument("--prefecture", help="Comma-separated site ids (e.g. tokyo,kyoto,hokkaido).")
     parser.add_argument("--headed", action="store_true", help="Show the Chromium window.")
-    parser.add_argument("--concurrency", type=int, default=3, help="Max parallel browsers (default 3).")
+    parser.add_argument("--concurrency", type=int, default=None, help="Max parallel browser contexts (default 8, env JAPAN_EVENTS_CONCURRENCY, cap 16).")
 
     sub = parser.add_subparsers(dest="command")
 
@@ -30,12 +32,12 @@ def build_parser() -> argparse.ArgumentParser:
     scrape.add_argument("--date", type=_parse_date, required=True)
     scrape.add_argument("--prefecture")
     scrape.add_argument("--headed", action="store_true")
-    scrape.add_argument("--concurrency", type=int, default=3)
+    scrape.add_argument("--concurrency", type=int, default=None)
 
     discover = sub.add_parser("discover", help="Probe each site for event URLs and JSON APIs.")
     discover.add_argument("--prefecture")
     discover.add_argument("--headed", action="store_true")
-    discover.add_argument("--concurrency", type=int, default=3)
+    discover.add_argument("--concurrency", type=int, default=None)
     return parser
 
 
@@ -44,7 +46,7 @@ def main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     headed = bool(getattr(args, "headed", False))
-    concurrency = int(getattr(args, "concurrency", 3) or 3)
+    concurrency = site_concurrency(getattr(args, "concurrency", None))
     prefecture = getattr(args, "prefecture", None)
 
     command = args.command

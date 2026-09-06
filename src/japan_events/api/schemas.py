@@ -85,6 +85,7 @@ class ScrapeJobOut(BaseModel):
     running: list[str] = Field(default_factory=list)
     sites: list[ScrapeSiteProgressOut] = Field(default_factory=list)
     error: str | None = None
+    concurrency: int = 0
 
 
 class ScrapeStatusOut(BaseModel):

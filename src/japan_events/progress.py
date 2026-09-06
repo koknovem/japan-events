@@ -20,6 +20,7 @@ class JobProgress:
             "running": [],
             "sites": [],
             "error": None,
+            "concurrency": 0,
         }
 
     def handle(self, event: str, payload: dict[str, Any] | None = None) -> None:
@@ -33,6 +34,7 @@ class JobProgress:
                 self._state["ok_count"] = 0
                 self._state["events_so_far"] = 0
                 self._state["running"] = []
+                self._state["concurrency"] = int(payload.get("concurrency") or 0)
                 self._state["sites"] = [
                     {
                         "id": site["id"],
@@ -100,6 +102,7 @@ class JobProgress:
                 "running": list(self._state["running"]),
                 "sites": [dict(item) for item in self._state["sites"]],
                 "error": self._state["error"],
+                "concurrency": self._state["concurrency"],
             }
 
     def _set_site(self, site_id: str | None, **fields: Any) -> dict[str, Any] | None:

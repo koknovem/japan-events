@@ -69,6 +69,7 @@ export interface ScrapeJob {
   running: string[]
   sites: ScrapeSiteProgress[]
   error: string | null
+  concurrency?: number
 }
 
 export interface ScrapeStatus {
@@ -89,6 +90,7 @@ export interface LoadProgress {
   running: string[]
   sites: ScrapeSiteProgress[]
   phase: string
+  concurrency?: number
   loadedBytes?: number
   totalBytes?: number
 }

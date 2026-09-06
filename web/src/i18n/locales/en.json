@@ -39,6 +39,7 @@
     "progressSites": "{{done}} / {{total}} prefectures",
     "progressEvents": "{{count}} events found so far",
     "progressCurrent": "Now scraping: {{names}}",
+    "progressParallel": "{{count}} prefectures at a time",
     "progressStarting": "Starting scrape…",
     "progressCombining": "Combining prefecture results…",
     "scraping": "Scraping prefecture calendars for {{date}}… this can take several minutes.",

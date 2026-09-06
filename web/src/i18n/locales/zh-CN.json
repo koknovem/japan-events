@@ -39,6 +39,7 @@
     "progressSites": "{{done}} / {{total}} 个都道府县",
     "progressEvents": "目前已找到 {{count}} 场活动",
     "progressCurrent": "正在抓取：{{names}}",
+    "progressParallel": "同时抓取 {{count}} 个都道府县",
     "progressStarting": "正在开始抓取…",
     "progressCombining": "正在汇总结果…",
     "scraping": "正在抓取 {{date}} 的都道府县日历…可能需要数分钟。",

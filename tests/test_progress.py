@@ -9,13 +9,15 @@ def test_percent_only_moves_when_sites_finish():
             "sites": [
                 {"id": "tokyo", "prefecture": "Tokyo"},
                 {"id": "kyoto", "prefecture": "Kyoto"},
-            ]
+            ],
+            "concurrency": 8,
         },
     )
     snap = progress.snapshot()
     assert snap["phase"] == "scraping"
     assert snap["total"] == 2
     assert snap["percent"] == 0
+    assert snap["concurrency"] == 8
 
     progress.handle("site_start", {"id": "tokyo", "prefecture": "Tokyo"})
     snap = progress.snapshot()
@@ -81,3 +83,16 @@ def test_status_exposes_job_snapshot():
         assert active["jobs"][0]["date"] == "2027-01-01"
     finally:
         service._executor.shutdown(wait=False)
+
+
+def test_site_concurrency_env_and_cap(monkeypatch):
+    from japan_events.settings import DEFAULT_SITE_CONCURRENCY, MAX_SITE_CONCURRENCY, site_concurrency
+
+    monkeypatch.delenv("JAPAN_EVENTS_CONCURRENCY", raising=False)
+    assert site_concurrency() == DEFAULT_SITE_CONCURRENCY
+    monkeypatch.setenv("JAPAN_EVENTS_CONCURRENCY", "12")
+    assert site_concurrency() == 12
+    monkeypatch.setenv("JAPAN_EVENTS_CONCURRENCY", "99")
+    assert site_concurrency() == MAX_SITE_CONCURRENCY
+    assert site_concurrency(2) == 2
+    assert site_concurrency(0) == 1

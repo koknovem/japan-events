@@ -8,6 +8,7 @@ from typing import Any
 
 from japan_events.models import CombinedOutput, SiteResult
 from japan_events.progress import JobProgress
+from japan_events.settings import site_concurrency
 from japan_events.storage import load_combined, rebuild_combined_from_files
 
 
@@ -28,7 +29,7 @@ def _run_scrape_in_thread(
                 target,
                 prefecture=prefecture,
                 headed=False,
-                concurrency=3,
+                concurrency=site_concurrency(),
                 on_progress=on_progress,
             )
         )

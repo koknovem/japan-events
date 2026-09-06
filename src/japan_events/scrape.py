@@ -10,6 +10,7 @@ from japan_events.langs import resolve_lang_urls
 from japan_events.models import Event, SiteConfig, SiteResult
 from japan_events.normalize import dedupe_events
 from japan_events.registry import filter_sites, get_adapter, load_sites
+from japan_events.settings import site_concurrency
 from japan_events.storage import write_combined, write_site_result
 
 ProgressCallback = Callable[[str, dict[str, Any]], None]
@@ -79,15 +80,17 @@ async def run_scrape(
     *,
     prefecture: str | None = None,
     headed: bool = False,
-    concurrency: int = 3,
+    concurrency: int | None = None,
     on_progress: ProgressCallback | None = None,
 ) -> list[SiteResult]:
     sites = filter_sites(load_sites(), prefecture)
-    sem = asyncio.Semaphore(max(1, concurrency))
+    workers = site_concurrency(concurrency)
+    sem = asyncio.Semaphore(workers)
     _emit(
         on_progress,
         "init",
         sites=[{"id": site.id, "prefecture": site.name} for site in sites],
+        concurrency=workers,
     )
 
     async with playwright_runtime() as playwright:

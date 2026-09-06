@@ -68,6 +68,10 @@ export function LoadingState({ label = 'Loading…', progress }: LoadingStatePro
         <p className="load-progress-meta">{t('events.progressCurrent', { names: runningNames.join(' · ') })}</p>
       ) : null}
 
+      {scrape && progress && (progress.concurrency ?? 0) > 0 ? (
+        <p className="load-progress-meta">{t('events.progressParallel', { count: progress.concurrency })}</p>
+      ) : null}
+
       {scrape && progress && progress.sites.length > 0 ? (
         <div className="site-ticks" aria-hidden="true">
           {progress.sites.map((site) => (

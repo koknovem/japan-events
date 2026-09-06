@@ -6,36 +6,32 @@ import { LoadingState } from '../common/LoadingState'
 interface EventListProps {
   events: EventItem[]
   loading: boolean
+  scraping?: boolean
   emptyMessage: string
-  onScrape?: () => void
-  scrapeBusy?: boolean
-  showScrape?: boolean
+  dateLabel: string
 }
 
 export function EventList({
   events,
   loading,
+  scraping,
   emptyMessage,
-  onScrape,
-  scrapeBusy,
-  showScrape,
+  dateLabel,
 }: EventListProps) {
-  if (loading) return <LoadingState label="Loading events for this date…" />
-
-  if (events.length === 0) {
+  if (loading) {
     return (
-      <EmptyState
-        title="No events for this date"
-        message={emptyMessage}
-        action={
-          showScrape && onScrape ? (
-            <button type="button" className="btn btn-primary" onClick={onScrape} disabled={scrapeBusy}>
-              {scrapeBusy ? 'Scraping…' : 'Scrape this date'}
-            </button>
-          ) : null
+      <LoadingState
+        label={
+          scraping
+            ? `Scraping prefecture calendars for ${dateLabel}… this can take several minutes.`
+            : `Loading events for ${dateLabel}…`
         }
       />
     )
+  }
+
+  if (events.length === 0) {
+    return <EmptyState title="No events for this date" message={emptyMessage} />
   }
 
   return (

@@ -1,4 +1,4 @@
-import type { EventsResponse, ScrapeJob, Site } from '../types/events'
+import type { EventsResponse, Site } from '../types/events'
 
 const BASE = ''
 
@@ -23,10 +23,4 @@ export const api = {
     if (prefecture) params.set('prefecture', prefecture)
     return request<EventsResponse>(`/api/events?${params}`)
   },
-  startScrape: (date: string, prefecture?: string) =>
-    request<ScrapeJob>('/api/scrape', {
-      method: 'POST',
-      body: JSON.stringify({ date, prefecture: prefecture || null }),
-    }),
-  scrapeStatus: (jobId: string) => request<ScrapeJob>(`/api/scrape/${jobId}`),
 }

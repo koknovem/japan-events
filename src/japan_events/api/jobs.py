@@ -1,96 +1,81 @@
 from __future__ import annotations
 
 import asyncio
-import uuid
-from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+import threading
+from concurrent.futures import Future, ThreadPoolExecutor
+from datetime import date
 from typing import Any
 
-
-@dataclass
-class ScrapeJob:
-    id: str
-    date: str
-    prefecture: str | None
-    status: str = "queued"  # queued | running | completed | failed
-    created_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
-    started_at: str | None = None
-    finished_at: str | None = None
-    error: str | None = None
-    event_count: int = 0
-    site_count: int = 0
-    ok_count: int = 0
+from japan_events.models import CombinedOutput, SiteResult
+from japan_events.storage import load_combined, rebuild_combined_from_files
 
 
-class JobManager:
-    def __init__(self) -> None:
-        self._jobs: dict[str, ScrapeJob] = {}
-        self._lock = asyncio.Lock()
-        self._running = False
+def _run_scrape_in_thread(target: date, prefecture: str | None = None) -> list[SiteResult]:
+    """Run the async Playwright scrape inside a dedicated OS thread."""
+    from japan_events.scrape import run_scrape
 
-    def list_jobs(self) -> list[ScrapeJob]:
-        return sorted(self._jobs.values(), key=lambda j: j.created_at, reverse=True)
-
-    def get(self, job_id: str) -> ScrapeJob | None:
-        return self._jobs.get(job_id)
-
-    async def enqueue(self, target: date, prefecture: str | None = None) -> ScrapeJob:
-        job = ScrapeJob(
-            id=str(uuid.uuid4()),
-            date=target.isoformat(),
+    return asyncio.run(
+        run_scrape(
+            target,
             prefecture=prefecture,
+            headed=False,
+            concurrency=3,
         )
-        async with self._lock:
-            self._jobs[job.id] = job
-        asyncio.create_task(self._run(job.id))
-        return job
+    )
 
-    async def _run(self, job_id: str) -> None:
-        job = self._jobs[job_id]
-        async with self._lock:
-            if self._running:
-                # Simple serial queue: wait until free.
-                while self._running:
-                    await asyncio.sleep(0.5)
-            self._running = True
-            job.status = "running"
-            job.started_at = datetime.now(timezone.utc).isoformat()
+
+class ThreadedScrapeService:
+    """Serialize scrapes per date in worker threads; callers block until finished."""
+
+    def __init__(self, max_workers: int = 2) -> None:
+        self._executor = ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="japan-scrape")
+        self._guard = threading.Lock()
+        self._inflight: dict[str, Future[list[SiteResult]]] = {}
+
+    def ensure_cached(
+        self,
+        target: date,
+        *,
+        prefecture: str | None = None,
+        force: bool = False,
+    ) -> tuple[CombinedOutput | None, bool]:
+        """
+        Return (combined, scraped_now).
+        If cache is missing (or force), scrape in a worker thread and wait.
+        Concurrent requests for the same date share one scrape future.
+        """
+        key = target.isoformat()
+        if not force:
+            combined = load_combined(target) or rebuild_combined_from_files(target)
+            if combined is not None:
+                return combined, False
+
+        with self._guard:
+            fut = self._inflight.get(key)
+            if fut is None:
+                fut = self._executor.submit(_run_scrape_in_thread, target, None)
+                self._inflight[key] = fut
 
         try:
-            from japan_events.scrape import run_scrape
+            fut.result()
+        except Exception:
+            with self._guard:
+                self._inflight.pop(key, None)
+            raise
+        else:
+            with self._guard:
+                if self._inflight.get(key) is fut:
+                    self._inflight.pop(key, None)
 
-            results = await run_scrape(
-                date.fromisoformat(job.date),
-                prefecture=job.prefecture,
-                headed=False,
-                concurrency=3,
-            )
-            job.site_count = len(results)
-            job.ok_count = sum(1 for r in results if r.ok)
-            job.event_count = sum(r.event_count for r in results)
-            job.status = "completed"
-        except Exception as exc:
-            job.status = "failed"
-            job.error = f"{type(exc).__name__}: {exc}"
-        finally:
-            job.finished_at = datetime.now(timezone.utc).isoformat()
-            async with self._lock:
-                self._running = False
+        combined = load_combined(target) or rebuild_combined_from_files(target)
+        return combined, True
 
-    def to_dict(self, job: ScrapeJob) -> dict[str, Any]:
-        return {
-            "id": job.id,
-            "date": job.date,
-            "prefecture": job.prefecture,
-            "status": job.status,
-            "created_at": job.created_at,
-            "started_at": job.started_at,
-            "finished_at": job.finished_at,
-            "error": job.error,
-            "event_count": job.event_count,
-            "site_count": job.site_count,
-            "ok_count": job.ok_count,
-        }
+    def status(self) -> dict[str, Any]:
+        with self._guard:
+            return {
+                "inflight_dates": list(self._inflight.keys()),
+                "workers": self._executor._max_workers,  # noqa: SLF001
+            }
 
 
-jobs = JobManager()
+scrape_service = ThreadedScrapeService()

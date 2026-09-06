@@ -39,6 +39,7 @@ export interface SiteStatus {
 export interface EventsResponse {
   date: string
   cached: boolean
+  scraped?: boolean
   generated_at: string | null
   site_count: number
   ok_count: number
@@ -46,18 +47,4 @@ export interface EventsResponse {
   events: EventItem[]
   sites: SiteStatus[]
   message: string | null
-}
-
-export interface ScrapeJob {
-  id: string
-  date: string
-  prefecture: string | null
-  status: 'queued' | 'running' | 'completed' | 'failed' | string
-  created_at: string
-  started_at: string | null
-  finished_at: string | null
-  error: string | null
-  event_count: number
-  site_count: number
-  ok_count: number
 }

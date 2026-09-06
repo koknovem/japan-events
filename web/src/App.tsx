@@ -5,8 +5,7 @@ import { DateCalendar } from './components/calendar/DateCalendar'
 import { EventList } from './components/events/EventList'
 import { EventsPanelHeader } from './components/events/EventsPanelHeader'
 import { PrefectureFilter } from './components/events/PrefectureFilter'
-import { ScrapeControls } from './components/events/ScrapeControls'
-import { useCachedDates, useEventsForDate, useScrapeJob, useSites } from './hooks/useEvents'
+import { useCachedDates, useEventsForDate, useSites } from './hooks/useEvents'
 
 function defaultDate(cached: string[]): Date {
   if (cached.includes('2026-09-06')) return parseISO('2026-09-06')
@@ -32,19 +31,17 @@ export default function App() {
     setBootstrapped(true)
   }, [dates, bootstrapped])
 
-  const { data, loading, error, reload, dateKey } = useEventsForDate(selected, prefecture)
-  const { job, busy, start } = useScrapeJob()
+  const { data, loading, scraping, error, dateKey } = useEventsForDate(
+    selected,
+    prefecture,
+    cachedSet,
+  )
 
   useEffect(() => {
-    if (job?.status === 'completed') {
-      void reload()
+    if (data?.scraped) {
       void refreshDates()
     }
-  }, [job?.status, reload, refreshDates])
-
-  const handleScrape = async () => {
-    await start(dateKey, prefecture)
-  }
+  }, [data?.scraped, refreshDates])
 
   return (
     <AppShell>
@@ -62,33 +59,24 @@ export default function App() {
           />
           <div style={{ marginTop: '0.85rem' }} className="panel panel-calendar">
             <PrefectureFilter sites={sites} value={prefecture} onChange={setPrefecture} />
-            <div style={{ marginTop: '0.85rem' }}>
-              <ScrapeControls
-                onScrape={() => void handleScrape()}
-                busy={busy}
-                job={job}
-                hasCache={Boolean(data?.cached)}
-              />
-            </div>
             <p style={{ margin: '0.85rem 0 0', color: 'var(--muted)', fontSize: '0.8rem', lineHeight: 1.45 }}>
-              Green dots mark dates already cached under <code>output/</code>. Scraping all prefectures
-              can take several minutes.
+              Green dots are dates already on disk. Choosing an uncached date scrapes every prefecture
+              on the server — wait until it finishes.
             </p>
           </div>
         </aside>
 
         <main className="panel panel-events">
-          <EventsPanelHeader date={selected} data={data} error={error} />
+          <EventsPanelHeader date={selected} data={data} error={error} scraping={scraping || loading} />
           <EventList
             events={data?.events ?? []}
             loading={loading}
+            scraping={scraping}
+            dateLabel={format(selected, 'yyyy-MM-dd')}
             emptyMessage={
               data?.message ??
-              `No events found for ${format(selected, 'yyyy-MM-dd')}. Try scraping or another prefecture.`
+              `No events found for ${dateKey}. Try another prefecture or date.`
             }
-            showScrape={!data?.cached}
-            onScrape={() => void handleScrape()}
-            scrapeBusy={busy}
           />
         </main>
       </div>

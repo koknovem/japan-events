@@ -28,11 +28,10 @@ Open docs at http://127.0.0.1:8000/docs
 | GET | `/api/health` | Health check |
 | GET | `/api/sites` | Registry of prefectures |
 | GET | `/api/dates` | Cached scrape dates under `output/` |
-| GET | `/api/events?date=YYYY-MM-DD` | Events for a date (optional `prefecture=tokyo,kyoto`) |
-| POST | `/api/scrape` | Start async Playwright scrape `{ "date": "2026-09-06" }` |
-| GET | `/api/scrape/{job_id}` | Scrape job status |
+| GET | `/api/events?date=YYYY-MM-DD` | Events for a date (auto-scrapes in a worker thread if not cached; optional `prefecture=`) |
+| GET | `/api/scrape/status` | In-flight scrape dates |
 
-Cached JSON is served immediately; `POST /api/scrape` refreshes data in the background.
+`GET /api/events` serves cached JSON immediately when present. If the date is missing, the API runs Playwright in a **thread**, blocks until finished, then returns the result (the UI just waits on the request).
 
 ## Web UI (React + TypeScript)
 

@@ -1,0 +1,80 @@
+{
+  "id": "aomori",
+  "name": "Aomori",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://aomori-tourism.com/en/",
+  "configured_event_url": "https://aomori-tourism.com/en/event/index.html",
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_15.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/theme/festival/"
+    },
+    {
+      "text": "see more events",
+      "href": "https://aomori-tourism.com/en/event/index.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_1732.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_7277.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_1768.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_739.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_3624.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_1828.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_26.html"
+    },
+    {
+      "text": "more",
+      "href": "https://aomori-tourism.com/en/event/detail_619.html"
+    }
+  ],
+  "chosen_event_url": "https://aomori-tourism.com/en/event/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=3Mvs8qoHTKmp0XERrU/IeA==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "PW2davvoGvTU1e8PodzS6QM",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkKQmDP36ULeZSI+tc9vB89f4IC8Q+UTuQjy7HX2dALvOYjWWWVGs87+VSGOW8I0gReMx6pPUh/nDPKkZ1eShY3g2rNaJsnvJL80Q1Ml59SwhKxO7pcWTe9b1X3wbmgzAodj2sTvBKBe0WVPwWyiPoK8Qemwei5XCLSB1f6u+LNX4rCO...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | Amazing AOMORI - The Official Aomori Travel Guide",
+  "final_url": "https://aomori-tourism.com/en/event/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:13.168594+00:00"
+}

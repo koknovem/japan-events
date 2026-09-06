@@ -1,0 +1,145 @@
+{
+  "id": "shiga",
+  "name": "Shiga",
+  "region": "Tokai & Kansai",
+  "home_url": "https://en.biwako-visitors.jp/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Agree')"
+  ],
+  "event_links": [
+    {
+      "text": "<img src=\"https://global.biwako-visitors.jp/wp/wp-content/themes/da-theme/assets/images/common/nav-icon/icon-nav-annual-",
+      "href": "https://global.biwako-visitors.jp/annual-events"
+    },
+    {
+      "text": "<img src=\"https://global.biwako-visitors.jp/wp/wp-content/themes/da-theme/assets/images/common/nav-icon/icon-nav-annual-",
+      "href": "https://global.biwako-visitors.jp/https://global.biwako-visitors.jp/annual-events/"
+    },
+    {
+      "text": "Annual Events",
+      "href": "https://global.biwako-visitors.jp/annual-events/"
+    },
+    {
+      "text": "Annual Events",
+      "href": "https://global.biwako-visitors.jp/visitor-guide/annual-events"
+    },
+    {
+      "text": "简体中文",
+      "href": "https://global.biwako-visitors.jp/zh-hans/annual-events/"
+    },
+    {
+      "text": "繁體中文",
+      "href": "https://global.biwako-visitors.jp/zh-hant/annual-events/"
+    },
+    {
+      "text": "한국어",
+      "href": "https://global.biwako-visitors.jp/ko/annual-events/"
+    },
+    {
+      "text": "Français",
+      "href": "https://global.biwako-visitors.jp/fr/annual-events/"
+    },
+    {
+      "text": "Major Events",
+      "href": "https://global.biwako-visitors.jp/annual-events/#major-events"
+    },
+    {
+      "text": "Recommended Events",
+      "href": "https://global.biwako-visitors.jp/annual-events/#recommended-events"
+    },
+    {
+      "text": "List of Events",
+      "href": "https://global.biwako-visitors.jp/annual-events/#list-of-events"
+    }
+  ],
+  "chosen_event_url": "https://global.biwako-visitors.jp/annual-events",
+  "json_endpoints": [
+    {
+      "url": "https://tpembars.com/entrypoint_config?page_url=https%3A%2F%2Fglobal.biwako-visitors.jp%2Fannual-events%2F&t=511000",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "marker": "713220",
+        "project": {
+          "trs": 511000,
+          "subscribed_brands": [
+            47,
+            84,
+            89,
+            104,
+            "... +7 more"
+          ],
+          "domain": "global.biwako-visitors.jp"
+        },
+        "assets_domain": "tpembars.com",
+        "trace_id": "Zza701ed5ccfb646e6ab7de31-713220",
+        "services": {
+          "emerald": {
+            "enabled": true
+          },
+          "integration": {
+            "enabled": false
+          },
+          "link_switcher": {
+            "enabled": true
+          },
+          "tooltip": {
+            "enabled": true
+          }
+        },
+        "erid_extender_enabled": false,
+        "processed_content": true,
+        "processed_content_types": {
+          "html": true,
+          "paragraphs": false
+        },
+        "ab_tests": {
+          "adblock_network_detection": "test_adblock_network",
+          "global_control": "total_test_group",
+          "tripcom_geo": "control_main"
+        },
+        "evaluation_id": "064b7a13e2ff3aa0ee29beaf8ff7794bd62d4b61d2c560d5e37b9c2f9b4a99da",
+        "short_link_domain": "tp.st"
+      }
+    },
+    {
+      "url": "https://sentry.avs.io/api/20/envelope/?sentry_version=7&sentry_key=1c30377dafc708e9dfdf6df7e355a97c&sentry_client=sentry.javascript.browser%2F9.44.0",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://global.biwako-visitors.jp/wp/wp-admin/admin-ajax.php",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": "success",
+        "favorites": [
+          {
+            "groups": [
+              {
+                "group_id": 1,
+                "site_id": 1,
+                "group_name": "Default List",
+                "posts": []
+              }
+            ],
+            "posts": [],
+            "site_id": 1
+          }
+        ]
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Shiga’s Must-See Traditional Events, Festivals, and Celebrations | Explore Shiga Japan Official Travel Guide",
+  "final_url": "https://global.biwako-visitors.jp/annual-events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:32.562991+00:00"
+}

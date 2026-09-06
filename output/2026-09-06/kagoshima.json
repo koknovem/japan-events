@@ -1,0 +1,12 @@
+{
+  "prefecture": "Kagoshima",
+  "id": "kagoshima",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:40; none_on_date:40_parsed",
+  "event_count": 0,
+  "source_url": "https://www.kagoshima-kankou.com/for/events",
+  "adapter": "generic",
+  "events": []
+}

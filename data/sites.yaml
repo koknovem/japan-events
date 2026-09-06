@@ -1,0 +1,334 @@
+# Official / semi-official prefectural tourism sites.
+# Adding a site: copy a block, set id/home_url, optionally event_url + adapter.
+# event_url values below were filled from `japan-events discover` (2026-09-06).
+
+sites:
+  # --- Hokkaido & Tohoku ---
+  - id: hokkaido
+    name: Hokkaido
+    region: Hokkaido & Tohoku
+    home_url: https://www.visit-hokkaido.jp/en/
+    event_url: https://www.visit-hokkaido.jp/en/event/
+    adapter: hokkaido
+    date_picker: true
+
+  - id: aomori
+    name: Aomori
+    region: Hokkaido & Tohoku
+    home_url: https://aomori-tourism.com/en/
+    event_url: https://aomori-tourism.com/en/event/index.html
+    adapter: generic
+
+  - id: iwate
+    name: Iwate
+    region: Hokkaido & Tohoku
+    home_url: https://iwatetabi.jp/en/
+    event_url: https://iwatetabi.jp/events/
+    adapter: generic
+
+  - id: miyagi
+    name: Miyagi
+    region: Hokkaido & Tohoku
+    home_url: https://visitmiyagi.com/en/
+    event_url: https://visitmiyagi.com/dosee/events-festivals/
+    adapter: generic
+
+  - id: akita
+    name: Akita
+    region: Hokkaido & Tohoku
+    home_url: https://akita-fun.jp/en/
+    event_url: https://akita-fun.jp/featured_contents/festival
+    adapter: generic
+
+  - id: yamagata
+    name: Yamagata
+    region: Hokkaido & Tohoku
+    home_url: https://yamagatakanko.com/en/
+    event_url: https://yamagatakanko.com/en/festivals/
+    adapter: generic
+
+  - id: fukushima
+    name: Fukushima
+    region: Hokkaido & Tohoku
+    home_url: https://fukushima.travel/
+    adapter: generic
+
+  # --- Kanto, Koshinetsu & Hokuriku ---
+  - id: ibaraki
+    name: Ibaraki
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.ibarakiguide.jp/en/
+    event_url: https://www.ibarakiguide.jp/event.php
+    adapter: generic
+
+  - id: tochigi
+    name: Tochigi
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.visit-tochigi.com/
+    event_url: https://www.visit-tochigi.com/seasons-in-tochigi/events/
+    adapter: generic
+
+  - id: gunma
+    name: Gunma
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.visit-gunma.jp/en/
+    adapter: generic
+
+  - id: saitama
+    name: Saitama
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://saitama-supportdesk.com/
+    event_url: https://saitama-supportdesk.com/events/
+    adapter: generic
+
+  - id: chiba
+    name: Chiba
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.visitchiba.jp/
+    adapter: generic
+
+  - id: tokyo
+    name: Tokyo
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.gotokyo.org/en/
+    event_url: https://www.gotokyo.org/en/calendar/index.html
+    adapter: tokyo
+    date_picker: true
+
+  - id: kanagawa
+    name: Kanagawa
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://visitkanagawa.jp/
+    adapter: generic
+
+  - id: yamanashi
+    name: Yamanashi
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.yamanashi-kankou.jp/english/
+    adapter: generic
+
+  - id: nagano
+    name: Nagano
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.go-nagano.net/en/
+    adapter: generic
+
+  - id: niigata
+    name: Niigata
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://enjoyniigata.com/en/
+    event_url: https://discover-niigata.com/events/
+    adapter: generic
+
+  - id: toyama
+    name: Toyama
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://visit-toyama-japan.com/en/
+    event_url: https://visit-toyama-japan.com/en/festivals
+    adapter: generic
+
+  - id: ishikawa
+    name: Ishikawa
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.ishikawatravel.jp/en/
+    event_url: https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/
+    adapter: generic
+
+  - id: fukui
+    name: Fukui
+    region: Kanto, Koshinetsu & Hokuriku
+    home_url: https://www.fuku-e.com/en/
+    event_url: https://www.fuku-e.com/en/events/index.html
+    adapter: generic
+
+  # --- Tokai & Kansai ---
+  - id: gifu
+    name: Gifu
+    region: Tokai & Kansai
+    home_url: https://visitgifu.com/
+    adapter: generic
+
+  - id: shizuoka
+    name: Shizuoka
+    region: Tokai & Kansai
+    home_url: https://www.visit-shizuoka.com/
+    event_url: https://www.visit-shizuoka.com/event/index.html
+    adapter: generic
+
+  - id: aichi
+    name: Aichi
+    region: Tokai & Kansai
+    home_url: https://aichinow.pref.aichi.jp/en/
+    event_url: https://aichinow.pref.aichi.jp/en/events/
+    adapter: generic
+
+  - id: mie
+    name: Mie
+    region: Tokai & Kansai
+    home_url: https://visitmie-japan.travel/en/
+    adapter: generic
+
+  - id: shiga
+    name: Shiga
+    region: Tokai & Kansai
+    home_url: https://en.biwako-visitors.jp/
+    event_url: https://global.biwako-visitors.jp/annual-events
+    adapter: generic
+
+  - id: kyoto
+    name: Kyoto
+    region: Tokai & Kansai
+    home_url: https://kyoto.travel/en/
+    event_url: https://kyoto.travel/en/events/
+    adapter: kyoto
+
+  - id: osaka
+    name: Osaka
+    region: Tokai & Kansai
+    home_url: https://osaka-info.jp/en/
+    event_url: https://osaka-info.jp/en/event/
+    adapter: generic
+
+  - id: hyogo
+    name: Hyogo
+    region: Tokai & Kansai
+    home_url: https://www.hyogo-tourism.jp/
+    event_url: https://www.hyogo-tourism.jp/event/index.html
+    adapter: generic
+
+  - id: nara
+    name: Nara
+    region: Tokai & Kansai
+    home_url: https://www.visitnara.jp/
+    event_url: https://www.visitnara.jp/event-calendar/
+    adapter: nara
+    api_url: https://www.visitnara.jp/travel-directory/api/data/
+
+  - id: wakayama
+    name: Wakayama
+    region: Tokai & Kansai
+    home_url: https://visitwakayama.jp/en/
+    event_url: https://visitwakayama.jp/en/events/index.html
+    adapter: generic
+
+  # --- Chugoku & Shikoku ---
+  - id: tottori
+    name: Tottori
+    region: Chugoku & Shikoku
+    home_url: https://www.tottori-tour.jp/en/
+    adapter: generic
+
+  - id: shimane
+    name: Shimane
+    region: Chugoku & Shikoku
+    home_url: https://www.kankou-shimane.com/en/
+    event_url: https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival
+    adapter: generic
+
+  - id: okayama
+    name: Okayama
+    region: Chugoku & Shikoku
+    home_url: https://www.okayama-japan.jp/en
+    event_url: https://www.okayama-japan.jp/en/event
+    adapter: generic
+
+  - id: hiroshima
+    name: Hiroshima
+    region: Chugoku & Shikoku
+    home_url: https://dive-hiroshima.com/en/
+    event_url: https://dive-hiroshima.com/en/events/
+    adapter: hiroshima
+    api_url: https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date=2026-01-01&end_date=2026-01-01&order=date&site=en&page_status=production
+
+  - id: yamaguchi
+    name: Yamaguchi
+    region: Chugoku & Shikoku
+    home_url: https://visit-jy.com/en/
+    event_url: https://visit-jy.com/en/spots?category=166
+    adapter: generic
+
+  - id: tokushima
+    name: Tokushima
+    region: Chugoku & Shikoku
+    home_url: https://discovertokushima.net/
+    adapter: generic
+
+  - id: kagawa
+    name: Kagawa
+    region: Chugoku & Shikoku
+    home_url: https://www.my-kagawa.jp/en/
+    adapter: generic
+
+  - id: ehime
+    name: Ehime
+    region: Chugoku & Shikoku
+    home_url: https://www.visitehimejapan.com/en/
+    event_url: https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events
+    adapter: generic
+
+  - id: kochi
+    name: Kochi
+    region: Chugoku & Shikoku
+    home_url: https://visitkochijapan.com/en/
+    adapter: generic
+
+  # --- Kyushu & Okinawa ---
+  - id: fukuoka
+    name: Fukuoka
+    region: Kyushu & Okinawa
+    home_url: https://www.crossroadfukuoka.jp/en
+    adapter: generic
+
+  - id: saga
+    name: Saga
+    region: Kyushu & Okinawa
+    home_url: https://www.saga-tripgenius.com/
+    adapter: generic
+
+  - id: nagasaki
+    name: Nagasaki
+    region: Kyushu & Okinawa
+    home_url: https://www.nagasaki-tabinet.com/en/
+    event_url: https://www.nagasaki-tabinet.com/event
+    adapter: generic
+
+  - id: kumamoto
+    name: Kumamoto
+    region: Kyushu & Okinawa
+    home_url: https://kumamoto-guide.jp/en/
+    event_url: https://kumamoto-guide.jp/en/events/
+    adapter: generic
+
+  - id: oita
+    name: Oita
+    region: Kyushu & Okinawa
+    home_url: https://visit-oita.jp/en/
+    event_url: https://www.visit-oita.jp/events/
+    adapter: generic
+
+  - id: miyazaki
+    name: Miyazaki
+    region: Kyushu & Okinawa
+    home_url: https://www.visit-miyazaki.com/
+    adapter: generic
+
+  - id: kagoshima
+    name: Kagoshima
+    region: Kyushu & Okinawa
+    home_url: https://www.kagoshima-kankou.com/for/
+    event_url: https://www.kagoshima-kankou.com/for/events
+    adapter: generic
+
+  - id: okinawa
+    name: Okinawa
+    region: Kyushu & Okinawa
+    home_url: https://visitokinawajapan.com/
+    adapter: generic
+
+  # --- Nationwide ---
+  - id: jnto
+    name: JNTO
+    region: Nationwide
+    home_url: https://www.japan.travel/en/
+    event_url: https://www.japan.travel/en/events/
+    adapter: jnto

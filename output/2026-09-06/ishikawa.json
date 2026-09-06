@@ -1,0 +1,12 @@
+{
+  "prefecture": "Ishikawa",
+  "id": "ishikawa",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "xhr:1; none_on_date:1_parsed",
+  "event_count": 0,
+  "source_url": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/",
+  "adapter": "generic",
+  "events": []
+}

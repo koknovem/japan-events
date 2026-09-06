@@ -1,0 +1,28 @@
+{
+  "prefecture": "Saitama",
+  "id": "saitama",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:40",
+  "event_count": 1,
+  "source_url": "https://saitama-supportdesk.com/events/",
+  "adapter": "generic",
+  "events": [
+    {
+      "prefecture": "Saitama",
+      "title": "Kumagaya Uchiwa Festival",
+      "start_date": "2022-07-20",
+      "end_date": "2027-01-22",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": "Northern Area",
+      "category": "Festivals and Regional events",
+      "description": "July 20th to the 22nd Kumagaya Uchiwa Festival Northern Area Festivals and Regional events",
+      "url": "https://saitama-supportdesk.com/events/post-11518/",
+      "image_url": "https://saitama-supportdesk.com/wp-content/uploads/2024/10/evt_a_kuma1.jpg",
+      "source": "https://saitama-supportdesk.com/events/#html"
+    }
+  ]
+}

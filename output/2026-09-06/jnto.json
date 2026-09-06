@@ -1,0 +1,12 @@
+{
+  "prefecture": "JNTO",
+  "id": "jnto",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "no_event_listing",
+  "event_count": 0,
+  "source_url": "https://www.japan.travel/en/events/",
+  "adapter": "jnto",
+  "events": []
+}

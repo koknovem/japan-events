@@ -1,0 +1,4867 @@
+{
+  "id": "osaka",
+  "name": "Osaka",
+  "region": "Tokai & Kansai",
+  "home_url": "https://osaka-info.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Event",
+      "href": "https://osaka-info.jp/en/event/"
+    },
+    {
+      "text": "Tennoji Zoo 2026 Night Zoo They come to life at night. Photo courtesy of Tennoji Zoo Tennoji/Abeno area, ​ ​September 19",
+      "href": "https://osaka-info.jp/en/event/tennojizoo-nightzoo2026/"
+    },
+    {
+      "text": "TV Anime \"Nihon Sangoku\" Digital Stamp Rally-Four city tour-First installment: Osaka Prefecture Experience the world of ",
+      "href": "https://osaka-info.jp/en/event/Nipponsangoku-stamprally/"
+    },
+    {
+      "text": "Gourmet​ ​Hotel New Otani OsakaSuper Sweets Buffet 2026~Sweet potatoes, chestnuts, and pumpkins~A sweets festival to lux",
+      "href": "https://osaka-info.jp/en/event/newotani-imo-kuri-nannkin/"
+    },
+    {
+      "text": "Exhibition / Special Screening​ ​of the Film \"Parallel and Perpendicular\"Costume exhibition, social media campaign,A sta",
+      "href": "https://osaka-info.jp/en/event/rishonomori-heikoutosuichoku/"
+    },
+    {
+      "text": "Gourmet​ ​voco Osaka Central by IHG\"A new journey: From The Hague to Osaka,\"\"Collaboration menu with voco Hotel\"Two voco",
+      "href": "https://osaka-info.jp/en/event/voco-journey-the-hague/"
+    },
+    {
+      "text": "season​ ​Nagai Botanical GardenWhite Bin CafeA special landscape unique to this season—white creates a gentle summer.Ten",
+      "href": "https://osaka-info.jp/en/event/nagaipark-whitevinca2026/"
+    },
+    {
+      "text": "Seasonal​ ​Expo'70 Commemorative ParkExpo Summer Festival 2026The largest summer festival event in the Kansai region!!No",
+      "href": "https://osaka-info.jp/en/event/bampaku-natsumatsui2026/"
+    },
+    {
+      "text": "Seasonal​ ​Harvest Hill: 70,000 SunflowersA tiny sun blooming in a flower fieldSakai/Senboku area​ ​2026-07-22 ~ 2026-09",
+      "href": "https://osaka-info.jp/en/event/harvest-himawari/"
+    },
+    {
+      "text": "Gourmet​ ​Conrad OsakaShine Muscat x CaramelAfternoon teaThe theme is Shine Muscat grapes, which are about to come into ",
+      "href": "https://osaka-info.jp/en/event/conrad-osaka-afternoontea2026/"
+    },
+    {
+      "text": "Exhibition / Special Exhibition​ ​Sakai Alphonse Mucha MuseumSpecial Exhibition \"Mucha Art Exhibition Returns\"Come, see,",
+      "href": "https://osaka-info.jp/en/event/sakai-mucha-returns/"
+    },
+    {
+      "text": "Exhibition / Special Exhibition​ ​Osaka Nakanoshima MuseumVermeer's \"Girl with a Pearl Earring\" ExhibitionA masterpiece ",
+      "href": "https://osaka-info.jp/en/event/vermeer-osaka-nakanoshima/"
+    },
+    {
+      "text": "2026/09/17 ~ 2026/09/19 ONDO LAND RYUICHI SAKAMOTO Kita area",
+      "href": "https://osaka-info.jp/en/event/ondo-land-ryuichi-sakamoto/"
+    },
+    {
+      "text": "2026/09/15 ~ 2026/09/15 Hōda HachimanAutumn Festival Procession Southern Area",
+      "href": "https://osaka-info.jp/en/event/kondahachimangu-autumn/"
+    },
+    {
+      "text": "2026/09/25 ~ 2026/09/25 Sumiyoshi TaishaMoon Viewing Festival Tennoji / Abeno Area",
+      "href": "https://osaka-info.jp/en/event/sumiyoshitaisha-kangetsusai/"
+    },
+    {
+      "text": "2026/09/04 ~ 2026/09/25 WEEEKEND SELECTERS Minami Area",
+      "href": "https://osaka-info.jp/en/event/weekend-selecters/"
+    },
+    {
+      "text": "2026/07/18 ~ 2026/09/08 Inside Hirakata ParkThe Terrifying Labyrinth: The Awakening of the Supernatural - Sadako Special",
+      "href": "https://osaka-info.jp/en/event/senritsuxr-hirakatapark/"
+    },
+    {
+      "text": "2026/07/13 ~ 2026/09/06 \"The Little Things You Understand Exhibition 2\" + \"The Too Small Exhibition\" Nakanoshima, Yodoya",
+      "href": "https://osaka-info.jp/en/event/biwakaru2-tiisasugiru/"
+    },
+    {
+      "text": "2026/08/01 ~ 2026/11/30 Join Mozuyan on a stamp rally to explore Osaka's best spots!",
+      "href": "https://osaka-info.jp/en/event/mozuyan-stamprally/"
+    },
+    {
+      "text": "2026/07/18 ~ 2026/09/27 Hirakata Park Event HallAll Super Sentai Exhibition Eastern Area",
+      "href": "https://osaka-info.jp/en/event/hirakatapark-supersentai/"
+    },
+    {
+      "text": "all",
+      "href": "https://osaka-info.jp/en/event/?search="
+    },
+    {
+      "text": "Seasonal Experiences and Places to Visit",
+      "href": "https://osaka-info.jp/en/event/?search=&label=season"
+    },
+    {
+      "text": "traditional events",
+      "href": "https://osaka-info.jp/en/event/?search=&label=traditional"
+    },
+    {
+      "text": "Gourmet",
+      "href": "https://osaka-info.jp/en/event/?search=&label=gourmet"
+    },
+    {
+      "text": "Exhibitions/Special Openings",
+      "href": "https://osaka-info.jp/en/event/?search=&label=exhibition"
+    },
+    {
+      "text": "Sports",
+      "href": "https://osaka-info.jp/en/event/?search=&label=sport"
+    },
+    {
+      "text": "OtherLocal Events",
+      "href": "https://osaka-info.jp/en/event/?search=&label=about-event"
+    },
+    {
+      "text": "Previous month",
+      "href": "https://osaka-info.jp/en/event/?search=&month=2026-08&label=&location="
+    },
+    {
+      "text": "next month",
+      "href": "https://osaka-info.jp/en/event/?search=&month=2026-10&label=&location="
+    }
+  ],
+  "chosen_event_url": "https://osaka-info.jp/en/event/",
+  "json_endpoints": [
+    {
+      "url": "https://data.wovn.io/domain/options/HWML9Z?v=7b1f36fe&host=osaka-info.jp",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "audit_strategy": "square",
+        "auto_hide_widget": false,
+        "cookie_domain_preference": null,
+        "custom_colors": null,
+        "embedded_widget": false,
+        "embedded_widget_custom_css": null,
+        "embedded_widget_insertion_behavior": null,
+        "embedded_widget_selector": null,
+        "force_reload": false,
+        "generic_lang_word": "Language",
+        "hide_logo": false,
+        "js_data_suppress_406_error": false,
+        "lang_path": null,
+        "machine_translated_modal_content": {},
+        "mobile_position": "bottom_right",
+        "position": "bottom_right",
+        "secondary_language": null,
+        "show_machine_translated_modal": false,
+        "show_tbm": false,
+        "style": "default default",
+        "type": "auto",
+        "use_generic_lang_word": false,
+        "use_query_string": false,
+        "id": "69041cda4dfb592aeb61d149",
+        "dynamic_loading": true,
+        "parcel_forwarding": null,
+        "not_found_unpublish": false,
+        "disable_wap": false,
+        "translate_css_background_images": false,
+        "translate_css_background_images_scope": [],
+        "dynamic_values": true,
+        "excluded_urls": [],
+        "excluded_paths": [
+          "/special/coolosaka/"
+        ],
+        "included_paths": [
+          "/news/",
+          "/event/",
+          "/spot/",
+          "/special/",
+          "... +9 more"
+        ],
+        "host_aliases": [
+          "^osaka\\-info\\.jp$",
+          "^dev\\.osaka\\-info\\.jp$"
+        ],
+        "raw_host_aliases": [
+          "osaka-info.jp",
+          "dev.osaka-info.jp"
+        ],
+        "excluded_content": [
+          {
+            "selector": "code",
+            "target": "All"
+          },
+          {
+            "selector": ".ita-ppe-box",
+            "target": "All"
+          },
+          {
+            "selector": ".ita-kd-inputtools-div",
+            "target": "All"
+          },
+          {
+            "selector": ".goog-container",
+            "target": "All"
+          },
+          "... +36 more"
+        ],
+        "included_content": [],
+        "custom_attributes": null,
+        "custom_block_tags": [
+          "button",
+          "option",
+          "input",
+          "code"
+        ]
+      }
+    },
+    {
+      "url": "https://data.wovn.io/js_data/json/1/HWML9Z/?v=7b1f36fe&u=https%3A%2F%2Fosaka-info.jp%2Fevent%2F&browser_url=https%3A%2F%2Fosaka-info.jp%2Fen%2Fevent%2F&page_status_code=200",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "id": "6925129c82a56e994a1f2883",
+        "name": null,
+        "page_id": "6925129c82a56e994a1f2883",
+        "language": "ja",
+        "source_langs": [
+          {
+            "name": "日本語",
+            "tag": {
+              "language": "ja"
+            },
+            "code": "ja",
+            "en": "Japanese",
+            "use_word_boundary": false,
+            "script_direction": "ltr",
+            "unit_type": "character",
+            "candidates": [
+              "ja"
+            ]
+          }
+        ],
+        "convert_langs": [
+          {
+            "name": "日本語",
+            "tag": {
+              "language": "ja"
+            },
+            "code": "ja",
+            "en": "Japanese",
+            "use_word_boundary": false,
+            "script_direction": "ltr",
+            "unit_type": "character",
+            "candidates": [
+              "ja"
+            ]
+          },
+          {
+            "name": "العربية",
+            "tag": {
+              "language": "ar"
+            },
+            "code": "ar",
+            "en": "Arabic",
+            "use_word_boundary": true,
+            "script_direction": "rtl",
+            "unit_type": "word",
+            "candidates": [
+              "ar"
+            ]
+          },
+          {
+            "name": "English",
+            "tag": {
+              "language": "en"
+            },
+            "code": "en",
+            "en": "English",
+            "use_word_boundary": true,
+            "script_direction": "ltr",
+            "unit_type": "word",
+            "candidates": [
+              "en"
+            ]
+          },
+          {
+            "name": "Español",
+            "tag": {
+              "language": "es"
+            },
+            "code": "es",
+            "en": "Spanish",
+            "use_word_boundary": true,
+            "script_direction": "ltr",
+            "unit_type": "word",
+            "candidates": [
+              "es"
+            ]
+          },
+          "... +6 more"
+        ],
+        "published_langs": [
+          "ar",
+          "en",
+          "es",
+          "fr",
+          "... +5 more"
+        ],
+        "written_langs": [
+          "ar",
+          "en",
+          "es",
+          "fr",
+          "... +5 more"
+        ],
+        "processing": true,
+        "manual_published_time": 1771209988,
+        "page_css": "",
+        "page_css_hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "page_js": "",
+        "is_exceed_machine_translation_limit": false,
+        "link_translations": {},
+        "dynamic_values": null,
+        "excluded_content": [],
+        "included_content": [],
+        "text_vals": {
+          "大阪観光局オフィシャルサイト OSAKA INFO": {
+            "ar": [
+              {
+                "data": "الموقع الرسمي مكتب أوساكا للمؤتمرات والسياحة معلومات عن أوساكا"
+              }
+            ],
+            "en": [
+              {
+                "data": "Osaka Convention & Tourism Bureau Official Website OSAKA INFO"
+              }
+            ],
+            "es": [
+              {
+                "data": "Sitio web oficial Oficina de Convenciones y Turismo de Osaka INFORMACIÓN DE OSAKA"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Site officiel Office du tourisme et des congrès d'Osaka OSAKA INFO"
+              }
+            ],
+            "ko": [
+              {
+                "data": "오사카관광국 공식 사이트 OSAKA INFO"
+              }
+            ],
+            "th": [
+              {
+                "data": "สำนักงานการท่องเที่ยวโอซาก้า เว็บไซต์บริษัทอย่างเป็นทางการ ข้อมูลโอซาก้า"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "大阪观光局官方网站 OSAKA INFO"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "大阪觀光局官方網站 OSAKA INFO"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "大阪觀光局官方網站 OSAKA INFO"
+              }
+            ]
+          },
+          "サステナブルガストロノミーツーリズム": {
+            "ar": [
+              {
+                "data": "السياحة الغذائية المستدامة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Sustainable Gastronomy Tourism"
+              }
+            ],
+            "es": [
+              {
+                "data": "Turismo Gastronómico Sostenible"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Tourisme gastronomique durable"
+              }
+            ],
+            "ko": [
+              {
+                "data": "지속 가능한 가스 트로노미 관광"
+              }
+            ],
+            "th": [
+              {
+                "data": "การท่องเที่ยวเชิงอาหารอย่างยั่งยืน"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "可持续宝格斯特罗诺米旅游"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "可持續寶格斯特羅諾米旅遊"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "可持續寶格斯特羅諾米旅遊"
+              }
+            ]
+          },
+          "大阪観光局e-SIM": {
+            "ar": [
+              {
+                "data": "بطاقة e-SIM مكتب أوساكا للمؤتمرات والسياحة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Osaka Convention & Tourism Bureau e-SIM"
+              }
+            ],
+            "es": [
+              {
+                "data": "Tarjeta SIM electrónica Oficina de Convenciones y Turismo de Osaka"
+              }
+            ],
+            "fr": [
+              {
+                "data": "e-SIM Office du tourisme et des congrès d'Osaka"
+              }
+            ],
+            "ko": [
+              {
+                "data": "오사카관광국 e-SIM"
+              }
+            ],
+            "th": [
+              {
+                "data": "สำนักงานการท่องเที่ยวโอซาก้า อีซิม"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "大阪观光局e-SIM"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "大阪觀光局e-SIM"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "大阪觀光局e-SIM"
+              }
+            ]
+          },
+          "大阪楽游パス": {
+            "ar": [
+              {
+                "data": "ممر أوساكا راكويو"
+              }
+            ],
+            "en": [
+              {
+                "data": "Osaka Rakuyu Pass"
+              }
+            ],
+            "es": [
+              {
+                "data": "Paso Rakuyu de Osaka"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Col d'Osaka Rakuyu"
+              }
+            ],
+            "ko": [
+              {
+                "data": "오사카 라쿠부 패스"
+              }
+            ],
+            "th": [
+              {
+                "data": "โอซาก้า ราคุยุ พาส"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "大阪乐游券"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "大阪樂遊券"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "大阪樂遊券"
+              }
+            ]
+          },
+          "三井不動産": {
+            "ar": [
+              {
+                "data": "ميتسوي فودوسان"
+              }
+            ],
+            "en": [
+              {
+                "data": "Mitsui Fudosan"
+              }
+            ],
+            "es": [
+              {
+                "data": "Mitsui Fudosan"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Mitsui Fudosan"
+              }
+            ],
+            "ko": [
+              {
+                "data": "미쓰이 부동산"
+              }
+            ],
+            "th": [
+              {
+                "data": "มิตซุย ฟุโดซัง"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "三井不动产"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "三井不動產"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "三井不動產"
+              }
+            ]
+          },
+          "阪神千代田株式会社": {
+            "ar": [
+              {
+                "data": "شركة هانشين شيودا المحدودة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Hanshin Chiyoda Co., Ltd."
+              }
+            ],
+            "es": [
+              {
+                "data": "Hanshin Chiyoda Co., Ltd."
+              }
+            ],
+            "fr": [
+              {
+                "data": "Hanshin Chiyoda Co., Ltd."
+              }
+            ],
+            "ko": [
+              {
+                "data": "한신 지요다 주식회사"
+              }
+            ],
+            "th": [
+              {
+                "data": "บริษัท ฮันชิน ชิโยดะ จำกัด"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "阪神千代田株式会社"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "阪神千代田株式會社"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "阪神千代田株式會社"
+              }
+            ]
+          },
+          "JTB法人サービス": {
+            "ar": [
+              {
+                "data": "خدمات الشركات JTB"
+              }
+            ],
+            "en": [
+              {
+                "data": "JTB Corporate Services"
+              }
+            ],
+            "es": [
+              {
+                "data": "Servicios corporativos de JTB"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Services aux entreprises JTB"
+              }
+            ],
+            "ko": [
+              {
+                "data": "JTB 법인 서비스"
+              }
+            ],
+            "th": [
+              {
+                "data": "บริการองค์กรของเจทีบี"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "JTB公司服务"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "JTB公司服務"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "JTB公司服務"
+              }
+            ]
+          },
+          "NTT西日本": {
+            "ar": [
+              {
+                "data": "إن تي تي غرب اليابان"
+              }
+            ],
+            "en": [
+              {
+                "data": "NTT West Japan"
+              }
+            ],
+            "es": [
+              {
+                "data": "NTT Oeste de Japón"
+              }
+            ],
+            "fr": [
+              {
+                "data": "NTT Ouest Japon"
+              }
+            ],
+            "ko": [
+              {
+                "data": "NTT 서일본"
+              }
+            ],
+            "th": [
+              {
+                "data": "เอ็นทีที เวสต์ เจแปน"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "日本电信电话西日本"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "NTT西日本"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "NTT西日本"
+              }
+            ]
+          },
+          "サラヤ株式会社": {
+            "ar": [
+              {
+                "data": "شركة سرايا المحدودة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Saraya Co., Ltd."
+              }
+            ],
+            "es": [
+              {
+                "data": "Compañía Saraya, Ltd."
+              }
+            ],
+            "fr": [
+              {
+                "data": "Saraya Co., Ltd."
+              }
+            ],
+            "ko": [
+              {
+                "data": "사라야 주식회사"
+              }
+            ],
+            "th": [
+              {
+                "data": "บริษัท สารายา จำกัด"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "莎拉雅株式会社"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "莎拉雅株式會社"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "莎拉雅株式會社"
+              }
+            ]
+          },
+          "ヒトコミュニケーションズ": {
+            "ar": [
+              {
+                "data": "هيتو للاتصالات"
+              }
+            ],
+            "en": [
+              {
+                "data": "Hito Communications"
+              }
+            ],
+            "es": [
+              {
+                "data": "Comunicaciones Hito"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Hito Communications"
+              }
+            ],
+            "ko": [
+              {
+                "data": "인간 커뮤니케이션즈"
+              }
+            ],
+            "th": [
+              {
+                "data": "ฮิโตะ คอมมิวนิเคชั่นส์"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "人类通信"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "人類通信"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "人類通信"
+              }
+            ]
+          },
+          "インタセクト": {
+            "ar": [
+              {
+                "data": "تتقاطع"
+              }
+            ],
+            "en": [
+              {
+                "data": "Intersect"
+              }
+            ],
+            "es": [
+              {
+                "data": "Intersecarse"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Couper"
+              }
+            ],
+            "ko": [
+              {
+                "data": "인터섹트"
+              }
+            ],
+            "th": [
+              {
+                "data": "ตัด"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "交叉"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "交叉"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "交叉"
+              }
+            ]
+          },
+          "千寿製薬株式会社": {
+            "ar": [
+              {
+                "data": "شركة سنجو الدوائية المحدودة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Senju Pharmaceutical Co., Ltd."
+              }
+            ],
+            "es": [
+              {
+                "data": "Senju Pharmaceutical Co., Ltd."
+              }
+            ],
+            "fr": [
+              {
+                "data": "Senju Pharmaceutical Co., Ltd."
+              }
+            ],
+            "ko": [
+              {
+                "data": "천수제약 주식회사"
+              }
+            ],
+            "th": [
+              {
+                "data": "บริษัท เซนจู ฟาร์มาซูติคอล จำกัด"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "千寿制药株式会社"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "千壽制藥株式會社"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "千壽制藥株式會社"
+              }
+            ]
+          },
+          "LIFECARDライフカード": {
+            "ar": [
+              {
+                "data": "بطاقة الحياة"
+              }
+            ],
+            "en": [
+              {
+                "data": "LIFECARD"
+              }
+            ],
+            "es": [
+              {
+                "data": "TARJETA DE VIDA"
+              }
+            ],
+            "fr": [
+              {
+                "data": "CARTE DE VIE"
+              }
+            ],
+            "ko": [
+              {
+                "data": "LIFECARD 라이프 카드"
+              }
+            ],
+            "th": [
+              {
+                "data": "ไลฟ์การ์ด"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "LIFECARD生活卡"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "LIFECARD生活卡"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "LIFECARD生活卡"
+              }
+            ]
+          },
+          "OSAKA-INFO": {
+            "ar": [
+              {
+                "data": "أوساكا-إنفو"
+              }
+            ],
+            "en": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ],
+            "es": [
+              {
+                "data": "INFORMACIÓN DE OSAKA"
+              }
+            ],
+            "fr": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ],
+            "ko": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ],
+            "th": [
+              {
+                "data": "ข้อมูลโอซาก้า"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "OSAKA-INFO"
+              }
+            ]
+          },
+          "検索ボックスをクリア": {
+            "ar": [
+              {
+                "data": "مسح مربع البحث"
+              }
+            ],
+            "en": [
+              {
+                "data": "Clear the search box\n(Front desk 7:30 a.m. - 9:00 p.m. / Check-in 3:00 p.m. - 6:00 p.m.)"
+              }
+            ],
+            "es": [
+              {
+                "data": "Limpiar el cuadro de búsqueda"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Effacer le champ de recherche"
+              }
+            ],
+            "ko": [
+              {
+                "data": "검색창 지우기"
+              }
+            ],
+            "th": [
+              {
+                "data": "ล้างช่องค้นหา"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "清除搜索框"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "清除搜索框"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "清除搜索框"
+              }
+            ]
+          },
+          "近代絵画史に残る革新の系譜。": {
+            "ar": [
+              {
+                "data": "سلسلة من الابتكارات التي لا تزال قائمة في تاريخ الرسم الحديث."
+              }
+            ],
+            "en": [
+              {
+                "data": "A lineage of innovation that remains in the history of modern painting."
+              }
+            ],
+            "es": [
+              {
+                "data": "Un linaje de innovación que permanece en la historia de la pintura moderna."
+              }
+            ],
+            "fr": [
+              {
+                "data": "Une lignée d'innovations qui perdure dans l'histoire de la peinture moderne."
+              }
+            ],
+            "ko": [
+              {
+                "data": "근대 회화사에 남는 혁신의 계보."
+              }
+            ],
+            "th": [
+              {
+                "data": "สายธารแห่งนวัตกรรมที่ยังคงสืบทอดอยู่ในประวัติศาสตร์ของจิตรกรรมสมัยใหม่"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "留在近代绘画史上的革新的系谱。"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "留在近代繪畫史上的革新的係譜。"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "留在近代繪畫史上的革新的係譜。"
+              }
+            ]
+          },
+          "企業ロゴ": {
+            "ar": [
+              {
+                "data": "شعار الشركة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Company logo"
+              }
+            ],
+            "es": [
+              {
+                "data": "Logotipo de la empresa"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Logo de l'entreprise"
+              }
+            ],
+            "ko": [
+              {
+                "data": "기업 로고"
+              }
+            ],
+            "th": [
+              {
+                "data": "โลโก้บริษัท"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "公司徽标"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "公司徽標"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "公司徽標"
+              }
+            ]
+          },
+          "Google 提供": {
+            "ar": [
+              {
+                "data": "مقدمة من جوجل"
+              }
+            ],
+            "en": [
+              {
+                "data": "Provided by Google"
+              }
+            ],
+            "es": [
+              {
+                "data": "Proporcionado por Google"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Fourni par Google"
+              }
+            ],
+            "ko": [
+              {
+                "data": "Google 제공"
+              }
+            ],
+            "th": [
+              {
+                "data": "จัดทำโดย Google"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "谷歌提供"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "穀歌提供"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "穀歌提供"
+              }
+            ]
+          },
+          "大阪で開催される最新イベント情報をチェック！お祭りや伝統行事、グルメ、展覧会、スポーツなど、大阪観光を彩る旬な情報が満載です。月別スケジュールやカテゴリでの検索も可能。旅行の計画に役立つ大阪公式観光情報をお届けします。": {
+            "ar": [
+              {
+                "data": "اطلع على أحدث المعلومات حول الفعاليات في أوساكا! ستجد هنا معلومات قيّمة تُثري تجربتك السياحية في أوساكا، بما في ذلك المهرجانات والفعاليات التقليدية والمطاعم الفاخرة والمعارض وال..."
+              }
+            ],
+            "en": [
+              {
+                "data": "Check out the latest event information in Osaka! Packed with timely information to enhance your Osaka sightseeing experience, including festivals, traditional events, gourmet fo..."
+              }
+            ],
+            "es": [
+              {
+                "data": "¡Consulta la información más reciente sobre eventos en Osaka! Encontrarás información actualizada para enriquecer tu experiencia turística en Osaka, incluyendo festivales, event..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "Découvrez les dernières actualités d'Osaka ! Retrouvez toutes les informations pratiques pour enrichir votre séjour à Osaka : festivals, événements traditionnels, gastronomie, e..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "오사카에서 개최되는 최신 이벤트 정보를 체크! 축제나 전통 행사, 음식, 전람회, 스포츠 등, 오사카 관광을 물들이는 제철의 정보가 가득합니다. 월별 스케줄이나 카테고리에서의 검색도 가능. 여행 계획에 도움이 되는 오사카 공식 관광 정보를 전달합니다."
+              }
+            ],
+            "th": [
+              {
+                "data": "ตรวจสอบข้อมูลกิจกรรมล่าสุดในโอซาก้า! อัดแน่นไปด้วยข้อมูลที่ทันสมัยเพื่อเพิ่มประสบการณ์การท่องเที่ยวโอซาก้าของคุณ ไม่ว่าจะเป็นเทศกาล งานประเพณี อาหารรสเลิศ นิทรรศการ และกีฬา คุณย..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "查看大阪举办的最新活动信息!满载祭祀、传统活动、美食、展览会、运动等点缀大阪观光的时令信息。也可以按月计划或类别进行搜索。为您提供有助于旅行计划的大阪官方观光信息。"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "查看大阪舉辦的最新活動信息!滿載祭祀、傳統活動、美食、展覽會、運動等點綴大阪觀光的時令信息。也可以按月計劃或類別進行搜索。為您提供有助於旅行計劃的大阪官方觀光信息。"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "查看大阪舉辦的最新活動信息!滿載祭祀、傳統活動、美食、展覽會、運動等點綴大阪觀光的時令信息。也可以按月計劃或類別進行搜索。為您提供有助於旅行計劃的大阪官方觀光信息。"
+              }
+            ]
+          },
+          "ただいま開催中のイベントはありません。 | 大阪のイベント・お祭り情報｜観光・グルメ・季節の行事一覧【OSAKA-INFO】": {
+            "ar": [
+              {
+                "data": "لا توجد فعاليات جارية حاليًا. | معلومات عن فعاليات ومهرجانات أوساكا | قائمة المعالم السياحية، والمأكولات الشهية، والفعاليات الموسمية [OSAKA-INFO]"
+              }
+            ],
+            "en": [
+              {
+                "data": "There are no events currently taking place. | Osaka Events & Festivals Information | Sightseeing, Gourmet Food & Seasonal Events List [OSAKA-INFO]"
+              }
+            ],
+            "es": [
+              {
+                "data": "Actualmente no hay eventos programados. | Información sobre eventos y festivales en Osaka | Lista de atracciones turísticas, gastronomía y eventos de temporada [OSAKA-INFO]"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Aucun événement n'est programmé pour le moment. | Informations sur les événements et festivals d'Osaka | Visites touristiques, gastronomie et événements saisonniers [OSAKA-INFO]"
+              }
+            ],
+            "ko": [
+              {
+                "data": "지금 개최중인 이벤트는 없습니다. | 오사카 이벤트 · 축제 정보 | 관광 · 음식 · 계절 행사 목록 [OSAKA-INFO]"
+              }
+            ],
+            "th": [
+              {
+                "data": "ขณะนี้ไม่มีกิจกรรมใดๆ จัดขึ้น | ข้อมูลกิจกรรมและเทศกาลในโอซาก้า | สถานที่ท่องเที่ยว อาหารรสเลิศ และกิจกรรมตามฤดูกาล [OSAKA-INFO]"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "现在没有正在举办的活动。|大阪的活动・节日信息|观光・美食・季节的活动一览表 【OSAKA-INFO】"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "現在沒有正在舉辦的活動。|大阪的活動・節慶信息|觀光・美食・季節的活動一覽表 【OSAKA-INFO】"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "現在沒有正在舉辦的活動。|大阪的活動・節慶信息|觀光・美食・季節的活動一覽表 【OSAKA-INFO】"
+              }
+            ]
+          },
+          "充レン": {
+            "ar": [
+              {
+                "data": "تكلفة"
+              }
+            ],
+            "en": [
+              {
+                "data": "Charge"
+              }
+            ],
+            "es": [
+              {
+                "data": "Cargar"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Charge"
+              }
+            ],
+            "ko": [
+              {
+                "data": "충렌"
+              }
+            ],
+            "th": [
+              {
+                "data": "ค่าใช้จ่าย"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "充硒"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "充硒"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "充硒"
+              }
+            ]
+          },
+          "※画像は過去開催の様子です。【日本初上陸】360度 没入型・音と光のスペクタクルショーが大阪へ": {
+            "ar": [
+              {
+                "data": "*الصورة تُظهر حدثًا سابقًا. [لأول مرة في اليابان] عرضٌ صوتي وضوئي غامر بزاوية 360 درجة قادم إلى أوساكا."
+              }
+            ],
+            "en": [
+              {
+                "data": "*The image shows a past event. [First time in Japan] A 360-degree immersive sound and light spectacle show is coming to Osaka."
+              }
+            ],
+            "es": [
+              {
+                "data": "*La imagen muestra un evento pasado. [Primera vez en Japón] Un espectáculo inmersivo de luz y sonido de 360 grados llega a Osaka."
+              }
+            ],
+            "fr": [
+              {
+                "data": "*L'image illustre un événement passé. [Une première au Japon] Un spectacle son et lumière immersif à 360 degrés arrive à Osaka."
+              }
+            ],
+            "ko": [
+              {
+                "data": "※화상은 과거 개최의 모습입니다. 【일본 최초 상륙】360도 몰입형・소리와 빛의 스펙터클 쇼가 오사카에"
+              }
+            ],
+            "th": [
+              {
+                "data": "*ภาพนี้แสดงเหตุการณ์ในอดีต [ครั้งแรกในญี่ปุ่น] การแสดงแสงสีเสียงแบบ 360 องศาที่สมจริงกำลังจะมาถึงโอซาก้า"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "※图像是过去举行的状态。【首次登陆日本】 360度身临其境声光奇观登陆大阪"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "* 圖片顯示過去嘅事件。 【日本首度】 360 度沉浸式聲光奇觀表演即將登陸大阪。"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "※圖像是過去舉行的狀態。【首次登陸日本】 360度身臨其境聲光奇觀登陸大阪"
+              }
+            ]
+          },
+          "©nagano ️©ナガノ / 2026「映画ちいかわ」製作委員会": {
+            "ar": [
+              {
+                "data": "©nagano ©Nagano / 2026 لجنة إنتاج \"فيلم تشيكاوا\"."
+              }
+            ],
+            "en": [
+              {
+                "data": "©nagano ©Nagano / 2026 \"Chikawa the Movie\" Production Committee"
+              }
+            ],
+            "es": [
+              {
+                "data": "©nagano ©Nagano / 2026 Comité de producción de \"Chikawa the Movie\""
+              }
+            ],
+            "fr": [
+              {
+                "data": "©nagano ©Nagano / 2026 Comité de production \"Chikawa le film\""
+              }
+            ],
+            "ko": [
+              {
+                "data": "©nagano️©나가노/2026 「영화 치이카와」제작위원회"
+              }
+            ],
+            "th": [
+              {
+                "data": "©nagano ©Nagano / 2026 คณะกรรมการสร้าง \"Chikawa the Movie\""
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "© nagano⇒©长野/2026“电影柴川”制作委员会"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "© nagano © 長野 / 2026年《千川大電影》製作委員會"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "© nagano⇒©長野/2026“電影柴川”制作委員會"
+              }
+            ]
+          },
+          "ミナミの夜の音楽カルチャーを体感！": {
+            "ar": [
+              {
+                "data": "استمتع بتجربة ثقافة الموسيقى الليلية في مينامي!"
+              }
+            ],
+            "en": [
+              {
+                "data": "Experience the nighttime music culture of Minami!"
+              }
+            ],
+            "es": [
+              {
+                "data": "¡Vive la cultura musical nocturna de Minami!"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Découvrez la culture musicale nocturne de Minami !"
+              }
+            ],
+            "ko": [
+              {
+                "data": "미나미의 밤의 음악 문화를 체감!"
+              }
+            ],
+            "th": [
+              {
+                "data": "สัมผัสวัฒนธรรมดนตรียามค่ำคืนของมินามิ!"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "感受南之夜的音乐文化!"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "體驗南嘅夜間音樂文化！"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "感受南之夜的音樂文化!"
+              }
+            ]
+          },
+          "本場ドイツ ビールの祭典緑溢れる「てんしば」で乾杯(プロースト)や！": {
+            "ar": [
+              {
+                "data": "نخب (Prost) في مهرجان البيرة الألماني الأصيل في \"تينشيبا\" الخضراء المورقة!"
+              }
+            ],
+            "en": [
+              {
+                "data": "A toast (Prost) at the authentic German beer festival in the lush green \"Tenshiba\"!"
+              }
+            ],
+            "es": [
+              {
+                "data": "¡Un brindis (Prost) en el auténtico festival de cerveza alemán en el exuberante y verde \"Tenshiba\"!"
+              }
+            ],
+            "fr": [
+              {
+                "data": "Un toast (Prost) à l'authentique festival de la bière allemande dans le cadre verdoyant de \"Tenshiba\" !"
+              }
+            ],
+            "ko": [
+              {
+                "data": "본고장 독일 맥주의 축하 초록 넘치는 「텐시바」로 건배(프로스트)나!"
+              }
+            ],
+            "th": [
+              {
+                "data": "ดื่มฉลอง (Prost) ในงานเทศกาลเบียร์เยอรมันแท้ๆ ท่ามกลางสวนเขียวชอุ่ม \"เท็นชิบะ\"!"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "正宗的德国啤酒盛典用绿意盎然的“天柴”干杯 (普罗斯特) !"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "喺綠意盎然嘅「天芝」中，喺正宗嘅德國啤酒節上多士（ Prost ）！"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "正宗的德國啤酒盛典用綠意盎然的“天柴”幹杯 (普羅斯特) !"
+              }
+            ]
+          }
+        },
+        "html_text_vals": {
+          "<a>法人・団体・メディアの方へ</a>": {
+            "ar": [
+              {
+                "data": "<a>للشركات والمؤسسات ووسائل الإعلام</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>For corporations, organizations, and media</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Para corporaciones, organizaciones y medios</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Pour les entreprises, les organisations et les médias</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>법인·단체·미디어로</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>สำหรับองค์กร องค์กร และสื่อต่างๆ</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>对于企业、组织和媒体</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>對於企業、組織和媒體</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>對於企業、組織和媒體</a>"
+              }
+            ]
+          },
+          "<a>国内修学旅行関係者の方へ</a>": {
+            "ar": [
+              {
+                "data": "<a>للمشتركين في الرحلات المدرسية الداخلية</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>For those involved in domestic school trips</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Para aquellos involucrados en viajes escolares nacionales.</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Pour ceux qui participent à des voyages scolaires nationaux</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>국내 수학 여행 관계자에게</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>สำหรับการเดินทางเพื่อการศึกษา</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>对于那些参加国内学校旅行的人</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>對於那些參加國內學校旅行的人</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>對於那些參加國內學校旅行的人</a>"
+              }
+            ]
+          },
+          "<a>MICE開催をご検討の方へ</a>": {
+            "ar": [
+              {
+                "data": "<a>لأولئك الذين يفكرون في عقد MICE</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>For Meetings &amp; Events</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Para aquellos que estén　 considerando tener MICE</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Pour ceux qui envisagent d’organiser un MICE</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>MICE 개최를 검토하시는 분께</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>สำหรับผู้ที่คิดจะถือ MICE</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>对于那些考虑举办会奖旅游的人</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>對於那些考慮舉辦會獎旅遊的人</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>對於那些考慮舉辦會獎旅遊的人</a>"
+              }
+            ]
+          },
+          "<a><span>大阪</span>まるわかり</a>": {
+            "ar": [
+              {
+                "data": "<a>كل شيء عن <span>أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>About<span> Osaka</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Todo sobre <span>Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Tout sur <span>Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>오사카 소개</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>เกี่ยวกับโอซาก้า<span></span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>关于大阪</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>關於</span>大阪</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>關於大阪</span></a>"
+              }
+            ]
+          },
+          "<span>大阪の基本</span></a>": {
+            "ar": [
+              {
+                "data": "<span>أساسيات أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka Basics</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Conceptos básicos de Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Bases d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>기본</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ข้อมูลหลัก</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>基本</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪概要</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>基本</span></a>"
+              }
+            ]
+          },
+          "<span>大阪の食文化</span></a>": {
+            "ar": [
+              {
+                "data": "<span>ثقافة الطعام في أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka’s Food Culture</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>La cultura gastronómica de Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>La culture culinaire d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>식문화</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>วัฒนธรรมอาหาร</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>饮食文化</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪的飲食文化</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>飲食文化</span></a>"
+              }
+            ]
+          },
+          "<span>大阪のスポーツ</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الرياضة في أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka’s Sports</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Deportes en Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Le sport à Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>스포츠</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>กีฬา</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>运动</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪的體育</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>運動</span></a>"
+              }
+            ]
+          },
+          "<span>大阪発ポップカルチャー</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الثقافة الشعبية من أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Pop Culture in Osaka</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Cultura pop de Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>La culture pop d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카의 대중문화</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>วัฒนธรรมป๊อปในโอซาก้า</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>流行文化</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪流行文化</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪流行文化</span></a>"
+              }
+            ]
+          },
+          "<span>観光大使</span></a>": {
+            "ar": [
+              {
+                "data": "<span>سفير السياحة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Tourism Ambassador</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Embajador de Turismo</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Ambassadeur du tourisme</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>관광 대사</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ทูตการท่องเที่ยว</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>旅游大使</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>旅遊大使</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>旅遊大使</span></a>"
+              }
+            ]
+          },
+          "<a>イベント</a>": {
+            "ar": [
+              {
+                "data": "<a>حدث</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>Event</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>evento</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>événement</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>이벤트</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>เหตุการณ์</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>庆典活动</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>慶典活動</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>慶典活動</a>"
+              }
+            ]
+          },
+          "<a>モデルコース</a>": {
+            "ar": [
+              {
+                "data": "<a>نموذج خط سير الرحلة</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>Itineraries</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Itinerario modelo</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Itinéraire type</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>일정</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>กำหนดการเดินทาง</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>推荐行程</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>推薦行程</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>推薦行程</a>"
+              }
+            ]
+          },
+          "<span>ビギナー向け</span></a>": {
+            "ar": [
+              {
+                "data": "<span>للمبتدئين</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>FOR BEGINNERS</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Para principiantes</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Pour les débutants</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>초심자 대상</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>สำหรับนักเดินทางมือใหม่</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>适合初次访问者</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>適合初次訪問者</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>適合初次訪問者</span></a>"
+              }
+            ]
+          },
+          "<span>世界遺産・百舌鳥古市古墳コース</span></a>": {
+            "ar": [
+              {
+                "data": "<span>موقع التراث العالمي موزو فورويتشي كوفون</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>World Heritage Mozu–Furuichi Kofun Course</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Curso Mozu-Furuichi Kofun, Patrimonio de la Humanidad</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Cours Mozu-Furuichi Kofun, site du patrimoine mondial</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>세계 유산·백설 토리코시 고분 코스</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>มรดกโลก Mozu-Furuichi Kofun Course</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>世界遗产百舌鸟古市古坟路线</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>世界遺產・百舌鳥古市古墳路線</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>世界遺產・百舌鳥古市古墳路線</span></a>"
+              }
+            ]
+          },
+          "<span>建築・アートを楽しむ</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الاستمتاع بالهندسة المعمارية والفن</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Enjoy Construction / Art</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Disfrutando de la arquitectura y el arte</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>J&#39;apprécie l&#39;architecture et l&#39;art</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>건축, 아트를 즐긴다</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>เพลิดเพลินกับสถาปัตยกรรม・ศิลปะ</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>轻松愉快欣赏建筑﹑艺术</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>輕鬆愉快欣賞建築﹑藝術</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>輕鬆愉快欣賞建築﹑藝術</span></a>"
+              }
+            ]
+          },
+          "<span>歴史を探索！</span></a>": {
+            "ar": [
+              {
+                "data": "<span>اكتشف التاريخ!</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Historical Tour</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>¡Explora la historia!</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Explorez l&#39;histoire !</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>역사를 탐방!</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>สำรวจประวัติศาสตร์!</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>探索歷史！</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>探索历史！</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>探索历史！</span></a>"
+              }
+            ]
+          },
+          "<span>自然・景観を楽しむ</span></a>": {
+            "ar": [
+              {
+                "data": "<span>استمتع بالطبيعة والمناظر الطبيعية</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Enjoy nature and landscape</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Disfruta de la naturaleza y el paisaje.</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Profitez de la nature et des paysages</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>자연 경관을 즐길</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>เพลิดเพลินกับธรรมชาติและภูมิทัศน์</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>享受自然和风景</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>享受自然和風景</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>享受自然和風景</span></a>"
+              }
+            ]
+          },
+          "<span>電車/車の旅</span></a>": {
+            "ar": [
+              {
+                "data": "<span>السفر بالقطار/السيارة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Journey on trains</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Viajes en tren/coche</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Voyage en train/voiture</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>전철 여행</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ท่องเที่ยวด้วยรถไฟ</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>电车之旅</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>電車之旅</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>電車之旅</span></a>"
+              }
+            ]
+          },
+          "<a><span>観光</span>スポット・体験</a>": {
+            "ar": [
+              {
+                "data": "<a>الأماكن والتجارب <span>السياحية</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Tourist</span>Attractions and Experiences</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Lugares y experiencias <span>turísticas</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Lieux et expériences <span>touristiques</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>관광 명소와 체험</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>สถานที่ท่องเที่ยวและประสบการณ์</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>景点和体验</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>旅遊</span>景點/體驗</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>旅遊</span>景點/體驗</a>"
+              }
+            ]
+          },
+          "<span>レジャー・スポーツ</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الترفيه والرياضة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Leisure / sports</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Ocio y Deportes</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Loisirs et sports</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>레저와 스포츠</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>สันทนาการ / กีฬา</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>休闲、运动</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>閒暇、運動的</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>休閒、運動</span></a>"
+              }
+            ]
+          },
+          "<span>グルメ</span></a>": {
+            "ar": [
+              {
+                "data": "<span>ذوّاق</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Gourmet</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Gastrónomo</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Gourmet</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>식도락가</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>นักกินและดื่ม</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>美食</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>美食</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>美食</span></a>"
+              }
+            ]
+          },
+          "<span>体験</span></a>": {
+            "ar": [
+              {
+                "data": "<span>خبرة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Experience</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Experiencia</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Expérience</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>체험</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>สัมผัสประสบการณ์</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>体验</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>經驗</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>體驗</span></a>"
+              }
+            ]
+          },
+          "<span>ショッピング</span></a>": {
+            "ar": [
+              {
+                "data": "<span>التسوق</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Shopping</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>compras</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>achats</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>쇼핑</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ช้อปปิ้ง</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>购物</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>購物</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>購物</span></a>"
+              }
+            ]
+          },
+          "<span>自然・風景</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الطبيعة/المناظر الطبيعية</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Nature / landscape</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>naturaleza/paisaje</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>nature/paysage</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>자연과 풍경</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ธรรมชาติ / ทิวทัศน์</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>自然、风景</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>自然</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>自然、風景</span></a>"
+              }
+            ]
+          },
+          "<span>アート</span></a>": {
+            "ar": [
+              {
+                "data": "<span>فن</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Art</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>arte</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>art</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>미술</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ศิลปะ</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>艺术</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>藝術</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>藝術</span></a>"
+              }
+            ]
+          },
+          "<span>歴史・文化</span></a>": {
+            "ar": [
+              {
+                "data": "<span>التاريخ والثقافة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>History / culture</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Historia y cultura</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Histoire et culture</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>역사 및 문화</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ประวัติศาสตร์และวัฒนธรรม</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>历史、文化</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>歷史、文化</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>歷史、文化</span></a>"
+              }
+            ]
+          },
+          "<span>季節</span></a>": {
+            "ar": [
+              {
+                "data": "<span>موسم</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Seasonal Experiences and Places to Visit</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>estación</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>saison</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>계절 체험과 가볼만한 곳</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ประสบการณ์ตามฤดูกาลและสถานที่ท่องเที่ยว</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>四季</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>四季</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>四季</span></a>"
+              }
+            ]
+          },
+          "<a>グルメ</a>": {
+            "ar": [
+              {
+                "data": "<a>مأكولات فاخرة</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>Gourmet</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Gastrónomo</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Gourmet</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>식도락가</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>นักกินและดื่ม</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>美食</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>美食</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>美食</a>"
+              }
+            ]
+          },
+          "<span>大阪ローカル料理</span></a>": {
+            "ar": [
+              {
+                "data": "<span>المطبخ المحلي في أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka local cuisine</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Cocina local de Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>cuisine locale d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카 현지 요리</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>อาหารท้องถิ่นโอซาก้า</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>大阪当地料理</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪當地料理</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪當地料理</span></a>"
+              }
+            ]
+          },
+          "<span>大阪の食魅力・食材</span></a>": {
+            "ar": [
+              {
+                "data": "<span>معالم الجذب السياحي والمكونات الغذائية في أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka&#39;s Food Attractions and Ingredients</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Atracciones e ingredientes gastronómicos de Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Attractions et ingrédients culinaires d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카의 음식 매력・식재료</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>แหล่งท่องเที่ยวและวัตถุดิบด้านอาหารของโอซาก้า</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>大阪的饮食魅力·食材</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪的飲食魅力·食材</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪的飲食魅力·食材</span></a>"
+              }
+            ]
+          },
+          "<span>大阪の食を楽しむ！</span></a>": {
+            "ar": [
+              {
+                "data": "<span>استمتع بمأكولات أوساكا!</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Enjoy Osaka cuisine!</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>¡Disfruta de la cocina de Osaka!</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Savourez la cuisine d&#39;Osaka !</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카의 음식을 즐긴다!</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>เพลิดเพลินกับอาหารโอซาก้า!</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>品尝大阪美食!</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>品嘗大阪美食!</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>品嘗大阪美食!</span></a>"
+              }
+            ]
+          },
+          "<a>特集</a>": {
+            "ar": [
+              {
+                "data": "<a>مميز</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>Featured</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Presentado</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>En vedette</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>추천</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>จุดเด่น</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>特点</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>特點</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>特點</a>"
+              }
+            ]
+          },
+          "<span>大阪のものづくり</span></a>": {
+            "ar": [
+              {
+                "data": "<span>تصنيع أوساكا</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka manufacturing</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Fabricación en Osaka</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Fabrication d&#39;Osaka</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카 제조</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>การผลิตของโอซาก้า</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>大阪制造</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪製造</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪製造</span></a>"
+              }
+            ]
+          },
+          "<span>おすすめ 映えスポット</span></a>": {
+            "ar": [
+              {
+                "data": "<span>الأماكن الموصى بها للتصوير الفوتوغرافي</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Recommended shining spots</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Lugares fotogénicos recomendados</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Endroits photogéniques recommandés</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>추천 돋보 명소</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>จุดแนะนำ</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>推荐景点</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>推薦景點</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>推薦景點</span></a>"
+              }
+            ]
+          },
+          "<span>発見！</span></a>": {
+            "ar": [
+              {
+                "data": "<span>اكتشاف!</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Discover！</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>¡descubrimiento!</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>découverte!</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>발견！!</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ค้นพบ！</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>发现！</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>發現！</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>發現！</span></a>"
+              }
+            ]
+          },
+          "<a>お役立ち情報</a>": {
+            "ar": [
+              {
+                "data": "<a>معلومات مفيدة</a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a>Information</a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a>Información útil</a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a>Informations utiles</a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a>정보</a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a>ข้อมูล</a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a>有用的旅游信息</a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a>有用的旅遊信息</a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a>有用的旅遊信息</a>"
+              }
+            ]
+          },
+          "<a><span>Q&amp;A</span></a>": {
+            "ar": [
+              {
+                "data": "<a><span>الأسئلة والأجوبة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Frequently Asked Questions</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a><span>Preguntas y respuestas</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a><span>Questions et réponses</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>자주 묻는 질문</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>คำถามที่พบบ่อย</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>经常问的问题</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>經常問的問題</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>經常問的問題</span></a>"
+              }
+            ]
+          },
+          "<a><span>お得なチケット</span></a>": {
+            "ar": [
+              {
+                "data": "<a><span>تذاكر مخفضة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Travel Passes</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a><span>Entradas con descuento</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a><span>Billets à prix réduit</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>여행 패스</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>ตั๋วสุดคุ้ม</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>优惠票</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>優惠票</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>優惠票</span></a>"
+              }
+            ]
+          },
+          "<a><span>観光で訪れる皆さんへ</span></a>": {
+            "ar": [
+              {
+                "data": "<a><span>الى جميع الزوار</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Tourist Information</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a><span>A todos los visitantes</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a><span>À tous les visiteurs</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>관광 정보</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>ข้อมูลท่องเที่ยว</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>致观光来访的各位</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>致觀光來訪的各位</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>致觀光來訪的各位</span></a>"
+              }
+            ]
+          },
+          "<a><span>観光案内所</span></a>": {
+            "ar": [
+              {
+                "data": "<a><span>مركز المعلومات السياحية</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Tourist Information Center</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a><span>Centro de información turística</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a><span>Centre d&#39;information touristique</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>관광안내소</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>ศูนย์ข้อมูลนักท่องเที่ยว</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>旅游服务中心</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>旅遊服務中心</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>旅遊服務中心</span></a>"
+              }
+            ]
+          },
+          "<a><span>便利情報</span></a>": {
+            "ar": [
+              {
+                "data": "<a><span>معلومات مفيدة</span></a>"
+              }
+            ],
+            "en": [
+              {
+                "data": "<a><span>Useful Information</span></a>"
+              }
+            ],
+            "es": [
+              {
+                "data": "<a><span>Información útil</span></a>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "<a><span>Informations utiles</span></a>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "<a><span>유용한 정보</span></a>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<a><span>ข้อมูลที่เป็นประโยชน์</span></a>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<a><span>有用信息</span></a>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<a><span>有用信息</span></a>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<a><span>有用信息</span></a>"
+              }
+            ]
+          }
+        },
+        "page_text_vals": {},
+        "img_vals": {
+          "https://osaka-info.jp/common/img/ba_deep_jp.png": {
+            "en": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/en/164495d92ee13055270e4f1903872a68/osakainfo_bnr_en.jpg"
+              }
+            ],
+            "ko": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/ko/630c42f522fa90758e9062a5bc2e0895/osakainfo_bnr_ko.jpg"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-CHS/808854111c29f676592462bf4e1dc4bc/osakainfo_bnr_cn.jpg"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-Hant-TW/13a32bb70c3215581a096e8284e71065/osakainfo_bnr_tw.jpg"
+              }
+            ],
+            "th": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/th/c82c9c7d7efead82ee3a46d0f4e8a664/osakainfo_bnr_en.jpg"
+              }
+            ],
+            "ar": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/ar/313fb97c17b355dc654ebf24bec6c3e8/osakainfo_bnr_en.jpg"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-Hant-HK/85b5a490aa9b36dc14e4a24950e74084/osakainfo_bnr_tw.jpg"
+              }
+            ],
+            "es": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/es/be6e9d2515b5185d83e333578c82a7f8/osakainfo_bnr_en.jpg"
+              }
+            ],
+            "fr": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/fr/b4aba189e377327ed80551732bc7e3a4/osakainfo_bnr_en.jpg"
+              }
+            ]
+          },
+          "https://osaka-info.jp/common/img/osakainfo_bnr_jp.jpg": {
+            "en": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/en/99862c646fe23004d17650c14f30bf0c/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ],
+            "ko": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/ko/6fb1efa01dc405d59a38741017dd4393/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ],
+            "th": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/th/9b779fa9fafafc214feaae420726c2c9/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-CHS/90a238ce6d8f2b22c7b40f49d2ec3bb8/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-Hant-HK/5b3a0d56f11e30c2662c6eb35f8e62d3/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "https://data.wovn.io/ImageValue/production/69041cda4dfb592aeb61d149/zh-Hant-TW/402494cec23746e57f3a4ae35cbd43f2/%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg"
+              }
+            ]
+          }
+        },
+        "pattern_vals": {},
+        "prop_vals": {},
+        "removed_text_vals": []
+      }
+    },
+    {
+      "url": "https://osaka-info.jp/en/event/article.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "items": [
+          {
+            "id": 11332,
+            "url": "https://osaka-info.jp/event/tennojizoo-nightzoo2026/",
+            "thumbnail": "https://osaka-info.jp/event/assets_c/2026/08/4edd86dd5320a8a99e5aa1467d6ebcf3f3f9d621-thumb-500xauto-12689.jpg",
+            "heading": "夜になると、動き出す。写真提供：天王寺動物園",
+            "title": "天王寺動物園 2026ナイトZOO",
+            "modifiedDate": "2026-09-04",
+            "eventStartDate": "2026-09-19",
+            "eventEndDate": "2026-10-25",
+            "label": "",
+            "ja_published": 1,
+            "ja_label": "",
+            "area": "天王寺・阿倍野エリア",
+            "prices": "【大人】800円\n【小中学生】200円\n※未就学児、大阪市内在住・在学、大阪市立(市外含む)の学校に在学する小中学生(要証明書提示)、\n大阪市内在住の65歳以上の方(要証明書提示)、障がい者手帳等をお持ちの方(要証明書提示)無料",
+            "transport": "【電車でお越しの方】\n～新世界ゲート～\n■Osaka Metro「動物園前駅」、Osaka Metro「恵美須町駅」、JR「新今宮駅」、南海「新今宮駅」の各駅から徒歩5分～10分 (エレベーター使用時は10分～15分)\n～てんしばゲート～\n■Osaka Metro「天王寺駅」、JR「天王寺駅」、近鉄南大阪線「大阪阿部野橋駅」の各駅から徒歩5分～10分 ...",
+            "address": "大阪市天王寺区茶臼山町1-108",
+            "en_published": 0,
+            "cn_published": 0,
+            "tw_published": 0,
+            "ko_published": 0,
+            "th_published": 0,
+            "cancel": 0
+          },
+          {
+            "id": 11329,
+            "url": "https://osaka-info.jp/event/newotani-imo-kuri-nannkin/",
+            "thumbnail": "https://osaka-info.jp/event/assets_c/2026/08/98df46535fc3e2f58778eec5644aee7b3ee2f888-thumb-500xauto-12662.jpg",
+            "heading": "秋の味覚を贅沢に堪能するスイーツの祭典",
+            "title": "ホテルニューオータニ大阪<br>スーパースイーツビュッフェ2026<br>～いも・くり・なんきん～",
+            "modifiedDate": "2026-09-04",
+            "eventStartDate": "2026-09-03",
+            "eventEndDate": "2026-10-08",
+            "label": "gourmet",
+            "ja_published": 1,
+            "ja_label": "グルメ",
+            "area": "大阪城・鶴見緑地エリア",
+            "prices": "【大人】平日　6,800円 / 土・日・祝日　7,500円\n【小学生】全日　4,000 円\n【幼児(4歳以上)】全日　3,000円\n※料金には、税金・サービス料が含まれます。",
+            "transport": "【電車でお越しの方】\n■JR大阪環状線「大阪城公園駅」より徒歩約3分\n■Osaka Metro長堀鶴見緑地線「大阪ビジネスパーク駅」より徒歩約3分\n■各線「京橋駅」より徒歩約8分",
+            "address": "大阪市中央区城見1-4-1",
+            "en_published": 0,
+            "cn_published": 0,
+            "tw_published": 0,
+            "ko_published": 0,
+            "th_published": 0,
+            "cancel": 0
+          },
+          {
+            "id": 11340,
+            "url": "https://osaka-info.jp/event/rishonomori-heikoutosuichoku/",
+            "thumbnail": "https://osaka-info.jp/event/assets_c/2026/08/cc7f7688df31a0634fd4850d67f3766aba43d1fb-thumb-500xauto-12713.jpg",
+            "heading": "ロケ地巡りや関連イベントも楽しもう！",
+            "title": "映画「平行と垂直」<br>衣装展示会・SNSキャンペーン・<br>コラボ和菓子での立礼茶席を実施",
+            "modifiedDate": "2026-09-04",
+            "eventStartDate": "2026-08-11",
+            "eventEndDate": "2026-09-30",
+            "label": "exhibition",
+            "ja_published": 1,
+            "ja_label": "展覧会 / 特別公開",
+            "area": "堺・泉北エリア",
+            "prices": "■衣装展示会：無料\n■コラボ和菓子立礼呈茶：大人800円　高校生700円　中学生以下600円\n■SNSキャンペーン：無料",
+            "transport": "【電車でお越しの方】\n■南海電車「堺駅」より750ｍ\n■阪堺電車「宿院駅」より100ｍ",
+            "address": "堺市堺区宿院町西2丁1-1",
+            "en_published": 0,
+            "cn_published": 0,
+            "tw_published": 0,
+            "ko_published": 0,
+            "th_published": 0,
+            "cancel": 0
+          },
+          {
+            "id": 11360,
+            "url": "https://osaka-info.jp/event/voco-journey-the-hague/",
+            "thumbnail": "https://osaka-info.jp/event/assets_c/2026/09/20260821_vocojpurney_1550x700_03-thumb-500xauto-12801.jpg",
+            "heading": "巨匠フェルメールの名作よって結ばれた2つのvocoホテルがレシピを交換し、異国の料理とコンテンツを楽しんでいただける企画が登場します。",
+            "title": " voco大阪セントラル by IHG<br>「新しい旅路：デン・ハーグから大阪へ、<br>vocoホテルとともに。」コラボメニュー",
+            "modifiedDate": "2026-09-04",
+            "eventStartDate": "2026-08-24",
+            "eventEndDate": "2026-09-30",
+            "label": "gourmet",
+            "ja_published": 1,
+            "ja_label": "グルメ",
+            "area": "キタエリア",
+            "prices": "・ビーツと柑橘のフレッシュサラダ　　2,000円 \n・骨付き若鶏のロースト　マッシュポテト添え　　4,800円\n・ホワイトチョコムース　フラワーと果実の装い　1,500円\n・大阪リバーサンセット ～オランダの想い～　2,200円\n\nセットメニュー：　8.500円\nビーツと柑橘のフレッシュサラダ、パン、カクテル(大阪リバーサンセット ～オランダの想い～)...",
+            "transport": "【電車でお越しの方】\n■Osaka Metro四ツ橋線 「肥後橋駅」7番出入口より徒歩3分\n■Osaka Metro御堂筋線、京阪本線 「淀屋橋駅」13番出入口より徒歩5分\n■Osaka Metro四ツ橋線・御堂筋線・中央線「本町駅」28番出入口より徒歩5分",
+            "address": "大阪市西区京町堀1-7-1",
+            "en_published": 0,
+            "cn_published": 0,
+            "tw_published": 0,
+            "ko_published": 0,
+            "th_published": 0,
+            "cancel": 0
+          },
+          "... +70 more"
+        ]
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260901&st=env&sjk=2365339563978674",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "lm2daqOYHNTAvr0P7tjRsAM",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkhBXjqNBzbzL2GBpqT1ZxEhwoDg1Hpn3gFI9DoaaBHhjOJA0pVXkp3N94EbrHzw5Sr0FLnTmaenN8/pHJCwTwECV8pG5HcEQaVwygc/PcD0YytRcr6phzGpqfDj1EHxDnvNKU9x2gZMjjvch41Yq61T3moCvo9SMBRFv+b383TJfQCb...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260901&st=env&sjk=1524447867369051",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "lm2daqDyHNWf1e8Pyv-jeQ",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "Gw1tjLtDJ39Npp57C5cH-WFEAt_ADqVJAo7WTeKuDaU",
+        "bg_binary": "frTDf2RU6bfjrAOfiz9PaQXliW0ijqqR9oQ905yeypSYp6JSKz8Gt5pIgUPFqms/bYbiTS7zMkxJ7rqyIWewryX0ZGMHFVdpM2uvEKGrgUHvePHXdIPQKZTgPK7ZRLep26QhnMxhkHg+hdOYWEwNu+jbyOyfhnpC9SvUmogR2zqVgzssd...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/consent/f24b2a76-6f28-4506-b23b-288086cd6241/f24b2a76-6f28-4506-b23b-288086cd6241.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "CookieSameSiteNoneEnabled": false,
+        "CookieV2CSPEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "202303.2.0",
+        "OptanonDataJSON": "f24b2a76-6f28-4506-b23b-288086cd6241",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "BulkDomainCheckUrl": "https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck",
+        "RuleSet": [
+          {
+            "Id": "67e6ecb9-ca0d-439f-82f6-aa526668b489",
+            "Name": "201_for CPRA",
+            "Countries": [
+              "us"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "CPRA",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "201_CPRA Template",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false
+          },
+          {
+            "Id": "6f10e9e8-75ad-46c5-bc9c-496c0f6bc2b4",
+            "Name": "100_for GDPR",
+            "Countries": [
+              "no",
+              "de",
+              "be",
+              "fi",
+              "... +36 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en",
+              "th": "th",
+              "ja": "ja"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "100_GDPR Template",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false
+          },
+          {
+            "Id": "3441a55e-60a4-4a47-8f2c-cf32491e022f",
+            "Name": "000_Global",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +205 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en",
+              "ja": "ja"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GENERIC",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "000_Global Template",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2023-04-26T11:51:01.732380430",
+          "updatedTime": "2023-04-26T11:51:01.732386330",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2023-04-26T11:51:01.743904192",
+          "updatedTime": "2023-04-26T11:51:01.743910092",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iab2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 1,
+          "googleVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2BannerFocus": true,
+          "CookieV2GPC": true,
+          "CookieV2AssignTemplateRule": true,
+          "CookieV2GeolocationJsonApi": true,
+          "CookieV2TCF21": true,
+          "CookieV2RemoveSettingsIcon": true,
+          "CookieV2BannerLogo": true,
+          "CookieV2GeneralVendors": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "UK",
+        "Domain": "osaka-info.jp",
+        "TenantGuid": "72f60782-0240-4825-8db6-c974b3fd4847",
+        "EnvId": "app-au-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "100_GeoLocationRuleGroup_osaka-info.jp",
+        "GATrackToggle": false,
+        "GATrackAssignedCategory": "",
+        "WebFormIntegrationEnabled": false,
+        "WebFormSrcUrl": "",
+        "WebFormWorkerUrl": "",
+        "GppData": {
+          "cmpId": "28"
+        }
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/consent/f24b2a76-6f28-4506-b23b-288086cd6241/3441a55e-60a4-4a47-8f2c-cf32491e022f/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pccloseButtonType": "Icon",
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit our website, we may store information on or retrieve information from your browser, mostly in the form of cookies. This information might be about you, your prefe...",
+          "AboutText": "Privacy Policy",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Accept All Cookies",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "CookiesDescText": "Description",
+          "AboutLink": "https://osaka-info.jp/en/octb-privacy-policy/",
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "PCShowAlwaysActiveToggle": true,
+          "AlertNoticeText": "We use cookies to improve your experience on our website, to personalize content and ads, to provide socialmedia features and to analyze our traffic. We share information about ...",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookie Settings",
+          "CookieSettingButtonText": "Cookie Settings",
+          "AlertAllowCookiesText": "OK",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": true,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "bottom",
+          "PreferenceCenterPosition": "default",
+          "PreferenceCenterConfirmText": "Save Settings",
+          "VendorListText": "List of IAB Vendors"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "",
+          "PCCustomCSS": "",
+          "PcTextColor": "#696969",
+          "PcButtonColor": "#F17210",
+          "PcButtonTextColor": "#FFFFFF",
+          "PcBackgroundColor": "#FFFFFF",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#F8F8F8",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#3860BE",
+          "TextColor": "#696969",
+          "ButtonColor": "#F17210",
+          "BannerMPButtonColor": "#F17210",
+          "BannerMPButtonTextColor": "#FFFFFF",
+          "ButtonTextColor": "#FFFFFF",
+          "BackgroundColor": "#FFFFFF",
+          "BannerLinksTextColor": "#3860BE",
+          "BannerAccordionBackgroundColor": "#E9E9E9",
+          "CookiePersistentLogo": "https://cdn-au.onetrust.com/logos/static/ot_persistent_cookie_icon.png",
+          "OptanonLogo": "https://cdn-au.onetrust.com/logos/72f60782-0240-4825-8db6-c974b3fd4847/bbad263e-a873-4973-b76d-2e205d0c7e9c/efea0766-e782-484b-b01f-656ab4ccc671/175_40_OSAKAINFOロゴ.jpg",
+          "BnrLogo": "",
+          "OneTrustFooterLogo": "https://cdn-au.onetrust.com/logos/static/powered_by_logo.svg",
+          "OptanonCookieDomain": "osaka-info.jp",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": true
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202303.2.0/assets/otFlat.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFlat",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxhdCI+PGRpdiByb2xlPSJhbGVydGRpYWxvZyIgYXJpYS1kZXNjcmliZWRieT0ib25ldHJ1c3QtcG9saWN5LXRleHQiPjxkaXYgY2xhc3M9Im90LXNkay1jb250Y...",
+        "css": "#onetrust-banner-sdk{box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFlat{position:fixed;z-index:2147483645;bottom:0;right:0;left:0;background-color:#fff;max-height:90..."
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202303.2.0/assets/v2/otPcCenter.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcCenter",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY0NlbnRlciBvdC1oaWRlIG90LWZhZGUtaW4iPjxkaXYgcm9sZT0iYWxlcnRkaWFsb2ciIGFyaWEtbW9kYWw9InRydWUiIGFyaWEtZGVzY3JpYmVkYnk9Im90LXBjLWRlc...",
+        "css": "#onetrust-pc-sdk.otPcCenter{overflow:hidden;position:fixed;margin:0 auto;top:5%;right:0;left:0;width:40%;max-width:575px;min-width:575px;border-radius:2.5px;z-index:2147483647;b..."
+      }
+    },
+    {
+      "url": "https://t.dc-tag.jp/post/10038",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "tags": [
+          {
+            "event": {
+              "target": null,
+              "timeout": [
+                500,
+                7,
+                true
+              ],
+              "type": "onload"
+            },
+            "id": 1338,
+            "tag_text": "<img style=\"display:none;\" src=\"https://match.adsrvr.org/track/cmf/generic?ttd_pid=bap22oj&amp;ttd_tpi=1\" width=\"1\" height=\"1\" border=\"0\">",
+            "triggers": {
+              "group_id": {
+                "0": {
+                  "conditions": "..."
+                }
+              }
+            }
+          },
+          {
+            "event": {
+              "target": null,
+              "timeout": [
+                500,
+                7,
+                true
+              ],
+              "type": "onload"
+            },
+            "id": 1362,
+            "tag_text": "<img style=\"display:none;\" src=\"https://tg.socdm.com/aux/idsync?proto=bx_dmp_adjust\" width=\"1\" height=\"1\" border=\"0\">",
+            "triggers": {
+              "group_id": {
+                "0": {
+                  "conditions": "..."
+                }
+              }
+            }
+          },
+          {
+            "event": {
+              "target": null,
+              "timeout": [
+                500,
+                7,
+                true
+              ],
+              "type": "onload"
+            },
+            "id": 1386,
+            "tag_text": "<img style=\"display:none;\" src=\"https://s.side3.zucks.net/r/bx\" width=\"1\" height=\"1\" border=\"0\">\n",
+            "triggers": {
+              "group_id": {
+                "0": {
+                  "conditions": "..."
+                }
+              }
+            }
+          },
+          {
+            "event": {
+              "target": null,
+              "timeout": [
+                500,
+                7,
+                true
+              ],
+              "type": "onload"
+            },
+            "id": 1543,
+            "tag_text": "<img src=\"https://s.side3.zucks.net/s?pid=datacurrent&puid=c75fb45a-90c6-4d21-bae6-179d90af2615\" width=\"1\" height=\"1\" style=\"display:none;\" />",
+            "triggers": {
+              "group_id": {
+                "0": {
+                  "conditions": "..."
+                }
+              }
+            }
+          },
+          "... +7 more"
+        ]
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202609030101&st=env&sjk=4665250648678975",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "l22dav2gI-jCvr0Pp-75kAs",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "Vrk4SF7onOKZBsir19cTRWKKpgIJcQ7GEvU3/Q4w2QF4Jff0JDGejq84TwI0HDNQ+D7tMA/BHOKtQWufL5qc/m0qY8MfJTUY+aByoHwn4jaENGyGXJqfDc986fiq89We1XD29zM17PJNjabyxp6bBPeYGDw/VuRu+FowajTzq4AJL239j...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://j.wovn.io/widget_session_auth?v=7b1f36fe&token=HWML9Z&original_url=https%3A%2F%2Fosaka-info.jp%2Fen%2Fevent%2F&url_without_lang=https%3A%2F%2Fosaka-info.jp%2Fevent%2F",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "error": true,
+        "reason": "Request not allowed"
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260901&st=env&sjk=6142032926177975",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "mG2davnACfzc1e8P67O0sQQ",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkYOS6bfG23G3vNJ8CcBh6AJ2rpsik/K2wArlbi0myVnmwgWsC3DkBaCf6E8bXK1SJZeEDuTaTEFODoxdG4mgnT1JPTECizhj/7SNj5skeLLfPtsHbwnoR+kGiQRu8CyRWeBRMdHs3Ek8Q7czsPqD3cr47dAdktM841Y+KcP5m5Zwu/W...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260901&st=env&sjk=1546315406174280",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "mG2dao-RDKSTvr0PsZvu2Qg",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkXNYXQ9Dn2zZaynE+nscwpSBgIp+nrqPyY1kPNKIyQebCHNCu8ugdfiz9/JhACrpTTHOBxvn8xfy6USjMaR/1OXUsHWlx90ZV+A75efRLl+A9kAMMXpTJ/amjcVCuwWB3bzYfllkPtNqyAh9+WYrS97ONudXHPg0Kk32pSwvOCVwKBy...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://ee.wovn.io/values/translate?v=7b1f36fe",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "html_text_vals": {
+          "<span>キタエリア</span><span>2026-08-24 ~ 2026-09-30</span><span>・ビーツと柑橘のフレッシュサラダ　　2,000円 ・骨付き若鶏のロースト　マッシュポテト添え　　4,800円 ・ホワイトチョコムース　フラワーと果実の装い　1,500円 ・大阪リバーサンセット ～オランダの想い～　2,200円 セットメニュー：　8.500円 ビーツと柑橘のフレッシュサラダ、パン、カクテル(大阪リバーサンセット ～オランダの想い～)、 骨付き若鶏のロースト、ホワイトチョコムース、コーヒーまたは紅茶 ※要予約　※上記料金は税金・サービス料込みです</span><span>【電車でお越しの方】 ■Osaka Metro四ツ橋線 「肥後橋駅」7番出入口より徒歩3分 ■Osaka Metro御堂筋線、京阪本線 「淀屋橋駅」13番出入口より徒歩5分 ■Osaka Metro四ツ橋線・御堂筋線・中央線「本町駅」28番出入口より徒歩5分</span><span>大阪市西区京町堀1-7-1</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة كيتا</span> <span>24-08-2026 ~ 30-09-2026</span> <span>• سلطة الشمندر الطازج والحمضيات ٢٠٠٠ ين • دجاج صغير مشوي بالعظم مع بطاطا مهروسة ٤٨٠٠ ين • موس الشوكولاتة البيض..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Kita area</span> <span>2026-08-24 ~ 2026-09-30</span> <span>・Fresh beet and citrus salad 2,000 yen ・Roasted young chicken with bone and mashed potatoes 4,800 yen ・White ch..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Kita</span> <span>24/08/2026 ~ 30/09/2026</span> <span>• Ensalada fresca de remolacha y cítricos 2000 yenes • Pollo joven asado con hueso y puré de patatas 4800 ye..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Zone de Kita</span> <span>24/08/2026 ~ 30/09/2026</span> <span>Salade de betteraves fraîches et d&#39;agrumes : 2 000 yens ; poulet rôti avec os et purée de pommes de terr..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>기타 지역</span> <span>2026-08-24 ~ 2026-09-30</span> <span>· 비트와 감귤의 신선한 샐러드 2,000 엔 · 뼈와 어린 닭 로스트 매쉬 감자 4,800 엔 · 화이트 초코 무스 플라워와 과일 옷 1,500 엔 2,200엔 세트 메뉴: 8.500엔 비트와 감귤의 신선..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่คิตะ</span> <span>24 สิงหาคม 2569 ถึง 30 กันยายน 2569</span> <span>• สลัดบีทรูทสดและส้ม 2,000 เยน • ไก่ย่างติดกระดูกและมันฝรั่งบด 4,800 เยน • มูสช็อกโกแลตขาวตกแต่งด..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>北区</span><span>2026年8月24日 ~ 2026年9月30日</span><span>・鲜甜菜柑橘沙拉 2,000日元 ・带骨烤嫩鸡配土豆泥 4,800日元 ・鲜花水果装饰白巧克力慕斯 1,500日元 ・大阪河日落～荷兰风情～ 2,200日元 套餐：8,500日元 鲜甜菜柑橘沙拉、面包、鸡尾酒（大阪河日落～荷兰风情～）、带骨..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>北區</span><span>2026年8月24日～2026年9月30日</span><span>・鮮甜菜柑橘沙律 2,000 日圓・烤雞配骨薯泥 4,800 日圓・白朱古力慕斯配花果裝飾 1,500 日圓・大阪河日落 ~ 一個荷蘭靈感 ~ 2,200 日圓套餐： 8,500 日圓太陽菜、麵包同荷蘭菜 ~靈感～ ) 、燒骨雞幼雞、白朱古力慕..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>北區</span><span>2026年8月24日 ~ 2026年9月30日</span><span>・鮮甜菜柑橘沙拉 2,000日元 ・帶骨烤嫩雞配土豆泥 4,800日元 ・鮮花水果裝飾白巧克力慕斯 1,500日元 ・大阪河日落～荷蘭風情～ 2,200日元 套餐：8,500日元鮮甜菜柑橘沙拉、麵包、雞尾酒（大阪河日落～荷蘭風格～）、帶骨烤..."
+              }
+            ]
+          },
+          "35件見つかりました。 1ページ中5目を表示中。 | Osaka Events &amp; Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]": {
+            "ar": [
+              {
+                "data": "تم العثور على 35 نتيجة. عرض 5 من 1 صفحة. | معلومات عن فعاليات ومهرجانات أوساكا | قائمة المعالم السياحية، والمأكولات الشهية، والفعاليات الموسمية [OSAKA-INFO]"
+              }
+            ],
+            "en": [
+              {
+                "data": "35 results found. Showing 5 of 1 page. | Osaka Events & Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]"
+              }
+            ],
+            "es": [
+              {
+                "data": "Se encontraron 35 resultados. Mostrando 5 de 1 página. | Información sobre eventos y festivales de Osaka | Lista de lugares de interés, gastronomía y eventos de temporada [OSAKA..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "35 résultats trouvés. Affichage de 5 sur 1 page. | Informations sur les événements et festivals d'Osaka | Visites touristiques, gastronomie et événements saisonniers [OSAKA-INFO]"
+              }
+            ],
+            "ko": [
+              {
+                "data": "35건 찾았습니다. 1페이지 중 5번째를 표시중. | Osaka Events & Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]"
+              }
+            ],
+            "th": [
+              {
+                "data": "พบ 35 รายการ แสดง 5 รายการจาก 1 หน้า | ข้อมูลกิจกรรมและเทศกาลโอซาก้า | สถานที่ท่องเที่ยว อาหารรสเลิศ และกิจกรรมตามฤดูกาล [OSAKA-INFO]"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "共找到 35 条结果。显示第 5 条，共 1 页。 | 大阪活动及节庆资讯 | 观光、美食及时令活动列表 [OSAKA-INFO]"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "共找到 35 個結果。顯示第 5 條，共 1 頁。 | 大阪活動及節慶資訊 | 觀光、美食及時令活動清單 [OSAKA-INFO]"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "共找到 35 個結果。顯示第 5 條，共 1 頁。 | 大阪活動及節慶資訊 | 觀光、美食及時令活動清單 [OSAKA-INFO]"
+              }
+            ]
+          },
+          "<span>堺・泉北エリア</span><span>2026-08-11 ~ 2026-09-30</span><span>■衣装展示会：無料 ■コラボ和菓子立礼呈茶：大人800円　高校生700円　中学生以下600円 ■SNSキャンペーン：無料</span><span>【電車でお越しの方】 ■南海電車「堺駅」より750ｍ ■阪堺電車「宿院駅」より100ｍ</span><span>堺市堺区宿院町西2丁1-1</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة ساكاي/سينبوكو</span> <span>١١ أغسطس ٢٠٢٦ - ٣٠ سبتمبر ٢٠٢٦</span> <span>■ معرض الأزياء: مجاني ■ حفل شاي ياباني بالتعاون مع حلويات يابانية: ٨٠٠ ين للبالغين، ٧٠٠ ين لطل..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Sakai/Senboku Area</span> <span>2026-08-11 ~ 2026-09-30</span> <span>■ Costume Exhibition: Free ■ Collaboration Japanese Confectionery Tea Ceremony: Adults 800 yen, High S..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Sakai/Senboku</span> <span>11/08/2026 ~ 30/09/2026</span> <span>■Exposición de vestuario: Gratuita ■Ceremonia del té con dulces japoneses en colaboración: Adultos ..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Zone Sakai/Senboku</span> <span>11/08/2026 ~ 30/09/2026</span> <span>■ Exposition de costumes : Gratuit ■ Cérémonie du thé et confiseries japonaises (en collaboration) : A..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>사카이・센호쿠 지역</span> <span>2026-08-11 ~ 2026-09-30</span> <span>■의상 전시회:무료 ■콜라보 화과자</span> <span>입례 정차:어른800엔 ■한 사카이 전철 「숙원역」에서 100m</span> <span>사카이시 사카이구 슈쿠인초 니시 2초 1-1</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่ซาไก/เซ็นโบกุ</span> <span>11-30 กันยายน 2026</span> <span>■นิทรรศการเครื่องแต่งกาย: ฟรี ■พิธีชงชาและขนมญี่ปุ่นร่วมกับแบรนด์อื่น: ผู้ใหญ่ 800 เยน, นักเรียนมัธยมปลาย..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>堺·泉北区域</span><span>2026-08-11 ~ 2026-09-30</span> <span>■服装展示会:免费■合作日式点心立礼呈茶:成人800日元高中生700日元中学生以下600日元■SNS活动:免费</span><span>乘坐电车来的客人距离南海电车“堺站”750米距离阪堺电车“宿院站”100米</span><sp..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>堺 / 仙柏地區</span><span>2026-08-11 ~ 2026-09-30</span> <span>■ 服裝展覽：免費 ■ 聯乘日本菓子茶道：成人 800 日圓、高中生 700 日圓、初中生以下 600 日圓 ■ SNS 活動：免費</span><span>【 75.0 米列車前來者 ■ ■距離阪井電車「樹園站」100m</..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>堺・泉北區域</span><span>2026-08-11~2026-09-30</span> <span>■服裝展示會:免費■合作日式點心立禮呈茶:成人800日元高中生700日元中學生以下600日元■SNS活動:免費</span><span>【乘坐電車前來的客人】 ■距離南海電車“堺站”750米■距離阪堺電車“宿院站”100米</span..."
+              }
+            ]
+          },
+          "35 件見つかりました。<span>5 ページ中 1 ページ目を表示中。</span>": {
+            "ar": [
+              {
+                "data": "تم العثور على 35 نتيجة. <span>عرض الصفحة 1 من 5.</span>"
+              }
+            ],
+            "en": [
+              {
+                "data": "35 results found. <span>Showing page 1 of 5.</span>"
+              }
+            ],
+            "es": [
+              {
+                "data": "35 resultados encontrados. <span>Mostrando página 1 de 5.</span>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "35 résultats trouvés. <span>Affichage de la page 1 sur 5.</span>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "35건 찾았습니다. <span>5 페이지 중 1 페이지를 표시 중입니다.</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "พบ 35 ผลลัพธ์ <span>แสดงหน้า 1 จากทั้งหมด 5 หน้า</span>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "找到了35件。<span>正在显示5页中的第1页。</span>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "找到了35件。<span>正在顯示5頁中的第1頁。</span>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "找到了35件。<span>正在顯示5頁中的第1頁。</span>"
+              }
+            ]
+          },
+          "<span>大阪城・鶴見緑地エリア</span><span>2026-09-03 ~ 2026-10-08</span><span>【大人】平日　6,800円 / 土・日・祝日　7,500円 【小学生】全日　4,000 円 【幼児(4歳以上)】全日　3,000円 ※料金には、税金・サービス料が含まれます。</span><span>【電車でお越しの方】 ■JR大阪環状線「大阪城公園駅」より徒歩約3分 ■Osaka Metro長堀鶴見緑地線「大阪ビジネスパーク駅」より徒歩約3分 ■各線「京橋駅」より徒歩約8分</span><span>大阪市中央区城見1-4-1</span>": {
+            "ar": [
+              {
+                "data": "<span>قلعة أوساكا / منطقة تسورومي ريوكوتشي</span> <span>3 سبتمبر 2026 - 8 أكتوبر 2026</span> <span>[للبالغين] أيام الأسبوع 6800 ين / أيام السبت والأحد والعطلات 7500 ين [لطلاب ال..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka Castle/Tsurumi Ryokuchi Area</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adults] Weekdays 6,800 yen / Saturdays, Sundays, and holidays 7,500 yen [Elementary s..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Castillo de Osaka/Área de Tsurumi Ryokuchi</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adultos] Días laborables 6.800 yenes / Sábados, domingos y festivos 7.500 yen..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Château d&#39;Osaka/Quartier Tsurumi Ryokuchi</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adultes] Semaine : 6 800 yens / Samedi, dimanche et jours fériés : 7 500 y..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카성・쓰루미 녹지 에리어</span> <span>2026-09-03 ~ 2026-10-08</span><span>【성인】평일 6,800엔 / 토·일·공휴일 7,500엔 【초등학생】전일 4,000엔 【유아(4세 이상)】전일 3,000엔 ※서비스</span><span>【전철로 오시는 분】 ■JR 오사카 환..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ปราสาทโอซาก้า/พื้นที่สึรุมิ เรียวคุจิ</span> <span>3 กันยายน 2026 - 8 ตุลาคม 2026</span> <span>[ผู้ใหญ่] วันธรรมดา 6,800 เยน / วันเสาร์ อาทิตย์ และวันหยุดนักขัตฤกษ์ 7,500 ..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>大阪城/鹤见绿地地区</span><span>2026年9月3日～2026年10月8日</span><span>[成人] 平日 6,800日元 / 周六、周日及节假日 7,500日元 [小学生] 全天 4,000日元 [婴幼儿（4岁及以上）] 全天 3,000日元 *价格包含税费和服务费。</span><span>[乘坐电车前往] ■ 从J..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪城／鶴見涼地地區</span><span>2026-09-03 ~ 2026-10-08</span><span>【成人】平日 6,800 日圓 / 星期六、日、假日 7,500 日圓【小學生】全天 4,000 日圓【嬰兒（ 4 歲以上 * 3 ， 0 日起服務費）】全包稅</span><span>【搭電車前來者】 ■ 從 JR 大阪環..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪城/鶴見綠地地區</span><span>2026年9月3日～2026年10月8日</span><span>[成人] 平日 6,800日元 / 週六、週日及節（4 7,500日元 [小學生] 全天 4,000日元 [嬰幼兒稅</span><span>[搭乘電車前往] ■ 從JR大阪環狀線「大阪城公園站」步行約3分鐘 ■ 從Osaka M..."
+              }
+            ]
+          },
+          "<span>ミナミエリア</span><span>2026-09-04 ~ 2026-09-25</span><span>2,000円</span><span>【電車でお越しの方】 ■Osaka Metro各線「心斎橋駅」より徒歩約3分</span><span>大阪市中央区南船場3丁目10-19 銀泉心斎橋ビルB1F</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة مينامي،</span> <span>4-9-2026 ~ 25-9-2026،</span> <span>2000 ين ياباني</span> <span>[للقادمين بالقطار] ■ على بُعد 3 دقائق سيرًا على الأقدام تقريبًا من محطة شينسايباش..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Minami Area</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2,000 yen</span> <span>[For those coming by train] ■ Approximately 3 minutes on foot from Shinsaibashi Statio..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Zona de Minami</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2.000 yenes</span> <span>[Para quienes lleguen en tren] ■ Aproximadamente a 3 minutos a pie de la estación..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Quartier Minami</span> <span>04/09/2026 ~ 25/09/2026</span> <span>2 000 yens</span> <span>[Pour les personnes arrivant en train] ■ À environ 3 minutes à pied de la station..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>미나미 에리어</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2,000엔</span><span>【전철로 오시는 분】 ■ Osaka Metro 각선 “신사이바시역”에서 도보 약 3분</span> <span>미나미셈바 시 주오구 미나미후네바 3가 10-19</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>เขตมินามิ</span> <span>4-25 กันยายน 2026</span> <span>ราคา 2,000 เยน</span> <span>[สำหรับผู้ที่เดินทางโดยรถไฟ] ■ เดินประมาณ 3 นาทีจากสถานีชินไซบาชิ (โดย Osaka Metro ทุกสาย..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>南区</span><span>2026年9月4日～2026年9月25日</span><span>2,000日元</span><span>[乘火车前来] ■ 从Osaka Metro所有线路的心斋桥站步行约3分钟</span><span>大阪市中央南船场3-10-19 银禅心斋桥大厦B1层</span>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>南區</span><span>2026-09-04 ~ 2026-09-25</span> <span>2,000 日圓</span><span>【搭火車前來人士】 ■ Osaka Metro全線「心齋橋站」步行約 3 分鐘</span><span>B1F 、銀前心齋橋大廈、 3-10-19 南川市南船場、</span>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>南區</span><span>2026年9月4日～2026年9月25日</span><span>2,000日元</span><span>[搭火車前來] ■ 從Osaka Metro所有線路的心齋橋站步行約3分鐘</span><span>大阪市中央南船場3-10-19 銀禪心齋橋大廈B1層</span>"
+              }
+            ]
+          },
+          "<span>天王寺・阿倍野エリア</span><span>2026-09-05 ~ 2026-09-27</span><span>【大人】300円 【高校生・大学生】200円 ※中学生以下、障がい者手帳等をお持ちの方(介護者1名を含む)、大阪市内在住の65歳以上の方は無料【要証明(健康保険証、敬老優待乗車証等の原本)】</span><span>【電車でお越しの方】 ■Osaka Metro御堂筋線「長居駅」下車。3号出口より東へ徒歩約800m ■JR阪和線「長居駅」下車。東口より東へ徒歩約1,000m ■近鉄南大阪線「針中野駅」下車。西へ徒歩約800m</span><span>大阪市東住吉区長居公園1-23</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة تينوجي/أبينو</span><span>، 5-27 سبتمبر 2026:</span> <span>[للبالغين] 300 ين، [لطلاب المدارس الثانوية والجامعات] 200 ين. *مجانًا لطلاب المرحلة الإعدادية وما دون، والأ..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Tennoji/Abeno Area</span> <span>2026-09-05 ~ 2026-09-27</span> <span>[Adults] 300 yen [High school and university students] 200 yen *Free for junior high school students a..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Tennoji/Abeno</span> <span>05-09-2026 ~ 27-09-2026</span> <span>[Adultos] 300 yenes [Estudiantes de secundaria y universitarios] 200 yenes *Gratis para estudiantes..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Quartier Tennoji/Abeno,</span> <span>du 5 au 27 septembre 2026</span> <span>[Adultes] 300 yens [Lycéens et étudiants] 200 yens *Gratuit pour les collégiens et les plus jeu..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>텐노지・아베노 에리어</span> <span>2026-09-05 ~ 2026-09-27</span><span>【어른】300엔 【고교생·대학생】200엔 ※중학생 이하, 장애인 수첩등을 가지고 계신 분(개호자 1명을 포함한다), 오사카 시내 거주의 65세 이상의 분은 무료【요증명(건강보험증, 경로우대 승차증등..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่เทนโนจิ/อาเบโนะ</span> <span>5-27 กันยายน 2026</span> <span>[ผู้ใหญ่] 300 เยน [นักเรียนมัธยมปลายและนักศึกษามหาวิทยาลัย] 200 เยน *ฟรีสำหรับนักเรียนมัธยมต้นและต่ำกว่า..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>天王寺/阿倍野地区</span><span>2026年9月5日～2026年9月27日</span><span>[成人] 300日元 [高中生、大学生] 200日元 *初中及以下学生、残疾人士（含一名陪护人员）以及65岁及以上大阪市居民免费 [需出示证件（健康保险卡原件、老年人优惠卡等）]</span> <span>[乘坐电车] ■ 搭乘大阪..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>天王寺／阿倍野地區</span><span>2026-09-05 ~ 2026-09-27</span><span>【成人】300日元【高中生及大學生】200日元＊初中生以下、殘疾人士（包括一名看護者）、大阪市65歲以上居民免費【需提供醫療保險卡等原件，需提供</span><span>長者train] ■ Osaka Metro御堂筋線長井..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>天王寺/阿倍野地區</span><span>2026年9月5日～2026年9月27日</span><span>[成人] 300日元 [高中生、大學生] 200日元 *初中及以下學生、殘疾人士（含一名陪護人員）以及65歲及以上大阪市居民免費 [國中及以下學生、殘障人士（含一名陪護人員）及65歲以上大阪市居民免費 [20737 月卡證件（含健康..."
+              }
+            ]
+          }
+        },
+        "text_vals": {
+          "<span>キタエリア</span><span>2026-08-24 ~ 2026-09-30</span><span>・ビーツと柑橘のフレッシュサラダ　　2,000円 ・骨付き若鶏のロースト　マッシュポテト添え　　4,800円 ・ホワイトチョコムース　フラワーと果実の装い　1,500円 ・大阪リバーサンセット ～オランダの想い～　2,200円 セットメニュー：　8.500円 ビーツと柑橘のフレッシュサラダ、パン、カクテル(大阪リバーサンセット ～オランダの想い～)、 骨付き若鶏のロースト、ホワイトチョコムース、コーヒーまたは紅茶 ※要予約　※上記料金は税金・サービス料込みです</span><span>【電車でお越しの方】 ■Osaka Metro四ツ橋線 「肥後橋駅」7番出入口より徒歩3分 ■Osaka Metro御堂筋線、京阪本線 「淀屋橋駅」13番出入口より徒歩5分 ■Osaka Metro四ツ橋線・御堂筋線・中央線「本町駅」28番出入口より徒歩5分</span><span>大阪市西区京町堀1-7-1</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة كيتا</span> <span>24-08-2026 ~ 30-09-2026</span> <span>• سلطة الشمندر الطازج والحمضيات ٢٠٠٠ ين • دجاج صغير مشوي بالعظم مع بطاطا مهروسة ٤٨٠٠ ين • موس الشوكولاتة البيض..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Kita area</span> <span>2026-08-24 ~ 2026-09-30</span> <span>・Fresh beet and citrus salad 2,000 yen ・Roasted young chicken with bone and mashed potatoes 4,800 yen ・White ch..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Kita</span> <span>24/08/2026 ~ 30/09/2026</span> <span>• Ensalada fresca de remolacha y cítricos 2000 yenes • Pollo joven asado con hueso y puré de patatas 4800 ye..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Zone de Kita</span> <span>24/08/2026 ~ 30/09/2026</span> <span>Salade de betteraves fraîches et d&#39;agrumes : 2 000 yens ; poulet rôti avec os et purée de pommes de terr..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>기타 지역</span> <span>2026-08-24 ~ 2026-09-30</span> <span>· 비트와 감귤의 신선한 샐러드 2,000 엔 · 뼈와 어린 닭 로스트 매쉬 감자 4,800 엔 · 화이트 초코 무스 플라워와 과일 옷 1,500 엔 2,200엔 세트 메뉴: 8.500엔 비트와 감귤의 신선..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่คิตะ</span> <span>24 สิงหาคม 2569 ถึง 30 กันยายน 2569</span> <span>• สลัดบีทรูทสดและส้ม 2,000 เยน • ไก่ย่างติดกระดูกและมันฝรั่งบด 4,800 เยน • มูสช็อกโกแลตขาวตกแต่งด..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>北区</span><span>2026年8月24日 ~ 2026年9月30日</span><span>・鲜甜菜柑橘沙拉 2,000日元 ・带骨烤嫩鸡配土豆泥 4,800日元 ・鲜花水果装饰白巧克力慕斯 1,500日元 ・大阪河日落～荷兰风情～ 2,200日元 套餐：8,500日元 鲜甜菜柑橘沙拉、面包、鸡尾酒（大阪河日落～荷兰风情～）、带骨..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>北區</span><span>2026年8月24日～2026年9月30日</span><span>・鮮甜菜柑橘沙律 2,000 日圓・烤雞配骨薯泥 4,800 日圓・白朱古力慕斯配花果裝飾 1,500 日圓・大阪河日落 ~ 一個荷蘭靈感 ~ 2,200 日圓套餐： 8,500 日圓太陽菜、麵包同荷蘭菜 ~靈感～ ) 、燒骨雞幼雞、白朱古力慕..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>北區</span><span>2026年8月24日 ~ 2026年9月30日</span><span>・鮮甜菜柑橘沙拉 2,000日元 ・帶骨烤嫩雞配土豆泥 4,800日元 ・鮮花水果裝飾白巧克力慕斯 1,500日元 ・大阪河日落～荷蘭風情～ 2,200日元 套餐：8,500日元鮮甜菜柑橘沙拉、麵包、雞尾酒（大阪河日落～荷蘭風格～）、帶骨烤..."
+              }
+            ]
+          },
+          "35件見つかりました。 1ページ中5目を表示中。 | Osaka Events &amp; Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]": {
+            "ar": [
+              {
+                "data": "تم العثور على 35 نتيجة. عرض 5 من 1 صفحة. | معلومات عن فعاليات ومهرجانات أوساكا | قائمة المعالم السياحية، والمأكولات الشهية، والفعاليات الموسمية [OSAKA-INFO]"
+              }
+            ],
+            "en": [
+              {
+                "data": "35 results found. Showing 5 of 1 page. | Osaka Events & Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]"
+              }
+            ],
+            "es": [
+              {
+                "data": "Se encontraron 35 resultados. Mostrando 5 de 1 página. | Información sobre eventos y festivales de Osaka | Lista de lugares de interés, gastronomía y eventos de temporada [OSAKA..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "35 résultats trouvés. Affichage de 5 sur 1 page. | Informations sur les événements et festivals d'Osaka | Visites touristiques, gastronomie et événements saisonniers [OSAKA-INFO]"
+              }
+            ],
+            "ko": [
+              {
+                "data": "35건 찾았습니다. 1페이지 중 5번째를 표시중. | Osaka Events & Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]"
+              }
+            ],
+            "th": [
+              {
+                "data": "พบ 35 รายการ แสดง 5 รายการจาก 1 หน้า | ข้อมูลกิจกรรมและเทศกาลโอซาก้า | สถานที่ท่องเที่ยว อาหารรสเลิศ และกิจกรรมตามฤดูกาล [OSAKA-INFO]"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "共找到 35 条结果。显示第 5 条，共 1 页。 | 大阪活动及节庆资讯 | 观光、美食及时令活动列表 [OSAKA-INFO]"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "共找到 35 個結果。顯示第 5 條，共 1 頁。 | 大阪活動及節慶資訊 | 觀光、美食及時令活動清單 [OSAKA-INFO]"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "共找到 35 個結果。顯示第 5 條，共 1 頁。 | 大阪活動及節慶資訊 | 觀光、美食及時令活動清單 [OSAKA-INFO]"
+              }
+            ]
+          },
+          "<span>堺・泉北エリア</span><span>2026-08-11 ~ 2026-09-30</span><span>■衣装展示会：無料 ■コラボ和菓子立礼呈茶：大人800円　高校生700円　中学生以下600円 ■SNSキャンペーン：無料</span><span>【電車でお越しの方】 ■南海電車「堺駅」より750ｍ ■阪堺電車「宿院駅」より100ｍ</span><span>堺市堺区宿院町西2丁1-1</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة ساكاي/سينبوكو</span> <span>١١ أغسطس ٢٠٢٦ - ٣٠ سبتمبر ٢٠٢٦</span> <span>■ معرض الأزياء: مجاني ■ حفل شاي ياباني بالتعاون مع حلويات يابانية: ٨٠٠ ين للبالغين، ٧٠٠ ين لطل..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Sakai/Senboku Area</span> <span>2026-08-11 ~ 2026-09-30</span> <span>■ Costume Exhibition: Free ■ Collaboration Japanese Confectionery Tea Ceremony: Adults 800 yen, High S..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Sakai/Senboku</span> <span>11/08/2026 ~ 30/09/2026</span> <span>■Exposición de vestuario: Gratuita ■Ceremonia del té con dulces japoneses en colaboración: Adultos ..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Zone Sakai/Senboku</span> <span>11/08/2026 ~ 30/09/2026</span> <span>■ Exposition de costumes : Gratuit ■ Cérémonie du thé et confiseries japonaises (en collaboration) : A..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>사카이・센호쿠 지역</span> <span>2026-08-11 ~ 2026-09-30</span> <span>■의상 전시회:무료 ■콜라보 화과자</span> <span>입례 정차:어른800엔 ■한 사카이 전철 「숙원역」에서 100m</span> <span>사카이시 사카이구 슈쿠인초 니시 2초 1-1</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่ซาไก/เซ็นโบกุ</span> <span>11-30 กันยายน 2026</span> <span>■นิทรรศการเครื่องแต่งกาย: ฟรี ■พิธีชงชาและขนมญี่ปุ่นร่วมกับแบรนด์อื่น: ผู้ใหญ่ 800 เยน, นักเรียนมัธยมปลาย..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>堺·泉北区域</span><span>2026-08-11 ~ 2026-09-30</span> <span>■服装展示会:免费■合作日式点心立礼呈茶:成人800日元高中生700日元中学生以下600日元■SNS活动:免费</span><span>乘坐电车来的客人距离南海电车“堺站”750米距离阪堺电车“宿院站”100米</span><sp..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>堺 / 仙柏地區</span><span>2026-08-11 ~ 2026-09-30</span> <span>■ 服裝展覽：免費 ■ 聯乘日本菓子茶道：成人 800 日圓、高中生 700 日圓、初中生以下 600 日圓 ■ SNS 活動：免費</span><span>【 75.0 米列車前來者 ■ ■距離阪井電車「樹園站」100m</..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>堺・泉北區域</span><span>2026-08-11~2026-09-30</span> <span>■服裝展示會:免費■合作日式點心立禮呈茶:成人800日元高中生700日元中學生以下600日元■SNS活動:免費</span><span>【乘坐電車前來的客人】 ■距離南海電車“堺站”750米■距離阪堺電車“宿院站”100米</span..."
+              }
+            ]
+          },
+          "35 件見つかりました。<span>5 ページ中 1 ページ目を表示中。</span>": {
+            "ar": [
+              {
+                "data": "تم العثور على 35 نتيجة. <span>عرض الصفحة 1 من 5.</span>"
+              }
+            ],
+            "en": [
+              {
+                "data": "35 results found. <span>Showing page 1 of 5.</span>"
+              }
+            ],
+            "es": [
+              {
+                "data": "35 resultados encontrados. <span>Mostrando página 1 de 5.</span>"
+              }
+            ],
+            "fr": [
+              {
+                "data": "35 résultats trouvés. <span>Affichage de la page 1 sur 5.</span>"
+              }
+            ],
+            "ko": [
+              {
+                "data": "35건 찾았습니다. <span>5 페이지 중 1 페이지를 표시 중입니다.</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "พบ 35 ผลลัพธ์ <span>แสดงหน้า 1 จากทั้งหมด 5 หน้า</span>"
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "找到了35件。<span>正在显示5页中的第1页。</span>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "找到了35件。<span>正在顯示5頁中的第1頁。</span>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "找到了35件。<span>正在顯示5頁中的第1頁。</span>"
+              }
+            ]
+          },
+          "<span>大阪城・鶴見緑地エリア</span><span>2026-09-03 ~ 2026-10-08</span><span>【大人】平日　6,800円 / 土・日・祝日　7,500円 【小学生】全日　4,000 円 【幼児(4歳以上)】全日　3,000円 ※料金には、税金・サービス料が含まれます。</span><span>【電車でお越しの方】 ■JR大阪環状線「大阪城公園駅」より徒歩約3分 ■Osaka Metro長堀鶴見緑地線「大阪ビジネスパーク駅」より徒歩約3分 ■各線「京橋駅」より徒歩約8分</span><span>大阪市中央区城見1-4-1</span>": {
+            "ar": [
+              {
+                "data": "<span>قلعة أوساكا / منطقة تسورومي ريوكوتشي</span> <span>3 سبتمبر 2026 - 8 أكتوبر 2026</span> <span>[للبالغين] أيام الأسبوع 6800 ين / أيام السبت والأحد والعطلات 7500 ين [لطلاب ال..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Osaka Castle/Tsurumi Ryokuchi Area</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adults] Weekdays 6,800 yen / Saturdays, Sundays, and holidays 7,500 yen [Elementary s..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Castillo de Osaka/Área de Tsurumi Ryokuchi</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adultos] Días laborables 6.800 yenes / Sábados, domingos y festivos 7.500 yen..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Château d&#39;Osaka/Quartier Tsurumi Ryokuchi</span> <span>2026-09-03 ~ 2026-10-08</span> <span>[Adultes] Semaine : 6 800 yens / Samedi, dimanche et jours fériés : 7 500 y..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>오사카성・쓰루미 녹지 에리어</span> <span>2026-09-03 ~ 2026-10-08</span><span>【성인】평일 6,800엔 / 토·일·공휴일 7,500엔 【초등학생】전일 4,000엔 【유아(4세 이상)】전일 3,000엔 ※서비스</span><span>【전철로 오시는 분】 ■JR 오사카 환..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>ปราสาทโอซาก้า/พื้นที่สึรุมิ เรียวคุจิ</span> <span>3 กันยายน 2026 - 8 ตุลาคม 2026</span> <span>[ผู้ใหญ่] วันธรรมดา 6,800 เยน / วันเสาร์ อาทิตย์ และวันหยุดนักขัตฤกษ์ 7,500 ..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>大阪城/鹤见绿地地区</span><span>2026年9月3日～2026年10月8日</span><span>[成人] 平日 6,800日元 / 周六、周日及节假日 7,500日元 [小学生] 全天 4,000日元 [婴幼儿（4岁及以上）] 全天 3,000日元 *价格包含税费和服务费。</span><span>[乘坐电车前往] ■ 从J..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>大阪城／鶴見涼地地區</span><span>2026-09-03 ~ 2026-10-08</span><span>【成人】平日 6,800 日圓 / 星期六、日、假日 7,500 日圓【小學生】全天 4,000 日圓【嬰兒（ 4 歲以上 * 3 ， 0 日起服務費）】全包稅</span><span>【搭電車前來者】 ■ 從 JR 大阪環..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>大阪城/鶴見綠地地區</span><span>2026年9月3日～2026年10月8日</span><span>[成人] 平日 6,800日元 / 週六、週日及節（4 7,500日元 [小學生] 全天 4,000日元 [嬰幼兒稅</span><span>[搭乘電車前往] ■ 從JR大阪環狀線「大阪城公園站」步行約3分鐘 ■ 從Osaka M..."
+              }
+            ]
+          },
+          "<span>ミナミエリア</span><span>2026-09-04 ~ 2026-09-25</span><span>2,000円</span><span>【電車でお越しの方】 ■Osaka Metro各線「心斎橋駅」より徒歩約3分</span><span>大阪市中央区南船場3丁目10-19 銀泉心斎橋ビルB1F</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة مينامي،</span> <span>4-9-2026 ~ 25-9-2026،</span> <span>2000 ين ياباني</span> <span>[للقادمين بالقطار] ■ على بُعد 3 دقائق سيرًا على الأقدام تقريبًا من محطة شينسايباش..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Minami Area</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2,000 yen</span> <span>[For those coming by train] ■ Approximately 3 minutes on foot from Shinsaibashi Statio..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Zona de Minami</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2.000 yenes</span> <span>[Para quienes lleguen en tren] ■ Aproximadamente a 3 minutos a pie de la estación..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Quartier Minami</span> <span>04/09/2026 ~ 25/09/2026</span> <span>2 000 yens</span> <span>[Pour les personnes arrivant en train] ■ À environ 3 minutes à pied de la station..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>미나미 에리어</span> <span>2026-09-04 ~ 2026-09-25</span> <span>2,000엔</span><span>【전철로 오시는 분】 ■ Osaka Metro 각선 “신사이바시역”에서 도보 약 3분</span> <span>미나미셈바 시 주오구 미나미후네바 3가 10-19</span>"
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>เขตมินามิ</span> <span>4-25 กันยายน 2026</span> <span>ราคา 2,000 เยน</span> <span>[สำหรับผู้ที่เดินทางโดยรถไฟ] ■ เดินประมาณ 3 นาทีจากสถานีชินไซบาชิ (โดย Osaka Metro ทุกสาย..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>南区</span><span>2026年9月4日～2026年9月25日</span><span>2,000日元</span><span>[乘火车前来] ■ 从Osaka Metro所有线路的心斋桥站步行约3分钟</span><span>大阪市中央南船场3-10-19 银禅心斋桥大厦B1层</span>"
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>南區</span><span>2026-09-04 ~ 2026-09-25</span> <span>2,000 日圓</span><span>【搭火車前來人士】 ■ Osaka Metro全線「心齋橋站」步行約 3 分鐘</span><span>B1F 、銀前心齋橋大廈、 3-10-19 南川市南船場、</span>"
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>南區</span><span>2026年9月4日～2026年9月25日</span><span>2,000日元</span><span>[搭火車前來] ■ 從Osaka Metro所有線路的心齋橋站步行約3分鐘</span><span>大阪市中央南船場3-10-19 銀禪心齋橋大廈B1層</span>"
+              }
+            ]
+          },
+          "<span>天王寺・阿倍野エリア</span><span>2026-09-05 ~ 2026-09-27</span><span>【大人】300円 【高校生・大学生】200円 ※中学生以下、障がい者手帳等をお持ちの方(介護者1名を含む)、大阪市内在住の65歳以上の方は無料【要証明(健康保険証、敬老優待乗車証等の原本)】</span><span>【電車でお越しの方】 ■Osaka Metro御堂筋線「長居駅」下車。3号出口より東へ徒歩約800m ■JR阪和線「長居駅」下車。東口より東へ徒歩約1,000m ■近鉄南大阪線「針中野駅」下車。西へ徒歩約800m</span><span>大阪市東住吉区長居公園1-23</span>": {
+            "ar": [
+              {
+                "data": "<span>منطقة تينوجي/أبينو</span><span>، 5-27 سبتمبر 2026:</span> <span>[للبالغين] 300 ين، [لطلاب المدارس الثانوية والجامعات] 200 ين. *مجانًا لطلاب المرحلة الإعدادية وما دون، والأ..."
+              }
+            ],
+            "en": [
+              {
+                "data": "<span>Tennoji/Abeno Area</span> <span>2026-09-05 ~ 2026-09-27</span> <span>[Adults] 300 yen [High school and university students] 200 yen *Free for junior high school students a..."
+              }
+            ],
+            "es": [
+              {
+                "data": "<span>Área de Tennoji/Abeno</span> <span>05-09-2026 ~ 27-09-2026</span> <span>[Adultos] 300 yenes [Estudiantes de secundaria y universitarios] 200 yenes *Gratis para estudiantes..."
+              }
+            ],
+            "fr": [
+              {
+                "data": "<span>Quartier Tennoji/Abeno,</span> <span>du 5 au 27 septembre 2026</span> <span>[Adultes] 300 yens [Lycéens et étudiants] 200 yens *Gratuit pour les collégiens et les plus jeu..."
+              }
+            ],
+            "ko": [
+              {
+                "data": "<span>텐노지・아베노 에리어</span> <span>2026-09-05 ~ 2026-09-27</span><span>【어른】300엔 【고교생·대학생】200엔 ※중학생 이하, 장애인 수첩등을 가지고 계신 분(개호자 1명을 포함한다), 오사카 시내 거주의 65세 이상의 분은 무료【요증명(건강보험증, 경로우대 승차증등..."
+              }
+            ],
+            "th": [
+              {
+                "data": "<span>พื้นที่เทนโนจิ/อาเบโนะ</span> <span>5-27 กันยายน 2026</span> <span>[ผู้ใหญ่] 300 เยน [นักเรียนมัธยมปลายและนักศึกษามหาวิทยาลัย] 200 เยน *ฟรีสำหรับนักเรียนมัธยมต้นและต่ำกว่า..."
+              }
+            ],
+            "zh-CHS": [
+              {
+                "data": "<span>天王寺/阿倍野地区</span><span>2026年9月5日～2026年9月27日</span><span>[成人] 300日元 [高中生、大学生] 200日元 *初中及以下学生、残疾人士（含一名陪护人员）以及65岁及以上大阪市居民免费 [需出示证件（健康保险卡原件、老年人优惠卡等）]</span> <span>[乘坐电车] ■ 搭乘大阪..."
+              }
+            ],
+            "zh-Hant-HK": [
+              {
+                "data": "<span>天王寺／阿倍野地區</span><span>2026-09-05 ~ 2026-09-27</span><span>【成人】300日元【高中生及大學生】200日元＊初中生以下、殘疾人士（包括一名看護者）、大阪市65歲以上居民免費【需提供醫療保險卡等原件，需提供</span><span>長者train] ■ Osaka Metro御堂筋線長井..."
+              }
+            ],
+            "zh-Hant-TW": [
+              {
+                "data": "<span>天王寺/阿倍野地區</span><span>2026年9月5日～2026年9月27日</span><span>[成人] 300日元 [高中生、大學生] 200日元 *初中及以下學生、殘疾人士（含一名陪護人員）以及65歲及以上大阪市居民免費 [國中及以下學生、殘障人士（含一名陪護人員）及65歲以上大阪市居民免費 [20737 月卡證件（含健康..."
+              }
+            ]
+          }
+        },
+        "img_vals": {}
+      }
+    },
+    {
+      "url": "https://storage.bannernow.com/feeds/fed_ce1cmrojkoxoeduw7zazpzcqu/results.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "update_interval": 21600,
+        "feed": [
+          {
+            "UAECMA_UAE_AR_Shortened": "<b>‫ينطوي تداول عقود الفروقات والفوركس على مخاطر مرتفعة.‬  ‫خاضعة لرقابة هيئة سوق المال (CMA) لأغراض التعريف.</b>",
+            "UAECMA_UAE_EN_Shortened": "<b>Trading CFDs and FX carries high risk. Regulated by CMA for Introduction.</b>",
+            "FSC_TW_ZHS_Shortened": "差价合约（CFD）是复杂的工具，由于杠杆作用，存在快速亏损的高风险。",
+            "FSC_TW_ZHS_Standard": "差价合约（CFD）是复杂的工具，由于杠杆作用，存在快速亏损的高风险。 您应该考虑自己是否了解差价合约的工作原理，以及是否有承受资金损失的高风险的能力。 请参阅我们的风险披露通知及其他法律文件。 Pepperstone Financial Markets Limited，FSC牌照号：GB21026314。",
+            "FSC_TW_EN_Shortened": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.",
+            "FSC_TW_EN_Standard": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work, and whether you can aff...",
+            "UAECMA_UAE_AR_Standard": "<b>ينطوي تداول عقود الفروقات والفوركس على مخاطر مرتفعة، وقد لا يكون مناسبًا للجميع. خاضعة لرقابة هيئة سوق المال (CMA) لأغراض التعريف. شركة Pepperstone Financial Services LLC - ر...",
+            "UAECMA_UAE_EN_Standard": "<b>Trading CFDs and FX carries high risk and is not suitable for everyone. Regulated by CMA for Introduction. Pepperstone Financial Services LLC - license number 20200000358.</b>",
+            "BAFIN_DE_DE_Shortened": "<b>75,2 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter.</b>",
+            "BAFIN_DE_DE_Standard": "<b>75,2 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter.</b> Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leiste...",
+            "CYSEC_IT_Standard": "<b>Il 72.9% dei conti degli investitori al dettaglio perdono denaro quando scambiano CFD con questo fornitore. Dovresti considerare se hai capito come funzionano i CFD e se puoi...",
+            "CYSEC_IT_Short": "<b>Il 72.9% dei conti degli investitori al dettaglio perdono denaro quando scambiano CFD con questo fornitore.</b>",
+            "CMA_AF_EN_Short": "75-95% of retail investor accounts lose money when trading on margin.CMA Licence No.128.",
+            "CMA_AF_EN_Standard": "Pepperstone Markets Kenya Limited | Company No.PVT-PJU7Q8K | CMA Licence No.128. Between 75-95% of retail investor accounts lose money when trading on margin.",
+            "SCB_PT_Short": "<b>79.6% das contas de investidores de varejo perdem dinheiro ao operar CFDs com esse provedor.</b>",
+            "SCB_PT_Standard": "Os CFDs são instrumentos complexos e apresentam um alto risco de perda rápida de dinheiro devido à alavancagem.<b> 79.6% das contas de investidores de varejo perdem dinheiro ao ...",
+            "SCB_ES_Short": "<b>El 79.6% de las cuentas de inversores minoristas pierden dinero al operar CFDs con este proveedor.</b>",
+            "SCB_ES_Standard": "Los CFDs son instrumentos complejos y conllevan un alto riesgo de perder dinero rápidamente debido al apalancamiento. <b>El 79.6% de las cuentas de inversores minoristas pierden...",
+            "SCB_APAC_MN_Short": "<b>Жижиг хөрөнгө оруулагчдын 79.6% нь CFD арилжаалахдаа алдагдал хүлээдэг</b>",
+            "SCB_APAC_MN_Standard": "CFD буюу зөрүүлэх гэрээ нь хөрөнгө оруулалтын нарийн төвөгтэй хэрэгсэл бөгөөд хөшүүрэг ашигладаг тул богино хугацаанд мөнгөө алдах өндөр эрсдэлтэй. <b>Жижиг хөрөнгө оруулагчдын ...",
+            "SCB_APAC_ZHT_Short": "<b>79.6% 的散戶投資者在與該提供商進行差價合約交易時賬戶虧損。</b>",
+            "SCB_APAC_ZHT_Standard": "差價合約（CFD）是複雜的工具，由於槓桿作用，存在快速虧損的高風險。 <b>79.6%的散戶投資者在於該提供商進行差價合約交易時賬戶虧損。</b>您應該考慮自己是否了解差價合約的工作原理，以及是否有承受資金損失的高風險的能力。請參閱我們的RDN和其他法律文件。 Pepperstone Markets Limited，SCB號.SIA-F217。",
+            "SCB_APAC_ZHS_Short": "<b>79.6% 的散户投资者在于该提供商进行差价合约交易时账户亏损。</b>",
+            "SCB_APAC_ZHS_Standard": "差价合约（CFD）是复杂的工具，由于杠杆作用，存在快速亏损的高风险。  <b>79.6%的散户投资者在于该提供商进行差价合约交易时账户亏损。</b> 您应该考虑自己是否了解差价合约的工作原理，以及是否有承受资金损失的高风险的能力。 请参阅我们的RDN和其他法律文件。 Pepperstone Markets Limited，SCB号。 SIA-F217。",
+            "SCB_APAC_VN_Short": "<b>79.6% tài khoản nhà đầu tư bán lẻ bị mất tiền khi giao dịch CFD với nhà cung cấp này.</b>",
+            "SCB_APAC_VN_Standard": "CFD là công cụ phức tạp và có nguy cơ mất tiền nhanh chóng do đòn bẩy. <b>79.6% tài khoản nhà đầu tư bán lẻ bị mất tiền khi giao dịch CFD với nhà cung cấp này. </b>Bạn nên cân n...",
+            "SCB_APAC_TH_Short": "<b>79.6%​ ของ​บัญชี​นัก​ลงทุน​ราย​ย่อย​สูญ​เสีย​เงิน​เมื่อ​ทำการ​ซื้อ​ขาย​ CFD​ กับ​ผู้​ให้​บริการ​ราย​นี้​</b>",
+            "SCB_APAC_TH_Standard": "CFD​ เป็น​​​ตราสาร​​​ที่​​​ซับ​​​ซ้อน​​​และ​​​มี​​​ความ​​​เสี่ยง​​​สูง​​​ที่​​​จะ​​​สูญ​​​เสีย​​​เงิน​​​อย่าง​​​รวดเร็ว​​​เนื่อง​​​จา​​​กมีเลเวอเรจ​ <b>79.6%​ ของ​​​บัญชี​​​นัก​...",
+            "SCB_APAC_EN_Short": "<b>79.6\t% of retail investor accounts lose money when trading CFDs with this provider.</b>",
+            "SCB_APAC_EN_Standard": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <b>79.6\t\t% of retail investor accounts lose money when trading CFDs with this pro...",
+            "UAECMA_MENA_AR_Standard": "undefined",
+            "UAECMA_MENA_EN_Standard": "undefined",
+            "SCB_MENA_EN_Short": "<b>79.6% of retail investor accounts lose money when trading CFDs with this provider.</b>",
+            "SCB_MENA_EN_Standard": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <b>79.6% of retail investor accounts lose money when trading CFDs with this provi...",
+            "SCB_MENA_AR_Short": "<b>79.6٪ من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع هذا المزود.</b>",
+            "SCB_MENA_AR_Standard": "تعتبر عقود الفروقات منتجات مالية معقدة وتنطوي على مخاطر عالية لخسارة الأموال بسرعة بسبب الرافعة المالية.<b> 79.6٪ من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروق...",
+            "FCA_UK_EN_Shortened": "<b>72.9% of retail investor accounts lose money when trading CFDs with this provider</b>",
+            "FCA_UK_EN_Standard_2": "<b>72.9% of retail investor accounts lose money when trading spread bets and CFDs with this provider.&nbsp;</b>You should consider whether you understand how spread bets and CFD...",
+            "ASIC_AU_ZHS_Shortened": "交易差价合约/保证金外汇存在风险。请参阅我们的产品披露声明和目标市场确定书。AFSL 414530。",
+            "ASIC_AU_ZHS_Standard": "交易差价合约/外汇存在风险，不适合所有人。请参阅我们的产品披露声明和目标市场确定书。Pepperstone Group Limited，AFSL 414530。"
+          }
+        ],
+        "signature": "418e17d129442305bdb0a1fbae8c9bf2dcc642a2:5dd77a3c4c08d9ade1d0340a72f812b8291f06e8",
+        "updates": [
+          {
+            "version": "1.15.0",
+            "date": "2026-08-05T06:18:31.454Z",
+            "time_total": "0.4404",
+            "time_fetch": "0.1021",
+            "time_parse": "0.0072",
+            "time_json_parse": "0.0001",
+            "limit": 1,
+            "hard_limit": 10000,
+            "rows_before_transform": 1,
+            "actual": 1,
+            "has_more": false
+          },
+          {
+            "version": "1.15.0",
+            "date": "2026-08-05T06:18:06.092Z",
+            "time_total": "0.1986",
+            "time_fetch": "0.1335",
+            "time_parse": "0.0067",
+            "time_json_parse": "0.0001",
+            "limit": 1,
+            "hard_limit": 10000,
+            "rows_before_transform": 1,
+            "actual": 1,
+            "has_more": false
+          },
+          {
+            "version": "1.15.0",
+            "date": "2026-08-03T07:43:35.662Z",
+            "time_total": "0.1782",
+            "time_fetch": "0.0863",
+            "time_parse": "0.0131",
+            "time_json_parse": "0.0003",
+            "limit": 1,
+            "hard_limit": 10000,
+            "rows_before_transform": 1,
+            "actual": 1,
+            "has_more": false
+          },
+          {
+            "version": "1.15.0",
+            "date": "2026-08-03T07:42:53.003Z",
+            "time_total": "0.1632",
+            "time_fetch": "0.0905",
+            "time_parse": "0.0112",
+            "time_json_parse": "0.0001",
+            "limit": 1,
+            "hard_limit": 10000,
+            "rows_before_transform": 1,
+            "actual": 1,
+            "has_more": false
+          },
+          "... +16 more"
+        ]
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Osaka Events & Festivals Information | Sightseeing, Gourmet Food, and Seasonal Events List [OSAKA-INFO]",
+  "final_url": "https://osaka-info.jp/en/event/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:50.587112+00:00"
+}

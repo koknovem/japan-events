@@ -1,0 +1,12 @@
+{
+  "prefecture": "Nagasaki",
+  "id": "nagasaki",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:41; links:34; none_on_date:75_parsed",
+  "event_count": 0,
+  "source_url": "https://www.nagasaki-tabinet.com/event",
+  "adapter": "generic",
+  "events": []
+}

@@ -1,0 +1,421 @@
+{
+  "id": "nagano",
+  "name": "Nagano",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.go-nagano.net/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "#onetrust-accept-btn-handler"
+  ],
+  "event_links": [
+    {
+      "text": "What's New in Hakuba: Hiking, Workations and Summer Events at Hakuba Happo One Located in one of Nagano’s premiere winte",
+      "href": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one?hsLang=en"
+    },
+    {
+      "text": "2026 Summer Events and Activities at Hakuba Happo One Resort",
+      "href": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one#page03"
+    },
+    {
+      "text": "",
+      "href": "https://www.go-nagano.net/hubfs/blog_assets/happo_one_new_events/hakuba_mountain_festival_poster-small.png"
+    },
+    {
+      "text": "https://www.happo-one.jp/event-green/29399/ (Japanese language)",
+      "href": "https://www.happo-one.jp/event-green/29399/"
+    }
+  ],
+  "chosen_event_url": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one?hsLang=en",
+  "json_endpoints": [
+    {
+      "url": "https://cdn-apac.onetrust.com/consent/0f62ca37-281d-4dbb-afd1-4b87474c7066/0f62ca37-281d-4dbb-afd1-4b87474c7066.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "CookieSameSiteNoneEnabled": false,
+        "CookieV2CSPEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "202401.1.0",
+        "OptanonDataJSON": "0f62ca37-281d-4dbb-afd1-4b87474c7066",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "BulkDomainCheckUrl": "https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck",
+        "RuleSet": [
+          {
+            "Id": "8dec0616-b7e9-4a01-996e-8184582b2497",
+            "Name": "Global",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +207 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "Test_GoNagano2",
+            "Conditions": [],
+            "GCEnable": true,
+            "IsGPPEnabled": false
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2024-01-12T00:00:52.298732349",
+          "updatedTime": "2024-01-12T00:00:52.298738069",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-apac.onetrust.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2024-01-12T00:00:52.305391294",
+          "updatedTime": "2024-01-12T00:00:52.305396454",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-apac.onetrust.com/vendorlist/iab2Data.json"
+        },
+        "Iab2V2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2024-01-12T00:00:52.312087878",
+          "updatedTime": "2024-01-12T00:00:52.312091838",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-apac.onetrust.com/vendorlist/iab2V2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 1,
+          "googleVendorListUrl": "https://cdn-apac.onetrust.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2TCFinSDKstub": true,
+          "CookieV2BannerFocus": true,
+          "CookieV2GPC": true,
+          "CookieV2AssignTemplateRule": true,
+          "CookieV2GeolocationJsonApi": true,
+          "CookieV2GCMDMA": true,
+          "CookieV2TCF21": true,
+          "CookieV2RemoveSettingsIcon": true,
+          "CookieV2BannerLogo": true,
+          "CookieV2GeneralVendors": true,
+          "CookieV2GPP": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "JP",
+        "Domain": "go-nagano.net",
+        "TenantGuid": "9df9d3ac-c564-4c5b-ae14-dd0d88a096a6",
+        "EnvId": "app-apac-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "Go-NAGANO",
+        "GATrackToggle": false,
+        "GATrackAssignedCategory": "",
+        "WebFormIntegrationEnabled": false,
+        "WebFormSrcUrl": "",
+        "WebFormWorkerUrl": "",
+        "GppData": {
+          "cmpId": "28"
+        },
+        "AuthenticatedConsent": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cdn-apac.onetrust.com/consent/0f62ca37-281d-4dbb-afd1-4b87474c7066/8dec0616-b7e9-4a01-996e-8184582b2497/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "pccloseButtonType": "Icon",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your de...",
+          "AboutText": "More information",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Allow All",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "CookiesDescText": "Description",
+          "AboutLink": "https://cookiepedia.co.uk/giving-consent-to-cookies",
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "AlwaysInactiveText": "Always Inactive",
+          "PCShowAlwaysActiveToggle": true,
+          "AlertNoticeText": "By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. ",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookies Settings",
+          "CookieSettingButtonText": "Cookies Settings",
+          "AlertAllowCookiesText": "Accept All Cookies",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": false,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "default",
+          "PreferenceCenterPosition": "default",
+          "PreferenceCenterConfirmText": "Confirm My Choices"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "",
+          "PCCustomCSS": "",
+          "PcTextColor": "#696969",
+          "PcButtonColor": "#6CC04A",
+          "PcButtonTextColor": "#FFFFFF",
+          "PcBackgroundColor": "#FFFFFF",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#E9E9E9",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#3860BE",
+          "TextColor": "#696969",
+          "ButtonColor": "#6CC04A",
+          "BannerMPButtonColor": "#FFFFFF",
+          "BannerMPButtonTextColor": "#6CC04A",
+          "ButtonTextColor": "#FFFFFF",
+          "BackgroundColor": "#FFFFFF",
+          "BannerLinksTextColor": "#3860BE",
+          "BannerAccordionBackgroundColor": "#E9E9E9",
+          "CookiePersistentLogo": "https://cdn-apac.onetrust.com/logos/static/ot_persistent_cookie_icon.png",
+          "OptanonLogo": "https://cdn-apac.onetrust.com/logos/static/ot_company_logo.png",
+          "BnrLogo": "",
+          "OneTrustFooterLogo": "https://cdn-apac.onetrust.com/logos/static/powered_by_logo.svg",
+          "OptanonCookieDomain": "go-nagano.net",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": true
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cdn-apac.onetrust.com/scripttemplates/202401.1.0/assets/otFloatingRoundedIcon.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFloatingRoundedIcon",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxvYXRpbmdSb3VuZGVkSWNvbiB2ZXJ0aWNhbC1hbGlnbi1jb250ZW50Ij48ZGl2IHJvbGU9ImFsZXJ0ZGlhbG9nIiBhcmlhLWRlc2NyaWJlZGJ5PSJvbmV0cnVzd...",
+        "css": "#onetrust-banner-sdk.otFloatingRoundedIcon{position:fixed;bottom:2em;right:0;left:5em;z-index:2147483645;background-color:#fff;width:75%;border-radius:6.5px;padding:20px 0;-webk..."
+      }
+    },
+    {
+      "url": "https://cdn-apac.onetrust.com/scripttemplates/202401.1.0/assets/v2/otPcCenter.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcCenter",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY0NlbnRlciBvdC1oaWRlIG90LWZhZGUtaW4iPjxkaXYgcm9sZT0iYWxlcnRkaWFsb2ciIGFyaWEtbW9kYWw9InRydWUiIGFyaWEtZGVzY3JpYmVkYnk9Im90LXBjLWRlc...",
+        "css": "#onetrust-pc-sdk.otPcCenter{overflow:hidden;position:fixed;margin:0 auto;top:5%;right:0;left:0;width:40%;max-width:575px;min-width:575px;border-radius:2.5px;z-index:2147483647;b..."
+      }
+    },
+    {
+      "url": "https://forms-na2.hscollectedforms.net/collected-forms/v1/config/json?portalId=8455400&utk=c11f9a337cd9c4e3a081566afdd93613",
+      "status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "portalId": 8455400,
+        "submissionsApiDomain": "forms.hubspot.com",
+        "reportScraperTest": false,
+        "formCaptureEnabled": true,
+        "token": 369597253
+      }
+    },
+    {
+      "url": "https://cta-na2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=8455400&currentUrl=https%3A%2F%2Fwww.go-nagano.net%2Fen%2Ftrip-idea%2Fwhats-new-at-hakuba-happo-one&utk=c11f9a337cd9c4e3a081566afdd93613&__hstc=77327050.c11f9a337cd9c4e3a081566afdd93613.1788702054094.1788702054094.1788702054094.1&__hssc=77327050.1.1788702054094&contentId=377970697932",
+      "status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "sortedAudienceConfigs": [],
+        "requestedConfigs": [],
+        "gates": []
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/settings?session_id=ea4e1828517e7531ee65437e4ab4f4fb97958976",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "should_obtain_cookie_consent": false,
+        "features": {
+          "tfw_timeline_list": {
+            "bucket": [],
+            "version": null
+          },
+          "tfw_follower_count_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_backend": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_refsrc_session": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_fosnr_soft_interventions_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_mixed_media_15897": {
+            "bucket": "treatment",
+            "version": null
+          },
+          "tfw_experiments_cookie_expiration": {
+            "bucket": 1209600,
+            "version": null
+          },
+          "tfw_show_birdwatch_pivots_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_duplicate_scribes_to_settings": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_use_profile_image_shape_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_video_hls_dynamic_manifests_15082": {
+            "bucket": "true_bitrate",
+            "version": null
+          },
+          "tfw_legacy_timeline_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_frontend": {
+            "bucket": "on",
+            "version": null
+          }
+        }
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "What's New in Hakuba: Hiking, Workations and Summer Events at Hakuba Happo One | Go! NAGANO Official Travel Guide of Nagano, Japan",
+  "final_url": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:57.270277+00:00"
+}

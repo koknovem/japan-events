@@ -1,0 +1,59 @@
+{
+  "id": "oita",
+  "name": "Oita",
+  "region": "Kyushu & Okinawa",
+  "home_url": "https://visit-oita.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "イベント",
+      "href": "https://www.visit-oita.jp/events/"
+    },
+    {
+      "text": "地図から探す",
+      "href": "https://www.visit-oita.jp/events/#area_search"
+    },
+    {
+      "text": "すべてクリア",
+      "href": "https://www.visit-oita.jp/events/index"
+    },
+    {
+      "text": "検索枠を閉じる",
+      "href": "https://www.visit-oita.jp/events/#"
+    },
+    {
+      "text": "前月",
+      "href": "https://www.visit-oita.jp/events/index/2026-08"
+    },
+    {
+      "text": "翌月",
+      "href": "https://www.visit-oita.jp/events/index/2026-10"
+    },
+    {
+      "text": "1",
+      "href": "https://www.visit-oita.jp/events/index/is_search:1/open_date:2026-09-01/close_date:2026-09-01"
+    },
+    {
+      "text": "2",
+      "href": "https://www.visit-oita.jp/events/index/is_search:1/open_date:2026-09-02/close_date:2026-09-02"
+    },
+    {
+      "text": "3",
+      "href": "https://www.visit-oita.jp/events/index/is_search:1/open_date:2026-09-03/close_date:2026-09-03"
+    },
+    {
+      "text": "4",
+      "href": "https://www.visit-oita.jp/events/index/is_search:1/open_date:2026-09-04/close_date:2026-09-04"
+    }
+  ],
+  "chosen_event_url": "https://www.visit-oita.jp/events/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "イベント情報 | 日本一の「おんせん県」大分県の観光情報公式サイト",
+  "final_url": "https://www.visit-oita.jp/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:40.999048+00:00"
+}

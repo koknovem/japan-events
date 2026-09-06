@@ -1,0 +1,388 @@
+{
+  "id": "shizuoka",
+  "name": "Shizuoka",
+  "region": "Tokai & Kansai",
+  "home_url": "https://www.visit-shizuoka.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "イベント",
+      "href": "https://www.visit-shizuoka.com/event/index.html"
+    },
+    {
+      "text": "http://www.shr.or.jp/event/%e3%80%8c2026%e3%81%97%e3%81%9a%e3%81%8a%e3%81%8b%e3%83%bb%e3%82%88%e3%81%84%e3%81%a8%e3%81%9",
+      "href": "http://www.shr.or.jp/event/%e3%80%8c2026%e3%81%97%e3%81%9a%e3%81%8a%e3%81%8b%e3%83%bb%e3%82%88%e3%81%84%e3%81%a8%e3%81%93%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3%e3%80%8d2026%e5%b9%b46%e6%9c%88%e3%82%88%e3%82%8a/"
+    },
+    {
+      "text": "https://www.visit-shizuoka.com/event/detail_656.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_656.html"
+    },
+    {
+      "text": "https://www.visit-shizuoka.com/event/detail_637.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_637.html"
+    },
+    {
+      "text": "detail_589.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_589.html"
+    },
+    {
+      "text": "detail_631.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_631.html"
+    },
+    {
+      "text": "detail_625.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_625.html"
+    },
+    {
+      "text": "detail_616.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_616.html"
+    },
+    {
+      "text": "detail_665.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_665.html"
+    },
+    {
+      "text": "detail_543.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_543.html"
+    },
+    {
+      "text": "detail_611.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_611.html"
+    },
+    {
+      "text": "detail_635.html",
+      "href": "https://www.visit-shizuoka.com/event/detail_635.html"
+    }
+  ],
+  "chosen_event_url": "https://www.visit-shizuoka.com/event/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=616&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=589&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=631&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=667&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=635&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=637&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 10
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=644&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=611&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=640&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 17
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=543&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 11
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=665&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=659&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=625&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=668&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=550&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=654&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 5
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=660&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=620&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=638&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=656&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 10
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=658&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=597&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=663&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=592&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 3
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=605&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 0
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=623&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 7
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=643&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=603&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=607&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 6
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=661&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 3
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=655&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.visit-shizuoka.com/lsc/api/favG2/status.php?id=608&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "イベント｜【公式】しずおか観光ナビ　- 静岡市の旅行情報",
+  "final_url": "https://www.visit-shizuoka.com/event/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:17.226089+00:00"
+}

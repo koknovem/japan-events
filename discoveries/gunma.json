@@ -1,0 +1,1375 @@
+{
+  "id": "gunma",
+  "name": "Gunma",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.visit-gunma.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('OK')"
+  ],
+  "event_links": [
+    {
+      "text": "Stories & Guides Eight Weird and Wonderful Japanese Festivals Take part in Gunma’s liveliest events",
+      "href": "https://www.visit-gunma.jp/en/discover/stories-and-guides/eight-weird-wonderful-japanese-festivals/"
+    }
+  ],
+  "chosen_event_url": "https://www.visit-gunma.jp/en/discover/stories-and-guides/eight-weird-wonderful-japanese-festivals/",
+  "json_endpoints": [
+    {
+      "url": "https://api.japan-concierge.jp/v2/spots",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "external_ids": [
+          1,
+          2,
+          3,
+          4,
+          "... +449 more"
+        ]
+      }
+    },
+    {
+      "url": "https://api.japan-concierge.jp/v2/token",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/www.visit-gunma.jp.json?t=1",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "uid": 1015454,
+        "dkey": "07cbbda14e502cca26cc04480d5e6331",
+        "updated_at": 1788679157,
+        "version": "11.5.545",
+        "site_data_url_template": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/SITENAME.json",
+        "site_sampling_url_template": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/SITENAME.json",
+        "status_data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/status.json",
+        "hud": {
+          "host": "https://hud.crazyegg.com",
+          "script_url": "https://script.crazyegg.com/scripts/hud",
+          "core_api_auth_key": "c589873da652c9e5b9c80513fe8f0d3e3222d9128b4d6736771ffde103543fe9",
+          "launch_origins": [
+            "https://core.crazyegg.com",
+            "https://api.crazyegg.com"
+          ]
+        },
+        "survey_preview_dest": "https://api.crazyegg.com/surveys/preview",
+        "survey_launch_origins": [
+          "https://app.crazyegg.com",
+          "https://core.crazyegg.com"
+        ],
+        "addon_preview_dest": "https://api.crazyegg.com/surveys/preview",
+        "addon_launch_origins": [
+          "https://app.crazyegg.com",
+          "https://core.crazyegg.com"
+        ],
+        "ce_app_url": "https://app.crazyegg.com",
+        "flow_preview_url": "https://api.crazyegg.com/abtests/preview",
+        "clock_url": "https://tracking.crazyegg.com/clock",
+        "common_script_url": "https://script.crazyegg.com/pages/versioned/common-scripts/b96c449137f00bb6dd6811619f89660f.js",
+        "status": "ok",
+        "counters_dest": "https://tracking.crazyegg.com/metrics",
+        "data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/www.visit-gunma.jp.json",
+        "sampling_data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/www.visit-gunma.jp.json",
+        "tracking_script_url": "https://script.crazyegg.com/pages/versioned/tracking-scripts/dcb2ac42031d2ccaa00ff51fa0fa6f89.js",
+        "trackingpagestate_script_url": "https://script.crazyegg.com/pages/versioned/trackingpagestate-scripts/23d4e0cdcf08fb67ae792ae3df0f92b0.js",
+        "thirdparty_script_url": "https://script.crazyegg.com/pages/versioned/thirdparty-scripts/6fe5101ffa32e66e4debad675c8eea66.js",
+        "remote_script_url": "https://script.crazyegg.com/pages/versioned/remote-scripts/81d1701dbc9e7f7bf421387273c9c389.js",
+        "remote_host_url": "https://script.crazyegg.com/pages/remote-host.html?common=https%3A%2F%2Fscript.crazyegg.com%2Fpages%2Fversioned%2Fcommon-scripts%2Fb96c449137f00bb6dd6811619f89660f.js&thirdparty...",
+        "sites": "%8&4!}%|%]!}$<$4$8$1$8$9$7$,!}&%%?&$%^!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}%[&&&&%~%|%^${&&&$%?%|&%!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}&+%^&+&+%|&&&%%.%^%[&&&*%]%|&%%`!}$...",
+        "segments": [],
+        "global_ip_block_list": "$2$6$1$.$3$5$;$.$3$1$8$.$4$9!.$;$6$.$2$6$2$.$2$3$6$.$2$6$3!.$7$2$.$2$2$6$.$2$2$;$.$3$4$3!.$2$2$2$.$9$8$.$9$;$.$2!.$;$6$.$2$6$1$.$2$;$2$.$5$3!.$5$7$.$7$;$.$8$.$2$1$1!.$5$7$.$7$;$...",
+        "is_using_ip_blocking": true,
+        "snapshots": "%8&4!}%|%]!}$<$7$9$2$3$3$7$3$,!}&.!}$<$2$8$,!}%^!}$<$2$9$1$7$6$1$2$7$1$1$,!}&-!}$<&4!}&(&*&&&,&&%[&&&!!}$<!}%{&,&,&(&+!}$,!}%{&&&+&,!}$<!}&0&0&0$.&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$...",
+        "v6_tracking_dest": "https://user-event-tracker.crazyegg.com/",
+        "v6_secure_tracking_dest": "https://user-event-tracker.crazyegg.com/",
+        "transformations_script_url": "https://script.crazyegg.com/pages/versioned/transformations-scripts/6dec16b238136a8cf06c43e53a818d86.js",
+        "page_views_limit_reached": false,
+        "v11_tracking_dest": "https://tracking.crazyegg.com/v11",
+        "recordings_dest": "https://recording.crazyegg.com",
+        "recordings_sampling_dest": "https://sample-api-v2.crazyegg.com",
+        "ratio_v2_dest": "https://sampling-ratio.crazyegg.com/ratio/v2",
+        "page_states_tracking_url": "https://pagestates-tracking.crazyegg.com",
+        "assets_tracking_url": "https://assets-tracking.crazyegg.com"
+      }
+    },
+    {
+      "url": "https://api.japan-concierge.jp/v2/favorite_spots",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "data": []
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/www.visit-gunma.jp.json?t=1",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "version": "11.5.545",
+        "sites_sampling": "%8&4!}%|%]!}$<$4$8$1$8$9$7$,!}&%%?&$%^!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}&*%^%[&&&*%]%|&%%`%=&*%?&,%|&&!}$<$4$1&6%;"
+      }
+    },
+    {
+      "url": "https://api.japan-concierge.jp/v2/token",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://api.japan-concierge.jp/v2/spots",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "external_ids": [
+          1,
+          2,
+          3,
+          4,
+          "... +449 more"
+        ]
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/www.visit-gunma.jp.json?t=1",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "uid": 1015454,
+        "dkey": "07cbbda14e502cca26cc04480d5e6331",
+        "updated_at": 1788679157,
+        "version": "11.5.545",
+        "site_data_url_template": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/SITENAME.json",
+        "site_sampling_url_template": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/SITENAME.json",
+        "status_data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/status.json",
+        "hud": {
+          "host": "https://hud.crazyegg.com",
+          "script_url": "https://script.crazyegg.com/scripts/hud",
+          "core_api_auth_key": "c589873da652c9e5b9c80513fe8f0d3e3222d9128b4d6736771ffde103543fe9",
+          "launch_origins": [
+            "https://core.crazyegg.com",
+            "https://api.crazyegg.com"
+          ]
+        },
+        "survey_preview_dest": "https://api.crazyegg.com/surveys/preview",
+        "survey_launch_origins": [
+          "https://app.crazyegg.com",
+          "https://core.crazyegg.com"
+        ],
+        "addon_preview_dest": "https://api.crazyegg.com/surveys/preview",
+        "addon_launch_origins": [
+          "https://app.crazyegg.com",
+          "https://core.crazyegg.com"
+        ],
+        "ce_app_url": "https://app.crazyegg.com",
+        "flow_preview_url": "https://api.crazyegg.com/abtests/preview",
+        "clock_url": "https://tracking.crazyegg.com/clock",
+        "common_script_url": "https://script.crazyegg.com/pages/versioned/common-scripts/b96c449137f00bb6dd6811619f89660f.js",
+        "status": "ok",
+        "counters_dest": "https://tracking.crazyegg.com/metrics",
+        "data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/site/www.visit-gunma.jp.json",
+        "sampling_data_url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/www.visit-gunma.jp.json",
+        "tracking_script_url": "https://script.crazyegg.com/pages/versioned/tracking-scripts/dcb2ac42031d2ccaa00ff51fa0fa6f89.js",
+        "trackingpagestate_script_url": "https://script.crazyegg.com/pages/versioned/trackingpagestate-scripts/23d4e0cdcf08fb67ae792ae3df0f92b0.js",
+        "thirdparty_script_url": "https://script.crazyegg.com/pages/versioned/thirdparty-scripts/6fe5101ffa32e66e4debad675c8eea66.js",
+        "remote_script_url": "https://script.crazyegg.com/pages/versioned/remote-scripts/81d1701dbc9e7f7bf421387273c9c389.js",
+        "remote_host_url": "https://script.crazyegg.com/pages/remote-host.html?common=https%3A%2F%2Fscript.crazyegg.com%2Fpages%2Fversioned%2Fcommon-scripts%2Fb96c449137f00bb6dd6811619f89660f.js&thirdparty...",
+        "sites": "%8&4!}%|%]!}$<$4$8$1$8$9$7$,!}&%%?&$%^!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}%[&&&&%~%|%^${&&&$%?%|&%!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}&+%^&+&+%|&&&%%.%^%[&&&*%]%|&%%`!}$...",
+        "segments": [],
+        "global_ip_block_list": "$2$6$1$.$3$5$;$.$3$1$8$.$4$9!.$;$6$.$2$6$2$.$2$3$6$.$2$6$3!.$7$2$.$2$2$6$.$2$2$;$.$3$4$3!.$2$2$2$.$9$8$.$9$;$.$2!.$;$6$.$2$6$1$.$2$;$2$.$5$3!.$5$7$.$7$;$.$8$.$2$1$1!.$5$7$.$7$;$...",
+        "is_using_ip_blocking": true,
+        "snapshots": "%8&4!}%|%]!}$<$7$9$2$3$3$7$3$,!}&.!}$<$2$8$,!}%^!}$<$2$9$1$7$6$1$2$7$1$1$,!}&-!}$<&4!}&(&*&&&,&&%[&&&!!}$<!}%{&,&,&(&+!}$,!}%{&&&+&,!}$<!}&0&0&0$.&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$...",
+        "v6_tracking_dest": "https://user-event-tracker.crazyegg.com/",
+        "v6_secure_tracking_dest": "https://user-event-tracker.crazyegg.com/",
+        "transformations_script_url": "https://script.crazyegg.com/pages/versioned/transformations-scripts/6dec16b238136a8cf06c43e53a818d86.js",
+        "page_views_limit_reached": false,
+        "v11_tracking_dest": "https://tracking.crazyegg.com/v11",
+        "recordings_dest": "https://recording.crazyegg.com",
+        "recordings_sampling_dest": "https://sample-api-v2.crazyegg.com",
+        "ratio_v2_dest": "https://sampling-ratio.crazyegg.com/ratio/v2",
+        "page_states_tracking_url": "https://pagestates-tracking.crazyegg.com",
+        "assets_tracking_url": "https://assets-tracking.crazyegg.com"
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/data-scripts/0101/5454/sampling/www.visit-gunma.jp.json?t=1",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "version": "11.5.545",
+        "sites_sampling": "%8&4!}%|%]!}$<$4$8$1$8$9$7$,!}&%%?&$%^!}$<!}&.%|&+%|&,$-%`&-&%&$%?$.%}&(!}$,!}&*%^%[&&&*%]%|&%%`%=&*%?&,%|&&!}$<$4$1&6%;"
+      }
+    },
+    {
+      "url": "https://53ltmychqx-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.0.0)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.0.0)%3B%20JS%20Helper%20(0.0.0-5a0352a)&x-algolia-api-key=e5120ec9226b0207566775c6316d88c1&x-algolia-application-id=53LTMYCHQX",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 40,
+      "sample": {
+        "results": [
+          {
+            "hits": [
+              {
+                "title": "Marunuma Kogen Ski Area",
+                "url": "spots/marunuma-kogen-ski-area",
+                "updatedAt": 1755061948,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/img_0132_1__en-US__img_0132_Marunuma_Kogen_Ski_Area_1_CL-320x212.webp",
+                "contentRanking": 2,
+                "contentType": "SPOT",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "High altitude means high-quality snow",
+                "concierge": true,
+                "areaRanking": 5,
+                "categoryRanking": 3,
+                "area": "Oze",
+                "category": "Action & Adventure",
+                "rating": 5,
+                "tripPlanner": true,
+                "objectID": "132",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Yubatake Sensui",
+                "url": "spots/yubatake-sensui",
+                "updatedAt": 1779846912,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/16MpcnbyldwJGyrZ38Zg6m__en-US__img_spot_492_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "A modern, stylized retreat in Kusatsu",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "tripPlanner": true,
+                "gunmaExcellence": true,
+                "objectID": "492",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Kusatsu Onsen Boun",
+                "url": "spots/kusatsu-onsen-boun",
+                "updatedAt": 1750750309,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/7vExpDSlrDVm4XtoLdfJta__en-US__img_spot_Kusatsu-Onsen-Boun_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "Rejuvenate your senses in a serene retreat",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "gunmaExcellence": true,
+                "objectID": "467",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Aeruyado Takamatsu",
+                "url": "spots/aeruyado-takamatsu",
+                "updatedAt": 1750748855,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/15KwMxSmQq8IM0wuUf3mvU__en-US__img_spot_Aeruyado-Takamatsu_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "A stylish accommodation blending modern Japanese and western design",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "gunmaExcellence": true,
+                "objectID": "461",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              "... +16 more"
+            ],
+            "nbHits": 41,
+            "page": 0,
+            "nbPages": 3,
+            "hitsPerPage": 20,
+            "facets": {
+              "tag_tags": {
+                "tag_039": 41,
+                "tag_011": 30,
+                "tag_010": 16,
+                "tag_009": 15,
+                "tag_042": 15,
+                "tag_040": 7,
+                "tag_023": 2,
+                "tag_019": 1
+              },
+              "contentType": {
+                "ACCOMMODATION": 38,
+                "SPOT": 3
+              },
+              "season_tags": {
+                "tag_046": 32,
+                "tag_043": 31,
+                "tag_044": 31,
+                "tag_045": 31
+              },
+              "category_tags": {
+                "tag_008": 38,
+                "tag_001": 3,
+                "tag_003": 1
+              },
+              "location_tags": {
+                "tag_049": 10,
+                "tag_048": 9,
+                "tag_051": 9,
+                "tag_047": 7,
+                "tag_053": 4,
+                "tag_052": 2
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&facets=%5B%22category_tags%22%2C%22location_tags%22%2C%22seas...",
+            "index": "pl_prod_search_spots_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 62
+              },
+              "total": 0
+            },
+            "serverTimeMS": 1
+          },
+          {
+            "hits": [
+              {
+                "objectID": "3"
+              }
+            ],
+            "nbHits": 460,
+            "page": 0,
+            "nbPages": 460,
+            "hitsPerPage": 1,
+            "facets": {
+              "tag_tags": {
+                "tag_011": 71,
+                "tag_010": 61,
+                "tag_023": 53,
+                "tag_036": 48,
+                "tag_039": 41,
+                "tag_013": 40,
+                "tag_033": 40,
+                "tag_031": 35,
+                "tag_009": 32,
+                "tag_014": 32
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&hitsPerPage=1&attributesToRetrieve=%5B%5D&attributesToHighlig...",
+            "index": "pl_prod_search_spots_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 62
+              },
+              "total": 0
+            },
+            "serverTimeMS": 2
+          },
+          {
+            "hits": [
+              {
+                "title": "Onsen-Hopping Near Tokyo",
+                "updatedAt": 1753837697,
+                "url": "discover/stories-and-guides/onsen-hopping-near-tokyo",
+                "contentType": "STORY",
+                "startDate": 1,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/spb23hFQXSpodPltevTNi__en-US__img_01-01-320x212.webp",
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +1 more"
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +1 more"
+                ],
+                "src_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +9 more"
+                ],
+                "ranking": 1,
+                "subTitle": "Soak in geothermal baths and traditional atmospheres just hours from the capital",
+                "category": "tag_001",
+                "objectID": "sg_007",
+                "_highlightResult": {
+                  "title": "...",
+                  "updatedAt": "...",
+                  "url": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "imagUrl": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "src_tags": "...",
+                  "ranking": "...",
+                  "subTitle": "...",
+                  "category": "..."
+                }
+              },
+              {
+                "title": "Enjoy a Relaxing Retreat in Ikaho",
+                "updatedAt": 1750750947,
+                "url": "discover/stories-and-guides/enjoy-a-relaxing-retreat-in-ikaho",
+                "contentType": "STORY",
+                "startDate": 1,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/70XS9ZXZl6pT8STxSY7k59__en-US__kimg_story_74-320x212.webp",
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +6 more"
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +6 more"
+                ],
+                "src_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +12 more"
+                ],
+                "ranking": 11,
+                "subTitle": "With easy access from Tokyo and a range of relaxing activities, Ikaho is an ideal getaway",
+                "category": "tag_001",
+                "objectID": "5y7OpDwfDaIEkpSUW8oNWp",
+                "_highlightResult": {
+                  "title": "...",
+                  "updatedAt": "...",
+                  "url": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "imagUrl": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "src_tags": "...",
+                  "ranking": "...",
+                  "subTitle": "...",
+                  "category": "..."
+                }
+              },
+              {
+                "title": "Exploring Gunma's Onsen Culture",
+                "updatedAt": 1746692047,
+                "url": "discover/stories-and-guides/exploring-gunma-onsen-culture",
+                "contentType": "STORY",
+                "startDate": 1,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/snZEPdtwkwg7bdbpyWEBY__en-US__kimg_story_39-320x212.webp",
+                "category_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +2 more"
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +2 more"
+                ],
+                "src_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +13 more"
+                ],
+                "ranking": 12,
+                "subTitle": "Relax and soothe your senses as you learn more about Gunma's legendary onsen escapes",
+                "category": "tag_001",
+                "objectID": "3i2iMmC2PrRGG2agSYSeUM",
+                "_highlightResult": {
+                  "title": "...",
+                  "updatedAt": "...",
+                  "url": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "imagUrl": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "src_tags": "...",
+                  "ranking": "...",
+                  "subTitle": "...",
+                  "category": "..."
+                }
+              },
+              {
+                "title": "Eight Traditional Onsen Experiences in Kusatsu Onsen",
+                "updatedAt": 1753836233,
+                "url": "discover/stories-and-guides/eight-traditional-onsen-experiences-kusatsu",
+                "contentType": "STORY",
+                "startDate": 1,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/5XtOYfFuk7dvea53sEB231__en-US__img_sg009_01-01-320x212.webp",
+                "category_tags": [
+                  "...",
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +2 more"
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +2 more"
+                ],
+                "src_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +9 more"
+                ],
+                "ranking": 19,
+                "subTitle": "Embrace tradition at this famous onsen resort",
+                "category": "tag_001",
+                "objectID": "sg_009",
+                "_highlightResult": {
+                  "title": "...",
+                  "updatedAt": "...",
+                  "url": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "imagUrl": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "src_tags": "...",
+                  "ranking": "...",
+                  "subTitle": "...",
+                  "category": "..."
+                }
+              },
+              "... +16 more"
+            ],
+            "nbHits": 25,
+            "page": 0,
+            "nbPages": 2,
+            "hitsPerPage": 20,
+            "facets": {
+              "tag_tags": {
+                "tag_039": 25,
+                "tag_009": 24,
+                "tag_011": 22,
+                "tag_010": 19,
+                "tag_040": 13,
+                "tag_012": 10,
+                "tag_014": 10,
+                "tag_054": 10,
+                "tag_018": 9,
+                "tag_019": 9
+              },
+              "contentType": {
+                "STORY": 25
+              },
+              "season_tags": {
+                "tag_043": 22,
+                "tag_044": 22,
+                "tag_045": 22,
+                "tag_046": 21
+              },
+              "category_tags": {
+                "tag_001": 18,
+                "tag_002": 11,
+                "tag_004": 10,
+                "tag_008": 7,
+                "tag_003": 3,
+                "tag_007": 2,
+                "tag_006": 1
+              },
+              "location_tags": {
+                "tag_048": 13,
+                "tag_049": 13,
+                "tag_051": 13,
+                "tag_047": 10,
+                "tag_050": 8,
+                "tag_052": 5,
+                "tag_053": 3
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&facets=%5B%22category_tags%22%2C%22location_tags%22%2C%22seas...",
+            "index": "pl_prod_search_stories_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 62
+              },
+              "afterFetch": {
+                "format": {
+                  "total": "..."
+                }
+              },
+              "total": 0
+            },
+            "serverTimeMS": 3
+          },
+          {
+            "hits": [
+              {
+                "objectID": "sg_007"
+              }
+            ],
+            "nbHits": 82,
+            "page": 0,
+            "nbPages": 82,
+            "hitsPerPage": 1,
+            "facets": {
+              "tag_tags": {
+                "tag_009": 42,
+                "tag_011": 34,
+                "tag_054": 34,
+                "tag_010": 31,
+                "tag_012": 28,
+                "tag_018": 26,
+                "tag_039": 25,
+                "tag_038": 24,
+                "tag_019": 21,
+                "tag_030": 21
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&hitsPerPage=1&attributesToRetrieve=%5B%5D&attributesToHighlig...",
+            "index": "pl_prod_search_stories_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 62
+              },
+              "total": 0
+            },
+            "serverTimeMS": 4
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.japan-concierge.jp/v2/favorite_spots",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "data": []
+      }
+    },
+    {
+      "url": "https://53ltmychqx-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.0.0)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.0.0)%3B%20JS%20Helper%20(0.0.0-5a0352a)&x-algolia-api-key=e5120ec9226b0207566775c6316d88c1&x-algolia-application-id=53LTMYCHQX",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 20,
+      "sample": {
+        "results": [
+          {
+            "hits": [
+              {
+                "title": "Marunuma Kogen Ski Area",
+                "url": "spots/marunuma-kogen-ski-area",
+                "updatedAt": 1755061948,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/img_0132_1__en-US__img_0132_Marunuma_Kogen_Ski_Area_1_CL-320x212.webp",
+                "contentRanking": 2,
+                "contentType": "SPOT",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "High altitude means high-quality snow",
+                "concierge": true,
+                "areaRanking": 5,
+                "categoryRanking": 3,
+                "area": "Oze",
+                "category": "Action & Adventure",
+                "rating": 5,
+                "tripPlanner": true,
+                "objectID": "132",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Yubatake Sensui",
+                "url": "spots/yubatake-sensui",
+                "updatedAt": 1779846912,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/16MpcnbyldwJGyrZ38Zg6m__en-US__img_spot_492_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "A modern, stylized retreat in Kusatsu",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "tripPlanner": true,
+                "gunmaExcellence": true,
+                "objectID": "492",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Kusatsu Onsen Boun",
+                "url": "spots/kusatsu-onsen-boun",
+                "updatedAt": 1750750309,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/7vExpDSlrDVm4XtoLdfJta__en-US__img_spot_Kusatsu-Onsen-Boun_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "Rejuvenate your senses in a serene retreat",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "gunmaExcellence": true,
+                "objectID": "467",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              {
+                "title": "Aeruyado Takamatsu",
+                "url": "spots/aeruyado-takamatsu",
+                "updatedAt": 1750748855,
+                "imagUrl": "https://vgu-media-prod.s3.ap-northeast-1.amazonaws.com/media/15KwMxSmQq8IM0wuUf3mvU__en-US__img_spot_Aeruyado-Takamatsu_01-320x212.webp",
+                "contentRanking": 1,
+                "contentType": "ACCOMMODATION",
+                "startDate": 0,
+                "category_tags": [
+                  "..."
+                ],
+                "season_tags": [
+                  "...",
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "location_tags": [
+                  "..."
+                ],
+                "tag_tags": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "tag_tags_header": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "shortIntroduction": "A stylish accommodation blending modern Japanese and western design",
+                "concierge": true,
+                "areaRanking": 1,
+                "categoryRanking": 7,
+                "area": "Kusatsu",
+                "category": "Accommodation",
+                "rating": 5,
+                "gunmaExcellence": true,
+                "objectID": "461",
+                "_highlightResult": {
+                  "title": "...",
+                  "url": "...",
+                  "updatedAt": "...",
+                  "imagUrl": "...",
+                  "contentRanking": "...",
+                  "contentType": "...",
+                  "startDate": "...",
+                  "category_tags": "...",
+                  "season_tags": "...",
+                  "location_tags": "...",
+                  "tag_tags": "...",
+                  "tag_tags_header": "...",
+                  "shortIntroduction": "...",
+                  "areaRanking": "...",
+                  "categoryRanking": "...",
+                  "area": "...",
+                  "category": "...",
+                  "rating": "..."
+                }
+              },
+              "... +16 more"
+            ],
+            "nbHits": 41,
+            "page": 0,
+            "nbPages": 3,
+            "hitsPerPage": 20,
+            "facets": {
+              "tag_tags": {
+                "tag_039": 41,
+                "tag_011": 30,
+                "tag_010": 16,
+                "tag_009": 15,
+                "tag_042": 15,
+                "tag_040": 7,
+                "tag_023": 2,
+                "tag_019": 1
+              },
+              "contentType": {
+                "ACCOMMODATION": 38,
+                "SPOT": 3
+              },
+              "season_tags": {
+                "tag_046": 32,
+                "tag_043": 31,
+                "tag_044": 31,
+                "tag_045": 31
+              },
+              "category_tags": {
+                "tag_008": 38,
+                "tag_001": 3,
+                "tag_003": 1
+              },
+              "location_tags": {
+                "tag_049": 10,
+                "tag_048": 9,
+                "tag_051": 9,
+                "tag_047": 7,
+                "tag_053": 4,
+                "tag_052": 2
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&facets=%5B%22category_tags%22%2C%22location_tags%22%2C%22seas...",
+            "index": "pl_prod_search_spots_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 84
+              },
+              "total": 0
+            },
+            "serverTimeMS": 1
+          },
+          {
+            "hits": [
+              {
+                "objectID": "3"
+              }
+            ],
+            "nbHits": 460,
+            "page": 0,
+            "nbPages": 460,
+            "hitsPerPage": 1,
+            "facets": {
+              "tag_tags": {
+                "tag_011": 71,
+                "tag_010": 61,
+                "tag_023": 53,
+                "tag_036": 48,
+                "tag_039": 41,
+                "tag_013": 40,
+                "tag_033": 40,
+                "tag_031": 35,
+                "tag_009": 32,
+                "tag_014": 32
+              }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+              "facetsCount": true,
+              "nbHits": true,
+              "typo": true
+            },
+            "query": "",
+            "params": "maxValuesPerFacet=10&query=&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&filters=&hitsPerPage=1&attributesToRetrieve=%5B%5D&attributesToHighlig...",
+            "index": "pl_prod_search_spots_en-US",
+            "renderingContent": {},
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+              "_request": {
+                "roundTrip": 84
+              },
+              "total": 0
+            },
+            "serverTimeMS": 2
+          }
+        ]
+      }
+    }
+  ],
+  "likely_event_apis": [
+    {
+      "url": "https://53ltmychqx-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.0.0)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.0.0)%3B%20JS%20Helper%20(0.0.0-5a0352a)&x-algolia-api-key=e5120ec9226b0207566775c6316d88c1&x-algolia-application-id=53LTMYCHQX",
+      "event_item_count": 40,
+      "sample_keys": [
+        "area",
+        "areaRanking",
+        "category",
+        "categoryRanking",
+        "category_tags",
+        "contentRanking",
+        "contentType",
+        "imagUrl",
+        "location_tags",
+        "rating",
+        "season_tags",
+        "shortIntroduction",
+        "startDate",
+        "tag_tags",
+        "tag_tags_header",
+        "title",
+        "updatedAt",
+        "url"
+      ]
+    },
+    {
+      "url": "https://53ltmychqx-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.0.0)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.0.0)%3B%20JS%20Helper%20(0.0.0-5a0352a)&x-algolia-api-key=e5120ec9226b0207566775c6316d88c1&x-algolia-application-id=53LTMYCHQX",
+      "event_item_count": 20,
+      "sample_keys": [
+        "area",
+        "areaRanking",
+        "category",
+        "categoryRanking",
+        "category_tags",
+        "contentRanking",
+        "contentType",
+        "imagUrl",
+        "location_tags",
+        "rating",
+        "season_tags",
+        "shortIntroduction",
+        "startDate",
+        "tag_tags",
+        "tag_tags_header",
+        "title",
+        "updatedAt",
+        "url"
+      ]
+    }
+  ],
+  "page_title": "Search | Gunma Official Tourist Guide",
+  "final_url": "https://www.visit-gunma.jp/en/search/?tags=tag_039",
+  "notes": "stable JSON candidates: 2",
+  "discovered_at": "2026-09-06T13:40:48.544694+00:00"
+}

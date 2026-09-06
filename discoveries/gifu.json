@@ -1,0 +1,95 @@
+{
+  "id": "gifu",
+  "name": "Gifu",
+  "region": "Tokai & Kansai",
+  "home_url": "https://visitgifu.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Fox Wedding Festival in Hida Furukawa, September 26th (Sat)",
+      "href": "https://visitgifu.com/64954/"
+    },
+    {
+      "text": "2027 Shirakawa-go Light Up Event News",
+      "href": "https://visitgifu.com/64926/"
+    },
+    {
+      "text": "For more information in English",
+      "href": "https://visitgifu.com/see-do/hida-furukawa-fox-fire-festival/"
+    }
+  ],
+  "chosen_event_url": "https://visitgifu.com/64954/",
+  "json_endpoints": [
+    {
+      "url": "https://syndication.twitter.com/settings?session_id=0a80925a9088e13931a04d3bd8e2f9a47bc10d08",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "should_obtain_cookie_consent": false,
+        "features": {
+          "tfw_timeline_list": {
+            "bucket": [],
+            "version": null
+          },
+          "tfw_follower_count_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_backend": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_refsrc_session": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_fosnr_soft_interventions_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_mixed_media_15897": {
+            "bucket": "treatment",
+            "version": null
+          },
+          "tfw_experiments_cookie_expiration": {
+            "bucket": 1209600,
+            "version": null
+          },
+          "tfw_show_birdwatch_pivots_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_duplicate_scribes_to_settings": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_use_profile_image_shape_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_video_hls_dynamic_manifests_15082": {
+            "bucket": "true_bitrate",
+            "version": null
+          },
+          "tfw_legacy_timeline_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_frontend": {
+            "bucket": "on",
+            "version": null
+          }
+        }
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Fox Wedding Festival in Hida Furukawa, September 26th (Sat)",
+  "final_url": "https://visitgifu.com/64954/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:15.493884+00:00"
+}

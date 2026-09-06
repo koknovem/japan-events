@@ -1,0 +1,12 @@
+{
+  "prefecture": "Toyama",
+  "id": "toyama",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "links:1; none_on_date:1_parsed",
+  "event_count": 0,
+  "source_url": "https://visit-toyama-japan.com/en/festivals",
+  "adapter": "generic",
+  "events": []
+}

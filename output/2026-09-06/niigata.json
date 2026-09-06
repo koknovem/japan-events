@@ -1,0 +1,43 @@
+{
+  "prefecture": "Niigata",
+  "id": "niigata",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:26; links:1",
+  "event_count": 2,
+  "source_url": "https://discover-niigata.com/events/",
+  "adapter": "generic",
+  "events": [
+    {
+      "prefecture": "Niigata",
+      "title": "Murakami Grand Festival",
+      "start_date": "2007-07-06",
+      "end_date": "2027-01-07",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "July 6 to 7 every year Murakami Grand Festival Festivals&Traditional Events Murakami and Shibata Area",
+      "url": "https://discover-niigata.com/events/13027/",
+      "image_url": "https://discover-niigata.com/wp-content/uploads/2026/02/01-1200.webp",
+      "source": "https://discover-niigata.com/events/#html"
+    },
+    {
+      "prefecture": "Niigata",
+      "title": "year Murakami Grand Festival Festivals&Traditional Events Murakami and Shibata Area",
+      "start_date": "2007-07-06",
+      "end_date": "2027-01-07",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": null,
+      "url": "https://discover-niigata.com/events/13027/",
+      "image_url": null,
+      "source": "https://discover-niigata.com/events/#links"
+    }
+  ]
+}

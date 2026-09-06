@@ -1,0 +1,44 @@
+{
+  "id": "chiba",
+  "name": "Chiba",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.visitchiba.jp/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.visitchiba.jp/",
+  "json_endpoints": [
+    {
+      "url": "https://connect.facebook.net/app_config/json/344316719069622/",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "fedcm": {
+          "default": false
+        }
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=JchrDZJpTJSwfTY+CKpAYQ==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "V22dauWoMtm32roP79W3kAE",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "wftDtcQvKYhH7i3Zq-p4c0AU-dYxShxspFhx-K7hOjM",
+        "bg_binary": "RrDHTebzddmcTh78mA7fVB7G+hixtSd/ApxisUF0xIGaU6ErbGcNdU7RCx/F6I3RfzHKvPKJbY8CwABy2kK0lgMZU2kBnYl5ZJDeKJjKqmHXlp0V1mQlMzZacqMHf/ttbGK49FaM19S/FJyl5BqGgXBJxHHvReHFTUubdurXX9yP1hN4c...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Visit Chiba | Endless Adventures Await",
+  "final_url": "https://www.visitchiba.jp/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:40:39.737055+00:00"
+}

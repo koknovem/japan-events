@@ -1,0 +1,490 @@
+{
+  "id": "hiroshima",
+  "name": "Hiroshima",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://dive-hiroshima.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "a:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "EventsEvents",
+      "href": "https://dive-hiroshima.com/en/events/"
+    },
+    {
+      "text": "Events04/01→ 03/31Hiroshima Castle sightseeing boat",
+      "href": "https://dive-hiroshima.com/en/events/events-45195/"
+    },
+    {
+      "text": "Events7/12(Sun)→ 9/27(Sun)Hiroshima City Kagura Troupe Performances Series July-September [Yuki Lodge]",
+      "href": "https://dive-hiroshima.com/en/events/events-36732/"
+    },
+    {
+      "text": "Events6/26(Fri)→ 11/10(Tue)Miyoshi Mononoke Museum \"Tsukumogami: Tools Turned into Yokai! Exhibition\"",
+      "href": "https://dive-hiroshima.com/en/events/events-45526/"
+    },
+    {
+      "text": "Events3/23(Mon)→ 3/31(Wed)Onomichi Seven Buddha Pilgrimage x JR West",
+      "href": "https://dive-hiroshima.com/en/events/events-45407/"
+    },
+    {
+      "text": "Events4/27(Sat)→ 3/31(Wed)Pride of Hiroshima exhibition",
+      "href": "https://dive-hiroshima.com/en/events/events-68837/"
+    },
+    {
+      "text": "",
+      "href": "https://dive-hiroshima.com/en/events/#"
+    },
+    {
+      "text": "Special FeatureSpecial Feature",
+      "href": "https://dive-hiroshima.com/events/#"
+    },
+    {
+      "text": "08/22(SAT)→ 10/18(SUN)Kochia and Cosmos Hill#Around Hiroshima City#Learning/ Experiencing#Nature",
+      "href": "https://dive-hiroshima.com/en/events/events-46198/"
+    },
+    {
+      "text": "07/04(SAT)→ 09/13(SUN)~WOOD ONE Museum of Art 30th Anniversary Project~ Sculptor Taki Tamada's Cardboard Story, Act Two#",
+      "href": "https://dive-hiroshima.com/en/events/events-45665/"
+    },
+    {
+      "text": "07/10(FRI)→ 09/23(WED)Pokémon x Crafts Exhibition - A Great Discovery of Beauty and Skill - [Hiroshima Prefectural Art M",
+      "href": "https://dive-hiroshima.com/en/events/events-45920/"
+    },
+    {
+      "text": "07/18(SAT)→ 09/30(WED)2026 Hiroshima Bay Night ＆ Sunset Cruises#Around Hiroshima City#Around Miyajima#Nightlife#Nature",
+      "href": "https://dive-hiroshima.com/en/events/events-43405/"
+    },
+    {
+      "text": "07/18(SAT)→ 09/30(WED)Hiroshima Bay Night Cruises “Ninoshima Osanpo Cruise”#Around Hiroshima City#Nightlife#Nature",
+      "href": "https://dive-hiroshima.com/en/events/events-43426/"
+    }
+  ],
+  "chosen_event_url": "https://dive-hiroshima.com/en/events/",
+  "json_endpoints": [
+    {
+      "url": "https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date=2026-09-06&end_date=2026-10-06&order=date&site=en&page_status=production",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 20,
+      "sample": {
+        "status": 200,
+        "list_data": {
+          "total": 20,
+          "offset": 0,
+          "limit": 24,
+          "count": 20,
+          "posts": [
+            {
+              "url": "https://cms.dive-hiroshima.com/en/events/events-46198/",
+              "target": "",
+              "event_date": [
+                {
+                  "start_date": "...",
+                  "end_date": "..."
+                }
+              ],
+              "image": {
+                "ID": 33305,
+                "id": 33305,
+                "title": "IMG_9190 (1)",
+                "filename": "IMG_9190-1-scaled.jpg",
+                "filesize": 393948,
+                "url": "https://image.dive-hiroshima.com/wp-content/uploads/2024/07/IMG_9190-1-scaled.jpg",
+                "link": "https://cms.dive-hiroshima.com/en/events/events-46198/attachment/img_9190-1/",
+                "alt": "",
+                "author": "63",
+                "description": "",
+                "caption": "",
+                "name": "img_9190-1",
+                "status": "inherit",
+                "uploaded_to": 46198,
+                "date": "2024-08-02 01:21:16",
+                "modified": "2026-09-03 00:05:39",
+                "menu_order": 0,
+                "mime_type": "image/jpeg",
+                "type": "image",
+                "subtype": "jpeg",
+                "icon": "https://cms.dive-hiroshima.com/en/wp-includes/images/media/default.png",
+                "width": 2560,
+                "height": 1707,
+                "sizes": {
+                  "thumbnail": "...",
+                  "thumbnail-width": "...",
+                  "thumbnail-height": "...",
+                  "medium": "...",
+                  "medium-width": "...",
+                  "medium-height": "...",
+                  "medium_large": "...",
+                  "medium_large-width": "...",
+                  "medium_large-height": "...",
+                  "large": "...",
+                  "large-width": "...",
+                  "large-height": "...",
+                  "1536x1536": "...",
+                  "1536x1536-width": "...",
+                  "1536x1536-height": "...",
+                  "2048x2048": "...",
+                  "2048x2048-width": "...",
+                  "2048x2048-height": "..."
+                }
+              },
+              "title": "Kochia and Cosmos Hill",
+              "sub_title": "A heartwarming hill of flowers, dyed in autumn colors.",
+              "summary": "",
+              "tags": [
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                }
+              ]
+            },
+            {
+              "url": "https://cms.dive-hiroshima.com/en/events/events-68837/",
+              "target": "",
+              "event_date": [
+                {
+                  "start_date": "...",
+                  "end_date": "..."
+                }
+              ],
+              "image": {
+                "ID": 32177,
+                "id": 32177,
+                "title": "entrance_ image",
+                "filename": "entrance_-image-1.jpg",
+                "filesize": 126853,
+                "url": "https://image.dive-hiroshima.com/wp-content/uploads/2024/04/entrance_-image-1.jpg",
+                "link": "https://cms.dive-hiroshima.com/en/events/events-68837/attachment/entrance_-image-2/",
+                "alt": "",
+                "author": "23",
+                "description": "",
+                "caption": "",
+                "name": "entrance_-image-2",
+                "status": "inherit",
+                "uploaded_to": 32215,
+                "date": "2024-04-26 01:12:10",
+                "modified": "2024-05-01 02:52:00",
+                "menu_order": 0,
+                "mime_type": "image/jpeg",
+                "type": "image",
+                "subtype": "jpeg",
+                "icon": "https://cms.dive-hiroshima.com/en/wp-includes/images/media/default.png",
+                "width": 1280,
+                "height": 720,
+                "sizes": {
+                  "thumbnail": "...",
+                  "thumbnail-width": "...",
+                  "thumbnail-height": "...",
+                  "medium": "...",
+                  "medium-width": "...",
+                  "medium-height": "...",
+                  "medium_large": "...",
+                  "medium_large-width": "...",
+                  "medium_large-height": "...",
+                  "large": "...",
+                  "large-width": "...",
+                  "large-height": "...",
+                  "1536x1536": "...",
+                  "1536x1536-width": "...",
+                  "1536x1536-height": "...",
+                  "2048x2048": "...",
+                  "2048x2048-width": "...",
+                  "2048x2048-height": "..."
+                }
+              },
+              "title": "Pride of Hiroshima exhibition 　",
+              "sub_title": "",
+              "summary": "",
+              "tags": [
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                }
+              ]
+            },
+            {
+              "url": "https://cms.dive-hiroshima.com/en/events/events-45665/",
+              "target": "",
+              "event_date": [
+                {
+                  "start_date": "...",
+                  "end_date": "..."
+                }
+              ],
+              "image": {
+                "ID": 45607,
+                "id": 45607,
+                "title": "《サカナたちの物語》2015-22年",
+                "filename": "《サカナたちの物語》2015-22年-1-scaled.jpg",
+                "filesize": 722144,
+                "url": "https://image.dive-hiroshima.com/wp-content/uploads/2026/06/《サカナたちの物語》2015-22年-1-scaled.jpg",
+                "link": "https://cms.dive-hiroshima.com/en/events/events-45665/attachment/attachment-0-1222/",
+                "alt": "",
+                "author": "43",
+                "description": "",
+                "caption": "",
+                "name": "attachment-0-1222",
+                "status": "inherit",
+                "uploaded_to": 45665,
+                "date": "2026-06-25 01:01:50",
+                "modified": "2026-06-26 04:30:03",
+                "menu_order": 0,
+                "mime_type": "image/jpeg",
+                "type": "image",
+                "subtype": "jpeg",
+                "icon": "https://cms.dive-hiroshima.com/en/wp-includes/images/media/default.png",
+                "width": 2560,
+                "height": 1708,
+                "sizes": {
+                  "thumbnail": "...",
+                  "thumbnail-width": "...",
+                  "thumbnail-height": "...",
+                  "medium": "...",
+                  "medium-width": "...",
+                  "medium-height": "...",
+                  "medium_large": "...",
+                  "medium_large-width": "...",
+                  "medium_large-height": "...",
+                  "large": "...",
+                  "large-width": "...",
+                  "large-height": "...",
+                  "1536x1536": "...",
+                  "1536x1536-width": "...",
+                  "1536x1536-height": "...",
+                  "2048x2048": "...",
+                  "2048x2048-width": "...",
+                  "2048x2048-height": "..."
+                }
+              },
+              "title": "~WOOD ONE Museum of Art 30th Anniversary Project~ Sculptor Taki Tamada's Cardboard Story, Act Two",
+              "sub_title": "",
+              "summary": "",
+              "tags": [
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                }
+              ]
+            },
+            {
+              "url": "https://cms.dive-hiroshima.com/en/events/events-45920/",
+              "target": "",
+              "event_date": [
+                {
+                  "start_date": "...",
+                  "end_date": "..."
+                }
+              ],
+              "image": {
+                "ID": 45917,
+                "id": 45917,
+                "title": "P_Kflyer_omote- (1)_page-0001",
+                "filename": "P_Kflyer_omote-1_page-0001.jpg",
+                "filesize": 686353,
+                "url": "https://image.dive-hiroshima.com/wp-content/uploads/2026/07/P_Kflyer_omote-1_page-0001.jpg",
+                "link": "https://cms.dive-hiroshima.com/en/events/events-45920/attachment/p_kflyer_omote-1_page-0001/",
+                "alt": "",
+                "author": "23",
+                "description": "",
+                "caption": "",
+                "name": "p_kflyer_omote-1_page-0001",
+                "status": "inherit",
+                "uploaded_to": 45920,
+                "date": "2026-07-22 09:04:43",
+                "modified": "2026-07-22 09:18:01",
+                "menu_order": 0,
+                "mime_type": "image/jpeg",
+                "type": "image",
+                "subtype": "jpeg",
+                "icon": "https://cms.dive-hiroshima.com/en/wp-includes/images/media/default.png",
+                "width": 1231,
+                "height": 1754,
+                "sizes": {
+                  "thumbnail": "...",
+                  "thumbnail-width": "...",
+                  "thumbnail-height": "...",
+                  "medium": "...",
+                  "medium-width": "...",
+                  "medium-height": "...",
+                  "medium_large": "...",
+                  "medium_large-width": "...",
+                  "medium_large-height": "...",
+                  "large": "...",
+                  "large-width": "...",
+                  "large-height": "...",
+                  "1536x1536": "...",
+                  "1536x1536-width": "...",
+                  "1536x1536-height": "...",
+                  "2048x2048": "...",
+                  "2048x2048-width": "...",
+                  "2048x2048-height": "..."
+                }
+              },
+              "title": "Pokémon x Crafts Exhibition - A Great Discovery of Beauty and Skill - [Hiroshima Prefectural Art Museum]",
+              "sub_title": "",
+              "summary": "",
+              "tags": [
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                },
+                {
+                  "term_id": "...",
+                  "name": "...",
+                  "slug": "...",
+                  "term_group": "...",
+                  "term_taxonomy_id": "...",
+                  "taxonomy": "...",
+                  "description": "...",
+                  "parent": "...",
+                  "count": "...",
+                  "filter": "...",
+                  "term_order": "..."
+                }
+              ]
+            },
+            "... +16 more"
+          ]
+        }
+      }
+    }
+  ],
+  "likely_event_apis": [
+    {
+      "url": "https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date=2026-09-06&end_date=2026-10-06&order=date&site=en&page_status=production",
+      "event_item_count": 20,
+      "sample_keys": [
+        "event_date",
+        "image",
+        "sub_title",
+        "summary",
+        "tags",
+        "target",
+        "title",
+        "url"
+      ]
+    }
+  ],
+  "page_title": "Events | The Official Guide to Hiroshima - Travel and Tour Information",
+  "final_url": "https://dive-hiroshima.com/en/events/",
+  "notes": "stable JSON candidates: 1",
+  "discovered_at": "2026-09-06T13:42:18.177650+00:00"
+}

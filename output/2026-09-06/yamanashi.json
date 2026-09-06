@@ -1,0 +1,12 @@
+{
+  "prefecture": "Yamanashi",
+  "id": "yamanashi",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "no_event_listing",
+  "event_count": 0,
+  "source_url": "https://yamanashi.secure.force.com/X_YAMANASHI_PUB_VF_EnglishTop",
+  "adapter": "generic",
+  "events": []
+}

@@ -1,0 +1,281 @@
+{
+  "id": "fukui",
+  "name": "Fukui",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.fuku-e.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('OK')"
+  ],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://www.fuku-e.com/en/events/index.html"
+    },
+    {
+      "text": "https://www.fuku-e.com/en/events/detail_4980.html",
+      "href": "https://www.fuku-e.com/en/events/detail_4980.html"
+    },
+    {
+      "text": "https://www.fuku-e.com/en/events/detail_6108.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6108.html"
+    },
+    {
+      "text": "detail_6234.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6234.html"
+    },
+    {
+      "text": "detail_6850.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6850.html"
+    },
+    {
+      "text": "detail_5236.html",
+      "href": "https://www.fuku-e.com/en/events/detail_5236.html"
+    },
+    {
+      "text": "detail_6121.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6121.html"
+    },
+    {
+      "text": "detail_5390.html",
+      "href": "https://www.fuku-e.com/en/events/detail_5390.html"
+    },
+    {
+      "text": "detail_6069.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6069.html"
+    },
+    {
+      "text": "detail_5345.html",
+      "href": "https://www.fuku-e.com/en/events/detail_5345.html"
+    },
+    {
+      "text": "detail_6185.html",
+      "href": "https://www.fuku-e.com/en/events/detail_6185.html"
+    }
+  ],
+  "chosen_event_url": "https://www.fuku-e.com/en/events/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6234&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 1
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=4980&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 46
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6850&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5236&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 25
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6121&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 4
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5390&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 9
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5345&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 10
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6962&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 10
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6108&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 15
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=3015&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 4
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5100&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 6
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6185&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 4
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5896&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 11
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6321&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 2
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5238&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 17
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5285&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 6
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5231&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 23
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=6069&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 9
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5046&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 18
+      }
+    },
+    {
+      "url": "https://www.fuku-e.com/lsc/api/favG2/status.php?id=5850&type=1&lang=ja",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "status": 0,
+        "cnt": 6
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260902&st=env&sjk=546498841809943",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "d22dasfnKYzt4dkPheHygQE",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "wftDtcQvKYhH7i3Zq-p4c0AU-dYxShxspFhx-K7hOjM",
+        "bg_binary": "RrDxNyaEmlzQiubJltH9fKfVITq+QQmDIBC0ACvSsf0aX04seA+E6sv2qiSVmmpknDA2grRFC+P5ZC6KQEfuxo0vmnkPFwzk6Z+eujOrVsCkJMa6RwsKq4I9BMxCjl5Cd5heqNReQQy0HA9nW7zCrrGswz9MH94e1eCYiRySz/6j+V0QV...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events｜DISCOVER FUKUI – Official Travel Guide to Fukui Prefecture, Japan",
+  "final_url": "https://www.fuku-e.com/en/events/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:12.437567+00:00"
+}

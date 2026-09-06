@@ -1,0 +1,12 @@
+{
+  "prefecture": "Tokushima",
+  "id": "tokushima",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "no_event_listing",
+  "event_count": 0,
+  "source_url": "https://discovertokushima.net/en/",
+  "adapter": "generic",
+  "events": []
+}

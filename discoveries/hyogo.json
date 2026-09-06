@@ -1,0 +1,141 @@
+{
+  "id": "hyogo",
+  "name": "Hyogo",
+  "region": "Tokai & Kansai",
+  "home_url": "https://www.hyogo-tourism.jp/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "イベント",
+      "href": "https://www.hyogo-tourism.jp/event/index.html"
+    },
+    {
+      "text": "/event/detail_2049.html",
+      "href": "https://www.hyogo-tourism.jp/event/detail_2049.html"
+    },
+    {
+      "text": "/event/detail_2039.html",
+      "href": "https://www.hyogo-tourism.jp/event/detail_2039.html"
+    },
+    {
+      "text": "/event/detail_2011.html",
+      "href": "https://www.hyogo-tourism.jp/event/detail_2011.html"
+    },
+    {
+      "text": "/event/detail_2055.html",
+      "href": "https://www.hyogo-tourism.jp/event/detail_2055.html"
+    }
+  ],
+  "chosen_event_url": "https://www.hyogo-tourism.jp/event/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://emrldtp.com/entrypoint_config?page_url=https%3A%2F%2Fwww.hyogo-tourism.jp%2Fevent%2Findex.html&t=505883",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "marker": "709147",
+        "project": {
+          "trs": 505883,
+          "subscribed_brands": [
+            84,
+            104,
+            121,
+            137,
+            "... +2 more"
+          ],
+          "domain": "www.hyogo-tourism.jp"
+        },
+        "assets_domain": "emrldtp.com",
+        "trace_id": "Zz158e75fdaa0440dc90e041e-709147",
+        "services": {
+          "emerald": {
+            "enabled": false
+          },
+          "integration": {
+            "enabled": false
+          },
+          "link_switcher": {
+            "enabled": false
+          },
+          "tooltip": {
+            "enabled": false
+          }
+        },
+        "erid_extender_enabled": false,
+        "processed_content": false,
+        "processed_content_types": {
+          "html": false,
+          "paragraphs": false
+        },
+        "ab_tests": {
+          "adblock_network_detection": "test_adblock_network",
+          "global_control": "total_test_group",
+          "tripcom_geo": "control_main"
+        },
+        "evaluation_id": "064b7a13e2ff3aa0ee29beaf8ff7794bd62d4b61d2c560d5e37b9c2f9b4a99da",
+        "short_link_domain": "tpk.mx"
+      }
+    },
+    {
+      "url": "https://sentry.avs.io/api/20/envelope/?sentry_version=7&sentry_key=1c30377dafc708e9dfdf6df7e355a97c&sentry_client=sentry.javascript.browser%2F9.44.0",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260902&st=env&sjk=8389080177635839",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "oW2dasT0Nc_t1e8P7K2_wQs",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrklFoEArPMn8Fq/vLiZh42Ns8Y5hrGRB26jy8TIIco5wcciq3QDInD4G6TomC5iNEzBz6WCo06IjYiKthug23JTHOc0g94uuN85x/X7Oepmz2MysKJJ2DB3bkY5dYeAJ/o+MbNE2wKoI8bEXLMC6+wgDXENZi8jXrTAukAGRkN6/d4NZ...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260902&st=env&sjk=1024109794425574",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "oW2dasX5NeS7vr0P587buQU",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "Vrk4F7pexraJ0KgOP+yiqOBhfWxXmUjnZC6MzFPoiuiA6jA1JNkE0DRVavoAJ/wXdEhLRMKlpMiM7HAZsV3v0n0jMCrgkB3cwFvLICZO/+/7/TPRgzjBerqPN/nUZwKoJ+5Q3XO38VJs8W1odK6I423/Ai0ZK5IZwsHdiAsHJeuBkprrl...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260902&st=env&sjk=5650683608870157",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "pG2dateEDZvc1e8P0sqMmQM",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkZ/WL18YL2gTPBYwbwTGBDob7L+3QevVBDD5n43sPYVSP/9qX3Bun/XOZPTpK3Tkbt0tw48aIEBG9+bGlP/sFxBOP6zr7kznuvGGnv9/AnGUX6p/1lzyCVERoFpArM1ZVINgjLWXlkQF81c6U2mBcWutqq9wWlg4PTf2LRw8Fp99tu0...",
+        "rc_enable": "y",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "イベント｜兵庫県公式観光サイト 兵庫観光ナビ",
+  "final_url": "https://www.hyogo-tourism.jp/event/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:01.508133+00:00"
+}

@@ -1,0 +1,563 @@
+{
+  "id": "kagawa",
+  "name": "Kagawa",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://www.my-kagawa.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.my-kagawa.jp/en/",
+  "json_endpoints": [
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "LpkHKGhQgvBO9iUOfe4Ris48kq2JMDbINgO9HT6eqPyMsaoMAlgjuFLW7ibUEArrZpO8gpRPnfrEnJhLPro=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "wlQjPs7qa7Jc3N0dFosF8xgIOU86T1O3ciYjQdhW+ukE930sm5oy2higD4EYVcyM1k/XQO3ilmBZIqK9rQ==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "kIJJWHdLnzll8U8jJvih6TgPOaz0p7UI/7lZjCEJMC/IEX0rLjhWwuauNZwNqkHKKGBxB0wdWTnt7e6Cfc0=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "BtOnHVAnGobdkukNbJfEQJOT/tZ/G+pa3no18FQ3B2bReIjJoZZGZfNMiRGQqVuEtrfPF/m7TFkt43yBMA==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "eaEyfzN2Hr9Su1RnTCJKiIxM9A9CF6OaOAAwWFMablWt4dwS6ZTyKHHqnDpgAfRZvsVddIjWT6rNYwecCNk=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "izP+rrEjBKXWpnCbtCFQ0Ia41Qivn5xU/gsablVQiZFyW/othVERMHu242MFluR5adLssCqbuCNxSvtQczc=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "wSevjGb40T0lN7moGA0tUF2LyY5tml/COFh9JlDBI5rponqHQWsCLIef5HHblZz0OocUN/gFLtwMzFmUfQo=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "TB04YDWyn9rRbtSb8AdiZUkuMSGDkJU6Kylux6N9zlahx47mLuiqOQO7Ne0d+gKKNrDhmIy8QsS/gvoCmw==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "rqPPpvPR7VB2WYC8SryJ8j+Vt3+gUaTRQ67WIRwuxH41XjrjGywZ6R/R4Et7YShc8mP1ieL7wfp8v3bHpw==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "ENqhoczghtmqQQxMjPb6qQl74Fn8oVpH1gaam4B4tM3RAnnnC27MHTMtfH8KGtpH4DTF7NlxIGlzDKE/BK4=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "J0hCQ3Ey+WfdFAsiC+F212ty6uYuws5vKQsM7nQ2NeCbQemUU/2m6IbyH8RtbQ6khMsxfvPRcKzjcZay8Q==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "W6mYEfA5gS8ZlTdYOff4jC+jpV7DTsZbrcz2VXSwNmbSp4mQXY8RS3suoZG5SDu6Qh7iEpbP39hYFdi9cMA=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "YF0TKQULnvtkEuTNax9D8Lx5tLX0fwT2uZgXSPcflqxQHT/tidHJozaZIThFayPf8AOXnCi2cwSO4ZxDnA==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "WmT6ldq1Yi/WIn5HhmG2LIahc19TxozYNhvBSd3WAdcJPrD1xieYKw9J/zbhXeAlb0LAQzBwEV45S4ad8A==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "27EHfiQX/vDeZyfoz2godg+DoUBI5NvoXzhoy6BdQwRAUU8yC1KijXAOYrEfAZw+C5l0x8MiDMJxkT0S8w==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "v29MidAwG6vaLW55y4XoJmCl/v8Pz8BN8pqHf0EaNmMqKlhD3Shw2aOh0kTBzebYlrvS7GzBck2CWYyuSPk=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "F6EU/Wyt5ARhQ5/UZjXV2AxUGt87EJqc47yBwCJbjL6/hZVQvW3lSt80yIqMn5SQMfa8LeZLCAY7ZaMAc1M=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "DHONK+xuI/lLIyrohi28RZCjfDuHPWqzi9U4EVHmMXn1J+Gt1YsNjsezZpSAIaj3j+kSrLUiVQBSaFUFPA==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "01APOqFzTTdEiBa1R6rT/xrCrxOo8C32rbgX339A8m75sfu+rc7HIme3yb9+Jv50tZsfG1waOvB9B00ZAMI=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "/+fCeLOUEC2fkkujCiVTTXMubTYIcXLQcHNLww7mzyRivsDNZ6vKvSp+KO3tIkfF4Yi5x3sp8UiowttEzEI=",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "VISIT KAGAWA",
+  "final_url": "https://www.my-kagawa.jp/en",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:29.607701+00:00"
+}

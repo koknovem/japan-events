@@ -1,0 +1,28 @@
+{
+  "prefecture": "Shimane",
+  "id": "shimane",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "xhr:1; xhr:1",
+  "event_count": 1,
+  "source_url": "https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival",
+  "adapter": "generic",
+  "events": [
+    {
+      "prefecture": "Shimane",
+      "title": "See & Do | Shimane Japan Official Travel & Tourism Guide",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": null,
+      "url": "www.kankou-shimane.com/en/destinations/",
+      "image_url": null,
+      "source": "https://api1.tetori.link/api/access"
+    }
+  ]
+}

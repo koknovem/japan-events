@@ -1,0 +1,440 @@
+{
+  "generated_at": "2026-09-06T13:42:58.412457+00:00",
+  "site_count": 48,
+  "ok_count": 43,
+  "with_api": 5,
+  "sites": [
+    {
+      "id": "hokkaido",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-hokkaido.jp/en/event/",
+      "api_count": 0,
+      "event_link_count": 15,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "aomori",
+      "ok": true,
+      "chosen_event_url": "https://aomori-tourism.com/en/event/index.html",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "iwate",
+      "ok": false,
+      "chosen_event_url": null,
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": null,
+      "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://visit-iwate.com/en/\nCall log:\n  - navigating to \"https://visit-iwate.com/en/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "miyagi",
+      "ok": true,
+      "chosen_event_url": "https://visitmiyagi.com/dosee/events-festivals/",
+      "api_count": 0,
+      "event_link_count": 18,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "akita",
+      "ok": true,
+      "chosen_event_url": "https://akita-fun.jp/featured_contents/festival",
+      "api_count": 0,
+      "event_link_count": 2,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "yamagata",
+      "ok": true,
+      "chosen_event_url": "https://yamagatakanko.com/en/festivals/",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "fukushima",
+      "ok": true,
+      "chosen_event_url": "https://fukushima.travel/tours/jumptour.php?id=47",
+      "api_count": 0,
+      "event_link_count": 2,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "ibaraki",
+      "ok": true,
+      "chosen_event_url": "https://www.ibarakiguide.jp/event.php",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "tochigi",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-tochigi.com/seasons-in-tochigi/events/",
+      "api_count": 0,
+      "event_link_count": 6,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "gunma",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-gunma.jp/en/discover/stories-and-guides/eight-weird-wonderful-japanese-festivals/",
+      "api_count": 2,
+      "event_link_count": 1,
+      "notes": "stable JSON candidates: 2",
+      "error": null
+    },
+    {
+      "id": "saitama",
+      "ok": true,
+      "chosen_event_url": "https://saitama-supportdesk.com/events/",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "chiba",
+      "ok": true,
+      "chosen_event_url": "https://www.visitchiba.jp/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "tokyo",
+      "ok": true,
+      "chosen_event_url": "https://www.gotokyo.org/en/calendar/index.html",
+      "api_count": 0,
+      "event_link_count": 7,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "kanagawa",
+      "ok": false,
+      "chosen_event_url": null,
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": null,
+      "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://tokyodaytrip.com/en/\nCall log:\n  - navigating to \"https://tokyodaytrip.com/en/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "yamanashi",
+      "ok": true,
+      "chosen_event_url": "https://yamanashi.secure.force.com/X_YAMANASHI_PUB_VF_EnglishTop",
+      "api_count": 0,
+      "event_link_count": 1,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "nagano",
+      "ok": true,
+      "chosen_event_url": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one?hsLang=en",
+      "api_count": 0,
+      "event_link_count": 4,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "niigata",
+      "ok": true,
+      "chosen_event_url": "https://discover-niigata.com/events/",
+      "api_count": 0,
+      "event_link_count": 14,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "toyama",
+      "ok": true,
+      "chosen_event_url": "https://visit-toyama-japan.com/en/festivals",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "ishikawa",
+      "ok": true,
+      "chosen_event_url": "https://www.ishikawatravel.jp/things-to-do/festivals-and-events/",
+      "api_count": 1,
+      "event_link_count": 10,
+      "notes": "stable JSON candidates: 1",
+      "error": null
+    },
+    {
+      "id": "fukui",
+      "ok": true,
+      "chosen_event_url": "https://www.fuku-e.com/en/events/index.html",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "gifu",
+      "ok": true,
+      "chosen_event_url": "https://visitgifu.com/64954/",
+      "api_count": 0,
+      "event_link_count": 3,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "shizuoka",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-shizuoka.com/event/index.html",
+      "api_count": 0,
+      "event_link_count": 12,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "aichi",
+      "ok": true,
+      "chosen_event_url": "https://aichinow.pref.aichi.jp/en/events/",
+      "api_count": 0,
+      "event_link_count": 25,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "mie",
+      "ok": true,
+      "chosen_event_url": "https://visitmie-japan.travel/en/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "shiga",
+      "ok": true,
+      "chosen_event_url": "https://global.biwako-visitors.jp/annual-events",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "kyoto",
+      "ok": true,
+      "chosen_event_url": "https://kyoto.travel/en/events/",
+      "api_count": 0,
+      "event_link_count": 16,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "osaka",
+      "ok": true,
+      "chosen_event_url": "https://osaka-info.jp/en/event/",
+      "api_count": 0,
+      "event_link_count": 29,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "hyogo",
+      "ok": true,
+      "chosen_event_url": "https://www.hyogo-tourism.jp/event/index.html",
+      "api_count": 0,
+      "event_link_count": 5,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "nara",
+      "ok": true,
+      "chosen_event_url": "https://www.visitnara.jp/event-calendar/",
+      "api_count": 1,
+      "event_link_count": 2,
+      "notes": "stable JSON candidates: 1",
+      "error": null
+    },
+    {
+      "id": "wakayama",
+      "ok": true,
+      "chosen_event_url": "https://visitwakayama.jp/en/events/index.html",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "tottori",
+      "ok": true,
+      "chosen_event_url": "https://www.tottori-tour.jp/en/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "shimane",
+      "ok": true,
+      "chosen_event_url": "https://www.kankou-shimane.com/en/destinations/12923",
+      "api_count": 2,
+      "event_link_count": 3,
+      "notes": "stable JSON candidates: 2",
+      "error": null
+    },
+    {
+      "id": "okayama",
+      "ok": true,
+      "chosen_event_url": "https://www.okayama-japan.jp/en/event",
+      "api_count": 0,
+      "event_link_count": 1,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "hiroshima",
+      "ok": true,
+      "chosen_event_url": "https://dive-hiroshima.com/en/events/",
+      "api_count": 1,
+      "event_link_count": 13,
+      "notes": "stable JSON candidates: 1",
+      "error": null
+    },
+    {
+      "id": "yamaguchi",
+      "ok": true,
+      "chosen_event_url": "https://visit-jy.com/en/spots?category=166",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "tokushima",
+      "ok": false,
+      "chosen_event_url": null,
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": null,
+      "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.tourismtokushima.jp/en/\nCall log:\n  - navigating to \"https://www.tourismtokushima.jp/en/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "kagawa",
+      "ok": true,
+      "chosen_event_url": "https://www.my-kagawa.jp/en/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "ehime",
+      "ok": true,
+      "chosen_event_url": "https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events",
+      "api_count": 0,
+      "event_link_count": 7,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "kochi",
+      "ok": true,
+      "chosen_event_url": "https://visitkochijapan.com/en/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "fukuoka",
+      "ok": false,
+      "chosen_event_url": null,
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": null,
+      "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.visit-fukuoka-japan.com/\nCall log:\n  - navigating to \"https://www.visit-fukuoka-japan.com/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "saga",
+      "ok": true,
+      "chosen_event_url": "https://www.saga-tripgenius.com/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "nagasaki",
+      "ok": true,
+      "chosen_event_url": "https://www.nagasaki-tabinet.com/event",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "kumamoto",
+      "ok": true,
+      "chosen_event_url": "https://kumamoto-guide.jp/en/events/",
+      "api_count": 0,
+      "event_link_count": 6,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "oita",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-oita.jp/events/",
+      "api_count": 0,
+      "event_link_count": 10,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "miyazaki",
+      "ok": true,
+      "chosen_event_url": "https://www.visit-miyazaki.com/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    },
+    {
+      "id": "kagoshima",
+      "ok": true,
+      "chosen_event_url": "https://www.kagoshima-kankou.com/for/events",
+      "api_count": 0,
+      "event_link_count": 11,
+      "notes": "HTML event links found; no JSON API captured",
+      "error": null
+    },
+    {
+      "id": "okinawa",
+      "ok": false,
+      "chosen_event_url": null,
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": null,
+      "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.visitokinawa.jp/\nCall log:\n  - navigating to \"https://www.visitokinawa.jp/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "jnto",
+      "ok": true,
+      "chosen_event_url": "https://www.japan.travel/en/events/",
+      "api_count": 0,
+      "event_link_count": 0,
+      "notes": "no event listing or JSON API detected from home page",
+      "error": null
+    }
+  ]
+}

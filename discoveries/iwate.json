@@ -1,0 +1,17 @@
+{
+  "id": "iwate",
+  "name": "Iwate",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://visit-iwate.com/en/",
+  "configured_event_url": null,
+  "ok": false,
+  "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://visit-iwate.com/en/\nCall log:\n  - navigating to \"https://visit-iwate.com/en/\", waiting until \"domcontentloaded\"\n",
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": null,
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": null,
+  "final_url": null,
+  "discovered_at": "2026-09-06T13:40:06.171924+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "tottori",
+  "name": "Tottori",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://www.tottori-tour.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.tottori-tour.jp/en/",
+  "json_endpoints": [
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "content_type": "application/json+protobuf; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": [
+        "JpZaJyqB8uPg4I5G4zcmlqiOy4FWlhhxbjbJ1IHvV3/AczMoWCCHG2l08mmQDs3hoTJ2a/xcPlBCTBukTA==",
+        43200,
+        100
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "responseContext": {}
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Tottori Tourism Guide ～ Explore the rural Japan～",
+  "final_url": "https://www.tottori-tour.jp/en/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:01.937738+00:00"
+}

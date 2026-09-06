@@ -1,0 +1,1060 @@
+{
+  "id": "nara",
+  "name": "Nara",
+  "region": "Tokai & Kansai",
+  "home_url": "https://www.visitnara.jp/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Event Calendar",
+      "href": "https://www.visitnara.jp/event-calendar/"
+    },
+    {
+      "text": "Discover",
+      "href": "https://www.visitnara.jp/event-calendar/#"
+    }
+  ],
+  "chosen_event_url": "https://www.visitnara.jp/event-calendar/",
+  "json_endpoints": [
+    {
+      "url": "https://cdn-au.onetrust.com/consent/7b787298-a300-459a-8de2-2e782f08472a/7b787298-a300-459a-8de2-2e782f08472a.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "CookieSameSiteNoneEnabled": false,
+        "CookieV2CSPEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "202312.1.0",
+        "OptanonDataJSON": "7b787298-a300-459a-8de2-2e782f08472a",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "BulkDomainCheckUrl": "https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck",
+        "RuleSet": [
+          {
+            "Id": "110e757a-827f-4703-a500-84316769868e",
+            "Name": "100_GDPR",
+            "Countries": [
+              "no",
+              "de",
+              "be",
+              "fi",
+              "... +36 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "100_GDPR_visitnara.jp",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false
+          },
+          {
+            "Id": "4538b089-2517-451a-aae0-27b68b0862af",
+            "Name": "000_Global",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +206 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en",
+              "ja": "ja"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GENERIC",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "000_Global_visitnara.jp",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2023-12-25T01:30:43.576777527",
+          "updatedTime": "2023-12-25T01:30:43.576781967",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2023-12-25T01:30:43.586919646",
+          "updatedTime": "2023-12-25T01:30:43.586924206",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iab2Data.json"
+        },
+        "Iab2V2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2023-12-25T01:30:43.596274605",
+          "updatedTime": "2023-12-25T01:30:43.596278725",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iab2V2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 1,
+          "googleVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2BannerFocus": true,
+          "CookieV2GPC": true,
+          "CookieV2AssignTemplateRule": true,
+          "CookieV2GeolocationJsonApi": true,
+          "CookieV2GCMDMA": true,
+          "CookieV2TCF21": true,
+          "CookieV2RemoveSettingsIcon": true,
+          "CookieV2BannerLogo": true,
+          "CookieV2GeneralVendors": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "UK",
+        "Domain": "visitnara.jp",
+        "TenantGuid": "3d44d3e3-ba7b-440b-8977-67ed4b165452",
+        "EnvId": "app-au-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "GRG_visitnara.jp",
+        "GATrackToggle": false,
+        "GATrackAssignedCategory": "",
+        "WebFormIntegrationEnabled": false,
+        "WebFormSrcUrl": "",
+        "WebFormWorkerUrl": "",
+        "GppData": {
+          "cmpId": "28"
+        },
+        "AuthenticatedConsent": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/consent/7b787298-a300-459a-8de2-2e782f08472a/4538b089-2517-451a-aae0-27b68b0862af/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "pccloseButtonType": "Icon",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit our website, we may store information on or retrieve information from your browser, mostly in the form of cookies. This information might be about you, your prefe...",
+          "AboutText": "",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Accept All Cookies",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "CookiesDescText": "Description",
+          "AboutLink": "",
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "AlwaysInactiveText": "Always Inactive",
+          "PCShowAlwaysActiveToggle": true,
+          "AlertNoticeText": "We use cookies to improve your experience on our website, to personalize content and ads, and to analyze our traffic. We share information about your use of our website with our...",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookie Settings",
+          "CookieSettingButtonText": "Cookie Settings",
+          "AlertAllowCookiesText": "OK",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": true,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "bottom-right",
+          "PreferenceCenterPosition": "default",
+          "PreferenceCenterConfirmText": "Cookie Settings"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "/* Style for Cookie Settings Button */\n#onetrust-consent-sdk button#onetrust-pc-btn-handler {\n    border-color: #DCE3E7;\n}\n/* Style for Cookie Settings Button On Policy Page */\n...",
+          "PCCustomCSS": "",
+          "PcTextColor": "#333333",
+          "PcButtonColor": "#DCE3E7",
+          "PcButtonTextColor": "#333333",
+          "PcBackgroundColor": "#FFFFFF",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#F8F8F8",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#3860BE",
+          "TextColor": "#333333",
+          "ButtonColor": "#993E1F",
+          "BannerMPButtonColor": "#DCE3E7",
+          "BannerMPButtonTextColor": "#333333",
+          "ButtonTextColor": "#fff",
+          "BackgroundColor": "#FFFFFF",
+          "BannerLinksTextColor": "#3860BE",
+          "BannerAccordionBackgroundColor": "#E9E9E9",
+          "CookiePersistentLogo": "https://cdn-au.onetrust.com/logos/static/ot_persistent_cookie_icon.png",
+          "OptanonLogo": "https://cdn-au.onetrust.com/logos/3d44d3e3-ba7b-440b-8977-67ed4b165452/b0ab1442-41c7-43a3-86ee-5490f8870317/ce060cde-0895-42f8-8c49-c37e6a435d57/logo_visitnara.png",
+          "BnrLogo": "",
+          "OneTrustFooterLogo": "https://cdn-au.onetrust.com/logos/static/powered_by_logo.svg",
+          "OptanonCookieDomain": "visitnara.jp",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": true
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202312.1.0/assets/otFloatingRounded.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFloatingRounded",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxvYXRpbmdSb3VuZGVkIj48ZGl2IGNsYXNzPSJvdC1zZGstY29udGFpbmVyIiByb2xlPSJhbGVydGRpYWxvZyIgYXJpYS1kZXNjcmliZWRieT0ib25ldHJ1c3Qtc...",
+        "css": "#onetrust-banner-sdk{box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRounded{position:fixed;background-color:#fff;width:60%;max-width:700px;z-index:2147483645;..."
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202312.1.0/assets/v2/otPcCenter.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcCenter",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY0NlbnRlciBvdC1oaWRlIG90LWZhZGUtaW4iPjxkaXYgcm9sZT0iYWxlcnRkaWFsb2ciIGFyaWEtbW9kYWw9InRydWUiIGFyaWEtZGVzY3JpYmVkYnk9Im90LXBjLWRlc...",
+        "css": "#onetrust-pc-sdk.otPcCenter{overflow:hidden;position:fixed;margin:0 auto;top:5%;right:0;left:0;width:40%;max-width:575px;min-width:575px;border-radius:2.5px;z-index:2147483647;b..."
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://www.visitnara.jp/travel-directory/api/data/",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 400,
+      "sample": {
+        "venues": [
+          {
+            "fields": {
+              "name": "Haseji",
+              "sort": 5,
+              "tags": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                "... +5 more"
+              ],
+              "adress": "857 Hase, Sakurai",
+              "budget": 2,
+              "nameJp": "長谷路",
+              "category": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "location": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "locationId": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "addressJp": "桜井市初瀬857",
+              "detailType": "Venue",
+              "subCategory": [
+                {
+                  "name": "...",
+                  "id": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "..."
+                }
+              ],
+              "subLocation": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "id": "..."
+                }
+              ],
+              "lat": 34.531147720957236,
+              "lng": 135.90632011779098,
+              "priceBudget": 2,
+              "getName": "Haseji",
+              "photo": "//images.ctfassets.net/9uvqwr58loxx/D00288_DSC-B-00028.jpg/c5a8f5b0b9282b2162d2c5b20bdcd217/DSC-B-00028.jpg"
+            },
+            "id": "D00288",
+            "pv": 0,
+            "closed": [
+              3
+            ]
+          },
+          {
+            "fields": {
+              "name": "Soni Highland Yamayaki",
+              "sort": 5,
+              "tags": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "adress": "Taroji, Soni, Uda (Soni Highland)",
+              "nameJp": "曽爾高原山焼き",
+              "category": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "location": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "locationId": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "addressJp": "宇陀郡曽爾村太良路（曽爾高原）",
+              "detailType": "Event",
+              "subCategory": [
+                {
+                  "name": "...",
+                  "id": "..."
+                }
+              ],
+              "subLocation": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "id": "..."
+                }
+              ],
+              "eventDatePeriod": "Early Mar",
+              "lat": 34.52087764108112,
+              "lng": 136.15760117499087,
+              "priceBudget": {},
+              "getName": "Soni Highland Yamayaki",
+              "photo": "//images.ctfassets.net/9uvqwr58loxx/E02021_VN_....jpg/ab0b0ccc304822861e0ec9b1ca1a4ad6/VN____.jpg"
+            },
+            "id": "E02021",
+            "pv": 0,
+            "closed": []
+          },
+          {
+            "fields": {
+              "name": "Soni Highland Yama Akari",
+              "sort": 5,
+              "tags": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                "... +2 more"
+              ],
+              "adress": "Taroji, Soni, Uda (Soni Highland)",
+              "nameJp": "曽爾高原山灯り",
+              "category": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "addressJp": "宇陀郡曽爾村太良路（曽爾高原）",
+              "detailType": "Event",
+              "subCategory": [
+                {
+                  "name": "...",
+                  "id": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "..."
+                }
+              ],
+              "subLocation": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "id": "..."
+                }
+              ],
+              "eventDatePeriod": "Mid Sep - Late Nov",
+              "lat": 34.52090416017653,
+              "lng": 136.15804105726932,
+              "priceBudget": {},
+              "getName": "Soni Highland Yama Akari",
+              "photo": "//images.ctfassets.net/9uvqwr58loxx/E02078_VN_........................jpg/9b8b68ddc810f392dede26c5056fb32d/VN________________________.jpg"
+            },
+            "id": "E02078",
+            "pv": 0,
+            "closed": []
+          },
+          {
+            "fields": {
+              "name": "Kometani Residence",
+              "sort": 5,
+              "tags": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                },
+                "... +2 more"
+              ],
+              "adress": "1-10-11 Imaicho, Kashihara",
+              "nameJp": "旧米谷家住宅",
+              "category": [
+                {
+                  "name": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "location": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "locationId": "...",
+                  "id": "...",
+                  "_type": "..."
+                }
+              ],
+              "addressJp": "橿原市今井町1-10-11",
+              "detailType": "Venue",
+              "subCategory": [
+                {
+                  "name": "...",
+                  "id": "..."
+                }
+              ],
+              "subLocation": [
+                {
+                  "name": "...",
+                  "sort": "...",
+                  "id": "..."
+                }
+              ],
+              "lat": 34.50718468566477,
+              "lng": 135.78739768584444,
+              "priceBudget": {},
+              "getName": "Kometani Residence",
+              "photo": "//images.ctfassets.net/9uvqwr58loxx/A00993_DSC-B-00882.jpg/9bc234123d84bbea9a63f6ae9e2817e9/DSC-B-00882.jpg"
+            },
+            "id": "A00993",
+            "pv": 0,
+            "closed": []
+          },
+          "... +692 more"
+        ],
+        "categories": [
+          {
+            "name": "Eat & Drink",
+            "id": "3ab2mf1nEkkQ4osk0kUKyq",
+            "sub": [
+              {
+                "name": "Asian",
+                "id": "4X5nNfO7nWmsW26q28g48e"
+              },
+              {
+                "name": "Noodles",
+                "id": "7uHXasmmaWsUgE2me4EiCg"
+              },
+              {
+                "name": "Vegetarian-friendly",
+                "id": "3KFEcphFeM4kQuiuWmgk8s"
+              },
+              {
+                "name": "Japanese Cafes",
+                "id": "6rnwHqnx3q6k2EC0mWkYQs"
+              },
+              "... +4 more"
+            ]
+          },
+          {
+            "name": "Things to Do",
+            "id": "5OmElIjDq0mUe2g8U4c4iC",
+            "sub": [
+              {
+                "name": "History & Culture",
+                "id": "4xN60ZhXUQKqwc2C0wM6AI"
+              },
+              {
+                "name": "Onsen & Public Baths",
+                "id": "6zuRdCBhscug8mo0cGW4cq"
+              },
+              {
+                "name": "Nightlife",
+                "id": "3xkIaoveNWEOaQY0Kcwm0C"
+              },
+              {
+                "name": "Museums",
+                "id": "5RBHuiS1tSiAoWg0AmO24y"
+              },
+              "... +2 more"
+            ]
+          },
+          {
+            "name": "Accommodation",
+            "id": "1ZGaJ0xRmEiqUoYye4mSui",
+            "sub": [
+              {
+                "name": "Guesthouses & Hostels",
+                "id": "2C6cbttL6MeskYACOuuiya"
+              },
+              {
+                "name": "Rental Properties",
+                "id": "6Q33lKo6PKQw4qmi2uu2YC"
+              },
+              {
+                "name": "Shukubo",
+                "id": "2T3LcVPBLWeCsUggsAmW2C"
+              },
+              {
+                "name": "Ryokan",
+                "id": "536hHPBuw8iwu4KmgQukK0"
+              },
+              "... +1 more"
+            ]
+          },
+          {
+            "name": "Events",
+            "id": "TEhpqPqZc2QoAiw6ksGgW",
+            "sub": [
+              {
+                "name": "Fireworks",
+                "id": "CbbqOcWlKoiYecGU0seW8"
+              },
+              {
+                "name": "Art Events",
+                "id": "61P01VdZBYCK8SasIAOySG"
+              },
+              {
+                "name": "Cultural Events",
+                "id": "4koyNWJ6HmyMIECqq8mmIo"
+              },
+              {
+                "name": "Nature Events",
+                "id": "T6XoTrUMSsUOsC6Eqs2Eo"
+              }
+            ]
+          },
+          "... +2 more"
+        ],
+        "locations": [
+          {
+            "name": "Nara",
+            "sort": 1,
+            "id": "6czrGAdMpUUWUmGi2CCA6S",
+            "sub": [
+              {
+                "name": "Naramachi",
+                "sort": 2,
+                "id": "33CWDmTgVimquY2qge0mMW"
+              },
+              {
+                "name": "Other Areas",
+                "sort": 6,
+                "id": "20TJEt7ceo8OWIwEQ6WMyO"
+              },
+              {
+                "name": "Nishinokyo",
+                "sort": 4,
+                "id": "RoogQgOIyAwuywA2Sg4Em"
+              },
+              {
+                "name": "Tomio",
+                "sort": 5,
+                "id": "yRBIQHHzFIac0iaoOsWOK"
+              },
+              "... +2 more"
+            ]
+          },
+          {
+            "name": "West",
+            "sort": 4,
+            "id": "1pc1CAFQecOm2Mk42wSQ6A",
+            "sub": [
+              {
+                "name": "Horyuji Temple",
+                "sort": 27,
+                "id": "2osmObmYssEKsaCiEggo4K"
+              },
+              {
+                "name": "Yamato Takada",
+                "sort": 31,
+                "id": "3SXtLkUuKkwIcywU0aUyug"
+              },
+              {
+                "name": "Ikoma",
+                "sort": 28,
+                "id": "2iqgsRNzG48aWeW0UQuiEG"
+              },
+              {
+                "name": "Taimadera Temple",
+                "sort": 29,
+                "id": "1JiOvKIFGYqSEAESegAWIC"
+              },
+              "... +1 more"
+            ]
+          },
+          {
+            "name": "South",
+            "sort": 3,
+            "id": "2xx25kyUrioG04sOU2Sei8",
+            "sub": [
+              {
+                "name": "Omine-Okugake Trail ",
+                "sort": 26,
+                "id": "69tosRbKa42wk4mYesKeuq"
+              },
+              {
+                "name": "Odaigahara Plateau",
+                "sort": 22,
+                "id": "5cG80FvpOE4ukiE2WMSciy"
+              },
+              {
+                "name": "Kawakami",
+                "sort": 23,
+                "id": "40nQ2WUgdOGSASMsQWIU62"
+              },
+              {
+                "name": "Totsukawa",
+                "sort": 25,
+                "id": "1ZEI81kBUQcqQWw60scMk4"
+              },
+              "... +4 more"
+            ]
+          },
+          {
+            "name": "East",
+            "sort": 2,
+            "id": "jwRACBTzIOoM8yyiWIK4E",
+            "sub": [
+              {
+                "name": "Yamanobe-no-Michi",
+                "sort": 17,
+                "id": "2WSgarVd3yGUmKgawsKMae"
+              },
+              {
+                "name": "Hase",
+                "sort": 11,
+                "id": "4Bmhw0UUakY8oKcO2yKMi2"
+              },
+              {
+                "name": "Uda",
+                "sort": 13,
+                "id": "7x0pnuwccoCO2w2kWsoImg"
+              },
+              {
+                "name": "Sakurai",
+                "sort": 14,
+                "id": "6J72vlTEycU0mYE2yCGoWi"
+              },
+              "... +8 more"
+            ]
+          }
+        ],
+        "lists": [
+          {
+            "fields": {
+              "title": "Gojo",
+              "image": {
+                "url": "//images.ctfassets.net/9uvqwr58loxx/6bqCmZuXUkiWekCawOwuEq/5fef1b9e22c1ac085fe78bf8725ff71f/S00900_PKY_J8A8967.JPG",
+                "fileName": "S00900 PKY J8A8967",
+                "description": {},
+                "width": 1600,
+                "height": 1067,
+                "id": "6bqCmZuXUkiWekCawOwuEq"
+              }
+            },
+            "id": "2uz18Mqh3KUGW8SAyAUE8u",
+            "venues_tags": [
+              "Traditional Japan",
+              "Art Gallery",
+              "History Museum",
+              "Nature",
+              "... +27 more"
+            ],
+            "venues_subCategory": [
+              "Edible Gifts",
+              "Activities & Experiences",
+              "Shopping",
+              "Ryokan",
+              "... +5 more"
+            ],
+            "venues_category_ids": [
+              "2K0RRGhI8UwMM0KYSsGkQ0",
+              "1ZGaJ0xRmEiqUoYye4mSui",
+              "6w6HYgKNosSG8o40sWssAU",
+              "3LS7Nhfc7SAwi00KiEsIew",
+              "... +5 more"
+            ],
+            "venues_location_ids": [
+              "2xx25kyUrioG04sOU2Sei8",
+              "oG1apksAPmAOU4uOOEGyU"
+            ],
+            "pv": 0,
+            "pageId": "gojo",
+            "type": "area guide"
+          },
+          {
+            "fields": {
+              "title": "Dorogawa Onsen",
+              "image": {
+                "url": "//images.ctfassets.net/9uvqwr58loxx/6gNVlRpzPyGseaIGukACeA/bb81ab7b784bca0f22a770b14a97ced6/img_dorogawa_DSC_1626.jpg",
+                "fileName": "img_dorogawa_DSC_1626",
+                "description": {},
+                "width": 2400,
+                "height": 1601,
+                "id": "6gNVlRpzPyGseaIGukACeA"
+              }
+            },
+            "id": "4mIKRw8eMUqs4kYAgoQMug",
+            "venues_tags": [
+              "World Heritage",
+              "Top Attraction",
+              "Traditional Japan",
+              "Kaiseki",
+              "... +23 more"
+            ],
+            "venues_subCategory": [
+              "Onsen & Public Baths",
+              "History & Culture",
+              "Accommodation",
+              "Nature & The Outdoors",
+              "... +2 more"
+            ],
+            "venues_category_ids": [
+              "2K0RRGhI8UwMM0KYSsGkQ0",
+              "1ZGaJ0xRmEiqUoYye4mSui",
+              "6zuRdCBhscug8mo0cGW4cq",
+              "536hHPBuw8iwu4KmgQukK0",
+              "... +2 more"
+            ],
+            "venues_location_ids": [
+              "2xx25kyUrioG04sOU2Sei8",
+              "749yVggqIwEq2ks0Aw8KIq"
+            ],
+            "pv": 0,
+            "pageId": "dorogawa",
+            "type": "area guide"
+          },
+          {
+            "fields": {
+              "title": "Ikoma",
+              "image": {
+                "url": "//images.ctfassets.net/9uvqwr58loxx/A00408_VN_IMG_9883.JPG/c92fa19ec1d79b5ae65438aa9a2e3d08/VN_IMG_9883.JPG",
+                "fileName": "A00408_VN_IMG_9883.JPG",
+                "description": {},
+                "width": 5036,
+                "height": 2743,
+                "id": "A00408_VN_IMG_9883.JPG"
+              }
+            },
+            "id": "VGmmLZBLIiC6YgCuO4Im8",
+            "venues_tags": [
+              "Top Attraction",
+              "Parks & Gardens",
+              "Tea & Tea Ceremony",
+              "English Spoken",
+              "... +11 more"
+            ],
+            "venues_subCategory": [
+              "Activities & Experiences",
+              "History & Culture",
+              "Things to Do"
+            ],
+            "venues_category_ids": [
+              "4xN60ZhXUQKqwc2C0wM6AI",
+              "INI2f7NVKKAsSysOseEMC",
+              "5OmElIjDq0mUe2g8U4c4iC"
+            ],
+            "venues_location_ids": [
+              "1pc1CAFQecOm2Mk42wSQ6A",
+              "2iqgsRNzG48aWeW0UQuiEG"
+            ],
+            "pv": 0,
+            "pageId": "ikoma",
+            "type": "area guide"
+          },
+          {
+            "fields": {
+              "title": "Asuka",
+              "image": {
+                "url": "//images.ctfassets.net/9uvqwr58loxx/A00524_NP_IBK_1001_...._..jpg/44b8dd2179ff80e8ba5e322222424dec/NP_IBK_1001_______.jpg",
+                "fileName": "A00524_NP_IBK_1001_...._..jpg",
+                "description": {},
+                "width": 1504,
+                "height": 1000,
+                "id": "A00524_NP_IBK_1001_...._..jpg"
+              }
+            },
+            "id": "5imGtrO55m6UgUyACUqOwO",
+            "venues_tags": [
+              "Top Attraction",
+              "Traditional Japan",
+              "History Museum",
+              "Nature",
+              "... +28 more"
+            ],
+            "venues_subCategory": [
+              "Japanese Restaurants",
+              "Onsen & Public Baths",
+              "Japanese Cafes",
+              "Activities & Experiences",
+              "... +9 more"
+            ],
+            "venues_category_ids": [
+              "6Q33lKo6PKQw4qmi2uu2YC",
+              "6rnwHqnx3q6k2EC0mWkYQs",
+              "2K0RRGhI8UwMM0KYSsGkQ0",
+              "1ZGaJ0xRmEiqUoYye4mSui",
+              "... +9 more"
+            ],
+            "venues_location_ids": [
+              "jwRACBTzIOoM8yyiWIK4E",
+              "2eEIggyEpiyi6OMOSmyUSq"
+            ],
+            "pv": 0,
+            "pageId": "asuka",
+            "type": "area guide"
+          },
+          "... +144 more"
+        ]
+      }
+    },
+    {
+      "url": "https://privacyportal-au.onetrust.com/request/v1/consentreceipts",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "receipt": "eyJraWQiOiJxSzZzaVkrNnF0VU04UTNNNkcxa1dvNy9ObUg0UXZ3QnAreWhNdUZrU1c5QmdEK2w5V3BDYndjSG1kU0JWK0trOVU0YjAyM3R0bk85OU5rckJlU0lsdz09IiwiYWxnIjoiSFM1MTIifQ.eyJtb2MiOiJDT09LSUUiLCJzdW..."
+      }
+    }
+  ],
+  "likely_event_apis": [
+    {
+      "url": "https://www.visitnara.jp/travel-directory/api/data/",
+      "event_item_count": 400,
+      "sample_keys": [
+        "addressJp",
+        "adress",
+        "budget",
+        "category",
+        "detailType",
+        "eventDatePeriod",
+        "getName",
+        "lat",
+        "lng",
+        "location",
+        "name",
+        "nameJp",
+        "photo",
+        "priceBudget",
+        "sort",
+        "subCategory",
+        "subLocation",
+        "tags"
+      ]
+    }
+  ],
+  "page_title": "Event Calendar - Official Nara Travel Guide",
+  "final_url": "https://www.visitnara.jp/event-calendar/#?_=__",
+  "notes": "stable JSON candidates: 1",
+  "discovered_at": "2026-09-06T13:41:47.763183+00:00"
+}

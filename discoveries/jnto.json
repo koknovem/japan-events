@@ -1,0 +1,18 @@
+{
+  "id": "jnto",
+  "name": "JNTO",
+  "region": "Nationwide",
+  "home_url": "https://www.japan.travel/en/",
+  "configured_event_url": "https://www.japan.travel/en/events/",
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.japan.travel/en/events/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "ERROR: The request could not be satisfied",
+  "final_url": "https://www.japan.travel/en/events/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:54.877888+00:00"
+}

@@ -1,0 +1,471 @@
+{
+  "id": "ehime",
+  "name": "Ehime",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://www.visitehimejapan.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "#onetrust-accept-btn-handler"
+  ],
+  "event_links": [
+    {
+      "text": "Festivals & Events",
+      "href": "https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events"
+    },
+    {
+      "text": "Festivals & Events",
+      "href": "https://www.visitehimejapan.com/en/discover/stories/#anchor-festival-events"
+    },
+    {
+      "text": "Festivals & Events",
+      "href": "https://www.visitehimejapan.com/en/#anchor-festival-events"
+    },
+    {
+      "text": "SPOT Festivals & Events Saijo Festival",
+      "href": "https://www.visitehimejapan.com/en/things-to-do/spots/0074/"
+    },
+    {
+      "text": "SPOT Festivals & Events Warei Taisai Uwajima Ushi-Oni Festival",
+      "href": "https://www.visitehimejapan.com/en/things-to-do/spots/0066/"
+    },
+    {
+      "text": "SPOT Festivals & Events Matsuyama Dogo Autumn Festival",
+      "href": "https://www.visitehimejapan.com/en/things-to-do/spots/0048/"
+    },
+    {
+      "text": "SPOT Festivals & Events Niihama Taiko Festival",
+      "href": "https://www.visitehimejapan.com/en/things-to-do/spots/0075/"
+    }
+  ],
+  "chosen_event_url": "https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events",
+  "json_endpoints": [
+    {
+      "url": "https://cookie-cdn.cookiepro.com/consent/018df2ab-8d84-715d-8aeb-259eada923fa/018df2ab-8d84-715d-8aeb-259eada923fa.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "CookieSameSiteNoneEnabled": false,
+        "CookieV2CSPEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "202402.1.0",
+        "OptanonDataJSON": "018df2ab-8d84-715d-8aeb-259eada923fa",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "BulkDomainCheckUrl": "https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck",
+        "RuleSet": [
+          {
+            "Id": "018eefd0-6a23-75bd-b365-1402364c3c9d",
+            "Name": "GDPR other",
+            "Countries": [
+              "no",
+              "be",
+              "bg",
+              "dk",
+              "... +2 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "100_GDPR_visitehimejapan.com",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          },
+          {
+            "Id": "018eefd0-666b-718a-9a6d-a427eab5a4a6",
+            "Name": "GDPR EU",
+            "Countries": [
+              "de",
+              "fi",
+              "pt",
+              "lt",
+              "... +30 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "100_GDPR_visitehimejapan.com",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          },
+          {
+            "Id": "018eefd0-666c-7438-9eb0-306ffd40a2c6",
+            "Name": "Global temp",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +206 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GENERIC",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "000_Global_visitehimejapan.com",
+            "Conditions": [],
+            "GCEnable": false,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2024-04-18T06:11:10.353100645",
+          "updatedTime": "2024-04-18T06:11:10.353109805",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2024-04-18T06:11:10.378046942",
+          "updatedTime": "2024-04-18T06:11:10.378052862",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/iab2Data.json"
+        },
+        "Iab2V2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2024-04-18T06:11:10.403021200",
+          "updatedTime": "2024-04-18T06:11:10.403026240",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/iab2V2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 1,
+          "googleVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2BannerFocus": true,
+          "CookieV2GPC": true,
+          "CookieV2AssignTemplateRule": true,
+          "CookieV2GeolocationJsonApi": true,
+          "CookieV2GCMDMA": true,
+          "CookieV2TCF21": true,
+          "CookieV2RemoveSettingsIcon": true,
+          "CookieV2BannerLogo": true,
+          "CookieV2GeneralVendors": true,
+          "CookieV2GPP": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "UK",
+        "Domain": "www.visitehimejapan.com",
+        "TenantGuid": "fdba3271-4b27-4327-bbb7-f13f82cd083d",
+        "EnvId": "cookiepro-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "Default Audiences",
+        "GATrackToggle": false,
+        "GATrackAssignedCategory": "",
+        "WebFormIntegrationEnabled": false,
+        "WebFormSrcUrl": "",
+        "WebFormWorkerUrl": "",
+        "GppData": {
+          "cmpId": "28"
+        },
+        "AuthenticatedConsent": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/consent/018df2ab-8d84-715d-8aeb-259eada923fa/018eefd0-666c-7438-9eb0-306ffd40a2c6/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "pccloseButtonType": "Icon",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your de...",
+          "AboutText": "More information",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Allow All",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "CookiesDescText": "Description",
+          "AboutLink": "https://cookiepedia.co.uk/giving-consent-to-cookies",
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "AlwaysInactiveText": "Always Inactive",
+          "PCShowAlwaysActiveToggle": true,
+          "AlertNoticeText": "We use cookies to improve your experience on our website, to personalize content and ads, and to analyze our traffic. We share information about your use of our website with our...",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookies Settings",
+          "CookieSettingButtonText": "Cookies Settings",
+          "AlertAllowCookiesText": "Accept All Cookies",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": false,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "bottom-left",
+          "PreferenceCenterPosition": "default",
+          "PreferenceCenterConfirmText": "Confirm My Choices"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "",
+          "PCCustomCSS": "",
+          "PcTextColor": "#696969",
+          "PcButtonColor": "#FE9F01",
+          "PcButtonTextColor": "#FFFFFF",
+          "PcBackgroundColor": "#FFFFFF",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#E9E9E9",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#FE9F01",
+          "TextColor": "#696969",
+          "ButtonColor": "#FE9F01",
+          "BannerMPButtonColor": "#FFFFFF",
+          "BannerMPButtonTextColor": "#FE9F01",
+          "ButtonTextColor": "#FFFFFF",
+          "BackgroundColor": "#FFFFFF",
+          "BannerLinksTextColor": "#FE9F01",
+          "BannerAccordionBackgroundColor": "#E9E9E9",
+          "CookiePersistentLogo": "https://cookie-cdn.cookiepro.com/logos/static/ot_persistent_cookie_icon.png",
+          "OptanonLogo": "https://cookie-cdn.cookiepro.com/logos/static/cookiepro_logo.png",
+          "BnrLogo": "",
+          "OneTrustFooterLogo": "https://cookie-cdn.cookiepro.com/logos/static/poweredBy_cp_logo.svg",
+          "OptanonCookieDomain": "www.visitehimejapan.com",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": true
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202402.1.0/assets/otFloatingFlat.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFloatingFlat",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxvYXRpbmdGbGF0Ij48ZGl2IHJvbGU9ImFsZXJ0ZGlhbG9nIiBhcmlhLWRlc2NyaWJlZGJ5PSJvbmV0cnVzdC1wb2xpY3ktdGV4dCI+PGRpdiBjbGFzcz0ib3Qtc...",
+        "css": "#onetrust-banner-sdk.otFloatingFlat{position:fixed;width:58%;max-width:760px;min-height:135px;font-size:16px;right:2em;bottom:2em;z-index:2147483645;box-shadow:0 0 4px 0;-webkit..."
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202402.1.0/assets/v2/otPcCenter.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcCenter",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY0NlbnRlciBvdC1oaWRlIG90LWZhZGUtaW4iPjxkaXYgcm9sZT0iYWxlcnRkaWFsb2ciIGFyaWEtbW9kYWw9InRydWUiIGFyaWEtZGVzY3JpYmVkYnk9Im90LXBjLWRlc...",
+        "css": "#onetrust-pc-sdk.otPcCenter{overflow:hidden;position:fixed;margin:0 auto;top:5%;right:0;left:0;width:40%;max-width:575px;min-width:575px;border-radius:2.5px;z-index:2147483647;b..."
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202402.1.0/assets/otCookieSettingsButton.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otCookieSettingsButton",
+        "html": "PGRpdiBpZD0ib3Qtc2RrLWJ0bi1mbG9hdGluZyIgdGl0bGU9Ik1hbmFnZSBQcml2YWN5IFByZWZlcmVuY2VzIiBjbGFzcz0ib3QtZmxvYXRpbmctYnV0dG9uIG90LWhpZGUiPjxkaXYgY2xhc3M9Im90LWZsb2F0aW5nLWJ1dHRvbl9fZ...",
+        "css": "#ot-sdk-btn-floating.ot-floating-button{position:fixed;bottom:10px;opacity:0;width:50px;height:50px;line-height:15px;cursor:pointer;background-color:rgba(0,0,0,0);transition:all..."
+      }
+    },
+    {
+      "url": "https://consentag.eu/manager/consent/user/getuam",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "isEU": false,
+        "deleted": "false",
+        "uid": "5166baaa3959408d98f49138c51ce834",
+        "browserId": "sg-1788702143-de6b5049b7824141884d8faca73a8f09",
+        "meta": {
+          "siteOwner": 0,
+          "style": {
+            "id": 0
+          },
+          "purposes": {
+            "243": {
+              "id": 243,
+              "providers": {
+                "54288896": {
+                  "name": "...",
+                  "link": "...",
+                  "id": "..."
+                }
+              }
+            },
+            "245": {
+              "id": 245,
+              "providers": {
+                "54288896": {
+                  "name": "...",
+                  "link": "...",
+                  "id": "..."
+                }
+              }
+            }
+          },
+          "pixels": [
+            {
+              "iabId": 85,
+              "external": true,
+              "provider": 54288896,
+              "purpose": 243,
+              "html": "<script type='text/javascript' async src='https://i.ctnsnet.com/int/integration?pixel=84448947&nid=1125532&cont=s&loc={{_pageUrl}}&ref={{_pageReferrer}}&cst={{_consent}}&gdpr_co...",
+              "id": 84448948,
+              "event": {
+                "id": 1400
+              },
+              "frequency": 1420
+            }
+          ],
+          "lang": "en",
+          "silent": true,
+          "legacy": true
+        },
+        "consented": true
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Things to Do | Visit Ehime Japan",
+  "final_url": "https://www.visitehimejapan.com/en/things-to-do/#anchor-festival-events",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:27.580235+00:00"
+}

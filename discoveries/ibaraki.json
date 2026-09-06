@@ -1,0 +1,124 @@
+{
+  "id": "ibaraki",
+  "name": "Ibaraki",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.ibarakiguide.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "イベント",
+      "href": "https://www.ibarakiguide.jp/event.php"
+    },
+    {
+      "text": "#イベント",
+      "href": "https://www.ibarakiguide.jp/search.php?keyword=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88"
+    },
+    {
+      "text": "本文へ移動する",
+      "href": "https://www.ibarakiguide.jp/event.php#wrapper"
+    },
+    {
+      "text": "English",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "简体中文",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=zh-CN&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "繁體中文",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=zh-TW&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "한국어",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=ko&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "ไทย",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=th&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "Tiếng Việt",
+      "href": "https://www-ibarakiguide-jp.translate.goog/event.php?_x_tr_sl=ja&_x_tr_tl=vi&_x_tr_hl=ja&_x_tr_pto=nui"
+    },
+    {
+      "text": "MENU",
+      "href": "https://www.ibarakiguide.jp/event.php#menuBox"
+    }
+  ],
+  "chosen_event_url": "https://www.ibarakiguide.jp/event.php",
+  "json_endpoints": [
+    {
+      "url": "https://api.kotozna.chat/biz/tabimae/snippet/tenant/0f68e51b3f7a0913e9a05945420a3c8d539f72728cd79896ac6b61d30f9fa0cd",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "bubble_icon_url": "https://resource.im.kotozna.com/prd/image/upload/v1727323355/lamondo_admin_panel/k6fej8ajw6dqlwepm1a5.png",
+        "colors": {
+          "background": "#F2F2F2",
+          "black": "#000000",
+          "fontSize": 14,
+          "iconSize": 97,
+          "messageBg": "#F2F2F2",
+          "messageClose": "#9F9F9F",
+          "messageLabel": "#222222",
+          "primary": "#f4a278",
+          "title": "#FFFFFF",
+          "white": "#ffffff"
+        },
+        "css": "http://localhost:3000/src_sass_mbs_main_scss.styles.css",
+        "logo": "https://resource.im.kotozna.com/prd/image/upload/v1727323346/lamondo_admin_panel/bzuwej72xe46wecssz1r.png",
+        "message": "",
+        "show": true,
+        "success": true,
+        "switch_popup_text": true,
+        "theme": null,
+        "translations": [
+          {
+            "chatIsNotAvailable": "Hierdie diens is nie meer beskikbaar nie.",
+            "closeTabName": "Maak die oortjie toe",
+            "language": "af",
+            "languageTitle": "Taalinstelling",
+            "widgetMessage": "gesels",
+            "widgetTitle": "観光いばらき"
+          },
+          {
+            "chatIsNotAvailable": "ይህ አገልግሎት ከአሁን በኋላ አይገኝም።",
+            "closeTabName": "ትሩን ዝጋ",
+            "language": "am",
+            "languageTitle": "ቋንቋ ቅንብር",
+            "widgetMessage": "ውይይት",
+            "widgetTitle": "観光いばらき"
+          },
+          {
+            "chatIsNotAvailable": "هذه الخدمة لم تعد متاحة.",
+            "closeTabName": "أغلق علامة التبويب",
+            "language": "ar",
+            "languageTitle": "إعدادات اللغة",
+            "widgetMessage": "محادثة",
+            "widgetTitle": "観光いばらき"
+          },
+          {
+            "chatIsNotAvailable": "Bu xidmət artıq mövcud deyil.",
+            "closeTabName": "Nişanı bağlayın",
+            "language": "az",
+            "languageTitle": "Dil qəbulu",
+            "widgetMessage": "söhbət edin",
+            "widgetTitle": "観光いばらき"
+          },
+          "... +106 more"
+        ],
+        "url": "https://kzn.chat/biz/location/0f68e51b3f7a0913e9a05945420a3c8d539f72728cd79896ac6b61d30f9fa0cd?query=snippet"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "イベント情報 | 観光いばらき公式ホームページ",
+  "final_url": "https://www.ibarakiguide.jp/event.php",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:20.395294+00:00"
+}

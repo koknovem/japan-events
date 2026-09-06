@@ -1,0 +1,23 @@
+{
+  "id": "yamanashi",
+  "name": "Yamanashi",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.yamanashi-kankou.jp/english/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Yamanashi Disaster Prevention Portal",
+      "href": "https://yamanashi.secure.force.com/X_YAMANASHI_PUB_VF_EnglishTop"
+    }
+  ],
+  "chosen_event_url": "https://yamanashi.secure.force.com/X_YAMANASHI_PUB_VF_EnglishTop",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "",
+  "final_url": "https://yamanashi.secure.force.com/X_YAMANASHI_PUB_VF_EnglishTop",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:51.613018+00:00"
+}

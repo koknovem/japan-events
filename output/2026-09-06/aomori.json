@@ -1,0 +1,12 @@
+{
+  "prefecture": "Aomori",
+  "id": "aomori",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:33; none_on_date:33_parsed",
+  "event_count": 0,
+  "source_url": "https://aomori-tourism.com/en/event/index.html",
+  "adapter": "generic",
+  "events": []
+}

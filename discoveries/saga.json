@@ -1,0 +1,18 @@
+{
+  "id": "saga",
+  "name": "Saga",
+  "region": "Kyushu & Okinawa",
+  "home_url": "https://www.saga-tripgenius.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.saga-tripgenius.com/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "Saga Prefecture Tourism Federation",
+  "final_url": "https://www.saga-tripgenius.com/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:31.769839+00:00"
+}

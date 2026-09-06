@@ -1,0 +1,86 @@
+from __future__ import annotations
+
+import asyncio
+from datetime import date
+
+from japan_events.browser import close_session, launch_browser, open_session, playwright_runtime
+from japan_events.models import SiteConfig, SiteResult
+from japan_events.registry import filter_sites, get_adapter, load_sites
+from japan_events.storage import write_combined, write_site_result
+
+
+async def scrape_site(site: SiteConfig, target: date, session) -> SiteResult:
+    adapter = get_adapter(site)
+    events = await adapter.scrape(target, session)
+    notes = getattr(session, "page_notes", None)
+    if not events and not notes:
+        notes = "no matching events"
+    return SiteResult(
+        prefecture=site.name,
+        id=site.id,
+        ok=True,
+        date=target.isoformat(),
+        notes=notes,
+        event_count=len(events),
+        source_url=session.page.url if session.page else site.listing_url,
+        adapter=getattr(adapter, "name", site.adapter),
+        events=events,
+    )
+
+
+async def run_scrape(
+    target: date,
+    *,
+    prefecture: str | None = None,
+    headed: bool = False,
+    concurrency: int = 3,
+) -> list[SiteResult]:
+    sites = filter_sites(load_sites(), prefecture)
+    sem = asyncio.Semaphore(max(1, concurrency))
+    results: list[SiteResult] = []
+
+    async with playwright_runtime() as playwright:
+        browser = await launch_browser(playwright, headed=headed)
+
+        async def one(site: SiteConfig) -> SiteResult:
+            async with sem:
+                print(f"[scrape] {site.id} via {site.adapter}: {site.listing_url}", flush=True)
+                session = None
+                try:
+                    session = await open_session(browser, site, headed=headed)
+                    result = await scrape_site(site, target, session)
+                except Exception as exc:
+                    result = SiteResult(
+                        prefecture=site.name,
+                        id=site.id,
+                        ok=False,
+                        date=target.isoformat(),
+                        error=f"{type(exc).__name__}: {exc}",
+                        event_count=0,
+                        source_url=site.listing_url,
+                        adapter=site.adapter,
+                        events=[],
+                    )
+                finally:
+                    if session is not None:
+                        await close_session(session)
+                write_site_result(result, target)
+                flag = "ok" if result.ok else "ERR"
+                print(
+                    f"[scrape] {site.id}: {flag} events={result.event_count}"
+                    + (f" error={result.error}" if result.error else ""),
+                    flush=True,
+                )
+                return result
+
+        results = list(await asyncio.gather(*[one(site) for site in sites]))
+        await browser.close()
+
+    write_combined(results, target)
+    ok = sum(1 for r in results if r.ok)
+    total_events = sum(r.event_count for r in results)
+    print(
+        f"[scrape] done date={target.isoformat()} sites={ok}/{len(results)} events={total_events}",
+        flush=True,
+    )
+    return results

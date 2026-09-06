@@ -1,0 +1,454 @@
+{
+  "id": "kumamoto",
+  "name": "Kumamoto",
+  "region": "Kyushu & Okinawa",
+  "home_url": "https://kumamoto-guide.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept all')"
+  ],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://kumamoto-guide.jp/en/events/"
+    },
+    {
+      "text": "March – MaySpring",
+      "href": "https://kumamoto-guide.jp/en/events/#spring"
+    },
+    {
+      "text": "June - AugustSummer",
+      "href": "https://kumamoto-guide.jp/en/events/#summer"
+    },
+    {
+      "text": "September - NovemberAutumn",
+      "href": "https://kumamoto-guide.jp/en/events/#autumn"
+    },
+    {
+      "text": "December - FebruaryWinter",
+      "href": "https://kumamoto-guide.jp/en/events/#winter"
+    },
+    {
+      "text": "PAGETOP",
+      "href": "https://kumamoto-guide.jp/en/events/#contents"
+    }
+  ],
+  "chosen_event_url": "https://kumamoto-guide.jp/en/events/",
+  "json_endpoints": [
+    {
+      "url": "https://cdn-au.onetrust.com/consent/09923d40-32ce-4ac7-b476-5a02d5e0172d/09923d40-32ce-4ac7-b476-5a02d5e0172d.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "CookieSameSiteNoneEnabled": false,
+        "CookieV2CSPEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "202505.2.0",
+        "OptanonDataJSON": "09923d40-32ce-4ac7-b476-5a02d5e0172d",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "BulkDomainCheckUrl": "https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck",
+        "RuleSet": [
+          {
+            "Id": "0197aa87-9c38-779e-85e2-71f904923b1b",
+            "Name": "Japan",
+            "Countries": [
+              "jp"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "de": "de",
+              "default": "ja",
+              "th": "th",
+              "ko": "ko",
+              "en": "en",
+              "fr": "fr",
+              "zh": "zh"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GENERIC",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "kumamoto-guide.jp(熊本市) - Generic Template",
+            "Conditions": [],
+            "GCEnable": true,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          },
+          {
+            "Id": "0197aa87-9783-742c-a36b-79c0bd1ab5df",
+            "Name": "GDPR",
+            "Countries": [
+              "de",
+              "no",
+              "be",
+              "fi",
+              "... +35 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "de": "de",
+              "default": "ja",
+              "th": "th",
+              "ko": "ko",
+              "en": "en",
+              "fr": "fr",
+              "zh": "zh"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "【GDPR】Custom Template",
+            "Conditions": [],
+            "GCEnable": true,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          },
+          {
+            "Id": "0197aa87-9783-7735-94cc-eb003eb619a5",
+            "Name": "CCPA",
+            "Countries": [],
+            "States": {
+              "us": [
+                "ca"
+              ]
+            },
+            "LanguageSwitcherPlaceholder": {
+              "de": "de",
+              "default": "ja",
+              "th": "th",
+              "ko": "ko",
+              "en": "en",
+              "fr": "fr",
+              "zh": "zh"
+            },
+            "BannerPushesDown": false,
+            "Default": false,
+            "Global": false,
+            "Type": "CCPA",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "【CCPA】Custom Template",
+            "Conditions": [],
+            "GCEnable": true,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          },
+          {
+            "Id": "0197aa87-9761-7fd4-b944-3e86e6250bca",
+            "Name": "Global",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +206 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "de": "de",
+              "default": "ja",
+              "th": "th",
+              "ko": "ko",
+              "en": "en",
+              "fr": "fr",
+              "zh": "zh"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GENERIC",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "kumamoto-guide.jp(熊本市) - Generic Template",
+            "Conditions": [],
+            "GCEnable": true,
+            "IsGPPEnabled": false,
+            "EnableJWTAuthForKnownUsers": false
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2025-07-10T08:54:02.594946005",
+          "updatedTime": "2025-07-10T08:54:02.594950685",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2025-07-10T08:54:02.601728985",
+          "updatedTime": "2025-07-10T08:54:02.601732505",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iab2Data.json"
+        },
+        "Iab2V2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2025-07-10T08:54:02.605865357",
+          "updatedTime": "2025-07-10T08:54:02.605868477",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/iab2V2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 61,
+          "googleVendorListUrl": "https://cdn-au.onetrust.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2BannerFocus": true,
+          "CookieV2RejectAll": true,
+          "CookieV2GPC": true,
+          "CookieV2GeolocationJsonApi": true,
+          "CookieV2TCF21": true,
+          "CookieV2BannerLogo": true,
+          "ConsentStoreConsentStrings": true,
+          "CookieV2AssignTemplateRule": true,
+          "MobileAuthenticatedConsents": true,
+          "CookieV2MicrosoftUET": true,
+          "CookieV2GCMDMA": true,
+          "CookieV2RemoveSettingsIcon": true,
+          "CookieV2GeneralVendors": true,
+          "CookieV2GPP": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "UK",
+        "Domain": "kumamoto-guide.jp",
+        "TenantGuid": "52dbd5b3-000d-436c-b054-6c973e7a7e35",
+        "EnvId": "app-au-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "kumamoto-guide.jp(熊本市) - Default Audiences",
+        "GATrackToggle": false,
+        "GATrackAssignedCategory": "",
+        "WebFormIntegrationEnabled": false,
+        "WebFormSrcUrl": "",
+        "WebFormWorkerUrl": "",
+        "GppData": {
+          "cmpId": "28"
+        },
+        "AuthenticatedConsent": false,
+        "CDNLocation": "https://cdn-au.onetrust.com",
+        "RootDomainConsentEnabled": false,
+        "RootDomainUrl": "",
+        "LanguageDetectionEnabled": true,
+        "LanguageDetectionByHtml": false,
+        "DataLanguage": ""
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/consent/09923d40-32ce-4ac7-b476-5a02d5e0172d/0197aa87-9761-7fd4-b944-3e86e6250bca/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "pccloseButtonType": "Icon",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your de...",
+          "AboutText": "",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Allow All",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "CookiesDescText": "Description",
+          "AboutLink": "",
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "AlwaysInactiveText": "Always Inactive",
+          "PCShowAlwaysActiveToggle": true,
+          "AlertNoticeText": "By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. ",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookies Settings",
+          "AlertMoreInfoTextDialog": "Cookies Settings, Opens the preference center dialog",
+          "CookieSettingButtonText": "Cookies Settings",
+          "AlertAllowCookiesText": "Accept All Cookies",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": false,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "bottom",
+          "PreferenceCenterPosition": "default"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "",
+          "PCCustomCSS": "",
+          "PcTextColor": "#696969",
+          "PcButtonColor": "#000000",
+          "PcButtonTextColor": "#FFFFFF",
+          "PcBackgroundColor": "#FFFFFF",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#F8F8F8",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#3860BE",
+          "TextColor": "#696969",
+          "ButtonColor": "#000000",
+          "BannerMPButtonColor": "#FFFFFF",
+          "BannerMPButtonTextColor": "#000000",
+          "ButtonTextColor": "#FFFFFF",
+          "BackgroundColor": "#FFFFFF",
+          "BannerLinksTextColor": "#3860BE",
+          "BannerAccordionBackgroundColor": "#E9E9E9",
+          "CookiePersistentLogo": "https://cdn-au.onetrust.com/logos/static/ot_persistent_cookie.png",
+          "OptanonLogo": "https://cdn-au.onetrust.com/logos/52dbd5b3-000d-436c-b054-6c973e7a7e35/ebccb2e2-439b-4e78-81ee-45a26e9ff84f/4822f9fc-0377-4f7f-899e-3b57729630ea/logo-h.png",
+          "BnrLogo": "",
+          "OneTrustFooterLogo": "https://cdn-au.onetrust.com/logos/static/powered_by_logo.svg",
+          "OptanonCookieDomain": "kumamoto-guide.jp",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "hide-cookie-setting-button",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": false
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202505.2.0/assets/otFlat.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFlat",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxhdCI+PGRpdiByb2xlPSJkaWFsb2ciPjxkaXYgY2xhc3M9Im90LXNkay1jb250YWluZXIiPjxkaXYgY2xhc3M9Im90LXNkay1yb3ciPjxkaXYgaWQ9Im9uZXRyd...",
+        "css": "#onetrust-banner-sdk{box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFlat{position:fixed;z-index:2147483645;bottom:0;right:0;left:0;background-color:#fff;max-height:90..."
+      }
+    },
+    {
+      "url": "https://cdn-au.onetrust.com/scripttemplates/202505.2.0/assets/v2/otPcCenter.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcCenter",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY0NlbnRlciBvdC1oaWRlIG90LWZhZGUtaW4iPjxkaXYgcm9sZT0iZGlhbG9nIiBhcmlhLW1vZGFsPSJ0cnVlIj48IS0tIENsb3NlIEJ1dHRvbiAtLT48ZGl2IGNsYXNzP...",
+        "css": "#onetrust-pc-sdk.otPcCenter{--ot-footer-space: 160px;overflow:hidden;position:fixed;margin:0 auto;top:5%;right:0;left:0;width:40%;max-width:575px;min-width:575px;border-radius:2..."
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | Kumamoto City Official Guide",
+  "final_url": "https://kumamoto-guide.jp/en/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:45.497630+00:00"
+}

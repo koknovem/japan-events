@@ -1,0 +1,76 @@
+{
+  "id": "saitama",
+  "name": "Saitama",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://saitama-supportdesk.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "a:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "<img src=\"https://saitama-supportdesk.com/wp-content/themes/saitama-pref-multi/assets/images/common/img_mega-menu-events",
+      "href": "https://saitama-supportdesk.com/events/"
+    },
+    {
+      "text": "繁體中文",
+      "href": "https://saitama-supportdesk.com/zh-hant/events/"
+    },
+    {
+      "text": "简体中文",
+      "href": "https://saitama-supportdesk.com/zh-hans/events/"
+    },
+    {
+      "text": "ไทย",
+      "href": "https://saitama-supportdesk.com/th/events/"
+    },
+    {
+      "text": "한국어",
+      "href": "https://saitama-supportdesk.com/ko/events/"
+    },
+    {
+      "text": "日本語",
+      "href": "https://saitama-supportdesk.com/ja/events/"
+    },
+    {
+      "text": "Kazo Citizens’ Peace Festival",
+      "href": "https://saitama-supportdesk.com/events/post-11465/"
+    },
+    {
+      "text": "Yorii Hojo Festival",
+      "href": "https://saitama-supportdesk.com/events/post-11438/"
+    },
+    {
+      "text": "Sakitama Fire Festival",
+      "href": "https://saitama-supportdesk.com/events/post-36627/"
+    },
+    {
+      "text": "Grand Bonsai Festival",
+      "href": "https://saitama-supportdesk.com/events/post-35785/"
+    }
+  ],
+  "chosen_event_url": "https://saitama-supportdesk.com/events/",
+  "json_endpoints": [
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=QYgj++5cRNer86K4SFpr/w==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "Wm2darG5E_vK0-kPkfz2uQ0",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "wftDtcQvKYhH7i3Zq-p4c0AU-dYxShxspFhx-K7hOjM",
+        "bg_binary": "RrDzP0rs5WKzcx40ulZlE5PiHq6bPWKL902Z7r6nWv2ekmByh1yrigz3kExlF06GN5LtH3ZN6RVxzvr+PBcmCGRVIYjyNO9Nb3X4m/fufY0K17hCcVLTKp7rZObL59txqcDCPgzhzZyDQClcJTbmnIYM1l9JSHkwr+NFqZxWkcE3COB+d...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Event Information | (Official) Saitama Tourism Support Desk | Just North of Tokyo",
+  "final_url": "https://saitama-supportdesk.com/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:42.086948+00:00"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "wakayama",
+  "name": "Wakayama",
+  "region": "Tokai & Kansai",
+  "home_url": "https://visitwakayama.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://visitwakayama.jp/en/events/index.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_23.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_626.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_50.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_20.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_74.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_3703.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_79.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_35.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_81.html"
+    },
+    {
+      "text": "",
+      "href": "https://visitwakayama.jp/en/events/detail_34.html"
+    }
+  ],
+  "chosen_event_url": "https://visitwakayama.jp/en/events/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=S0EypIXiQAOWXSzUWiDGdA==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "oW2daqvcFoOGvr0PnIWEwAE",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "VrkEHE/bel/g2TAxODGYS2JvM/1KT+elYhtABq91WmSPVO0Mbg7dQi6Xd9PYAlJGvyUiLkzOJXVK9KScd2LBQo4UTWl6AoUmTZnhHhBEr34aEdobcmN6gncZUXO05+z00NlrzI1fOwydwJwTERgeeOYU3uoaTXz9U8T6p73JiwGIZ7eWe...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events｜Visit Wakayama - The Official Tourism Website of Wakayama Prefecture",
+  "final_url": "https://visitwakayama.jp/en/events/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:53.773514+00:00"
+}

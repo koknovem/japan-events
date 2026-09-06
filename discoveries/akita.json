@@ -1,0 +1,56 @@
+{
+  "id": "akita",
+  "name": "Akita",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://akita-fun.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "お祭り",
+      "href": "https://akita-fun.jp/featured_contents/festival"
+    },
+    {
+      "text": "イベント",
+      "href": "https://akita-fun.jp/events"
+    }
+  ],
+  "chosen_event_url": "https://akita-fun.jp/featured_contents/festival",
+  "json_endpoints": [
+    {
+      "url": "https://akita-fun.jp/myplan/favorite_spot_ids",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": []
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=eQEHYLLrT4KqX/ZEu2F2Hg==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "P22daoi_EvHn1e8Pteyh0QU",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "o4-ogFGHNUmTyA9letJjAGCVBR7cCUVwuZlEYnOU3dk",
+        "bg_binary": "Vrksmu5USA6StSlF5xT3Kn9xjFoTNiQef62BpBAh0lvWR8ADCHwk5o1OappTzXBktYW+ZkLJPIkDTWnVuRUa2FeSzP+Bw6MkOyja2xW8TDLkYbHB43icm/fkPdhszIV3ZDv+2b9j6EnACP1FH+O8dF1TtrYzsgtTsd7Jglx32cett8Plu...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    },
+    {
+      "url": "https://akita-fun.jp/myplan/favorite_spot_ids",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": []
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "秋田のお祭り | アキタファン",
+  "final_url": "https://akita-fun.jp/featured_contents/festival",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:16.173098+00:00"
+}

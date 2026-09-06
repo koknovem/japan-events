@@ -1,0 +1,94 @@
+{
+  "id": "kochi",
+  "name": "Kochi",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://visitkochijapan.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "a:has-text('Accept')"
+  ],
+  "event_links": [],
+  "chosen_event_url": "https://visitkochijapan.com/en/",
+  "json_endpoints": [
+    {
+      "url": "https://sp-trk.com/i/4a2jxjij?lc=https%3A%2F%2Fvisitkochijapan.com%2Fen%2F&hl=2&tp=0&if=0&te=0&so=landscape-primary&bp=Win32&lg=en-US&sw=1365&sh=900&sl=0&st=0&sx=0&sy=0&ow=1365&oh=900&aw=1365&ah=900&cd=24&pr=1&tz=Asia%2FHong_Kong&to=-480&pc=12&dm=32&ss=1&ls=1&tu=4472558850676451125&u=4472558850693228343&iu=4472558850676451125&il=https%3A%2F%2Fvisitkochijapan.com%2Fen%2F&su=4472558850676451125&np=den&id=1&od=0&pe=0&gp=Google%20Inc.%20(Google)%7CANGLE%20(Google%2C%20Vulkan%201.3.0%20(SwiftShader%20Device%20(Subzero)%20(0x0000C0DE))%2C%20SwiftShader%20driver)&co=0&jv=0&ww=1365&wh=900&ne=4g&nr=0&nd=10&es=33&hq=1&cw=0&pb1=1684489967&pb2=1684489967&pn=-1856981560&pt=17&pd=0&t=01&a=1788702149381&r=4472558850676451125&o=q2r735v01ee&et=32&n=pv",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "s": 0.0,
+        "r": "4472558853813790569"
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/settings?session_id=78309043edca54579c4819ef9f2c7a7c0fda09ee",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "should_obtain_cookie_consent": false,
+        "features": {
+          "tfw_timeline_list": {
+            "bucket": [],
+            "version": null
+          },
+          "tfw_follower_count_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_backend": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_refsrc_session": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_fosnr_soft_interventions_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_mixed_media_15897": {
+            "bucket": "treatment",
+            "version": null
+          },
+          "tfw_experiments_cookie_expiration": {
+            "bucket": 1209600,
+            "version": null
+          },
+          "tfw_show_birdwatch_pivots_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_duplicate_scribes_to_settings": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_use_profile_image_shape_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_video_hls_dynamic_manifests_15082": {
+            "bucket": "true_bitrate",
+            "version": null
+          },
+          "tfw_legacy_timeline_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_frontend": {
+            "bucket": "on",
+            "version": null
+          }
+        }
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "VISIT KOCHI JAPAN",
+  "final_url": "https://visitkochijapan.com/en/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:30.850913+00:00"
+}

@@ -1,0 +1,280 @@
+{
+  "id": "mie",
+  "name": "Mie",
+  "region": "Tokai & Kansai",
+  "home_url": "https://visitmie-japan.travel/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://visitmie-japan.travel/en/",
+  "json_endpoints": [
+    {
+      "url": "https://visitmie-japan.travel/en/api/featured.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "data": [],
+        "count": 0,
+        "current_language": "en"
+      }
+    },
+    {
+      "url": "https://visitmie-japan.travel/en/api/articles_pickup.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "data": [
+          {
+            "id": "98",
+            "title": "Top-Class Theme Parks for Families and Groups to Enjoy",
+            "list_image": "/sites/default/files/2025-09/kv_11.webp",
+            "list_text": "Mie Prefecture is perfect for all ages. Experience thrills at Nagashima Spa Land, and Suzuka Circuit Park. Relax at Nabana no Sato’s blooms and winter lights. With hot springs, ...",
+            "url": "/en/articles/20250925165519",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2025-09-25 16:55:19",
+            "changed": "2025-11-26 13:32:58",
+            "language": "en",
+            "categories": [
+              "Local Cuisine & Shopping",
+              "Activities & Experiences"
+            ],
+            "areas": [
+              "Northern Area",
+              "Central Area"
+            ]
+          }
+        ],
+        "count": 1,
+        "current_language": "en"
+      }
+    },
+    {
+      "url": "https://webchat.bebot.io/api/v1/verify_widget_key?locale=en-us",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "chatPath": "/chat/54b5d130",
+        "entrypointToken": "54b5d130",
+        "key": "73f6866a7264ef43fb0d549fc19edf6855948ca820bb93a4586df2d217931454",
+        "locale": "en-us",
+        "defaultSettings": {
+          "card": {
+            "title": "Bebot",
+            "subTitle": "Type your question 👇",
+            "buttonText": "Chat Now"
+          },
+          "messageNotification": {
+            "text": "Hi I'm Bebot! Feel free to ask me any questions😊"
+          },
+          "rollout": {
+            "text": "Hi I'm Bebot! Feel free to ask me any questions😊"
+          },
+          "bubbleButton": {
+            "text": "Chat with Bebot"
+          },
+          "screenReaderLabels": {
+            "regionTitle": "Chatbot",
+            "loading": "Loading",
+            "dismiss": "Dismiss"
+          },
+          "textToSpeech": {
+            "control": {
+              "label": "Audio"
+            }
+          }
+        },
+        "featured": [],
+        "clientSessionId": "3bd43b98-f97f-4d25-a7eb-b6006143f108"
+      }
+    },
+    {
+      "url": "https://visitmie-japan.travel/en/api/spots.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "data": [
+          {
+            "id": "175",
+            "title": "Nigiwai no Mori “Inabe Hütte”",
+            "list_image": "/sites/default/files/2025-12/image1_58.jpeg",
+            "list_text": "",
+            "url": "/en/spots/20251204175254-0",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2025-12-04 17:52:54",
+            "changed": "2025-12-04 17:58:22",
+            "language": "en",
+            "categories": [
+              "Local Cuisine & Shopping"
+            ],
+            "areas": [
+              "Northern Area"
+            ]
+          },
+          {
+            "id": "173",
+            "title": "Aquaignis",
+            "list_image": "/sites/default/files/2025-12/image1_51.jpeg",
+            "list_text": "An integrated resort in Yunoyama Onsen operating with the concept of combined effect of healing and food.",
+            "url": "/en/spots/20251204174702",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2025-12-04 17:47:02",
+            "changed": "2025-12-04 17:51:32",
+            "language": "en",
+            "categories": [
+              "Local Cuisine & Shopping",
+              "Activities & Experiences",
+              "Hot Spring Destinations"
+            ],
+            "areas": [
+              "Northern Area"
+            ]
+          },
+          {
+            "id": "172",
+            "title": "Inabe City Nogyokoen（agricultural park）",
+            "list_image": "/sites/default/files/2025-12/image1_47.jpeg",
+            "list_text": "The plum blossoms spread like carpet.",
+            "url": "/en/spots/20251204174108",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2025-12-04 17:41:08",
+            "changed": "2025-12-04 17:46:19",
+            "language": "en",
+            "categories": [
+              "Nature",
+              "Activities & Experiences"
+            ],
+            "areas": [
+              "Northern Area"
+            ]
+          },
+          {
+            "id": "171",
+            "title": "Mitsui Outlet Park JAZZ DREAM NAGASHIMA",
+            "list_image": "/sites/default/files/2025-12/image1_44.jpeg",
+            "list_text": "The biggest outlet mall in Japan in terms of the number of stores and the total floor area of stores.",
+            "url": "/en/spots/20251204172111",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2025-12-04 17:21:11",
+            "changed": "2025-12-04 17:39:15",
+            "language": "en",
+            "categories": [
+              "Local Cuisine & Shopping"
+            ],
+            "areas": [
+              "Northern Area"
+            ]
+          },
+          "... +49 more"
+        ],
+        "count": 53,
+        "current_language": "en"
+      }
+    },
+    {
+      "url": "https://visitmie-japan.travel/en/api/articles.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "data": [
+          {
+            "id": "225",
+            "title": "Five Flowery Spring Blossoms in Mie",
+            "list_image": "/sites/default/files/2026-08/image2_1.jpeg",
+            "list_text": "The arrival of spring paints Mie Prefecture in a tapestry of colors. As the season awakens, it is not merely cherry blossoms that steal the spotlight. A symphony of vibrant blos...",
+            "url": "/en/articles/20260804145322",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2026-08-04 14:53:22",
+            "changed": "2026-08-31 15:13:51",
+            "language": "en",
+            "categories": [
+              "Nature"
+            ],
+            "areas": [
+              "Northern Area",
+              "Iga Area",
+              "Central Area",
+              "Ise-Shima Area"
+            ]
+          },
+          {
+            "id": "213",
+            "title": "OWASE WAPPA: Nature’s Gift Shaped into Tableware Art",
+            "list_image": "/sites/default/files/2026-07/image1_5.jpeg",
+            "list_text": "There is always something deeply moving about Japanese handcrafts. Every piece begins with carefully chosen natural materials, shaped for a clear purpose yet never stripped of e...",
+            "url": "/en/articles/20260723145941",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2026-07-23 14:59:41",
+            "changed": "2026-08-31 14:16:44",
+            "language": "en",
+            "categories": [
+              "Culture & History"
+            ],
+            "areas": [
+              "Kumano Area"
+            ]
+          },
+          {
+            "id": "217",
+            "title": "Walk the Mochi Kaido Road Like Ancient Travelers for a Taste of Mie’s Confectionery Culture, Part 1",
+            "list_image": "/sites/default/files/2026-07/image14_6.jpeg",
+            "list_text": "Ise Jingu is the highlight of any trip to Mie Prefecture. The pilgrimage to this sacred shrine, known as “Oise Mairi,” became popular among common people during the Edo period (...",
+            "url": "/en/articles/20260728170205",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2026-07-28 17:02:05",
+            "changed": "2026-08-19 17:21:57",
+            "language": "en",
+            "categories": [
+              "Culture & History",
+              "Local Cuisine & Shopping"
+            ],
+            "areas": [
+              "Northern Area"
+            ]
+          },
+          {
+            "id": "230",
+            "title": "From Kumano City to the Kumano Kodo: An Abundance of Natural Wonders",
+            "list_image": "/sites/default/files/2026-08/image3_9.jpeg",
+            "list_text": "The area around Kumano City is packed with incredible things to see and do, from the ancient cobblestone hiking trails of Kumano Kodo to the unusual Onigajo rock formations, the...",
+            "url": "/en/articles/20260813135600",
+            "link_type": "",
+            "display_top_page": true,
+            "created": "2026-08-13 13:56:00",
+            "changed": "2026-08-13 17:06:33",
+            "language": "en",
+            "categories": [
+              "Nature",
+              "Activities & Experiences"
+            ],
+            "areas": [
+              "Kumano Area"
+            ]
+          },
+          "... +51 more"
+        ],
+        "count": 55,
+        "current_language": "en"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Visit Mie in Japan, Once in Your Lifetime",
+  "final_url": "https://visitmie-japan.travel/en/",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:41:19.017815+00:00"
+}

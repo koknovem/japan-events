@@ -1,0 +1,464 @@
+{
+  "id": "kagoshima",
+  "name": "Kagoshima",
+  "region": "Kyushu & Okinawa",
+  "home_url": "https://www.kagoshima-kankou.com/for/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://www.kagoshima-kankou.com/for/events"
+    },
+    {
+      "text": "2025.04.17 Events New SPECIAL EXHIBITION Koji Kinutani & his children Kota, Kanako",
+      "href": "https://www.kagoshima-kankou.com/for/events/70738"
+    },
+    {
+      "text": "Clear",
+      "href": "https://www.kagoshima-kankou.com/for/events?"
+    },
+    {
+      "text": "Kagoshima Kinko Bay Summer Night Fireworks Display 150,000 fireworks are set off in this big display of fireworks Nakasa",
+      "href": "https://www.kagoshima-kankou.com/for/events/53769"
+    },
+    {
+      "text": "Tarumizu Senbon Ichou (Thousand Ginkgos) A superb view 40 years in the making Osumi Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/13192"
+    },
+    {
+      "text": "Izumi: Japan’s top crane wintering ground Designated a special natural monument Hokusatsu Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/12373"
+    },
+    {
+      "text": "Chirin Island (Chiringashima) Known as a matchmaking spot for couples because the sandbar is reminiscent of a bridge or ",
+      "href": "https://www.kagoshima-kankou.com/for/events/10654"
+    },
+    {
+      "text": "Uwaba-kogen Highlands（Cosmos garden） Hokusatsu Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/10019"
+    },
+    {
+      "text": "Air Memorial in Kanoya One of the largest air events in Southern Kyushu. Osumi Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/52095"
+    },
+    {
+      "text": "Shinonomenosato of Ajisai Canyon Hokusatsu Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/50865"
+    },
+    {
+      "text": "Kyushu Azaleas in Bloom The Kagoshima prefectural flower, vividly coloring the mountains in summer Kirishima Area",
+      "href": "https://www.kagoshima-kankou.com/for/events/51556"
+    }
+  ],
+  "chosen_event_url": "https://www.kagoshima-kankou.com/for/events",
+  "json_endpoints": [
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/53769",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 115
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/13192",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 549
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12373",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 108
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/10654",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 703
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/10019",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 104
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52095",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 139
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/50865",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 173
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52123",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 83
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/50229",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 35
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/10547",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 142
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52306",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 38
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52329",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 30
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/20322",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 38
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51556",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 235
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12304",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 6
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/20243",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 25
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/50211",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 136
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51897",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 65
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/50798",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 92
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52336",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 36
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/53148",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 3
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51768",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 29
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/70547",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 6
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12301",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 1
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/20481",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 22
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/20151",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 38
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/20326",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 3
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51237",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 16
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12281",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 0
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52310",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 21
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52143",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 8
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52104",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 93
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12278",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 2
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/50341",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 6
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/12318",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 3
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51958",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 13
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52018",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 8
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/51063",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 84
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52731",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 6
+      }
+    },
+    {
+      "url": "https://www.kagoshima-kankou.com/for/favorite/check/52363",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 8
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | DISCOVER KAGOSHIMA｜Official Travel Guide",
+  "final_url": "https://www.kagoshima-kankou.com/for/events",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:57.319714+00:00"
+}

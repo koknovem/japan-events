@@ -1,0 +1,119 @@
+{
+  "id": "aichi",
+  "name": "Aichi",
+  "region": "Tokai & Kansai",
+  "home_url": "https://aichinow.pref.aichi.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://aichinow.pref.aichi.jp/en/events/"
+    },
+    {
+      "text": "Aichi International Women’s Film Festival 2026 Sep 2,2026(Wed) ～ Sep 6(Sun) • Will Aichi (Aichi Women's Center) • Midlan",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1064/"
+    },
+    {
+      "text": "Okazaki Komadachi Grape Picking Jul 20,2026(Mon) ～ Oct 10(Sat) Seven vineyards belonging to the Okazaki Komadachi Grape ",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/976/"
+    },
+    {
+      "text": "Night Zoo at Toyohashi Zoo & Botanical Park (Non Hoi Park) Jul 18,2026(Sat) ～ Sep 27(Sun) Toyohashi Zoo & Botanical Park",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/2295/"
+    },
+    {
+      "text": "Oiden Fishing Weir Jul 11,2026(Sat) ～ Sep 27(Sun) Riverbed area, Onose Town",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/2226/"
+    },
+    {
+      "text": "Night Pool at Laguna Ten Bosch's Lagunasia Jul 11,2026(Sat) ～ Sep 22(Tue) Laguna Ten Bosch's Lagunasia pool area",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/2970/"
+    },
+    {
+      "text": "Water Paradise Monpool - Japan Monkey Park 7/8, 7/9, 7/15-8/31, 9/2, 9/3, 9/9, 9/10, 2023 Japan Monkey Park",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1664/"
+    },
+    {
+      "text": "Shimoyama Hirase Fishing Weir Jul 4,2026(Sat) ～ Oct 4(Sun) Shimoyama Hirase Fishing Weir",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1566/"
+    },
+    {
+      "text": "Odo Tourist Fishing Weir Jul 1,2026(Wed) ～ Oct 31(Sat) Odo Tourist Fishing Weir Union",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1569/"
+    },
+    {
+      "text": "Summer Beer Tram Jun 12,2026(Fri) ～ Oct 25(Sun) Eki-mae Tram Stop–Undoukoen-mae Tram Stop",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1406/"
+    },
+    {
+      "text": "New Grand Beer Garden 2026: A Waikiki Breeze with a Hawaiian-style Beer Garden Jun 5,2026(Fri) ～ Sep 26(Sat) Okazaki Gra",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/2569/"
+    },
+    {
+      "text": "Nayabashi Bridge Beer Garden, Riverside Food Terrace Mon, Jun 1–Sat, Oct 31, 2026 (tentative) Riverside Food Terrace, in",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/4133/"
+    },
+    {
+      "text": "Kiso River Cormorant Fishing Shows Jun 1,2026(Mon) ～ Oct 15(Thu) Kiso River Cormorant Fishing Dock",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/68/"
+    },
+    {
+      "text": "Hotel Arc Riche Toyohashi's The Beer Garden 2026: Showa Beers and Retro 80s Pop May 22,2026(Fri) ～ Oct 31(Sat) Special t",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/4119/"
+    },
+    {
+      "text": "emCAMPUS FOOD Beer Park 2026 Fri, May 22–end of Sep, 2026 emCAMPUS FOOD, first floor of emCAMPUS EAST",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/4120/"
+    },
+    {
+      "text": "Nagoya Beer Garden Koyoen Apr 24,2026(Fri) ～ Sep 27(Sun) Outdoor beer garden venue, Koyoen",
+      "href": "https://aichinow.pref.aichi.jp/en/events/detail/1623/"
+    },
+    {
+      "text": "日本語",
+      "href": "https://aichinow.pref.aichi.jp/events/"
+    },
+    {
+      "text": "中文(繁體字)",
+      "href": "https://aichinow.pref.aichi.jp/tw/events/"
+    },
+    {
+      "text": "中文(简体字)",
+      "href": "https://aichinow.pref.aichi.jp/cn/events/"
+    },
+    {
+      "text": "한국어",
+      "href": "https://aichinow.pref.aichi.jp/ko/events/"
+    },
+    {
+      "text": "ไทย",
+      "href": "https://aichinow.pref.aichi.jp/th/events/"
+    },
+    {
+      "text": "Photo mode",
+      "href": "https://aichinow.pref.aichi.jp/en/events/#"
+    },
+    {
+      "text": "2",
+      "href": "https://aichinow.pref.aichi.jp/en/events?page=2"
+    },
+    {
+      "text": "3",
+      "href": "https://aichinow.pref.aichi.jp/en/events?page=3"
+    },
+    {
+      "text": "4",
+      "href": "https://aichinow.pref.aichi.jp/en/events?page=4"
+    }
+  ],
+  "chosen_event_url": "https://aichinow.pref.aichi.jp/en/events/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "EVENTS | Aichi Now: Official Travel Guide of Aichi, Japan",
+  "final_url": "https://aichinow.pref.aichi.jp/en/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:27.461969+00:00"
+}

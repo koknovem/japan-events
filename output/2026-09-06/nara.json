@@ -1,0 +1,58 @@
+{
+  "prefecture": "Nara",
+  "id": "nara",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "api:0; api:400; xhr:400; links:2",
+  "event_count": 3,
+  "source_url": "https://www.visitnara.jp/event-calendar/#?_=__",
+  "adapter": "nara",
+  "events": [
+    {
+      "prefecture": "Nara",
+      "title": "Nara Art Festival",
+      "start_date": "2026-09-01",
+      "end_date": "2026-11-01",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": null,
+      "url": null,
+      "image_url": "https://images.ctfassets.net/9uvqwr58loxx/E02081_VN_....-......JPG/7e525e03857032cc5fd3b41706a9ef6b/VN_____-_____.JPG",
+      "source": "https://www.visitnara.jp/event-calendar/#api"
+    },
+    {
+      "prefecture": "Nara",
+      "title": "Chugen Mantoro Lantern Festival",
+      "start_date": "2026-08-14",
+      "end_date": "2027-01-15",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": null,
+      "url": null,
+      "image_url": "https://images.ctfassets.net/9uvqwr58loxx/pDpEfjlfXiYW8yIq68k0I/a32847e3fa516bdeaa9c20c78b2833cd/pixta_3239613_M.jpg",
+      "source": "https://www.visitnara.jp/event-calendar/#api"
+    },
+    {
+      "prefecture": "Nara",
+      "title": "Mantoro Lantern Festival Cultural Events Illuminations Nara Park",
+      "start_date": "2015-08-14",
+      "end_date": "2027-01-15",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": null,
+      "url": "https://www.visitnara.jp/venues/E02062/",
+      "image_url": null,
+      "source": "https://www.visitnara.jp/event-calendar/#?_=__#links"
+    }
+  ]
+}

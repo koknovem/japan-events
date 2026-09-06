@@ -1,0 +1,85 @@
+{
+  "id": "kyoto",
+  "name": "Kyoto",
+  "region": "Tokai & Kansai",
+  "home_url": "https://kyoto.travel/en/",
+  "configured_event_url": "https://kyoto.travel/en/events/",
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept All')"
+  ],
+  "event_links": [
+    {
+      "text": "Festivals & Events",
+      "href": "https://kyoto.travel/en/events"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=4841"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=14696"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=14274"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=14670"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=1961"
+    },
+    {
+      "text": "See details (Japanese)",
+      "href": "https://ja.kyoto.travel/event/single.php?event_id=14432"
+    },
+    {
+      "text": "See all events",
+      "href": "https://kyoto.travel/en/events/"
+    },
+    {
+      "text": "Français",
+      "href": "https://kyoto.travel/fr/events/"
+    },
+    {
+      "text": "Español",
+      "href": "https://kyoto.travel/es/events/"
+    },
+    {
+      "text": "简体中文",
+      "href": "https://kyoto.travel/cn/events/"
+    },
+    {
+      "text": "繁體中文",
+      "href": "https://kyoto.travel/tw/events/"
+    },
+    {
+      "text": "한국어",
+      "href": "https://kyoto.travel/ko/events/"
+    },
+    {
+      "text": "Skip to content",
+      "href": "https://kyoto.travel/en/events/#content"
+    },
+    {
+      "text": "Festivals & Events",
+      "href": "https://kyoto.travel/en/events/#"
+    },
+    {
+      "text": "Featured Events",
+      "href": "https://kyoto.travel/en/events/#component-festivals"
+    }
+  ],
+  "chosen_event_url": "https://kyoto.travel/en/events/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "Festivals & Events | Kyoto Travel",
+  "final_url": "https://kyoto.travel/en/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:41:36.789993+00:00"
+}

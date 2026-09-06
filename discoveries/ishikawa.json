@@ -1,0 +1,474 @@
+{
+  "id": "ishikawa",
+  "name": "Ishikawa",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.ishikawatravel.jp/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "#onetrust-accept-btn-handler"
+  ],
+  "event_links": [
+    {
+      "text": "Festival & Events",
+      "href": "https://www.ishikawatravel.jp/things-to-do/festivals-and-events/"
+    },
+    {
+      "text": "Abare Festival",
+      "href": "https://www.ishikawatravel.jp/spots/abare-festival/"
+    },
+    {
+      "text": "Spring",
+      "href": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/#anchor_1"
+    },
+    {
+      "text": "Summer",
+      "href": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/#anchor_2"
+    },
+    {
+      "text": "Autumn",
+      "href": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/#anchor_3"
+    },
+    {
+      "text": "Winter",
+      "href": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/#anchor_4"
+    },
+    {
+      "text": "Tomobata Festival Boat parade in hopes for maritime safety and fruitful fishing Noto Peninsula",
+      "href": "https://www.ishikawatravel.jp/spots/tomobata-festival"
+    },
+    {
+      "text": "Uchinada World Kite Festival Worldwide kite designers for displays, shows, and competitions Kanazawa",
+      "href": "https://www.ishikawatravel.jp/spots/uchinada-world-kite-festival"
+    },
+    {
+      "text": "Seihakusai Festival Help pull massive floats through the streets of Nanao Noto Peninsula",
+      "href": "https://www.ishikawatravel.jp/spots/seihakusai-festival"
+    },
+    {
+      "text": "Otabi Festival Parades of traditional floats and children performing kabuki plays Kaga & Hakusan",
+      "href": "https://www.ishikawatravel.jp/spots/otabi-festival"
+    }
+  ],
+  "chosen_event_url": "https://www.ishikawatravel.jp/things-to-do/festivals-and-events/",
+  "json_endpoints": [
+    {
+      "url": "https://cookie-cdn.cookiepro.com/consent/3ff409d7-bcec-4789-8976-9344f257a378/3ff409d7-bcec-4789-8976-9344f257a378.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "CookieSPAEnabled": false,
+        "MultiVariantTestingEnabled": false,
+        "UseV2": true,
+        "MobileSDK": false,
+        "SkipGeolocation": false,
+        "ScriptType": "PRODUCTION",
+        "Version": "6.6.0",
+        "OptanonDataJSON": "3ff409d7-bcec-4789-8976-9344f257a378",
+        "GeolocationUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "RuleSet": [
+          {
+            "Id": "80beb500-edfe-490b-b973-03bc511b29f7",
+            "Name": "Global",
+            "Countries": [
+              "pr",
+              "ps",
+              "pw",
+              "py",
+              "... +205 more"
+            ],
+            "States": {},
+            "LanguageSwitcherPlaceholder": {
+              "default": "en",
+              "zh": "zh"
+            },
+            "BannerPushesDown": false,
+            "Default": true,
+            "Global": true,
+            "Type": "GDPR",
+            "UseGoogleVendors": false,
+            "VariantEnabled": false,
+            "TestEndTime": null,
+            "Variants": [],
+            "TemplateName": "GDPR Template"
+          }
+        ],
+        "IabData": {
+          "cookieVersion": "1",
+          "createdTime": "2021-07-01T10:39:24.527607",
+          "updatedTime": "2021-07-01T10:39:24.527613",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/iabData.json"
+        },
+        "IabV2Data": {
+          "cookieVersion": "1",
+          "createdTime": "2021-07-01T10:39:24.565119",
+          "updatedTime": "2021-07-01T10:39:24.565127",
+          "cmpId": "28",
+          "cmpVersion": "1",
+          "consentScreen": "1",
+          "consentLanguage": null,
+          "vendorListVersion": 0,
+          "maxVendorId": 0,
+          "encodingType": "0",
+          "globalVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/iab2Data.json"
+        },
+        "GoogleData": {
+          "vendorListVersion": 1,
+          "googleVendorListUrl": "https://cookie-cdn.cookiepro.com/vendorlist/googleData.json"
+        },
+        "ScriptDynamicLoadEnabled": false,
+        "TenantFeatures": {
+          "CookieV2BannerFocus": true,
+          "CookieV2CookieTranslations": true,
+          "CookieV2GPC": true,
+          "CookieV2AssignTemplateRule": true,
+          "CookieV2TCF21": true,
+          "CookieV2GeneralVendors": true
+        },
+        "IsSuppressBanner": false,
+        "IsSuppressPC": false,
+        "PublisherCC": "UK",
+        "Domain": "ishikawatravel.jp",
+        "TenantGuid": "2fc0ae77-fe3e-4973-aa73-e9b8fb0bdc99",
+        "EnvId": "cookiepro-prod",
+        "RemoteActionsEnabled": false,
+        "GeoRuleGroupName": "Default Consent Policy"
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "country": "HK",
+        "state": "",
+        "stateName": "",
+        "continent": "AS"
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/consent/3ff409d7-bcec-4789-8976-9344f257a378/80beb500-edfe-490b-b973-03bc511b29f7/en.json",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "event_item_count": 0,
+      "sample": {
+        "DomainData": {
+          "pccloseButtonType": "Icon",
+          "pclifeSpanYr": "Year",
+          "pclifeSpanYrs": "Years",
+          "pclifeSpanSecs": "A few seconds",
+          "pclifeSpanWk": "Week",
+          "pclifeSpanWks": "Weeks",
+          "pccontinueWithoutAcceptText": "Continue without Accepting",
+          "cctId": "3ff409d7-bcec-4789-8976-9344f257a378",
+          "MainText": "Privacy Preference Center",
+          "MainInfoText": "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your de...",
+          "AboutText": "More information",
+          "AboutCookiesText": "Your Privacy",
+          "ConfirmText": "Allow All",
+          "AllowAllText": "Save Settings",
+          "CookiesUsedText": "Cookies used",
+          "AboutLink": "https://www.ishikawatravel.jp/en/cookie-policy/",
+          "HideToolbarCookieList": true,
+          "ActiveText": "Active",
+          "AlwaysActiveText": "Always Active",
+          "AlertNoticeText": "By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. ",
+          "AlertCloseText": "Close",
+          "AlertMoreInfoText": "Cookies Settings",
+          "CookieSettingButtonText": "Cookies Settings",
+          "AlertAllowCookiesText": "Accept All Cookies",
+          "CloseShouldAcceptAllCookies": false,
+          "LastReconsentDate": null,
+          "BannerTitle": "",
+          "ForceConsent": false,
+          "BannerPushesDownPage": false,
+          "InactiveText": "Inactive",
+          "CookiesText": "Cookies",
+          "CategoriesText": "Cookie Subgroup",
+          "IsLifespanEnabled": false,
+          "LifespanText": "Lifespan",
+          "VendorLevelOptOut": false,
+          "HasScriptArchive": false,
+          "BannerPosition": "default",
+          "PreferenceCenterPosition": "right",
+          "PreferenceCenterConfirmText": "Confirm My Choices",
+          "VendorListText": "List of IAB Vendors"
+        },
+        "CommonData": {
+          "pcenterContinueWoAcceptLinkColor": "#696969",
+          "IabThirdPartyCookieUrl": "cookies.onetrust.mgr.consensu.org",
+          "OptanonHideAcceptButton": "",
+          "OptanonStyle": "modern",
+          "OptanonStaticContentLocation": "",
+          "BannerCustomCSS": "#onetrust-consent-sdk #onetrust-pc-btn-handler.cookie-setting-link{color:white!important;}",
+          "PCCustomCSS": "",
+          "PcTextColor": "#000000",
+          "PcButtonColor": "#c5b37e",
+          "PcButtonTextColor": "#FFFFFF",
+          "PcBackgroundColor": "#ffffff",
+          "PcMenuColor": "#F4F4F4",
+          "PcMenuHighLightColor": "#FFFFFF",
+          "PcAccordionBackgroundColor": "#F8F8F8",
+          "PCenterExpandToViewText": "",
+          "PcEnableToggles": false,
+          "PcLinksTextColor": "#000000",
+          "TextColor": "#ffffff",
+          "ButtonColor": "#ff0000",
+          "BannerMPButtonColor": "#FFFFFF",
+          "BannerMPButtonTextColor": "#ffffff",
+          "ButtonTextColor": "#ffffff",
+          "BackgroundColor": "#000000",
+          "BannerLinksTextColor": "#ffffff",
+          "BannerAccordionBackgroundColor": "#000000",
+          "OptanonLogo": "https://cookie-cdn.cookiepro.com/logos/2fc0ae77-fe3e-4973-aa73-e9b8fb0bdc99/d45446a9-359e-4646-9c9f-4487d9ab9df7/logo_ikw.png",
+          "OneTrustFooterLogo": "https://cookie-cdn.cookiepro.com/logos/static/poweredBy_cp_logo.svg",
+          "OptanonCookieDomain": "ishikawatravel.jp",
+          "OptanonGroupIdPerformanceCookies": "C0002",
+          "OptanonGroupIdFunctionalityCookies": "C0003",
+          "OptanonGroupIdTargetingCookies": "C0004",
+          "OptanonGroupIdSocialCookies": "C0005",
+          "ShowSubGroupCookies": false,
+          "LegacyBannerLayout": "default_flat_bottom_two_button_black",
+          "OptanonHideCookieSettingButton": "",
+          "UseRTL": false,
+          "ShowBannerAcceptButton": true,
+          "ShowBannerCookieSettings": true,
+          "ShowCookieList": false,
+          "PCShowCookieHost": true
+        },
+        "NtfyConfig": {
+          "ShowNtfy": false,
+          "NtfyDuration": 5,
+          "ShowCS": true,
+          "CSType": "BUTTON",
+          "CSTxt": "Cookie Settings",
+          "Sync": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Syncing...",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#1276CE",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "Complete": {
+            "Title": "Cookie Preferences",
+            "TitleAlign": "left",
+            "TitleColor": "#696969",
+            "Desc": "Synced",
+            "DescAlign": "left",
+            "DescColor": "#696969",
+            "BgColor": "#FFFFFF",
+            "BdrColor": "#FFFFFF",
+            "IconBgColor": "#6CC04A",
+            "ShowClose": true,
+            "CloseAria": "Close",
+            "ShowIcon": true
+          },
+          "CSButton": {
+            "Color": "#FFFFFF",
+            "BgColor": "#1276CE",
+            "BdrColor": "#1276CE",
+            "Align": "center"
+          },
+          "CSLink": {
+            "Color": "#1276CE",
+            "Align": "center"
+          }
+        },
+        "OTTData": null,
+        "MobileData": null
+      }
+    },
+    {
+      "url": "https://cdn.weglot.com/projects-settings/02a7f418f72a02bbb51256e151e2200f1.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 1,
+      "sample": {
+        "website": "https://ishikawatravel.jp/en",
+        "uid": "d20cab7ed7",
+        "project_slug": "ikw",
+        "deleted_at": null,
+        "api_key": "wg_02a7f418f72a02bbb51256e151e2200f1",
+        "language_from": "en",
+        "language_from_custom_flag": null,
+        "language_from_custom_name": null,
+        "auto_switch": false,
+        "auto_switch_fallback": null,
+        "translation_engine": 3,
+        "excluded_paths": [],
+        "excluded_blocks": [],
+        "dynamics": [],
+        "custom_settings": {
+          "button_style": {
+            "with_name": true,
+            "full_name": true,
+            "is_dropdown": true,
+            "with_flags": false,
+            "flag_type": "rectangle_mat",
+            "custom_css": ".weglot-container,\n.wg-default,\n.wg-default-wrapper {\n  display: inline-flex !important;\n  align-items: center !important;\n  gap: 8px !important;\n}\n\n/* ラベル */\n.weglot-container:..."
+          },
+          "switchers": [
+            {
+              "style": {
+                "with_name": true,
+                "with_flags": false,
+                "full_name": true,
+                "is_dropdown": true,
+                "invert_flags": true,
+                "flag_type": "rectangle_mat",
+                "size_scale": "1"
+              },
+              "opts": {
+                "open_hover": false,
+                "close_outside_click": false,
+                "is_responsive": false,
+                "display_device": "mobile",
+                "pixel_cutoff": 768
+              },
+              "colors": [],
+              "location": {},
+              "name": "Auto Translate",
+              "template": {
+                "name": "default_dropdown",
+                "hash": "785ab1cf2e94f5cd0008fb4a06b87d0c727a8039",
+                "integrity": "sha384-oPzT57deW26j2XxkcOlQBoZTCf79vcH4kdkRIeML0p/npXgVCrlh9lOzcQZYooPm"
+              }
+            }
+          ],
+          "translate_search": false,
+          "loading_bar": true,
+          "hide_switcher": false,
+          "translate_images": false,
+          "subdomain": false,
+          "wait_transition": true,
+          "dynamic": "",
+          "ai_disclaimer_selector": null
+        },
+        "media_enabled": false,
+        "external_enabled": false,
+        "page_views_enabled": false,
+        "versions": {
+          "translation": 1775043599
+        },
+        "pending_translation_enabled": false,
+        "curl_ssl_check_enabled": true,
+        "custom_css": ".weglot-container,\n.wg-default,\n.wg-default-wrapper {\n  display: inline-flex !important;\n  align-items: center !important;\n  gap: 8px !important;\n}\n\n/* ラベル */\n.weglot-container:...",
+        "languages": [
+          {
+            "language_to": "es",
+            "custom_code": null,
+            "custom_name": null,
+            "custom_local_name": null,
+            "provider": null,
+            "enabled": true,
+            "automatic_translation_enabled": true,
+            "deleted_at": null,
+            "connect_host_destination": null,
+            "custom_flag": null
+          },
+          {
+            "language_to": "de",
+            "custom_code": null,
+            "custom_name": null,
+            "custom_local_name": null,
+            "provider": null,
+            "enabled": true,
+            "automatic_translation_enabled": true,
+            "deleted_at": null,
+            "connect_host_destination": null,
+            "custom_flag": null
+          },
+          {
+            "language_to": "it",
+            "custom_code": null,
+            "custom_name": null,
+            "custom_local_name": null,
+            "provider": null,
+            "enabled": true,
+            "automatic_translation_enabled": true,
+            "deleted_at": null,
+            "connect_host_destination": null,
+            "custom_flag": null
+          },
+          {
+            "language_to": "ko",
+            "custom_code": null,
+            "custom_name": null,
+            "custom_local_name": null,
+            "provider": null,
+            "enabled": true,
+            "automatic_translation_enabled": true,
+            "deleted_at": null,
+            "connect_host_destination": null,
+            "custom_flag": null
+          },
+          "... +1 more"
+        ],
+        "category": 6,
+        "organization_slug": "w-5f6068f920",
+        "technology_id": 12,
+        "technology_name": "Other",
+        "api_domain": "cdn-api-weglot.com",
+        "api_base_url": "https://cdn-api-weglot.com",
+        "product": "1.0"
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/scripttemplates/6.6.0/assets/otFloatingRoundedIcon.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otFloatingRoundedIcon",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtYmFubmVyLXNkayIgY2xhc3M9Im90RmxvYXRpbmdSb3VuZGVkSWNvbiB2ZXJ0aWNhbC1hbGlnbi1jb250ZW50Ij48IS0tIENvb2tpZSBCdXR0b24gLS0+PGRpdiBpZD0ib25ldHJ1c3QtY29va2llLWJ0b...",
+        "css": "#onetrust-banner-sdk.otFloatingRoundedIcon{position:fixed;bottom:2em;right:0;left:5em;z-index:2147483645;background-color:#fff;width:75%;border-radius:6.5px;padding:20px 0;-webk..."
+      }
+    },
+    {
+      "url": "https://cookie-cdn.cookiepro.com/scripttemplates/6.6.0/assets/v2/otPcPanel.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "name": "otPcPanel",
+        "html": "PGRpdiBpZD0ib25ldHJ1c3QtcGMtc2RrIiBjbGFzcz0ib3RQY1BhbmVsIG90LWhpZGUgb3QtZmFkZS1pbiIgcm9sZT0iZGlhbG9nIiBhcmlhLWxhYmVsbGVkYnk9Im90LXBjLXRpdGxlIiBhcmlhLW1vZGFsPSJ0cnVlIj48IS0tIFBDI...",
+        "css": "@keyframes ot-slide-in-left{from{-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0)}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0,..."
+      }
+    }
+  ],
+  "likely_event_apis": [
+    {
+      "url": "https://cdn.weglot.com/projects-settings/02a7f418f72a02bbb51256e151e2200f1.json",
+      "event_item_count": 1,
+      "sample_keys": [
+        "colors",
+        "location",
+        "name",
+        "opts",
+        "style",
+        "template"
+      ]
+    }
+  ],
+  "page_title": "Festivals & Events | Ishikawa Travel",
+  "final_url": "https://www.ishikawatravel.jp/en/things-to-do/festivals-and-events/",
+  "notes": "stable JSON candidates: 1",
+  "discovered_at": "2026-09-06T13:41:05.238649+00:00"
+}

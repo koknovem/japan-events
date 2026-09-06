@@ -1,0 +1,1088 @@
+{
+  "id": "okayama",
+  "name": "Okayama",
+  "region": "Chugoku & Shikoku",
+  "home_url": "https://www.okayama-japan.jp/en",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Event",
+      "href": "https://www.okayama-japan.jp/en/event"
+    }
+  ],
+  "chosen_event_url": "https://www.okayama-japan.jp/en/event",
+  "json_endpoints": [
+    {
+      "url": "https://extreme-ip-lookup.com/json/",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8;",
+      "event_item_count": 0,
+      "sample": {
+        "businessName": "",
+        "businessWebsite": "",
+        "city": "",
+        "continent": "",
+        "country": "",
+        "countryCode": "",
+        "ipName": "",
+        "ipType": "",
+        "isp": "",
+        "lat": "",
+        "lon": "",
+        "message": "No API Key found, please get your API Key at https://extreme-ip-lookup.com",
+        "org": "",
+        "query": "219.77.64.106",
+        "region": "",
+        "status": "fail",
+        "timezone": "",
+        "utcOffset": ""
+      }
+    },
+    {
+      "url": "https://countriesnow.space/api/v0.1/countries/states",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "error": false,
+        "msg": "countries and states retrieved",
+        "data": [
+          {
+            "name": "Afghanistan",
+            "iso3": "AFG",
+            "iso2": "AF",
+            "states": [
+              {
+                "name": "Badakhshan",
+                "state_code": "BDS"
+              },
+              {
+                "name": "Badghis",
+                "state_code": "BDG"
+              },
+              {
+                "name": "Baghlan",
+                "state_code": "BGL"
+              },
+              {
+                "name": "Balkh",
+                "state_code": "BAL"
+              },
+              "... +29 more"
+            ]
+          },
+          {
+            "name": "Aland Islands",
+            "iso3": "ALA",
+            "iso2": "AX",
+            "states": []
+          },
+          {
+            "name": "Albania",
+            "iso3": "ALB",
+            "iso2": "AL",
+            "states": [
+              {
+                "name": "Berat County",
+                "state_code": "01"
+              },
+              {
+                "name": "Berat District",
+                "state_code": "BR"
+              },
+              {
+                "name": "Bulqizë District",
+                "state_code": "BU"
+              },
+              {
+                "name": "Delvinë District",
+                "state_code": "DL"
+              },
+              "... +43 more"
+            ]
+          },
+          {
+            "name": "Algeria",
+            "iso3": "DZA",
+            "iso2": "DZ",
+            "states": [
+              {
+                "name": "Adrar Province",
+                "state_code": "01"
+              },
+              {
+                "name": "Aïn Defla Province",
+                "state_code": "44"
+              },
+              {
+                "name": "Aïn Témouchent Province",
+                "state_code": "46"
+              },
+              {
+                "name": "Algiers Province",
+                "state_code": "16"
+              },
+              "... +43 more"
+            ]
+          },
+          "... +242 more"
+        ]
+      }
+    },
+    {
+      "url": "https://cdn01.stright.bizris.com/SIT-8d6aa432-46ff-43c1-a1ce-589d582bea33/cookie_consent_version.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "banner_version": "1.1"
+      }
+    },
+    {
+      "url": "https://cdn01.stright.bizris.com/SIT-8d6aa432-46ff-43c1-a1ce-589d582bea33/cookie_consent_settings.json?v=1.1",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "master_data": {
+          "country_list": [
+            {
+              "country_id": "AD",
+              "state_ids": null
+            },
+            {
+              "country_id": "AE",
+              "state_ids": null
+            },
+            {
+              "country_id": "AF",
+              "state_ids": null
+            },
+            {
+              "country_id": "AG",
+              "state_ids": null
+            },
+            "... +245 more"
+          ],
+          "region_list": [
+            {
+              "region_id": "R06c00",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R0b700",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R0cc00",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R17300",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            "... +246 more"
+          ],
+          "jurisdiction_list": [
+            {
+              "jurisdiction_id": "J08000"
+            },
+            {
+              "jurisdiction_id": "J1b500"
+            },
+            {
+              "jurisdiction_id": "J30c00"
+            },
+            {
+              "jurisdiction_id": "J32b00"
+            },
+            "... +5 more"
+          ]
+        },
+        "id_identify_data": {
+          "country_state_data": {
+            "CN-AH": "CN",
+            "CN-BJ": "CN",
+            "CN-CQ": "CN",
+            "CN-FJ": "CN",
+            "CN-GD": "CN",
+            "CN-GS": "CN",
+            "CN-GX": "CN",
+            "CN-GZ": "CN",
+            "CN-HA": "CN",
+            "CN-HB": "CN",
+            "CN-HE": "CN",
+            "CN-HI": "CN",
+            "CN-HL": "CN",
+            "CN-HN": "CN",
+            "CN-JL": "CN",
+            "CN-JS": "CN",
+            "CN-JX": "CN",
+            "CN-LN": "CN",
+            "CN-NM": "CN",
+            "CN-NX": "CN",
+            "CN-QH": "CN",
+            "CN-SC": "CN",
+            "CN-SD": "CN",
+            "CN-SH": "CN",
+            "CN-SN": "CN",
+            "CN-SX": "CN",
+            "CN-TJ": "CN",
+            "CN-XJ": "CN",
+            "CN-XZ": "CN",
+            "CN-YN": "CN",
+            "CN-ZJ": "CN",
+            "US-AK": "US",
+            "US-AL": "US",
+            "US-AR": "US",
+            "US-AZ": "US",
+            "US-CA": "US",
+            "US-CO": "US",
+            "US-CT": "US",
+            "US-DE": "US",
+            "US-FL": "US"
+          },
+          "region_country_data": {
+            "GR:999999": "R06c00",
+            "FI:999999": "R0b700",
+            "BG:999999": "R0cc00",
+            "HR:999999": "R17300",
+            "IT:999999": "R1b800",
+            "MQ:999999": "R33a00",
+            "PT:999999": "R35200",
+            "IE:999999": "R35201",
+            "NO:999999": "R37a00",
+            "CY:999999": "R3bc00",
+            "SK:999999": "R3e500",
+            "RO:999999": "R41600",
+            "EE:999999": "R42c00",
+            "CZ:999999": "R50900",
+            "BE:999999": "R54a00",
+            "PL:999999": "R59200",
+            "GB:999999": "R5f80F",
+            "ID:999999": "R5f816",
+            "TH:999999": "R5f86B",
+            "KR:999999": "R5f86C",
+            "TW:999999": "R5f86D",
+            "CN:999999": "R5f872",
+            "JP:999999": "R5f887",
+            "VN:999999": "R5f8AB",
+            "MT:999999": "R63300",
+            "LV:999999": "R64500",
+            "YT:999999": "R66a00",
+            "NL:999999": "R73500",
+            "GF:999999": "R7c800",
+            "MF:999999": "R8a300",
+            "LT:999999": "R9d100",
+            "HU:999999": "R9ee00",
+            "LI:999999": "R9f100",
+            "SI:999999": "Ra4800",
+            "AT:999999": "Raea00",
+            "SE:999999": "Rb1300",
+            "DE:999999": "Rcee00",
+            "GP:999999": "Rdf000",
+            "ES:999999": "Re8300",
+            "IS:999999": "Rf0600"
+          },
+          "jurisdiction_region_data": {
+            "R5f872": "J08000",
+            "R5f8AB": "J1b500",
+            "R5f86D": "J30c00",
+            "Rf0600": "J32b00",
+            "R35201": "J32b00",
+            "R1b800": "J32b00",
+            "R42c00": "J32b00",
+            "Raea00": "J32b00",
+            "R73500": "J32b00",
+            "R3bc00": "J32b00",
+            "R06c00": "J32b00",
+            "Rdf000": "J32b00",
+            "R17300": "J32b00",
+            "R8a300": "J32b00",
+            "Rb1300": "J32b00",
+            "Re8300": "J32b00",
+            "R3e500": "J32b00",
+            "Ra4800": "J32b00",
+            "R50900": "J32b00",
+            "Rcee00": "J32b00",
+            "R37a00": "J32b00",
+            "R9ee00": "J32b00",
+            "R0b700": "J32b00",
+            "Rf9e00": "J32b00",
+            "R7c800": "J32b00",
+            "R0cc00": "J32b00",
+            "R54a00": "J32b00",
+            "R59200": "J32b00",
+            "R35200": "J32b00",
+            "R66a00": "J32b00",
+            "R63300": "J32b00",
+            "R33a00": "J32b00",
+            "R64500": "J32b00",
+            "R9d100": "J32b00",
+            "R9f100": "J32b00",
+            "R41600": "J32b00",
+            "Rfbe00": "J32b00",
+            "Rfac00": "J32b00",
+            "R5f80F": "J4d500",
+            "R5f816": "J57200"
+          }
+        },
+        "common_info": {
+          "data": {
+            "site_id": "SIT-8d6aa432-46ff-43c1-a1ce-589d582bea33",
+            "contract_id": "cfaOpQ79JAELPnxLN1iTyDbBJpKMBHLFd1SL1EdMk2rN9PE4apTmbf2qZGvj9hx3",
+            "banner_id": "Be0f00",
+            "site_url": "https://matcha-jp.com/",
+            "fqdn_flg": false,
+            "check_target_domain": "matcha-jp.com",
+            "consent_management_domain": "matcha-jp.com",
+            "api_key": "IU9afnqgJr0ucOs-6NoOn35fdw8wKirq1yrTMyGBA1nRHkNNrAnpWBLkTv316eRn7vmC-nBf4Z0a5D_XXkwI0bLmruectbtwJJNxc6j-la0=",
+            "publish_info": [
+              {
+                "published_at": 1757397589070,
+                "banner_re_consent_flg": false
+              },
+              {
+                "published_at": 1757680794253,
+                "banner_re_consent_flg": true
+              },
+              {
+                "published_at": 1757680911602,
+                "banner_re_consent_flg": true
+              },
+              {
+                "published_at": 1758070255750,
+                "banner_re_consent_flg": true
+              },
+              "... +15 more"
+            ],
+            "plan": "EnterprisePlus",
+            "language_setting_method": "LangAttribute",
+            "priority_language": "en_US",
+            "display_languages": [
+              "en_US",
+              "ja_JP",
+              "zh_CN",
+              "zh_TW",
+              "... +5 more"
+            ],
+            "tag_execution_control_method": "All",
+            "tag_manager_event_name": "CmpGroups",
+            "tag_manager_data_layer_name": "CmpExecutionGroups",
+            "banner_version": "1.0",
+            "consent_data_unit": "CategoryConsent",
+            "service_added_banner_disp_flg": null,
+            "service_added_default_consent_status": null
+          },
+          "style": {
+            "logo_image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAArCAYAAACXblYnAAAQAElEQVR4AeydCZwcRRXGqzrZJVERUPEg3ifirSgYAxEvVFQIZKOicpiQCCgqXghigkoUL1RUJLshEVEkQUAUb7mSAMohcnkCHiBCwCBRQrI...",
+            "custom_css": "/* トグルボタンのデザイン */\n.cookie_consent-toggle--on {\n    border-color: #BACD99FF!important;\n    background-color: #BACD99FF!important;\n    box-shadow: inset 0 0 0 1px #BACD99FF!import...",
+            "powered_by_iij_display_flg": false,
+            "ndd_certified_logo_display_flg": false,
+            "verification_site_flg": false,
+            "banner_accordion_open_flg": false
+          }
+        },
+        "site_filtering_info": {
+          "data": {
+            "display_flg": false,
+            "transition_destination_url": null,
+            "redisplay_flg": false,
+            "site_viewable_age_data": null
+          },
+          "style": null
+        },
+        "jurisdiction_template_data": {
+          "J9c100": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J32b00": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J4d500": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "Jc2d00": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J08000": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J30c00": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "Jd5200": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J57200": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J1b500": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": false,
+                "show_banner_kbn": "PrivacySetting",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          }
+        },
+        "vendor_cookie_list_info": {
+          "C10400": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +3 more"
+                ]
+              },
+              {
+                "domain_id": "Dceb00",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D61300",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D5c400",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              "... +7 more"
+            ]
+          },
+          "C4b300": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D5c400",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D6b300",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "Ddbe00",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              "... +1 more"
+            ]
+          },
+          "C94a00": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D51d00",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "Da2300",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D8e800",
+                "service_ids": [
+                  "..."
+                ]
+              }
+            ]
+          },
+          "Cee000": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +2 more"
+                ]
+              },
+              {
+                "domain_id": "De5400",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "Dc0600",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "Da2200",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              "... +70 more"
+            ]
+          },
+          "C46a00": {
+            "domain_info": [
+              {
+                "domain_id": "De1900",
+                "service_ids": [
+                  "..."
+                ]
+              }
+            ]
+          }
+        },
+        "network_rule_service_info": [
+          {
+            "service_id": "S9ab00",
+            "domain_id": "D41600",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111001"
+            ]
+          },
+          {
+            "service_id": "S8cd00",
+            "domain_id": "D19100",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111004"
+            ]
+          },
+          {
+            "service_id": "Sc3d00",
+            "domain_id": "D19100",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111001"
+            ]
+          },
+          {
+            "service_id": "Sb3100",
+            "domain_id": "D3de00",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111004"
+            ]
+          },
+          "... +107 more"
+        ],
+        "network_rule_classification_info": {
+          "NRC-00000000-aaaa-aaaa-1111-111111111003": {
+            "icon_background_color": "#fa8231"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111001": {
+            "icon_background_color": "#ccd547"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111005": {
+            "icon_background_color": "#f7b731"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111002": {
+            "icon_background_color": "#2c98da"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111004": {
+            "icon_background_color": "#fd5b65"
+          }
+        },
+        "tag_control_condition_info": [
+          {
+            "kbn": "Script",
+            "tag": "https://www.googleadservices.com/pagead/conversion.js",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "https://pbs.aniview.com",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "https://sync.aniview.com",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "https://track1.aniview.com",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          "... +354 more"
+        ],
+        "google_consent_mode_info": {
+          "C4b300": [
+            "FunctionalityStorage"
+          ],
+          "C94a00": [
+            "AnalyticsStorage"
+          ],
+          "Cee000": [
+            "AdStorage",
+            "PersonalizationStorage",
+            "AdUserData",
+            "AdPersonalization"
+          ],
+          "C10400": [
+            "SecurityStorage"
+          ],
+          "C46a00": null,
+          "Cfbe00": null
+        }
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Event - Okayama Prefecture Official Tourism Guide Explore Okayama, the Land of Sunshine",
+  "final_url": "https://www.okayama-japan.jp/en/event",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:42:14.848572+00:00"
+}

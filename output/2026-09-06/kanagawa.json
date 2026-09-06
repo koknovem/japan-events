@@ -1,0 +1,12 @@
+{
+  "prefecture": "Kanagawa",
+  "id": "kanagawa",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "jsonld:21; html:4; none_on_date:22_parsed",
+  "event_count": 0,
+  "source_url": "https://visitkanagawa.jp/events",
+  "adapter": "generic",
+  "events": []
+}

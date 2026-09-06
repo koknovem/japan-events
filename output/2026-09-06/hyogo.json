@@ -1,0 +1,12 @@
+{
+  "prefecture": "Hyogo",
+  "id": "hyogo",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:31; none_on_date:25_parsed",
+  "event_count": 0,
+  "source_url": "https://www.hyogo-tourism.jp/event/index.html",
+  "adapter": "generic",
+  "events": []
+}

@@ -1,0 +1,58 @@
+{
+  "prefecture": "Iwate",
+  "id": "iwate",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:46; links:28",
+  "event_count": 3,
+  "source_url": "https://iwatetabi.jp/events/",
+  "adapter": "generic",
+  "events": [
+    {
+      "prefecture": "Iwate",
+      "title": "平庭闘牛大会しらかば場所 久慈市 県北エリア 日（日）",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "平庭闘牛大会しらかば場所 久慈市 県北エリア 2026年9月6日（日）",
+      "url": "https://iwatetabi.jp/events/8586/",
+      "image_url": "https://iwatetabi.jp/wp/wp-content/uploads/2024/03/2ed2a70c897c31a0c418f310268a89d1-360x240.jpg",
+      "source": "https://iwatetabi.jp/events/#html"
+    },
+    {
+      "prefecture": "Iwate",
+      "title": "南部木挽唄全国大会 宮古市 沿岸エリア 日（日）",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "南部木挽唄全国大会 宮古市 沿岸エリア 2026年9月6日（日）",
+      "url": "https://iwatetabi.jp/events/8595/",
+      "image_url": "https://iwatetabi.jp/wp/wp-content/uploads/2024/03/481-8-347x240.jpeg",
+      "source": "https://iwatetabi.jp/events/#html"
+    },
+    {
+      "prefecture": "Iwate",
+      "title": "やまびこフェスタ 宮古市 沿岸エリア 日（日）",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "やまびこフェスタ 宮古市 沿岸エリア 2026年9月6日（日）",
+      "url": "https://iwatetabi.jp/events/8113/",
+      "image_url": "https://iwatetabi.jp/wp/wp-content/uploads/2024/03/195-11-352x240.jpeg",
+      "source": "https://iwatetabi.jp/events/#html"
+    }
+  ]
+}

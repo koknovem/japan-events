@@ -1,0 +1,882 @@
+{
+  "id": "tokyo",
+  "name": "Tokyo",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.gotokyo.org/en/",
+  "configured_event_url": "https://www.gotokyo.org/en/calendar/index.html",
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "CALENDAR",
+      "href": "https://www.gotokyo.org/en/calendar/index.html"
+    },
+    {
+      "text": "Special Exhibition at \"Anime Tokyo Station\"FIST OF THE NORTH STAR: HOKUTO NO KEN* Special Exhibition (Aug 22 – Nov 8)",
+      "href": "https://animetokyo.jp/en/archives/events/events81/"
+    },
+    {
+      "text": "Formula E Tokyo E-Prix2026 Note: This event has ended.",
+      "href": "https://fiaformulae.com/en/calendar/2025-26/r14-tokyo"
+    },
+    {
+      "text": "Toshima City Walking Stamp Rally Jul 15, 2026 - Mar 31, 2027",
+      "href": "https://www.gotokyo.org/en/event/tokyotouristinfo/20260715en.html"
+    },
+    {
+      "text": "Tokyo Music Evening Yube Apr 1, 2026 - Mar 31, 2027",
+      "href": "https://www.gotokyo.org/en/event/tokyotouristinfo/20260401en.html"
+    },
+    {
+      "text": "Sep 12, 2026 - Nov 22, 2026 Shinagawa Cruise (September to November)",
+      "href": "https://www.gotokyo.org/en/event/tokyotouristinfo/20260912en.html"
+    },
+    {
+      "text": "Aug 22, 2026 - Aug 23, 2026 Tokyo Haneda Lantern Festival ―summer event of Anamori Inari Shrine",
+      "href": "https://www.gotokyo.org/en/event/ota/kentousai2026eng.html"
+    }
+  ],
+  "chosen_event_url": "https://www.gotokyo.org/en/calendar/index.html",
+  "json_endpoints": [
+    {
+      "url": "https://cdn01.stright.bizris.com/SIT-006e8ba5-2765-43fe-8a44-434e10b7b067/cookie_consent_version.json",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "banner_version": "1.2"
+      }
+    },
+    {
+      "url": "https://www.gotokyo.org/en/travel-directory/api/suggestblock/mode/url/limit/0",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "status": true,
+        "hsc": {
+          "html": true,
+          "json": false
+        },
+        "contents": {
+          "html": "&lt;div class=&quot;slick_slide_item&quot;&gt;\r\n\t\t\t\t\t\t\t&lt;a class=&quot;slider_inner&quot; href=&quot;/en/story/guide/spring/index.html&quot;&gt;\r\n\t\t\t\t\t&lt;div class=&quot;slid...",
+          "json": "[{\"page_id\":79,\"file_path\":\"\\/en\\/story\\/guide\\/spring\\/index.html\",\"page_title\":\"Tokyo Spring Guide\",\"template_id\":7,\"language_code\":\"en\",\"event_start_date\":null,\"event_end_dat..."
+        }
+      }
+    },
+    {
+      "url": "https://cdn01.stright.bizris.com/SIT-006e8ba5-2765-43fe-8a44-434e10b7b067/cookie_consent_settings.json?v=1.2",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "master_data": {
+          "country_list": [
+            {
+              "country_id": "AD",
+              "state_ids": null
+            },
+            {
+              "country_id": "AE",
+              "state_ids": null
+            },
+            {
+              "country_id": "AF",
+              "state_ids": null
+            },
+            {
+              "country_id": "AG",
+              "state_ids": null
+            },
+            "... +245 more"
+          ],
+          "region_list": [
+            {
+              "region_id": "R06c00",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R0b700",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R0cc00",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            {
+              "region_id": "R17300",
+              "region_settings": [
+                {
+                  "country_id": "...",
+                  "state_ids": "..."
+                }
+              ]
+            },
+            "... +246 more"
+          ],
+          "jurisdiction_list": [
+            {
+              "jurisdiction_id": "J32b00"
+            },
+            {
+              "jurisdiction_id": "J4d500"
+            },
+            {
+              "jurisdiction_id": "J9c100"
+            }
+          ]
+        },
+        "id_identify_data": {
+          "country_state_data": {
+            "CN-AH": "CN",
+            "CN-BJ": "CN",
+            "CN-CQ": "CN",
+            "CN-FJ": "CN",
+            "CN-GD": "CN",
+            "CN-GS": "CN",
+            "CN-GX": "CN",
+            "CN-GZ": "CN",
+            "CN-HA": "CN",
+            "CN-HB": "CN",
+            "CN-HE": "CN",
+            "CN-HI": "CN",
+            "CN-HL": "CN",
+            "CN-HN": "CN",
+            "CN-JL": "CN",
+            "CN-JS": "CN",
+            "CN-JX": "CN",
+            "CN-LN": "CN",
+            "CN-NM": "CN",
+            "CN-NX": "CN",
+            "CN-QH": "CN",
+            "CN-SC": "CN",
+            "CN-SD": "CN",
+            "CN-SH": "CN",
+            "CN-SN": "CN",
+            "CN-SX": "CN",
+            "CN-TJ": "CN",
+            "CN-XJ": "CN",
+            "CN-XZ": "CN",
+            "CN-YN": "CN",
+            "CN-ZJ": "CN",
+            "US-AK": "US",
+            "US-AL": "US",
+            "US-AR": "US",
+            "US-AZ": "US",
+            "US-CA": "US",
+            "US-CO": "US",
+            "US-CT": "US",
+            "US-DE": "US",
+            "US-FL": "US"
+          },
+          "region_country_data": {
+            "GR:999999": "R06c00",
+            "FI:999999": "R0b700",
+            "BG:999999": "R0cc00",
+            "HR:999999": "R17300",
+            "IT:999999": "R1b800",
+            "MQ:999999": "R33a00",
+            "PT:999999": "R35200",
+            "IE:999999": "R35201",
+            "NO:999999": "R37a00",
+            "CY:999999": "R3bc00",
+            "SK:999999": "R3e500",
+            "RO:999999": "R41600",
+            "EE:999999": "R42c00",
+            "CZ:999999": "R50900",
+            "BE:999999": "R54a00",
+            "PL:999999": "R59200",
+            "GB:999999": "R5f80F",
+            "DK:999999": "R5f877",
+            "JP:999999": "R5f887",
+            "MT:999999": "R63300",
+            "LV:999999": "R64500",
+            "YT:999999": "R66a00",
+            "NL:999999": "R73500",
+            "GF:999999": "R7c800",
+            "MF:999999": "R8a300",
+            "LT:999999": "R9d100",
+            "HU:999999": "R9ee00",
+            "LI:999999": "R9f100",
+            "SI:999999": "Ra4800",
+            "AT:999999": "Raea00",
+            "SE:999999": "Rb1300",
+            "DE:999999": "Rcee00",
+            "GP:999999": "Rdf000",
+            "ES:999999": "Re8300",
+            "IS:999999": "Rf0600",
+            "FR:999999": "Rf9e00",
+            "RE:999999": "Rfac00",
+            "LU:999999": "Rfbe00",
+            "US:US-AL": "R19c00",
+            "US:US-AK": "R19c00"
+          },
+          "jurisdiction_region_data": {
+            "Rf0600": "J32b00",
+            "R35201": "J32b00",
+            "R1b800": "J32b00",
+            "R42c00": "J32b00",
+            "Raea00": "J32b00",
+            "R73500": "J32b00",
+            "R3bc00": "J32b00",
+            "R06c00": "J32b00",
+            "Rdf000": "J32b00",
+            "R17300": "J32b00",
+            "R8a300": "J32b00",
+            "Rb1300": "J32b00",
+            "Re8300": "J32b00",
+            "R3e500": "J32b00",
+            "Ra4800": "J32b00",
+            "R50900": "J32b00",
+            "Rcee00": "J32b00",
+            "R37a00": "J32b00",
+            "R9ee00": "J32b00",
+            "R0b700": "J32b00",
+            "Rf9e00": "J32b00",
+            "R7c800": "J32b00",
+            "R0cc00": "J32b00",
+            "R54a00": "J32b00",
+            "R59200": "J32b00",
+            "R35200": "J32b00",
+            "R66a00": "J32b00",
+            "R63300": "J32b00",
+            "R33a00": "J32b00",
+            "R64500": "J32b00",
+            "R9d100": "J32b00",
+            "R9f100": "J32b00",
+            "R41600": "J32b00",
+            "Rfbe00": "J32b00",
+            "Rfac00": "J32b00",
+            "R5f877": "J32b00",
+            "default": "J32b00",
+            "R5f80F": "J4d500",
+            "R5f887": "J9c100"
+          }
+        },
+        "common_info": {
+          "data": {
+            "site_id": "SIT-006e8ba5-2765-43fe-8a44-434e10b7b067",
+            "contract_id": "R0cI8PI_fRlgnXUyVOVdK5XvZ0cUsLh6CTHkYfU_aHFsXVB7XZkEv7IO7RTXpbpm",
+            "banner_id": "Bb8100",
+            "site_url": "https://www.gotokyo.org/",
+            "fqdn_flg": false,
+            "check_target_domain": "www.gotokyo.org",
+            "consent_management_domain": "gotokyo.org",
+            "api_key": "kcXiWmOATNuXSKipzJlpjN8c_6jYHk3LzZR8eZKqbLL6t6B1TBu2uUmM8bTB1tncZnXjCg-3Ot7VBG30COchumlbQqSPnnUo2w2fuSXIIjg=",
+            "publish_info": [
+              {
+                "published_at": 1776733628208,
+                "banner_re_consent_flg": false
+              },
+              {
+                "published_at": 1776744068534,
+                "banner_re_consent_flg": true
+              },
+              {
+                "published_at": 1776744247989,
+                "banner_re_consent_flg": true
+              },
+              {
+                "published_at": 1776748720338,
+                "banner_re_consent_flg": true
+              },
+              "... +20 more"
+            ],
+            "plan": "EnterprisePlus",
+            "language_setting_method": "LangAttribute",
+            "priority_language": "en_US",
+            "display_languages": [
+              "en_US",
+              "ja_JP",
+              "zh_CN",
+              "zh_TW",
+              "... +6 more"
+            ],
+            "tag_execution_control_method": "All",
+            "tag_manager_event_name": "OneTrustGroupsUpdated",
+            "tag_manager_data_layer_name": "OnetrustActiveGroups",
+            "banner_version": "1.0",
+            "consent_data_unit": "CategoryConsent",
+            "service_added_banner_disp_flg": null,
+            "service_added_default_consent_status": null
+          },
+          "style": {
+            "logo_image": null,
+            "custom_css": ".cookie_consent-cookie_btn-button {\n\ttext-decoration: none;\n}\n.cookie_consent-cookie_btn-button:hover {\n\ttext-decoration: underline;\n}\n.cookie_consent-consent_banner--bottom .co...",
+            "powered_by_iij_display_flg": false,
+            "ndd_certified_logo_display_flg": false,
+            "verification_site_flg": false,
+            "banner_accordion_open_flg": false
+          }
+        },
+        "site_filtering_info": {
+          "data": {
+            "display_flg": false,
+            "transition_destination_url": null,
+            "redisplay_flg": false,
+            "site_viewable_age_data": null
+          },
+          "style": null
+        },
+        "jurisdiction_template_data": {
+          "J9c100": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": "Cookie 設定",
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J32b00": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": "Cookies Settings",
+                "button_layout": "BottomLeft"
+              }
+            }
+          },
+          "J4d500": {
+            "age_and_location_info": {
+              "data": {
+                "display_flg": false,
+                "initial_display_flg": false,
+                "age_input_flg": false,
+                "region_selection_granularity": null
+              },
+              "style": null
+            },
+            "age_division_info": {
+              "age_division_classification": "AllAges",
+              "no_requires_consent_info": null
+            },
+            "consent_info": {
+              "all_ages": {
+                "show_banner_flg": true,
+                "show_banner_kbn": "Consent",
+                "data": {
+                  "consent_validity_period": "...",
+                  "cookie_setting_display_flg": "...",
+                  "category_data": "...",
+                  "tag_manager_data": "..."
+                },
+                "style": {
+                  "common": "...",
+                  "consent": "...",
+                  "privacy_setting": "...",
+                  "vendor_and_cookie_list": "...",
+                  "network_rule": "...",
+                  "cookie_setting_button": "..."
+                }
+              }
+            },
+            "persistent_cookie_button_info": {
+              "data": {
+                "display_flg": false
+              },
+              "style": {
+                "button_image": null,
+                "button_text": null,
+                "button_layout": "BottomLeft"
+              }
+            }
+          }
+        },
+        "vendor_cookie_list_info": {
+          "C10400": {
+            "domain_info": [
+              {
+                "domain_id": "Dd0900",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D1c700",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "...",
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D61300",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              "... +4 more"
+            ]
+          },
+          "C4b300": {
+            "domain_info": [
+              {
+                "domain_id": "D44b00",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D35800",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "Dac400",
+                "service_ids": [
+                  "..."
+                ]
+              }
+            ]
+          },
+          "C94a00": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D8e800",
+                "service_ids": [
+                  "..."
+                ]
+              }
+            ]
+          },
+          "Cee000": {
+            "domain_info": [
+              {
+                "domain_id": "D19100",
+                "service_ids": [
+                  "...",
+                  "...",
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "De1900",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D96400",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              {
+                "domain_id": "D65000",
+                "service_ids": [
+                  "..."
+                ]
+              },
+              "... +3 more"
+            ]
+          }
+        },
+        "network_rule_service_info": [
+          {
+            "service_id": "S0ec00",
+            "domain_id": "D19100",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111004"
+            ]
+          },
+          {
+            "service_id": "S24700",
+            "domain_id": "D19100",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111001"
+            ]
+          },
+          {
+            "service_id": "S33e00",
+            "domain_id": "D96400",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111004"
+            ]
+          },
+          {
+            "service_id": "S36000",
+            "domain_id": "Dfa700",
+            "network_rule_classification_ids": [
+              "NRC-00000000-aaaa-aaaa-1111-111111111004"
+            ]
+          },
+          "... +19 more"
+        ],
+        "network_rule_classification_info": {
+          "NRC-00000000-aaaa-aaaa-1111-111111111001": {
+            "icon_background_color": "#ccd547"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111002": {
+            "icon_background_color": "#2c98da"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111003": {
+            "icon_background_color": "#fa8231"
+          },
+          "NRC-00000000-aaaa-aaaa-1111-111111111004": {
+            "icon_background_color": "#fd5b65"
+          }
+        },
+        "tag_control_condition_info": [
+          {
+            "kbn": "Img",
+            "tag": "fls.doubleclick.net",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "fls.doubleclick.net",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "http://www.googleadservices.com",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          {
+            "kbn": "Script",
+            "tag": "https://ad.doubleclick.net",
+            "cond": "Org",
+            "attr": null,
+            "ids": [
+              "Cee000"
+            ],
+            "ids_1_1": [
+              {
+                "Cee000": null
+              }
+            ]
+          },
+          "... +89 more"
+        ],
+        "google_consent_mode_info": {
+          "C10400": [
+            "SecurityStorage"
+          ],
+          "C46a00": null,
+          "C4b300": [
+            "FunctionalityStorage"
+          ],
+          "C94a00": [
+            "AnalyticsStorage"
+          ],
+          "Cee000": [
+            "AdStorage",
+            "PersonalizationStorage",
+            "AdUserData",
+            "AdPersonalization"
+          ],
+          "Cfbe00": null
+        }
+      }
+    },
+    {
+      "url": "https://www.gotokyo.org/en/travel-directory/api/suggestblock/mode/url/limit/0",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "status": true,
+        "hsc": {
+          "html": true,
+          "json": false
+        },
+        "contents": {
+          "html": "&lt;div class=&quot;slick_slide_item&quot;&gt;\r\n\t\t\t\t\t\t\t&lt;a class=&quot;slider_inner&quot; href=&quot;/en/story/guide/the-best-festivals-in-tokyo-and-japan/index.html&quot;&gt;...",
+          "json": "[{\"page_id\":41101,\"file_path\":\"\\/en\\/story\\/guide\\/the-best-festivals-in-tokyo-and-japan\\/index.html\",\"page_title\":\"2026 Matsuri: The Best Festivals in Tokyo and Japan\",\"templat..."
+        }
+      }
+    },
+    {
+      "url": "https://one01.stright.bizris.com/api/banner/register_disp_log",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "resultData": null,
+        "errorFlg": false,
+        "actionKbn": null,
+        "workflowData": null,
+        "warnMessageInfo": [],
+        "errorMessageInfo": []
+      }
+    },
+    {
+      "url": "https://consentag.eu/manager/consent/user/getuam",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "isEU": false,
+        "deleted": "false",
+        "uid": "c027fbc67f264447a1295427826d8d29",
+        "browserId": "sg-1788702045-6b668d552eb8471f9257b32113d2b2c4",
+        "meta": {
+          "siteOwner": 0,
+          "style": {
+            "id": 0
+          },
+          "purposes": {
+            "243": {
+              "id": 243,
+              "providers": {
+                "54288896": {
+                  "name": "...",
+                  "link": "...",
+                  "id": "..."
+                }
+              }
+            },
+            "245": {
+              "id": 245,
+              "providers": {
+                "54288896": {
+                  "name": "...",
+                  "link": "...",
+                  "id": "..."
+                }
+              }
+            }
+          },
+          "pixels": [
+            {
+              "iabId": 85,
+              "external": true,
+              "provider": 54288896,
+              "purpose": 243,
+              "html": "<script type='text/javascript' async src='https://i.ctnsnet.com/int/integration?pixel=73207164&nid=1125532&cont=s&loc={{_pageUrl}}&ref={{_pageReferrer}}&cst={{_consent}}&gdpr_co...",
+              "id": 73207163,
+              "event": {
+                "id": 1400
+              },
+              "frequency": 1420
+            },
+            {
+              "iabId": 85,
+              "external": true,
+              "provider": 54288896,
+              "purpose": 243,
+              "html": "<script type='text/javascript' async src='https://i.ctnsnet.com/int/integration?pixel=88215999&nid=1125532&cont=s&loc={{_pageUrl}}&ref={{_pageReferrer}}&cst={{_consent}}&gdpr_co...",
+              "id": 88216000,
+              "event": {
+                "id": 1400
+              },
+              "frequency": 1420
+            },
+            {
+              "iabId": 85,
+              "external": true,
+              "provider": 54288896,
+              "purpose": 243,
+              "html": "<script type='text/javascript' async src='https://cdn.ctnsnet.com/ase/fetch/scraper/88309695/1ccc5c26323b009f71973bd805c704e6.js?caid={{_uid}}&cst={{_consent}}&gdpr_consent={{_c...",
+              "id": 88309696,
+              "event": {
+                "id": 1400
+              },
+              "frequency": 1420
+            }
+          ],
+          "lang": "en",
+          "silent": true,
+          "legacy": true
+        },
+        "consented": true
+      }
+    },
+    {
+      "url": "https://www.gotokyo.org/search/en/keyword/list",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "datas": [
+          {
+            "id": 433,
+            "keyword": "meiji",
+            "count": 1236,
+            "adddt": "2019-01-25 12:46:08"
+          },
+          {
+            "id": 11821,
+            "keyword": "princes",
+            "count": 1172,
+            "adddt": "2022-12-06 05:04:28"
+          },
+          {
+            "id": 15408,
+            "keyword": "(tokyo)",
+            "count": 1160,
+            "adddt": "2024-08-16 14:27:50"
+          },
+          {
+            "id": 15431,
+            "keyword": "asukuni",
+            "count": 1136,
+            "adddt": "2024-08-20 09:05:40"
+          },
+          "... +16 more"
+        ]
+      }
+    },
+    {
+      "url": "https://one01.stright.bizris.com/api/banner/register_action_log",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "resultData": null,
+        "errorFlg": false,
+        "actionKbn": null,
+        "workflowData": null,
+        "warnMessageInfo": [],
+        "errorMessageInfo": []
+      }
+    },
+    {
+      "url": "https://one01.stright.bizris.com/api/banner/register_consent_status_log",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "resultData": null,
+        "errorFlg": false,
+        "actionKbn": null,
+        "workflowData": null,
+        "warnMessageInfo": [],
+        "errorMessageInfo": []
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "CALENDAR | The Official Tokyo Travel Guide, GO TOKYO",
+  "final_url": "https://www.gotokyo.org/en/calendar/index.html",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:49.412634+00:00"
+}

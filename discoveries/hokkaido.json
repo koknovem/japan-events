@@ -1,0 +1,94 @@
+{
+  "id": "hokkaido",
+  "name": "Hokkaido",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://www.visit-hokkaido.jp/en/",
+  "configured_event_url": "https://www.visit-hokkaido.jp/en/event/",
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://www.visit-hokkaido.jp/en/event/index.html"
+    },
+    {
+      "text": "https://www.visit-hokkaido.jp/en/event/detail_11005.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11005.html"
+    },
+    {
+      "text": "https://www.visit-hokkaido.jp/en/event/detail_11009.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11009.html"
+    },
+    {
+      "text": "https://www.visit-hokkaido.jp/en/event/detail_11001.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11001.html"
+    },
+    {
+      "text": "https://www.visit-hokkaido.jp/en/event/detail_11022.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11022.html"
+    },
+    {
+      "text": "https://www.visit-hokkaido.jp/en/event/detail_11013.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11013.html"
+    },
+    {
+      "text": "detail_11277.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11277.html"
+    },
+    {
+      "text": "detail_10149.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_10149.html"
+    },
+    {
+      "text": "detail_11443.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11443.html"
+    },
+    {
+      "text": "detail_10126.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_10126.html"
+    },
+    {
+      "text": "detail_11313.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11313.html"
+    },
+    {
+      "text": "detail_11046.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11046.html"
+    },
+    {
+      "text": "detail_11163.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11163.html"
+    },
+    {
+      "text": "detail_11317.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11317.html"
+    },
+    {
+      "text": "detail_11012.html",
+      "href": "https://www.visit-hokkaido.jp/en/event/detail_11012.html"
+    }
+  ],
+  "chosen_event_url": "https://www.visit-hokkaido.jp/en/event/",
+  "json_endpoints": [
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=gXNyttYfTMqrFn6smM3Wug==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "OW2datqtLtnM2roPosLHkQ4",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "wftDtcQvKYhH7i3Zq-p4c0AU-dYxShxspFhx-K7hOjM",
+        "bg_binary": "RrDvzh1gg+gx1EugyuvbjbumBy14nv2xKkTlXNFqAUyB4bbaVmD3pvP83+F8nEt7UsrRacREGXck4WtfKiup0yoDJhojTu4o578qZtYpl9HMf/La8kHbvJSQNlclFjSO8UEb4ooGb3TQ/LN0vqRGgJP6duK3BQyceMRjdOazl7ewdtzZ9...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | HOKKAIDO LOVE! -Hokkaido Official Tourism Site",
+  "final_url": "https://www.visit-hokkaido.jp/en/event/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:10.009273+00:00"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "yamagata",
+  "name": "Yamagata",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://yamagatakanko.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://yamagatakanko.com/en/festivals/"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_11320.html"
+    },
+    {
+      "text": "see more events",
+      "href": "https://yamagatakanko.com/en/festivals/index_1_2______0____.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_2957.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_12230.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_2960.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_7632.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_7853.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_12661.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_7511.html"
+    },
+    {
+      "text": "more",
+      "href": "https://yamagatakanko.com/en/festivals/detail_505.html"
+    }
+  ],
+  "chosen_event_url": "https://yamagatakanko.com/en/festivals/",
+  "json_endpoints": [
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=afs&tv=1234567890&st=env&sjk=D6UkR4pRTZiTF7mzj16E9A==&sde=1",
+      "status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "event_item_count": 0,
+      "sample": {
+        "sodar_query_id": "U22dat3sHMuX4dkP6t3TiQE",
+        "injector_basename": "sodar2",
+        "bg_hash_basename": "wftDtcQvKYhH7i3Zq-p4c0AU-dYxShxspFhx-K7hOjM",
+        "bg_binary": "RrDrazoPiN5zJMve/GFW20LQwAjGYo9jFeFHjW8L/u/YQKpBU/s9+9f5fBE5xKqICDX+0rpMkKdjch/ks8xBejQJPGZDYUAPC6qfd8pu39pmviHW/EY75V0IzQGStYYl5iBcJiRo3oEKD4FzAP9ODOoXJ/RiuqzpylcPyDf5pG78L9UMI...",
+        "bg_snapshot_delay_ms": "500",
+        "is_gen_204": "0"
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | STAY YAMAGATA",
+  "final_url": "https://yamagatakanko.com/en/festivals/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:35.970561+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "tochigi",
+  "name": "Tochigi",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://www.visit-tochigi.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://www.visit-tochigi.com/seasons-in-tochigi/events/"
+    },
+    {
+      "text": "繁體中文",
+      "href": "https://www.visit-tochigi.com/zh-tw/seasons-in-tochigi/events/"
+    },
+    {
+      "text": "简体中文",
+      "href": "https://www.visit-tochigi.com/zh-cn/seasons-in-tochigi/events/"
+    },
+    {
+      "text": "한국어",
+      "href": "https://www.visit-tochigi.com/ko/seasons-in-tochigi/events/"
+    },
+    {
+      "text": "ภาษาไทย",
+      "href": "https://www.visit-tochigi.com/th/seasons-in-tochigi/events/"
+    },
+    {
+      "text": "Français",
+      "href": "https://www.visit-tochigi.com/fr/seasons-in-tochigi/events/"
+    }
+  ],
+  "chosen_event_url": "https://www.visit-tochigi.com/seasons-in-tochigi/events/",
+  "json_endpoints": [],
+  "likely_event_apis": [],
+  "page_title": "Events | Visit Tochigi",
+  "final_url": "https://www.visit-tochigi.com/seasons-in-tochigi/events/",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:31.890767+00:00"
+}

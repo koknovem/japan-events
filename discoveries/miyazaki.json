@@ -1,0 +1,80 @@
+{
+  "id": "miyazaki",
+  "name": "Miyazaki",
+  "region": "Kyushu & Okinawa",
+  "home_url": "https://www.visit-miyazaki.com/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [],
+  "chosen_event_url": "https://www.visit-miyazaki.com/",
+  "json_endpoints": [
+    {
+      "url": "https://www.visit-miyazaki.com/api/domains/domain?domain=www.visit-miyazaki.com&portfolioId=&abp=1&gdabp=true",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "system": "CP",
+        "account": "913317",
+        "hashedAccountId": "1277481",
+        "customerId": "0D115EDB-7FFF-43DF-B225-2BA9045A621E",
+        "displayType": "ADS",
+        "dataSource": "INVENTORY",
+        "adSense": {
+          "channel": "189366",
+          "pubId": "ca-dp-godaddy36_3ph_js",
+          "keywords": [
+            "visit",
+            "miyazaki"
+          ],
+          "keywordSource": "Tokenizer"
+        },
+        "domain": {
+          "rootDomain": "visit-miyazaki.com",
+          "expiresAt": "",
+          "status": {
+            "internal": "ACTIVE"
+          },
+          "isAdult": false,
+          "hasAuction": false
+        },
+        "lander": {
+          "template": "ARROW_3",
+          "domainDisplayName": "VISIT-MIYAZAKI.COM",
+          "headerText": "",
+          "footerText": "",
+          "headerHtml": "",
+          "footerHtml": "",
+          "banner": {
+            "show": false,
+            "text": "visit-miyazaki.com may be for sale!",
+            "link": "https://godaddy.com/domain-parking/forsale/visit-miyazaki.com",
+            "type": "FOR_SALE"
+          },
+          "i18n": true,
+          "showDomain": true
+        },
+        "experiment": {
+          "experiment": "parking_cp_nfintent_5144",
+          "cohort": "on",
+          "start": "",
+          "end": "",
+          "enabled": true
+        },
+        "rsoc": {
+          "channelID": "65729+99981",
+          "path": "",
+          "url": ""
+        },
+        "hasCustomerLoginCookie": false
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "",
+  "final_url": "https://www.visit-miyazaki.com/lander",
+  "notes": "no event listing or JSON API detected from home page",
+  "discovered_at": "2026-09-06T13:42:51.582703+00:00"
+}

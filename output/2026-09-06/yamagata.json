@@ -1,0 +1,43 @@
+{
+  "prefecture": "Yamagata",
+  "id": "yamagata",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "html:20",
+  "event_count": 2,
+  "source_url": "https://yamagatakanko.com/en/festivals/",
+  "adapter": "generic",
+  "events": [
+    {
+      "prefecture": "Yamagata",
+      "title": "Mogami Area From y… The Shinjo Festival of Shinjo in Yamagata Prefecture has a history of than 260 year…",
+      "start_date": "2026-08-24",
+      "end_date": "2027-01-26",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Mogami Area From August 24 to 26 every y… The Shinjo Festival of Shinjo in Yamagata Prefecture has a history of more than 260 year… more",
+      "url": "https://yamagatakanko.com/en/festivals/detail_2991.html",
+      "image_url": null,
+      "source": "https://yamagatakanko.com/en/festivals/#html"
+    },
+    {
+      "prefecture": "Yamagata",
+      "title": "Shonai Area From year Sakata Festival is held from May 19 to 21 every year. It is a traditional festival that …",
+      "start_date": "2021-05-19",
+      "end_date": "2027-01-21",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Shonai Area From May 19 to 21 ever year Sakata Festival is held from May 19 to 21 every year. It is a traditional festival that … more",
+      "url": "https://yamagatakanko.com/en/festivals/detail_3044.html",
+      "image_url": null,
+      "source": "https://yamagatakanko.com/en/festivals/#html"
+    }
+  ]
+}

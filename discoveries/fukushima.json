@@ -1,0 +1,823 @@
+{
+  "id": "fukushima",
+  "name": "Fukushima",
+  "region": "Hokkaido & Tohoku",
+  "home_url": "https://fukushima.travel/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [
+    "button:has-text('Accept')"
+  ],
+  "event_links": [
+    {
+      "text": "Join the Aizu Samurai Festival: Parade Only¥15,000 per person5 hours | Aizu-Wakamatsu",
+      "href": "https://fukushima.travel/tours/jumptour.php?id=47"
+    },
+    {
+      "text": "https://www.aizukanko.com/kk/festival/info/12320",
+      "href": "https://www.aizukanko.com/kk/festival/info/12320"
+    }
+  ],
+  "chosen_event_url": "https://fukushima.travel/tours/jumptour.php?id=47",
+  "json_endpoints": [
+    {
+      "url": "https://o172235.ingest.sentry.io/api/5922356/envelope/?sentry_version=7&sentry_key=c9923a8be0f34966b16bdad6cb9e1cd4&sentry_client=sentry.javascript.nextjs%2F8.55.0",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://connect.facebook.net/app_config/json/554692133306072/",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "fedcm": {
+          "default": false
+        }
+      }
+    },
+    {
+      "url": "https://book.fukushima.travel/_next/data/u_duzA5NSHqQPS_bMFewY/index.json?lng=en-US",
+      "status": 200,
+      "content_type": "",
+      "event_item_count": 0,
+      "sample": {}
+    },
+    {
+      "url": "https://syndication.twitter.com/settings?session_id=8cc06ef8031735e6b33b18f01801829f27155929",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "should_obtain_cookie_consent": false,
+        "features": {
+          "tfw_timeline_list": {
+            "bucket": [],
+            "version": null
+          },
+          "tfw_follower_count_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_backend": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_refsrc_session": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_fosnr_soft_interventions_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_mixed_media_15897": {
+            "bucket": "treatment",
+            "version": null
+          },
+          "tfw_experiments_cookie_expiration": {
+            "bucket": 1209600,
+            "version": null
+          },
+          "tfw_show_birdwatch_pivots_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_duplicate_scribes_to_settings": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_use_profile_image_shape_enabled": {
+            "bucket": "on",
+            "version": null
+          },
+          "tfw_video_hls_dynamic_manifests_15082": {
+            "bucket": "true_bitrate",
+            "version": null
+          },
+          "tfw_legacy_timeline_sunset": {
+            "bucket": true,
+            "version": null
+          },
+          "tfw_tweet_edit_frontend": {
+            "bucket": "on",
+            "version": null
+          }
+        }
+      }
+    },
+    {
+      "url": "https://api.ntmg.com/v1/products/ddd8100f-38f9-5dca-b6df-98c5591b6d04/instances?start_date_local_from=2026-09-01&start_date_local_to=2026-10-01",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "instances": [
+          {
+            "booking_deadlines": [
+              {
+                "confirmation_type": "REQUEST",
+                "date_time_utc": "2026-09-08T08:00:00Z"
+              }
+            ],
+            "units": [
+              {
+                "group_guest_types": [],
+                "per_booking_guest_types": [],
+                "method": "PER_PARTICIPANT",
+                "guest_type": {
+                  "package_component_guest_type_mappings": "...",
+                  "key": "...",
+                  "title": "..."
+                },
+                "gross": "JPY22000",
+                "net": "JPY22000",
+                "commission": "JPY0"
+              },
+              {
+                "group_guest_types": [],
+                "per_booking_guest_types": [],
+                "method": "PER_PARTICIPANT",
+                "guest_type": {
+                  "package_component_guest_type_mappings": "...",
+                  "key": "...",
+                  "title": "..."
+                },
+                "gross": "JPY29000",
+                "net": "JPY29000",
+                "commission": "JPY0"
+              }
+            ],
+            "promotions": [],
+            "package_component_product_instances": [],
+            "dynamic_pricing_adjusted_unit_prices": [],
+            "id": "4dbc5512-6bc1-5134-8c79-b3b86d5b97ff",
+            "product_id": "ddd8100f-38f9-5dca-b6df-98c5591b6d04",
+            "start_date_time_utc": "2026-09-19T06:00:00Z",
+            "end_date_time_utc": "2026-09-19T13:00:00Z",
+            "start_date_time_local": "2026-09-19T15:00:00+09:00",
+            "end_date_time_local": "2026-09-19T22:00:00+09:00",
+            "start_time_local": "15:00",
+            "duration": "7:00",
+            "start_time_description": "(Day before parade)",
+            "start_time_id": "24c0f437-7326-5f87-ac5e-229ea4196c21",
+            "time_slot_key": "7:30-7:00",
+            "occupied_slots": 1,
+            "available_slots": -1,
+            "last_modified_date_time_utc": "2026-09-03T04:30:04Z",
+            "recurrence_key": "c14e6633-a31f-4b19-a21e-84e650e92721"
+          }
+        ],
+        "product_id": "ddd8100f-38f9-5dca-b6df-98c5591b6d04"
+      }
+    },
+    {
+      "url": "https://api.ntmg.com/v1/products",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "event_item_count": 0,
+      "sample": {
+        "products": [
+          {
+            "media": [
+              {
+                "url": "https://www.youtube.com/embed/PXHP2DsHWm4?si=nTRZObnfk_301YDV",
+                "type": "VIDEO"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/95731ab5-582e-4cd2-a11c-d90ebd48150e.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/f00dbb3f-f472-4660-8f4e-51754cfecddc.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/fc1d9e41-4134-476b-86d3-d201ea8deff1.jpg",
+                "type": "IMAGE"
+              },
+              "... +6 more"
+            ],
+            "recurrence": [
+              {
+                "closed_dates": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +26 more"
+                ],
+                "days_of_week": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +1 more"
+                ],
+                "start_times": [
+                  "...",
+                  "..."
+                ],
+                "additional_date_ranges": [],
+                "annually_repeating_closed_dates": [],
+                "related_resources": [],
+                "start_date_local": "2023-06-15",
+                "end_date_local": "2026-12-31",
+                "key": "bcfcd3c7-c8a8-4ed0-bd3d-070c27781a68"
+              }
+            ],
+            "operating_days_of_week": [
+              "TUE",
+              "WED",
+              "THU",
+              "FRI",
+              "... +1 more"
+            ],
+            "pricing": [],
+            "reservation_form_fields": [
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "email",
+                "prompt": "Email Address",
+                "format": "email",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "representative_name",
+                "prompt": "Representative's name (last + first)",
+                "format": "kana-name",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "emergency_contact_phone",
+                "prompt": "Contact number",
+                "format": "phone",
+                "required": "BEFORE_PARTICIPATING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "国籍",
+                "prompt": "Nationality",
+                "required": "OPTIONAL",
+                "type": "PER_BOOKING",
+                "input_element": "TEXT_BOX"
+              },
+              "... +2 more"
+            ],
+            "product_tags": [],
+            "internal_product_tags": [],
+            "package_component_product_summaries": [],
+            "id": "9c69dd94-c5bf-5165-ab6b-23d8db42991c",
+            "product_name": "Aizu Lacquerware Painting Experience\n",
+            "description": "The art of \"Maki-e\" involves decorating lacquer items with metallic lacquer or lacquer-like paint. During this experience, you can decorate an Aizu lacquerware item using Maki-e...",
+            "source_language": "JA_JP",
+            "supplier_id": "0267e12f-c4e8-54d4-8856-c4fd2c032cb4",
+            "supplier_name": "Fukushima Pref Tourism & Local Products Association",
+            "supplier_reference": "014",
+            "start_timezone": "Asia/Tokyo",
+            "lowest_price_gross": "JPY44000",
+            "lowest_price_unit_title": "2 people",
+            "agent_guest_booking_period_settings": {
+              "booking_start_date_time_utc": "2023-09-08T01:12:23Z"
+            },
+            "booking_widget_settings": {
+              "maximum_participant_rules": [
+                {
+                  "unit": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "blacklisted_languages": [],
+              "minimum_participant_rules": [
+                {
+                  "unit": "...",
+                  "minimum_participants": "..."
+                }
+              ],
+              "selectable_participant_rules": [
+                {
+                  "required_units": "...",
+                  "restricted_units": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "calendar_unit_order": [],
+              "is_visible": true,
+              "guest_payment_settings": {
+                "accepted_guest_payment_types": [
+                  "..."
+                ]
+              }
+            },
+            "allotment_settings": {
+              "inventory_consumption_rules": [
+                {
+                  "unit": "..."
+                },
+                {
+                  "unit": "..."
+                },
+                {
+                  "unit": "..."
+                },
+                {
+                  "unit": "..."
+                }
+              ],
+              "allotment_counting_type": "DEFAULT"
+            },
+            "original_lowest_price_gross": "JPY44000"
+          },
+          {
+            "media": [
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/8b12a177-94ed-4e84-803d-56ac167ce1a6.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/ff241dae-97ba-4ff3-8799-b13674318633.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/c5fe09b6-ba5a-4902-a8eb-fb3aa2deb932.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/6d8602b8-b6cc-4de2-b015-8810a38cb674.jpg",
+                "type": "IMAGE"
+              },
+              "... +1 more"
+            ],
+            "recurrence": [
+              {
+                "closed_dates": [
+                  "..."
+                ],
+                "days_of_week": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +1 more"
+                ],
+                "start_times": [
+                  "..."
+                ],
+                "additional_date_ranges": [],
+                "annually_repeating_closed_dates": [],
+                "related_resources": [],
+                "start_date_local": "2026-01-14",
+                "end_date_local": "2026-03-20",
+                "key": "6b524e88-46a5-4485-a225-fb14278fac9e"
+              }
+            ],
+            "operating_days_of_week": [],
+            "pricing": [],
+            "reservation_form_fields": [
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "email",
+                "prompt": "Email Address",
+                "format": "email",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "representative_name",
+                "prompt": "Representative Name",
+                "format": "alpha-name",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "emergency_contact_phone",
+                "prompt": "Contact number in Japan",
+                "format": "phone",
+                "required": "BEFORE_PARTICIPATING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "Nationality",
+                "prompt": "Nationality",
+                "required": "OPTIONAL",
+                "type": "PER_BOOKING",
+                "input_element": "TEXT_BOX"
+              },
+              "... +2 more"
+            ],
+            "product_tags": [],
+            "internal_product_tags": [],
+            "package_component_product_summaries": [],
+            "id": "cbd79d23-75ba-5a82-8658-d711a257cb18",
+            "product_name": "Aizu Winter Bus: Tsurugajo Castle & Ouchi-juku",
+            "description": "The Aizu region is the perfect blend of nature and history. This mountainous snow country is well known for its beautiful landscapes that change with the seasons and captivates ...",
+            "source_language": "EN_US",
+            "supplier_id": "0267e12f-c4e8-54d4-8856-c4fd2c032cb4",
+            "supplier_name": "Fukushima Pref Tourism & Local Products Association",
+            "supplier_reference": "605",
+            "start_timezone": "Asia/Tokyo",
+            "agent_guest_booking_period_settings": {
+              "booking_start_date_time_utc": "2024-12-20T05:51:43Z"
+            },
+            "booking_widget_settings": {
+              "maximum_participant_rules": [
+                {
+                  "unit": "...",
+                  "maximum_participants": "..."
+                },
+                {
+                  "unit": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "blacklisted_languages": [],
+              "minimum_participant_rules": [
+                {
+                  "unit": "...",
+                  "minimum_participants": "..."
+                },
+                {
+                  "unit": "..."
+                }
+              ],
+              "selectable_participant_rules": [
+                {
+                  "required_units": "...",
+                  "restricted_units": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "calendar_unit_order": [],
+              "is_visible": true,
+              "guest_payment_settings": {
+                "accepted_guest_payment_types": [
+                  "..."
+                ]
+              },
+              "is_view_only": true
+            },
+            "allotment_settings": {
+              "inventory_consumption_rules": [
+                {
+                  "unit": "..."
+                },
+                {
+                  "unit": "..."
+                }
+              ],
+              "allotment_counting_type": "DEFAULT"
+            }
+          },
+          {
+            "media": [
+              {
+                "url": "https://www.youtube.com/embed/igV3CSFOqps?si=j_90int_VEXcqxlq",
+                "type": "VIDEO"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/aab2557b-5c74-44e2-b519-a3538daddc70.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/e340c335-40b3-40ad-a994-7a980d51f060.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/11d96c27-dfd0-4249-bd24-47d42baf8899.jpg",
+                "type": "IMAGE"
+              },
+              "... +5 more"
+            ],
+            "recurrence": [
+              {
+                "closed_dates": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +16 more"
+                ],
+                "days_of_week": [
+                  "...",
+                  "...",
+                  "...",
+                  "...",
+                  "... +1 more"
+                ],
+                "start_times": [
+                  "...",
+                  "..."
+                ],
+                "additional_date_ranges": [],
+                "annually_repeating_closed_dates": [],
+                "related_resources": [],
+                "start_date_local": "2023-06-20",
+                "end_date_local": "2026-12-31",
+                "key": "78cb8170-5341-4de4-a1b2-a8ade761e469"
+              }
+            ],
+            "operating_days_of_week": [
+              "TUE",
+              "WED",
+              "THU",
+              "FRI",
+              "... +1 more"
+            ],
+            "pricing": [],
+            "reservation_form_fields": [
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "email",
+                "prompt": "Email Address",
+                "format": "email",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "representative_name",
+                "prompt": "Representative's name (last + first)",
+                "format": "kana-name",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "emergency_contact_phone",
+                "prompt": "Contact number",
+                "required": "BEFORE_PARTICIPATING",
+                "type": "PER_BOOKING",
+                "input_element": "TEXT_BOX"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "kana_family_name",
+                "prompt": "Family Name(Kana)",
+                "format": "kana-name",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              "... +1 more"
+            ],
+            "product_tags": [],
+            "internal_product_tags": [],
+            "package_component_product_summaries": [],
+            "id": "72cc0dbc-ac27-512f-a818-b9514d82217c",
+            "product_name": "Akabeko Painting Experience",
+            "description": "Paint your own akabeko, Fukushima's 'lucky cow'!\n\nFirst, we recommend exploring the historic Tsurugajo Castle, one of the stages of the Meiji Restoration which shaped Japanese h...",
+            "source_language": "JA_JP",
+            "supplier_id": "0267e12f-c4e8-54d4-8856-c4fd2c032cb4",
+            "supplier_name": "Fukushima Pref Tourism & Local Products Association",
+            "supplier_reference": "016",
+            "start_timezone": "Asia/Tokyo",
+            "lowest_price_gross": "JPY1430",
+            "lowest_price_unit_title": "Participant(s)",
+            "agent_guest_booking_period_settings": {
+              "booking_start_date_time_utc": "2023-09-08T01:30:52Z"
+            },
+            "booking_widget_settings": {
+              "maximum_participant_rules": [
+                {
+                  "unit": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "blacklisted_languages": [],
+              "minimum_participant_rules": [
+                {
+                  "unit": "...",
+                  "minimum_participants": "..."
+                }
+              ],
+              "selectable_participant_rules": [
+                {
+                  "required_units": "...",
+                  "restricted_units": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "calendar_unit_order": [],
+              "is_visible": true,
+              "guest_payment_settings": {
+                "accepted_guest_payment_types": [
+                  "..."
+                ]
+              }
+            },
+            "allotment_settings": {
+              "inventory_consumption_rules": [
+                {
+                  "unit": "..."
+                }
+              ],
+              "allotment_counting_type": "DEFAULT"
+            },
+            "original_lowest_price_gross": "JPY1430"
+          },
+          {
+            "media": [
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/b15c63c1-6017-4f0f-b196-d1fc0ee45a97.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/9e5e4a96-be27-4114-95d4-b911cf9be937.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/8096c234-49f7-4cbb-8983-1594a6eed91d.jpg",
+                "type": "IMAGE"
+              },
+              {
+                "url": "https://ntmg-media.s3.us-west-1.amazonaws.com/0267e12f-c4e8-54d4-8856-c4fd2c032cb4/tut/a3929ac8-543d-47ed-ab32-290e4235dca7.jpg",
+                "type": "IMAGE"
+              },
+              "... +5 more"
+            ],
+            "recurrence": [
+              {
+                "closed_dates": [],
+                "days_of_week": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "start_times": [
+                  "..."
+                ],
+                "additional_date_ranges": [],
+                "annually_repeating_closed_dates": [],
+                "related_resources": [],
+                "start_date_local": "2025-09-01",
+                "end_date_local": "2025-11-30",
+                "key": "ff77f6ec-a253-44c2-8320-11e00b9b88ed"
+              },
+              {
+                "closed_dates": [],
+                "days_of_week": [
+                  "...",
+                  "...",
+                  "..."
+                ],
+                "start_times": [
+                  "..."
+                ],
+                "additional_date_ranges": [],
+                "annually_repeating_closed_dates": [],
+                "related_resources": [],
+                "start_date_local": "2026-04-01",
+                "end_date_local": "2026-11-30",
+                "key": "ff77f6ec-a253-44c2-8320-11e00b9b88ed"
+              }
+            ],
+            "operating_days_of_week": [
+              "THU",
+              "FRI",
+              "SAT"
+            ],
+            "pricing": [],
+            "reservation_form_fields": [
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "email",
+                "prompt": "Email Address",
+                "format": "email",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "representative_name",
+                "prompt": "Representative's name (last + first)",
+                "format": "alpha-name",
+                "required": "WHEN_BOOKING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "emergency_contact_phone",
+                "prompt": "Contact number",
+                "format": "phone",
+                "required": "BEFORE_PARTICIPATING",
+                "type": "PER_BOOKING"
+              },
+              {
+                "choices": [],
+                "options": [],
+                "identity_verification_settings": [],
+                "key": "国籍",
+                "prompt": "Nationality",
+                "required": "OPTIONAL",
+                "type": "PER_BOOKING",
+                "input_element": "TEXT_BOX"
+              },
+              "... +2 more"
+            ],
+            "product_tags": [],
+            "internal_product_tags": [],
+            "package_component_product_summaries": [],
+            "id": "3cc56aa5-7832-539c-9453-7c349ce33fce",
+            "product_name": "Bamboo Fishing Experience",
+            "description": "During this experience,you will try the traditional way of fishing in Soma City using bamboo. You’ll make the fishing rods out of bamboo sticks, then use the leftover bamboo gra...",
+            "area_name": "日本、福島県相馬市尾浜追川 松川浦漁港",
+            "source_language": "JA_JP",
+            "supplier_id": "0267e12f-c4e8-54d4-8856-c4fd2c032cb4",
+            "supplier_name": "Fukushima Pref Tourism & Local Products Association",
+            "supplier_reference": "009",
+            "start_timezone": "Asia/Tokyo",
+            "lowest_price_gross": "JPY4500",
+            "lowest_price_unit_title": "Adult",
+            "agent_guest_booking_period_settings": {
+              "booking_start_date_time_utc": "2024-05-17T05:10:26Z"
+            },
+            "booking_widget_settings": {
+              "maximum_participant_rules": [
+                {
+                  "unit": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "blacklisted_languages": [],
+              "minimum_participant_rules": [
+                {
+                  "unit": "...",
+                  "minimum_participants": "..."
+                }
+              ],
+              "selectable_participant_rules": [
+                {
+                  "required_units": "...",
+                  "restricted_units": "...",
+                  "maximum_participants": "..."
+                }
+              ],
+              "calendar_unit_order": [],
+              "is_visible": true,
+              "guest_payment_settings": {
+                "accepted_guest_payment_types": [
+                  "..."
+                ]
+              }
+            },
+            "allotment_settings": {
+              "inventory_consumption_rules": [
+                {
+                  "unit": "..."
+                }
+              ],
+              "allotment_counting_type": "DEFAULT"
+            },
+            "original_lowest_price_gross": "JPY4500"
+          },
+          "... +28 more"
+        ]
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Join the Aizu Samurai Festival: Hotel Stay | From \"beginning\" to \"achieving\".",
+  "final_url": "https://book.fukushima.travel/products/ddd8100f-38f9-5dca-b6df-98c5591b6d04?lng=en",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:28.847954+00:00"
+}

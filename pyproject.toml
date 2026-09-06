@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "japan-events"
+version = "0.1.0"
+description = "Expandable Playwright scraper for official Japan prefecture tourism event calendars"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "japan-events" }]
+dependencies = [
+    "playwright>=1.47.0",
+    "pydantic>=2.7.0",
+    "pyyaml>=6.0.1",
+    "python-dateutil>=2.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+japan-events = "japan_events.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+japan_events = ["py.typed"]

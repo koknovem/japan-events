@@ -1,0 +1,380 @@
+{
+  "id": "toyama",
+  "name": "Toyama",
+  "region": "Kanto, Koshinetsu & Hokuriku",
+  "home_url": "https://visit-toyama-japan.com/en/",
+  "configured_event_url": null,
+  "ok": true,
+  "error": null,
+  "cookie_hits": [],
+  "event_links": [
+    {
+      "text": "Events",
+      "href": "https://visit-toyama-japan.com/en/festivals"
+    },
+    {
+      "text": "Clear All",
+      "href": "https://visit-toyama-japan.com/en/festivals?"
+    },
+    {
+      "text": "Asahi Funagawa Spring Quartet A Spring Quartet of the Northern Alps, Rows of Cherry Trees, Tulips, and Nanohana Flowers ",
+      "href": "https://visit-toyama-japan.com/en/festivals/51036"
+    },
+    {
+      "text": "Snow Corridor Walk, Tateyama Magnificent sight of a dazzling curved wall of snow!",
+      "href": "https://visit-toyama-japan.com/en/festivals/30003"
+    },
+    {
+      "text": "World Heritage Bus",
+      "href": "https://visit-toyama-japan.com/en/festivals/80177"
+    },
+    {
+      "text": "Etchu Owara Kaze-no-Bon（To be held in 2024） Enjoy the sad Owara Dance",
+      "href": "https://visit-toyama-japan.com/en/festivals/10012"
+    },
+    {
+      "text": "Kitanippon Shimbun Toyama Summer Fireworks Festival 3,000 fireworks colour the night sky with hopes for peace August 1st",
+      "href": "https://visit-toyama-japan.com/en/festivals/10009"
+    },
+    {
+      "text": "Winter Wonderland in Unazuki Onsen: Fireworks over the Snow Magical wintertime fireworks display, completely different f",
+      "href": "https://visit-toyama-japan.com/en/festivals/50054"
+    },
+    {
+      "text": "Takaoka Mikuruma-yama Festival Bringing history and culture to the modern day",
+      "href": "https://visit-toyama-japan.com/en/festivals/20002"
+    },
+    {
+      "text": "World Heritage – Ainokura Gassho-style Village Light-up A magical night at a world heritage site",
+      "href": "https://visit-toyama-japan.com/en/festivals/40038"
+    }
+  ],
+  "chosen_event_url": "https://visit-toyama-japan.com/en/festivals",
+  "json_endpoints": [
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40032",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 142
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/10012",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 840
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/50054",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 27
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40038",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 28
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/51036",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 1626
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20094",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 45
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20001",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 40
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/80177",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 48
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40019",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 101
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20082",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 13
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40029",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 30
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20020",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 62
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20024",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 48
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40030",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 23
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/10009",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 83
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/10003",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 63
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/30003",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 1099
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/10004",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 31
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20031",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 63
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40010",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 78
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20002",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 148
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20025",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 53
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20036",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 34
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40007",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 401
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40058",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 5
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20059",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 93
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/50055",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 11
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/21003",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 226
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/10006",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 22
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/50039",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 63
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/20010",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 47
+      }
+    },
+    {
+      "url": "https://visit-toyama-japan.com/en/favorite/check/40008",
+      "status": 200,
+      "content_type": "application/json",
+      "event_item_count": 0,
+      "sample": {
+        "exists": false,
+        "count": 83
+      }
+    }
+  ],
+  "likely_event_apis": [],
+  "page_title": "Events | The Official Tourism Website of Toyama \"Visit Toyama\"",
+  "final_url": "https://visit-toyama-japan.com/en/festivals",
+  "notes": "HTML event links found; no JSON API captured",
+  "discovered_at": "2026-09-06T13:40:57.459876+00:00"
+}

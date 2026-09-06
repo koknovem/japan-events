@@ -1,0 +1,12 @@
+{
+  "prefecture": "Nagano",
+  "id": "nagano",
+  "ok": true,
+  "date": "2026-09-06",
+  "error": null,
+  "notes": "no_event_listing",
+  "event_count": 0,
+  "source_url": "https://www.go-nagano.net/en/trip-idea/whats-new-at-hakuba-happo-one",
+  "adapter": "generic",
+  "events": []
+}

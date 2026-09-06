@@ -1,11 +1,25 @@
 id: chiba
 strategy: html
-event_url: https://www.visitchiba.jp/events/
-date_picker: false
-wait_ms: 1200
+event_url: https://maruchiba.jp/event/index.html
+date_picker: true
+wait_ms: 2500
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-- https://www.visitchiba.jp/en/
-- https://www.visitchiba.jp/
-notes: Events path may 404; harvest home as fallback
+card_selectors:
+  - ".result-list li"
+  - ".event-list li"
+  - article
+  - ".event-item"
+  - li
+fields:
+  title:
+    - h3
+    - h2
+    - a
+  period:
+    - ".date"
+    - time
+    - "[class*='date']"
+  url:
+    - a
+notes: 千葉県観光物産協会 ちば観光ナビ calendar search

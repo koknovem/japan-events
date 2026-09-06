@@ -4,9 +4,40 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing; no_event_listing; html:20; none_on_date:19_parsed",
-  "event_count": 0,
-  "source_url": "https://www.awanavi.jp/event",
+  "notes": "site_cards:151; html:13",
+  "event_count": 2,
+  "source_url": "https://www.awanavi.jp/event-calendar",
   "adapter": "tokushima",
-  "events": []
+  "events": [
+    {
+      "prefecture": "Tokushima",
+      "title": "06 PHOTO GALLERY フォトギャラリー",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "06 PHOTO GALLERY フォトギャラリー",
+      "url": "https://www.awanavi.jp/archives/gallery/",
+      "image_url": null,
+      "source": "https://www.awanavi.jp/event-calendar#site-card"
+    },
+    {
+      "prefecture": "Tokushima",
+      "title": "由岐の連続秋祭り",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": "南部 美波町 西の地・木岐・西由岐・伊座利地区 ほか",
+      "category": null,
+      "description": "開催期間 2026年9月6日(日)から2026年10月15日(木) 神事・祭り 由岐の連続秋祭り 美波町由岐地区では連続して秋祭りが開催されます！ 南部 美波町 西の地・木岐・西由岐・伊座利地区 ほか 由岐の連続秋祭り",
+      "url": "https://www.awanavi.jp/archives/event/1850",
+      "image_url": "https://www.awanavi.jp/wp-content/uploads/life/21640_66087_img.gif",
+      "source": "https://www.awanavi.jp/event-calendar#site-card"
+    }
+  ]
 }

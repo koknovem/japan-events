@@ -1,11 +1,24 @@
 id: gunma
 strategy: html
-event_url: https://www.visit-gunma.jp/en/
+event_url: https://gunma-kanko.jp/events
 date_picker: false
-wait_ms: 1200
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-- https://www.visit-gunma.jp/en/things-to-do/events/
-- https://www.visit-gunma.jp/en/discover/
-notes: Algolia search site; dedicated events index thin
+card_selectors:
+  - ".event-list li"
+  - article
+  - ".card"
+  - li
+fields:
+  title:
+    - h2
+    - h3
+    - a
+  period:
+    - time
+    - ".date"
+  url:
+    - "a[href*='/events/']"
+    - a
+notes: 群馬県観光物産国際協会 心にググっと観光ぐんま

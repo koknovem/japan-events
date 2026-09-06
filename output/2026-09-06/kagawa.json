@@ -4,9 +4,25 @@
   "ok": true,
   "date": "2026-09-06",
   "error": null,
-  "notes": "no_event_listing; html:22; links:1; none_on_date:22_parsed; html:7; none_on_date:4_parsed",
-  "event_count": 0,
-  "source_url": "https://www.my-kagawa.jp/",
+  "notes": "site_cards:151; html:22; links:1; none_on_date:22_parsed; site_cards:151; html:7; none_on_date:4_parsed; site_cards:151; html:22; links:1; none_on_date:22_parsed; site_cards:151; html:22; links:1; none_on_date:22_parsed; site_cards:151; html:7; followed:https://www.my-kagawa.jp/event/681",
+  "event_count": 1,
+  "source_url": "https://www.my-kagawa.jp/event/681",
   "adapter": "kagawa",
-  "events": []
+  "events": [
+    {
+      "prefecture": "Kagawa",
+      "title": "香南歴史民俗郷土館　由佐城月釜茶会（10月～12月）",
+      "start_date": "2026-01-10",
+      "end_date": "2026-09-12",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "香南歴史民俗郷土館 由佐城月釜茶会（10月～12月） 南佳孝 BLUE NIGHT AQUARIUM 2026@四国水族館 琴平花壇 鬼ヶ島大洞窟 能楽体験会「能と雅楽」公演の事前講習会 高松市屋島山上交流拠点施設「やしまーる」 リブマックスリゾート 観音寺 【紅葉スポット】白峯寺 高見島 善通寺市民プール ＪＡ香川県 産地直売所多度津店 宗吉かわらの里展示館（宗吉瓦窯跡史跡公園） 道の駅「ふれあいパークみの」 ＪＡ香川県 高瀬ふれあい産直市 道の駅「滝宮」・綾川町うどん会館 【宇多津町】道の駅 恋人の聖地 うたづ臨海公園 丸亀市猪熊弦一郎現代美術館 中山ひまわり団地 寒霞渓 香南歴史民俗郷土館 由佐城月釜茶会（７月～９月）",
+      "url": "https://www.my-kagawa.jp/event/2756",
+      "image_url": "https://www.my-kagawa.jp/image/rendering/attraction_image/5054/trim.180/3/2?v=ea9b07356df9fa81e81c9924dedd67b18a5a3607",
+      "source": "https://www.my-kagawa.jp/event/681#html"
+    }
+  ]
 }

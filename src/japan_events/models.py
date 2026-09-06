@@ -31,6 +31,8 @@ class SiteConfig(BaseModel):
     date_picker: bool = False
     cookie_selectors: list[str] = Field(default_factory=list)
     api_url: str | None = None
+    source_org: str | None = None
+    replaced_from: str | None = None
     extra: dict[str, Any] = Field(default_factory=dict)
 
     @property

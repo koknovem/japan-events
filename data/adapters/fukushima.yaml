@@ -1,11 +1,24 @@
 id: fukushima
 strategy: html
-event_url: https://fukushima.travel/
+event_url: https://www.tif.ne.jp/jp/entry/?type=event
 date_picker: false
-wait_ms: 1200
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-- https://fukushima.travel/en/
-- https://www.tif.ne.jp/all/event.html
-notes: Official portal is destination-led; limited dated event index
+card_selectors:
+  - article
+  - ".entry-list li"
+  - ".list li"
+  - "li"
+fields:
+  title:
+    - h2
+    - h3
+    - a
+  period:
+    - time
+    - ".date"
+    - "[class*='date']"
+  url:
+    - a
+notes: 福島県観光物産交流協会 ふくしまの旅 dated event index

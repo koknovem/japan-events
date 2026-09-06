@@ -127,7 +127,12 @@ def _as_date(value: Any, default_year: int | None = None) -> date | None:
         return date(int(full.group("y")), int(full.group("m")), int(full.group("d")))
     iso = _ISOISH.search(text)
     if iso:
-        return date(int(iso.group("y")), int(iso.group("m")), int(iso.group("d")))
+        y, m, d = int(iso.group("y")), int(iso.group("m")), int(iso.group("d"))
+        if 1 <= m <= 12 and 1 <= d <= 31:
+            try:
+                return date(y, m, d)
+            except ValueError:
+                return None
     md = _JP_MD.search(text)
     if md and default_year:
         try:

@@ -1,25 +1,23 @@
 id: akita
 strategy: html
-event_url: https://akita-fun.jp/
+event_url: https://akita-fun.jp/events
 date_picker: false
-wait_ms: 1200
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-- https://akita-fun.jp/featured_contents/festival
 card_selectors:
-- .news-list li
-- li
-- article
+  - ".news-list li"
+  - article
+  - li
 fields:
   title:
-  - a
-  - h2
-  - h3
+    - a
+    - h2
+    - h3
   period:
-  - time
-  - .date
-  - li
+    - time
+    - ".date"
+    - li
   url:
-  - a
-notes: Japanese home listing more reliable than /en/
+    - a
+notes: 秋田県観光連盟 アキタファン events index

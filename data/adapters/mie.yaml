@@ -1,10 +1,24 @@
 id: mie
 strategy: html
-event_url: https://visitmie-japan.travel/en/
+event_url: https://www.kankomie.or.jp/event
 date_picker: false
-wait_ms: 1200
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-- https://www.kanko-mie.or.jp/event/
-notes: English marketing site; JP kanko-mie has event index
+card_selectors:
+  - ".event-list li"
+  - article
+  - ".card"
+  - li
+fields:
+  title:
+    - h2
+    - h3
+    - a
+  period:
+    - time
+    - ".date"
+  url:
+    - "a[href*='/event/']"
+    - a
+notes: 三重県観光連盟 観光三重 dated event index

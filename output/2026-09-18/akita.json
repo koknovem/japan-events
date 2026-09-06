@@ -1,0 +1,45 @@
+{
+  "prefecture": "Akita",
+  "id": "akita",
+  "ok": true,
+  "date": "2026-09-18",
+  "error": null,
+  "notes": "site_cards:54; html:24",
+  "event_count": 2,
+  "source_url": "https://akita-fun.jp/events",
+  "adapter": "akita",
+  "events": [
+    {
+      "prefecture": "Akita",
+      "title": "由利地域  道の駅バトル「駅長おすすめの期間限定メニュー」【由利本荘市・にかほ市】",
+      "start_date": "2026-09-01",
+      "end_date": "2026-11-03",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "2026年9月1日(火)～11月3日(火・祝) 由利地域 道の駅バトル「駅長おすすめの期間限定メニュー」【由利本荘市・にかほ市】 由利地域の道の駅と高原の駅、川の駅が連携して、「道の駅バトル」を...",
+      "url": "https://akita-fun.jp/events/1330",
+      "image_url": "https://akita-fun.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI5NzUsInB1ciI6ImJsb2JfaWQifX0=--84e5cc0602dc10cc1d14699c95932bc8acb39f78/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIn0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--a5196c6357f58ea8ada6db6b119a7b5001b06200/%E9%81%93%E3%81%AE%E9%A7%85%E3%83%90%E3%83%88%E3%83%AB2026%E3%83%81%E3%83%A9%E3%82%B7%E2%91%A0%20-%20%E3%82%B3%E3%83%94%E3%83%BC.png",
+      "source": "https://akita-fun.jp/events#html",
+      "lang": "ja"
+    },
+    {
+      "prefecture": "Akita",
+      "title": "【鹿角・盛岡広域エリア＆大館　観光デジタルスタンプラリー２０２６】開催！！",
+      "start_date": "2026-07-18",
+      "end_date": "2026-11-04",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "2026年7月18日 (土) ～2026年11月4日 (水) 【鹿角・盛岡広域エリア＆大館 観光デジタルスタンプラリー２０２６】開催！！ 盛岡・県北・鹿角・大館をめぐる広域デジタルスタンプラリー開催！〜...",
+      "url": "https://akita-fun.jp/events/1487",
+      "image_url": "https://akita-fun.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjMwNDksInB1ciI6ImJsb2JfaWQifX0=--301cce0e0ef30145ce8148c0d668e41b8847116d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIn0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--a5196c6357f58ea8ada6db6b119a7b5001b06200/%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC.png",
+      "source": "https://akita-fun.jp/events#html",
+      "lang": "ja"
+    }
+  ]
+}

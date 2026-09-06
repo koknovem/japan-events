@@ -1,0 +1,12 @@
+{
+  "prefecture": "Iwate",
+  "id": "iwate",
+  "ok": false,
+  "date": "2026-09-18",
+  "error": "TargetClosedError: Page.evaluate: Target page, context or browser has been closed",
+  "notes": null,
+  "event_count": 0,
+  "source_url": "https://iwatetabi.jp/events/",
+  "adapter": "iwate",
+  "events": []
+}

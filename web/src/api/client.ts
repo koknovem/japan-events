@@ -18,9 +18,10 @@ export const api = {
   health: () => request<{ status: string; version: string }>('/api/health'),
   sites: () => request<Site[]>('/api/sites'),
   dates: () => request<{ dates: string[] }>('/api/dates'),
-  events: (date: string, prefecture?: string) => {
+  events: (date: string, opts?: { prefecture?: string; lang?: string }) => {
     const params = new URLSearchParams({ date })
-    if (prefecture) params.set('prefecture', prefecture)
+    if (opts?.prefecture) params.set('prefecture', opts.prefecture)
+    if (opts?.lang) params.set('lang', opts.lang)
     return request<EventsResponse>(`/api/events?${params}`)
   },
 }

@@ -1,0 +1,28 @@
+{
+  "prefecture": "Tokushima",
+  "id": "tokushima",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:151; html:13; none_on_date:12_parsed; site_cards:151; html:14",
+  "event_count": 1,
+  "source_url": "https://www.awanavi.jp/",
+  "adapter": "tokushima",
+  "events": [
+    {
+      "prefecture": "Tokushima",
+      "title": "RECOMMENDED EVENT おすすめのイベント",
+      "start_date": "2026-07-25",
+      "end_date": "2026-09-23",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "7月25日(土) 〜9月23日(水) 原安三郎コレクション 北斎×広重 原安三郎コレクション 北斎×広重 8月22日(土) 〜10月18日(日) 夜の動物園 2026 夜の動物園 2026 9月12日(土) かいようマルシェ かいようマルシェ 9月23日(水) なるリバ1日体験DAY なるリバ1日体験DAY 10月4日(日) こまつしま秋の阿波踊り こまつしま秋の阿波踊り 10月4日(日) 徳島ウイスキー＆スピリッツ カーニバル 徳島ウイスキー＆スピリッツ カーニバル 10月10日(土) 〜10月11日(日) 日和佐八幡神社秋まつり 日和佐八幡神社秋まつり 10月17日(土) 夜間公演 祖谷襖からくり 夜間公演 祖谷襖からくり 10月25日(日) 祖谷の粉ひき節日本一大会 祖谷の粉ひき節日本一大会 10月25日(日) とくしま海陽オープンウォータースイム2026 とくしま海陽オープンウォー",
+      "url": "https://www.awanavi.jp/archives/event/67977",
+      "image_url": "https://www.awanavi.jp/wp-content/uploads/2026/04/pr26_hokusaihiroshige-2-280x360.jpg",
+      "source": "https://www.awanavi.jp/#html"
+    }
+  ]
+}

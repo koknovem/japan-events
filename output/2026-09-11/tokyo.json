@@ -1,0 +1,43 @@
+{
+  "prefecture": "Tokyo",
+  "id": "tokyo",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "html:4; links:4; html:4; links:4",
+  "event_count": 2,
+  "source_url": "https://www.gotokyo.org/en/calendar/index.html",
+  "adapter": "tokyo",
+  "events": [
+    {
+      "prefecture": "Tokyo",
+      "title": "Tokyo Music Evening Yube",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Apr 1, 2026 - Mar 31, 2027 Tokyo Music Evening Yube",
+      "url": "https://www.gotokyo.org/en/event/tokyotouristinfo/20260401en.html",
+      "image_url": "https://www.gotokyo.org/en/event/tokyotouristinfo/images/tokyomusiceveningyube_toshimacity.jpg",
+      "source": "https://www.gotokyo.org/en/calendar/index.html#html"
+    },
+    {
+      "prefecture": "Tokyo",
+      "title": "Toshima City Walking Stamp Rally",
+      "start_date": "2026-07-15",
+      "end_date": "2027-03-31",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Jul 15, 2026 - Mar 31, 2027 Toshima City Walking Stamp Rally",
+      "url": "https://www.gotokyo.org/en/event/tokyotouristinfo/20260715en.html",
+      "image_url": "https://www.gotokyo.org/en/event/tokyotouristinfo/images/toshimawalkingstamprally_main.png",
+      "source": "https://www.gotokyo.org/en/calendar/index.html#html"
+    }
+  ]
+}

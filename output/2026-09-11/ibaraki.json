@@ -1,0 +1,12 @@
+{
+  "prefecture": "Ibaraki",
+  "id": "ibaraki",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "js_date_force:6; date_selects:0; search_clicked; site_cards:48; no_event_listing",
+  "event_count": 0,
+  "source_url": "https://www.ibarakiguide.jp/search.php",
+  "adapter": "ibaraki",
+  "events": []
+}

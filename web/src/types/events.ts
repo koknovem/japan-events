@@ -22,6 +22,7 @@ export interface EventItem {
   url: string | null
   image_url: string | null
   source: string
+  lang?: string
   site_id: string | null
 }
 

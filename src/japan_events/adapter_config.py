@@ -33,4 +33,6 @@ class SiteAdapterConfig(BaseModel):
     use_card_text_as_period: bool = True
     harvest_fallback: bool = True
     notes: str | None = None
+    # Optional explicit multi-language event listing URLs (en / ja / zh-TW / zh-CN).
+    urls_by_lang: dict[str, str] = Field(default_factory=dict)
     extra: dict[str, Any] = Field(default_factory=dict)

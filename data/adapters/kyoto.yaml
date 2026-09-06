@@ -1,13 +1,11 @@
 id: kyoto
 strategy: html
 event_url: https://kyoto.travel/en/events/
-date_picker: false
-wait_ms: 1200
+wait_ms: 1500
 harvest_fallback: true
-use_card_text_as_period: true
-card_selectors:
-- article
-- .event
-- li
-- .card
-notes: Custom Python adapter preferred
+urls_by_lang:
+  en: https://kyoto.travel/en/events/
+  ja: https://ja.kyoto.travel/events/
+  zh-TW: https://tw.kyoto.travel/events/
+  zh-CN: https://cn.kyoto.travel/events/
+notes: Kyoto Travel multilingual event listings

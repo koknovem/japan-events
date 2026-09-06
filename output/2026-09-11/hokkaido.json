@@ -1,0 +1,73 @@
+{
+  "prefecture": "Hokkaido",
+  "id": "hokkaido",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "html:20",
+  "event_count": 4,
+  "source_url": "https://www.visit-hokkaido.jp/en/event/",
+  "adapter": "hokkaido",
+  "events": [
+    {
+      "prefecture": "Hokkaido",
+      "title": "Lake Toya Long Run Fireworks Display",
+      "start_date": "2026-04-28",
+      "end_date": "2026-10-31",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Lake Toya Long Run Fireworks Display This iconic Lake Toya event lights up the night sky every evening for about six months. Around 450… Area around Toya, Noboribetsu, and Hidaka 2026/4/28-10/31 Every night from 20:45 for about 20 minutes detail_11046.html",
+      "url": "https://www.visit-hokkaido.jp/en/event/detail_11046.html",
+      "image_url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1046/11046_8_m.jpg",
+      "source": "https://www.visit-hokkaido.jp/en/event/#html"
+    },
+    {
+      "prefecture": "Hokkaido",
+      "title": "Jozankei Natsutouro (Jozankei Summer Lantern Trail)",
+      "start_date": "2026-06-01",
+      "end_date": "2026-10-31",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Jozankei Natsutouro (Jozankei Summer Lantern Trail) Jozankei Natsutouro is a summer evening event that transforms Jozankei Onsen with gentle lantern l… Sapporo/Jozankei 2026/6/1-10/31, June-August 19:00-21:30, September-October 18:00-21:30 detail_11163.html",
+      "url": "https://www.visit-hokkaido.jp/en/event/detail_11163.html",
+      "image_url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1163/11163_1_m.jpg",
+      "source": "https://www.visit-hokkaido.jp/en/event/#html"
+    },
+    {
+      "prefecture": "Hokkaido",
+      "title": "Sapporo Autumn Fest",
+      "start_date": "2026-09-11",
+      "end_date": "2026-10-03",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Sapporo Autumn Fest Launched in 2008, Sapporo Autumn Fest is one of Hokkaido's largest food festivals. Seasonal sp… Sapporo/Jozankei 2026/9/11-10/3 10:00-20:30 (L.O.20:00) detail_11012.html",
+      "url": "https://www.visit-hokkaido.jp/en/event/detail_11012.html",
+      "image_url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1012/11012_1_m.jpg",
+      "source": "https://www.visit-hokkaido.jp/en/event/#html"
+    },
+    {
+      "prefecture": "Hokkaido",
+      "title": "Sapporo Snow Festival",
+      "start_date": "2027-02-04",
+      "end_date": "2026-02-11",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Sapporo Snow Festival A world-famous winter festival featuring giant snow sculptures and dazzling ice displays. A great … Sapporo/Jozankei 2027/2/4-2/11 detail_11001.html",
+      "url": "https://www.visit-hokkaido.jp/en/event/detail_11001.html",
+      "image_url": "https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/1001/11001_1_m.jpg",
+      "source": "https://www.visit-hokkaido.jp/en/event/#html"
+    }
+  ]
+}

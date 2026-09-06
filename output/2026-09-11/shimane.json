@@ -1,0 +1,28 @@
+{
+  "prefecture": "Shimane",
+  "id": "shimane",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:56; xhr:1; xhr:1; none_on_date:1_parsed; site_cards:43; xhr:1; xhr:1; xhr:2; xhr:2; none_on_date:2_parsed",
+  "event_count": 1,
+  "source_url": "https://www.kankou-shimane.com/en/",
+  "adapter": "shimane",
+  "events": [
+    {
+      "prefecture": "Shimane",
+      "title": "Notice of Recent Temporary Communication Disruption",
+      "start_date": "2030-03-26",
+      "end_date": "2026-03-30",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "2026-03-30 Notice of Recent Temporary Communication Disruption",
+      "url": "https://www.kankou-shimane.com/en/news/27129",
+      "image_url": null,
+      "source": "https://www.kankou-shimane.com/en/#site-card"
+    }
+  ]
+}

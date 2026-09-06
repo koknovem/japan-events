@@ -1,0 +1,43 @@
+{
+  "prefecture": "Kyoto",
+  "id": "kyoto",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "html:28",
+  "event_count": 2,
+  "source_url": "https://kyoto.travel/en/events/",
+  "adapter": "kyoto",
+  "events": [
+    {
+      "prefecture": "Kyoto",
+      "title": "Ukiyo-e Super Creator: Utagawa Kuniyoshi Exhibition",
+      "start_date": "2026-07-18",
+      "end_date": "2026-09-23",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "\"Miyamoto Musashi and the Giant Whale,\" c. 1848, private collection Ukiyo-e Super Creator: Utagawa Kuniyoshi Exhibition 18 Jul – 23 Sep 2026 Art / Music / Theater Venue: Kyoto City KYOCERA Museum of Art, Main Building (North Wing), 1F Official Website See details (Japanese)",
+      "url": "https://kyotocity-kyocera.museum/en/",
+      "image_url": "https://ja.kyoto.travel/resource/event/14274-1.jpg",
+      "source": "https://kyoto.travel/en/events/#html"
+    },
+    {
+      "prefecture": "Kyoto",
+      "title": "World-traveling Japanese Taiko Drumming Group “Yamato” Japan Tour",
+      "start_date": "2026-09-11",
+      "end_date": "2026-09-13",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "World-traveling Japanese Taiko Drumming Group “Yamato” Japan Tour 11 Sep – 13 Sep 2026 Art / Music / Theater Venue: Kyoto Theatre Official Website See details (Japanese)",
+      "url": "https://www.yamato.jp/2026/en",
+      "image_url": "https://ja.kyoto.travel/resource/event/14696-1.jpg",
+      "source": "https://kyoto.travel/en/events/#html"
+    }
+  ]
+}

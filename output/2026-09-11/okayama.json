@@ -1,0 +1,12 @@
+{
+  "prefecture": "Okayama",
+  "id": "okayama",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:122; no_event_listing; site_cards:94; no_event_listing; none_on_date:99_parsed",
+  "event_count": 0,
+  "source_url": "https://www.okayama-japan.jp/en/event",
+  "adapter": "okayama",
+  "events": []
+}

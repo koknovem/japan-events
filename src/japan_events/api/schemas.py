@@ -29,6 +29,7 @@ class EventOut(BaseModel):
     url: str | None = None
     image_url: str | None = None
     source: str
+    lang: str = "ja"
     site_id: str | None = None
 
 

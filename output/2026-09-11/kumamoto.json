@@ -1,0 +1,28 @@
+{
+  "prefecture": "Kumamoto",
+  "id": "kumamoto",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:69; no_event_listing",
+  "event_count": 1,
+  "source_url": "https://kumamoto-guide.jp/en/events/",
+  "adapter": "kumamoto",
+  "events": [
+    {
+      "prefecture": "Kumamoto",
+      "title": "September - November Autumn",
+      "start_date": "2026-09-01",
+      "end_date": "2026-11-01",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "September - November Autumn",
+      "url": "https://kumamoto-guide.jp/en/events/#autumn",
+      "image_url": null,
+      "source": "https://kumamoto-guide.jp/en/events/#site-card"
+    }
+  ]
+}

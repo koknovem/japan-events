@@ -19,6 +19,7 @@ class Event(BaseModel):
     url: str | None = None
     image_url: str | None = None
     source: str
+    lang: str = "ja"
 
 
 class SiteConfig(BaseModel):

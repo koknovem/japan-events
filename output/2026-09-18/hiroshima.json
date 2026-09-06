@@ -1,0 +1,12 @@
+{
+  "prefecture": "Hiroshima",
+  "id": "hiroshima",
+  "ok": false,
+  "date": "2026-09-18",
+  "error": "Exception: Browser.new_context: Connection closed while reading from the driver",
+  "notes": null,
+  "event_count": 0,
+  "source_url": "https://dive-hiroshima.com/en/events/",
+  "adapter": "hiroshima",
+  "events": []
+}

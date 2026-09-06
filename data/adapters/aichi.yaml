@@ -5,6 +5,11 @@ date_picker: false
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
+urls_by_lang:
+  en: https://aichinow.pref.aichi.jp/en/events/
+  ja: https://aichinow.pref.aichi.jp/events/
+  zh-TW: https://aichinow.pref.aichi.jp/tw/events/
+  zh-CN: https://aichinow.pref.aichi.jp/cn/events/
 card_selectors:
 - div.list
 fields:

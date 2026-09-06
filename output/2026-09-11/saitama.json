@@ -1,0 +1,43 @@
+{
+  "prefecture": "Saitama",
+  "id": "saitama",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:9; html:40",
+  "event_count": 2,
+  "source_url": "https://saitama-supportdesk.com/events/",
+  "adapter": "saitama",
+  "events": [
+    {
+      "prefecture": "Saitama",
+      "title": "Grand Bonsai Festival",
+      "start_date": "2026-05-03",
+      "end_date": "2027-01-05",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": "Central Area",
+      "category": "Festivals and Regional events",
+      "description": "May 3rd to 5th Grand Bonsai Festival Central Area Central Area Festivals and Regional events",
+      "url": "https://saitama-supportdesk.com/events/post-35785/",
+      "image_url": "https://saitama-supportdesk.com/wp-content/uploads/2025/11/a8bc72acca1a8849ddfa441b60f24f92.jpg",
+      "source": "https://saitama-supportdesk.com/events/#html"
+    },
+    {
+      "prefecture": "Saitama",
+      "title": "Kumagaya Uchiwa Festival",
+      "start_date": "2022-07-20",
+      "end_date": "2027-01-22",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": "Northern Area",
+      "category": "Festivals and Regional events",
+      "description": "July 20th to the 22nd Kumagaya Uchiwa Festival Northern Area Festivals and Regional events",
+      "url": "https://saitama-supportdesk.com/events/post-11518/",
+      "image_url": "https://saitama-supportdesk.com/wp-content/uploads/2024/10/evt_a_kuma1.jpg",
+      "source": "https://saitama-supportdesk.com/events/#html"
+    }
+  ]
+}

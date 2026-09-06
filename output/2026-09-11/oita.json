@@ -1,0 +1,28 @@
+{
+  "prefecture": "Oita",
+  "id": "oita",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:75; html:28; none_on_date:19_parsed; site_cards:42; no_event_listing; site_cards:75; html:28; none_on_date:19_parsed; site_cards:75; html:28; none_on_date:19_parsed; site_cards:75; html:28; none_on_date:19_parsed; site_cards:75; html:29; followed:https://www.visit-oita.jp/events/index/2026-08",
+  "event_count": 1,
+  "source_url": "https://www.visit-oita.jp/events/index/2026-08",
+  "adapter": "oita",
+  "events": [
+    {
+      "prefecture": "Oita",
+      "title": "竹田市歴史文化館 由学館 企画展「昭和100年プロジェクト チャイムが聞こえる昭和の学校」",
+      "start_date": "2026-08-29",
+      "end_date": "2026-10-18",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": "竹田市",
+      "category": null,
+      "description": "竹田市 芸術・文化・街並 竹田市歴史文化館 由学館 企画展「昭和100年プロジェクト チャイムが聞こえる昭和の学校」 2026年8月29日（土）～10月18日（日）",
+      "url": "https://www.visit-oita.jp/events/detail/14430",
+      "image_url": "https://www.visit-oita.jp/files/cimage/CCCxjax235x176x0xEvent_14430_image.jpg",
+      "source": "https://www.visit-oita.jp/events/index/2026-08#site-card"
+    }
+  ]
+}

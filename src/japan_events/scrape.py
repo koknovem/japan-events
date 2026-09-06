@@ -4,17 +4,50 @@ import asyncio
 from datetime import date
 
 from japan_events.browser import close_session, launch_browser, open_session, playwright_runtime
-from japan_events.models import SiteConfig, SiteResult
+from japan_events.langs import resolve_lang_urls
+from japan_events.models import Event, SiteConfig, SiteResult
+from japan_events.normalize import dedupe_events
 from japan_events.registry import filter_sites, get_adapter, load_sites
 from japan_events.storage import write_combined, write_site_result
 
 
 async def scrape_site(site: SiteConfig, target: date, session) -> SiteResult:
+    """Scrape each configured language URL and tag events with ``lang``."""
     adapter = get_adapter(site)
-    events = await adapter.scrape(target, session)
-    notes = getattr(session, "page_notes", None)
-    if not events and not notes:
-        notes = "no matching events"
+    config = getattr(adapter, "config", None)
+    lang_urls = resolve_lang_urls(site, config)
+
+    collected: list[Event] = []
+    note_parts: list[str] = []
+    last_url = site.listing_url
+
+    orig_site_event = site.event_url
+    orig_cfg_event = getattr(config, "event_url", None) if config is not None else None
+
+    try:
+        for lang, url in lang_urls.items():
+            site.event_url = url
+            if config is not None:
+                config.event_url = url
+            print(f"[scrape]   {site.id} lang={lang} → {url}", flush=True)
+            try:
+                events = await adapter.scrape(target, session)
+                for ev in events:
+                    ev.lang = lang
+                collected.extend(events)
+                adapter_notes = getattr(session, "page_notes", None)
+                note_parts.append(f"{lang}:{len(events)}" + (f"({adapter_notes})" if adapter_notes else ""))
+                last_url = session.page.url if session.page else url
+            except Exception as exc:
+                note_parts.append(f"{lang}:ERR:{type(exc).__name__}")
+                print(f"[scrape]   {site.id} lang={lang} failed: {exc}", flush=True)
+    finally:
+        site.event_url = orig_site_event
+        if config is not None:
+            config.event_url = orig_cfg_event
+
+    events = dedupe_events(collected)
+    notes = "; ".join(note_parts) if note_parts else "no matching events"
     return SiteResult(
         prefecture=site.name,
         id=site.id,
@@ -22,7 +55,7 @@ async def scrape_site(site: SiteConfig, target: date, session) -> SiteResult:
         date=target.isoformat(),
         notes=notes,
         event_count=len(events),
-        source_url=session.page.url if session.page else site.listing_url,
+        source_url=last_url,
         adapter=getattr(adapter, "name", site.adapter),
         events=events,
     )
@@ -37,7 +70,6 @@ async def run_scrape(
 ) -> list[SiteResult]:
     sites = filter_sites(load_sites(), prefecture)
     sem = asyncio.Semaphore(max(1, concurrency))
-    results: list[SiteResult] = []
 
     async with playwright_runtime() as playwright:
         browser = await launch_browser(playwright, headed=headed)

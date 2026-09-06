@@ -1,0 +1,12 @@
+{
+  "prefecture": "Kagoshima",
+  "id": "kagoshima",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:151; html:40; none_on_date:40_parsed; site_cards:151; html:1; links:1; none_on_date:2_parsed; site_cards:151; html:40; none_on_date:40_parsed; site_cards:151; html:2; none_on_date:2_parsed; site_cards:151; html:2; none_on_date:2_parsed; site_cards:151; html:2; none_on_date:2_parsed; site_cards:151; html:2; none_on_date:2_parsed; none_on_date:216_parsed",
+  "event_count": 0,
+  "source_url": "https://www.kagoshima-kankou.com/for/events/10654",
+  "adapter": "kagoshima",
+  "events": []
+}

@@ -1,0 +1,28 @@
+{
+  "prefecture": "Wakayama",
+  "id": "wakayama",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:38; html:22",
+  "event_count": 1,
+  "source_url": "https://visitwakayama.jp/en/events/index.html",
+  "adapter": "wakayama",
+  "events": [
+    {
+      "prefecture": "Wakayama",
+      "title": "Waka-matsuri Festival",
+      "start_date": "2026-09-06",
+      "end_date": "2027-01-17",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Waka-matsuri Festival The Sunday closest to the 17th",
+      "url": "https://visitwakayama.jp/en/events/detail_34.html",
+      "image_url": "https://visitwakayama.jp/lsc/upfile/spot/0000/0034/34_1_m.jpg",
+      "source": "https://visitwakayama.jp/en/events/index.html#html"
+    }
+  ]
+}

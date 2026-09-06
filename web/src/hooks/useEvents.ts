@@ -45,19 +45,23 @@ export function useEventsForDate(
   prefectureFilter: string | null,
   cachedDates: Set<string>,
 ) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [data, setData] = useState<EventsResponse | null>(null)
   const [loading, setLoading] = useState(false)
   const [scraping, setScraping] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const dateKey = format(selected, 'yyyy-MM-dd')
+  const lang = i18n.language
 
   const load = useCallback(async () => {
     setLoading(true)
     setError(null)
     setScraping(!cachedDates.has(dateKey))
     try {
-      const res = await api.events(dateKey, prefectureFilter ?? undefined)
+      const res = await api.events(dateKey, {
+        prefecture: prefectureFilter ?? undefined,
+        lang,
+      })
       setData(res)
       setScraping(Boolean(res.scraped))
     } catch (err) {
@@ -67,7 +71,7 @@ export function useEventsForDate(
       setLoading(false)
       setScraping(false)
     }
-  }, [dateKey, prefectureFilter, cachedDates, t])
+  }, [dateKey, prefectureFilter, cachedDates, t, lang])
 
   useEffect(() => {
     void load()

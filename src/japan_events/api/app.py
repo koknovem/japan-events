@@ -14,8 +14,26 @@ from japan_events.api.schemas import (
     SiteOut,
     SiteStatusOut,
 )
+from japan_events.langs import SCRAPE_LANGS, map_ui_lang_to_scrape
 from japan_events.registry import load_sites
 from japan_events.storage import list_cached_dates
+
+
+def _filter_events_by_lang(events: list[EventOut], lang: str | None) -> tuple[list[EventOut], str | None]:
+    """Prefer requested lang; fall back ja → en → any if empty."""
+    if not lang:
+        return events, None
+    wanted = map_ui_lang_to_scrape(lang)
+    matched = [e for e in events if (e.lang or "ja") == wanted]
+    if matched:
+        return matched, wanted
+    for fallback in ("ja", "en", "zh-TW", "zh-CN"):
+        if fallback == wanted:
+            continue
+        matched = [e for e in events if (e.lang or "ja") == fallback]
+        if matched:
+            return matched, fallback
+    return events, wanted
 
 
 def _build_events_response(
@@ -23,6 +41,7 @@ def _build_events_response(
     *,
     prefecture: str | None,
     scraped: bool,
+    lang: str | None,
 ) -> EventsResponse:
     site_filter = None
     if prefecture:
@@ -46,7 +65,14 @@ def _build_events_response(
             )
         )
         for ev in site.events:
-            events.append(EventOut(**ev.model_dump(), site_id=site.id))
+            payload = ev.model_dump()
+            payload.setdefault("lang", "ja")
+            events.append(EventOut(**payload, site_id=site.id))
+
+    events, used_lang = _filter_events_by_lang(events, lang)
+    msg = "Fresh scrape completed." if scraped else None
+    if lang and used_lang and map_ui_lang_to_scrape(lang) != used_lang:
+        msg = (msg + " " if msg else "") + f"Showing {used_lang} (requested language had no events)."
 
     return EventsResponse(
         date=combined.date,
@@ -58,7 +84,7 @@ def _build_events_response(
         event_count=len(events),
         events=events,
         sites=sites_out,
-        message="Fresh scrape completed." if scraped else None,
+        message=msg,
     )
 
 
@@ -66,7 +92,7 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title="Japan Events API",
         description="Prefecture tourism event calendars scraped via Playwright adapters.",
-        version="0.3.0",
+        version="0.4.0",
     )
     app.add_middleware(
         CORSMiddleware,
@@ -78,7 +104,7 @@ def create_app() -> FastAPI:
 
     @app.get("/api/health", response_model=HealthResponse)
     def health() -> HealthResponse:
-        return HealthResponse(status="ok", version="0.3.0")
+        return HealthResponse(status="ok", version="0.4.0")
 
     @app.get("/api/sites", response_model=list[SiteOut])
     def list_sites() -> list[SiteOut]:
@@ -99,10 +125,18 @@ def create_app() -> FastAPI:
     def cached_dates() -> DatesResponse:
         return DatesResponse(dates=list_cached_dates())
 
+    @app.get("/api/langs")
+    def list_langs() -> dict:
+        return {"langs": list(SCRAPE_LANGS)}
+
     @app.get("/api/events", response_model=EventsResponse)
     def get_events(
         date_str: str = Query(..., alias="date", description="YYYY-MM-DD"),
         prefecture: str | None = Query(None, description="Comma-separated site ids"),
+        lang: str | None = Query(
+            None,
+            description="UI/scrape language: en | ja | zh-TW | zh-CN (falls back if empty)",
+        ),
         force: bool = Query(False, description="Force a fresh scrape even if cached"),
     ) -> EventsResponse:
         """Return events for a date. If not cached, scrape in a worker thread and wait."""
@@ -122,7 +156,7 @@ def create_app() -> FastAPI:
         if combined is None:
             raise HTTPException(status_code=502, detail="Scrape finished but no output was written")
 
-        return _build_events_response(combined, prefecture=prefecture, scraped=scraped)
+        return _build_events_response(combined, prefecture=prefecture, scraped=scraped, lang=lang)
 
     @app.get("/api/scrape/status")
     def scrape_status() -> dict:

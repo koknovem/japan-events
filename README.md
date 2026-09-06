@@ -28,10 +28,25 @@ Open docs at http://127.0.0.1:8000/docs
 | GET | `/api/health` | Health check |
 | GET | `/api/sites` | Registry of prefectures |
 | GET | `/api/dates` | Cached scrape dates under `output/` |
-| GET | `/api/events?date=YYYY-MM-DD` | Events for a date (auto-scrapes in a worker thread if not cached; optional `prefecture=`) |
+| GET | `/api/events?date=YYYY-MM-DD` | Events for a date (auto-scrapes if missing; optional `prefecture=`, `lang=en\|ja\|zh-TW\|zh-CN`) |
+| GET | `/api/langs` | Supported scrape/UI languages |
 | GET | `/api/scrape/status` | In-flight scrape dates |
 
 `GET /api/events` serves cached JSON immediately when present. If the date is missing, the API runs Playwright in a **thread**, blocks until finished, then returns the result (the UI just waits on the request).
+
+### Multi-language sources
+
+Scrapes tag each event with `lang` (`en` / `ja` / `zh-TW` / `zh-CN`). Declare URLs in `data/adapters/{id}.yaml`:
+
+```yaml
+urls_by_lang:
+  en: https://example.jp/en/event/
+  ja: https://example.jp/ja/event/
+  zh-TW: https://example.jp/zh-tw/event/
+  zh-CN: https://example.jp/zh-cn/event/
+```
+
+If omitted, `/en/`-style paths are rewritten when possible; JP-only 観光協会 calendars scrape once as `ja`. The UI sends `?lang=` from the language switcher and falls back to ja → en when that locale has no rows.
 
 ## Web UI (React + TypeScript)
 

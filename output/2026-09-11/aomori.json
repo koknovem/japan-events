@@ -1,0 +1,73 @@
+{
+  "prefecture": "Aomori",
+  "id": "aomori",
+  "ok": true,
+  "date": "2026-09-11",
+  "error": null,
+  "notes": "site_cards:1; html:33",
+  "event_count": 4,
+  "source_url": "https://aomori-tourism.com/en/event/index.html",
+  "adapter": "aomori",
+  "events": [
+    {
+      "prefecture": "Aomori",
+      "title": "Great Gingko of Kitakanegasawa",
+      "start_date": "2026-11-15",
+      "end_date": "2002-12-03",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Great Gingko of Kitakanegasawa Tsugaru area November 15 to December 3, 2… A gingko tree over 1,000 years old stands in the Kitakanegasawa dist… more",
+      "url": "https://aomori-tourism.com/en/event/detail_619.html",
+      "image_url": "https://aomori-tourism.com/lsc/upfile/spot/0000/0619/619_108_m.jpg",
+      "source": "https://aomori-tourism.com/en/event/index.html#html"
+    },
+    {
+      "prefecture": "Aomori",
+      "title": "Miyakoshi House Annex/Garden",
+      "start_date": "2026-10-04",
+      "end_date": "2020-11-10",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Miyakoshi House Annex/Garden Tsugaru area October 4 to November 10, 20… The premises of the Miyakoshi family’s residence contain build… more",
+      "url": "https://aomori-tourism.com/en/event/detail_8002.html",
+      "image_url": "https://aomori-tourism.com/lsc/upfile/spot/0000/8002/8002_101_m.jpg",
+      "source": "https://aomori-tourism.com/en/event/index.html#html"
+    },
+    {
+      "prefecture": "Aomori",
+      "title": "Tanabu Festival (Annual Festival of Tanabu Shrine)",
+      "start_date": "2026-08-18",
+      "end_date": "2027-01-20",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Tanabu Festival (Annual Festival of Tanabu Shrine) Shimokita area This festival is held annually from August 18 to 20. It is said to b… more",
+      "url": "https://aomori-tourism.com/en/event/detail_4899.html",
+      "image_url": "https://aomori-tourism.com/lsc/upfile/spot/0000/4899/4899_101_m.jpg",
+      "source": "https://aomori-tourism.com/en/event/index.html#html"
+    },
+    {
+      "prefecture": "Aomori",
+      "title": "Rafting on the Iwaki River",
+      "start_date": "2026-06-01",
+      "end_date": "2026-10-06",
+      "start_time": null,
+      "end_time": null,
+      "venue": null,
+      "area": null,
+      "category": null,
+      "description": "Rafting on the Iwaki River June to October The Iwaki River emerges from pure headwaters in Shirakami Sanchi, a … more",
+      "url": "https://aomori-tourism.com/en/event/detail_10085.html",
+      "image_url": "https://aomori-tourism.com/lsc/upfile/spot/0001/0085/10085_103_m.jpg",
+      "source": "https://aomori-tourism.com/en/event/index.html#html"
+    }
+  ]
+}

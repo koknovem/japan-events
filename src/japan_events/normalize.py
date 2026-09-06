@@ -389,13 +389,14 @@ def filter_events(events: list[Event], target: date) -> list[Event]:
 
 
 def dedupe_events(events: list[Event]) -> list[Event]:
-    seen: set[tuple[str, str, str]] = set()
+    seen: set[tuple[str, str, str, str]] = set()
     out: list[Event] = []
     for event in events:
         key = (
             event.title.strip().lower(),
             event.start_date or "",
             (event.url or "").split("?")[0],
+            event.lang or "ja",
         )
         if key in seen:
             continue

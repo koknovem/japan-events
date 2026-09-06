@@ -33,7 +33,7 @@ export default function App() {
     setBootstrapped(true)
   }, [dates, bootstrapped])
 
-  const { data, loading, scraping, progress, error, dateKey } = useEventsForDate(
+  const { data, loading, scraping, refreshing, progress, error, dateKey } = useEventsForDate(
     selected,
     prefecture,
     cachedSet,
@@ -75,8 +75,17 @@ export default function App() {
             error={error}
             loading={loading}
             scraping={scraping}
+            refreshing={refreshing}
             progress={progress}
           />
+          {refreshing && progress && !loading ? (
+            <div className="refresh-strip" aria-live="polite">
+              <div
+                className="refresh-strip-fill"
+                style={{ width: `${Math.max(4, progress.percent ?? 0)}%` }}
+              />
+            </div>
+          ) : null}
           <EventList
             events={data?.events ?? []}
             loading={loading}

@@ -43,6 +43,7 @@ def _build_events_response(
     prefecture: str | None,
     scraped: bool,
     lang: str | None,
+    refreshing: bool = False,
 ) -> EventsResponse:
     site_filter = None
     if prefecture:
@@ -86,6 +87,7 @@ def _build_events_response(
         events=events,
         sites=sites_out,
         message=msg,
+        refreshing=refreshing,
     )
 
 
@@ -157,7 +159,17 @@ def create_app() -> FastAPI:
         if combined is None:
             raise HTTPException(status_code=502, detail="Scrape finished but no output was written")
 
-        return _build_events_response(combined, prefecture=prefecture, scraped=scraped, lang=lang)
+        refreshing = False
+        if not scraped and not force:
+            refreshing = scrape_service.maybe_refresh(target)
+
+        return _build_events_response(
+            combined,
+            prefecture=prefecture,
+            scraped=scraped,
+            lang=lang,
+            refreshing=refreshing,
+        )
 
     @app.get("/api/scrape/status", response_model=ScrapeStatusOut)
     def scrape_status(

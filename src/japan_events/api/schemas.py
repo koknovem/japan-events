@@ -55,6 +55,7 @@ class EventsResponse(BaseModel):
     events: list[EventOut] = Field(default_factory=list)
     sites: list[SiteStatusOut] = Field(default_factory=list)
     message: str | None = None
+    refreshing: bool = False
 
 
 class DatesResponse(BaseModel):

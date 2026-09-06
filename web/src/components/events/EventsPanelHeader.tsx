@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+import { format, formatDistanceToNow, parseISO } from 'date-fns'
 import { useTranslation } from 'react-i18next'
 import type { EventsResponse, LoadProgress } from '../../types/events'
 import { dateFnsLocales, type AppLang } from '../../i18n'
@@ -9,15 +9,20 @@ interface EventsPanelHeaderProps {
   error: string | null
   loading?: boolean
   scraping?: boolean
+  refreshing?: boolean
   progress?: LoadProgress | null
 }
 
-export function EventsPanelHeader({ date, data, error, loading, scraping, progress }: EventsPanelHeaderProps) {
+export function EventsPanelHeader({ date, data, error, loading, scraping, refreshing, progress }: EventsPanelHeaderProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language as AppLang) in dateFnsLocales ? (i18n.language as AppLang) : 'en'
   const locale = dateFnsLocales[lang]
   const scrapeProgress = scraping && progress?.mode === 'scrape' ? progress : null
   const downloadProgress = loading && progress?.mode === 'download' ? progress : null
+  const refreshProgress = refreshing && !scraping ? progress : null
+  const cacheLabel = data?.generated_at
+    ? formatDistanceToNow(parseISO(data.generated_at), { addSuffix: true, locale })
+    : t('events.cached')
 
   return (
     <div className="panel-toolbar">
@@ -51,11 +56,27 @@ export function EventsPanelHeader({ date, data, error, loading, scraping, progre
               {' · '}
               {t('events.sitesCount', { ok: data.ok_count, total: data.site_count })}
               {' · '}
-              {data.scraped ? t('events.justScraped') : t('events.cached')}
+              {data.scraped ? t('events.justScraped') : cacheLabel}
             </span>
           ) : (
             <span className="meta-chip">{t('events.waiting')}</span>
           )}
+          {refreshProgress ? (
+            <span className="meta-chip">
+              <strong>
+                {refreshProgress.phase === 'scanning'
+                  ? t('events.checkingUpdates', {
+                      done: refreshProgress.done,
+                      total: refreshProgress.total,
+                    })
+                  : t('events.updatingChanged', {
+                      done: refreshProgress.done,
+                      total: refreshProgress.total,
+                    })}
+              </strong>
+              {refreshProgress.percent != null ? ` · ${refreshProgress.percent}%` : null}
+            </span>
+          ) : null}
           {error ? (
             <span className="meta-chip" style={{ color: 'var(--danger)' }}>
               {error}

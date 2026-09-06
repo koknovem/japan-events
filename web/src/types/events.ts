@@ -48,6 +48,7 @@ export interface EventsResponse {
   events: EventItem[]
   sites: SiteStatus[]
   message: string | null
+  refreshing?: boolean
 }
 
 export interface ScrapeSiteProgress {

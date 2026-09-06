@@ -23,7 +23,7 @@
     "aria": "都道府県で絞り込む"
   },
   "hint": {
-    "cacheDots": "緑の点は、すでに保存済みの日付です。未キャッシュの日付を選ぶと、サーバーが全都道府県を取得します。完了までお待ちください。"
+    "cacheDots": "緑の点は、すでに保存済みの日付です。開くとすぐ表示され、裏で各サイトに更新がないか確認します。"
   },
   "events": {
     "scrapingChip": "サーバースレッドで取得中…",
@@ -42,6 +42,8 @@
     "progressParallel": "同時に {{count}} 都道府県",
     "progressStarting": "取得を開始しています…",
     "progressCombining": "結果をまとめています…",
+    "checkingUpdates": "サイト確認 {{done}}/{{total}}",
+    "updatingChanged": "更新されたサイトを取得 {{done}}/{{total}}",
     "scraping": "{{date}} の都道府県カレンダーを取得中…数分かかることがあります。",
     "emptyTitle": "この日のイベントはありません",
     "emptyMessage": "{{date}} のイベントは見つかりませんでした。別の都道府県または日付をお試しください。",

@@ -23,7 +23,7 @@
     "aria": "Filter by prefecture"
   },
   "hint": {
-    "cacheDots": "Green dots are dates already on disk. Choosing an uncached date scrapes every prefecture on the server — wait until it finishes."
+    "cacheDots": "Green dots are dates already on disk. Opening one shows cached events immediately, then a quiet background scan checks whether prefecture sites have changed."
   },
   "events": {
     "scrapingChip": "Scraping in a server thread…",
@@ -42,6 +42,8 @@
     "progressParallel": "{{count}} prefectures at a time",
     "progressStarting": "Starting scrape…",
     "progressCombining": "Combining prefecture results…",
+    "checkingUpdates": "Checking sites {{done}}/{{total}}",
+    "updatingChanged": "Updating changed sites {{done}}/{{total}}",
     "scraping": "Scraping prefecture calendars for {{date}}… this can take several minutes.",
     "emptyTitle": "No events for this date",
     "emptyMessage": "No events found for {{date}}. Try another prefecture or date.",

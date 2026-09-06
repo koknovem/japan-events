@@ -23,7 +23,7 @@
     "aria": "按都道府县筛选"
   },
   "hint": {
-    "cacheDots": "绿色圆点表示该日期已有缓存。选择尚未缓存的日期时，服务器会抓取所有都道府县资料——请稍候完成。"
+    "cacheDots": "绿色圆点表示该日期已有缓存。打开后会立刻显示，并在后台快速检查各网站是否有更新。"
   },
   "events": {
     "scrapingChip": "服务器线程抓取中…",
@@ -42,6 +42,8 @@
     "progressParallel": "同时抓取 {{count}} 个都道府县",
     "progressStarting": "正在开始抓取…",
     "progressCombining": "正在汇总结果…",
+    "checkingUpdates": "正在检查网站 {{done}}/{{total}}",
+    "updatingChanged": "正在更新有变动的网站 {{done}}/{{total}}",
     "scraping": "正在抓取 {{date}} 的都道府县日历…可能需要数分钟。",
     "emptyTitle": "此日期没有活动",
     "emptyMessage": "{{date}} 没有找到活动。请试试其他都道府县或日期。",

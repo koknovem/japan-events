@@ -11,7 +11,7 @@ from japan_events.models import Event, SiteConfig, SiteResult
 from japan_events.normalize import dedupe_events
 from japan_events.registry import filter_sites, get_adapter, load_sites
 from japan_events.settings import site_concurrency
-from japan_events.storage import write_combined, write_site_result
+from japan_events.storage import rebuild_combined_from_files, write_combined, write_site_result
 
 ProgressCallback = Callable[[str, dict[str, Any]], None]
 
@@ -145,9 +145,14 @@ async def run_scrape(
             raise
 
     _emit(on_progress, "combining")
-    write_combined(results, target)
-    ok = sum(1 for r in results if r.ok)
-    total_events = sum(r.event_count for r in results)
+    if prefecture:
+        combined = rebuild_combined_from_files(target)
+        ok = combined.ok_count if combined else sum(1 for r in results if r.ok)
+        total_events = combined.event_count if combined else sum(r.event_count for r in results)
+    else:
+        write_combined(results, target)
+        ok = sum(1 for r in results if r.ok)
+        total_events = sum(r.event_count for r in results)
     print(
         f"[scrape] done date={target.isoformat()} sites={ok}/{len(results)} events={total_events}",
         flush=True,

@@ -73,7 +73,7 @@ def rebuild_combined_from_files(target: date, root: Path | None = None) -> Combi
         return None
     results: list[SiteResult] = []
     for path in sorted(folder.glob("*.json")):
-        if path.name == "all.json":
+        if path.name == "all.json" or path.name.startswith("_"):
             continue
         try:
             results.append(SiteResult.model_validate(json.loads(path.read_text(encoding="utf-8"))))

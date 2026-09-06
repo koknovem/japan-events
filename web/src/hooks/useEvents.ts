@@ -95,6 +95,7 @@ export function useEventsForDate(
   const [data, setData] = useState<EventsResponse | null>(null)
   const [loading, setLoading] = useState(true)
   const [scraping, setScraping] = useState(false)
+  const [refreshing, setRefreshing] = useState(false)
   const [progress, setProgress] = useState<LoadProgress | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [reloadToken, setReloadToken] = useState(0)
@@ -112,9 +113,14 @@ export function useEventsForDate(
     const willScrape = !isCached
     let pollTimer: number | undefined
     let cancelled = false
+    const eventOpts = {
+      prefecture: prefectureFilter ?? undefined,
+      lang,
+    }
 
     setLoading(true)
     setError(null)
+    setRefreshing(false)
     setScraping(willScrape)
     setProgress(willScrape ? scrapeStart(dateKey) : downloadStart(dateKey))
 
@@ -127,35 +133,67 @@ export function useEventsForDate(
       }
     }
 
+    const sleep = (ms: number) => new Promise((resolve) => window.setTimeout(resolve, ms))
+
+    const followBackgroundRefresh = async () => {
+      let sawJob = false
+      const giveUpAt = Date.now() + 20_000
+      while (!cancelled) {
+        try {
+          const status = await api.scrapeStatus(dateKey, { signal: controller.signal })
+          const job = status.job
+          const inFlight = status.inflight_dates.includes(dateKey)
+          const active =
+            inFlight ||
+            (!!job && ['starting', 'scanning', 'scraping', 'combining'].includes(job.phase))
+          if (active) {
+            sawJob = true
+            setRefreshing(true)
+            if (job) setProgress(jobToProgress(job))
+          } else if (sawJob) {
+            const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
+            if (!cancelled) {
+              setData({ ...latest, refreshing: false })
+              setRefreshing(false)
+              setProgress(null)
+            }
+            return
+          } else if (Date.now() > giveUpAt) {
+            if (!cancelled) {
+              setRefreshing(false)
+              setProgress(null)
+            }
+            return
+          }
+        } catch (err) {
+          if (err instanceof DOMException && err.name === 'AbortError') return
+        }
+        await sleep(700)
+      }
+    }
+
     void (async () => {
       try {
-        const eventsPromise = api.events(
-          dateKey,
-          {
-            prefecture: prefectureFilter ?? undefined,
-            lang,
+        const eventsPromise = api.events(dateKey, eventOpts, {
+          signal: controller.signal,
+          onDownloadProgress: (loaded, total) => {
+            if (cancelled || willScrape) return
+            setProgress({
+              mode: 'download',
+              date: dateKey,
+              percent: total > 0 ? Math.min(99, Math.round((loaded * 100) / total)) : null,
+              done: loaded,
+              total,
+              okCount: 0,
+              eventsSoFar: 0,
+              running: [],
+              sites: [],
+              phase: 'download',
+              loadedBytes: loaded,
+              totalBytes: total,
+            })
           },
-          {
-            signal: controller.signal,
-            onDownloadProgress: (loaded, total) => {
-              if (cancelled || willScrape) return
-              setProgress({
-                mode: 'download',
-                date: dateKey,
-                percent: total > 0 ? Math.min(99, Math.round((loaded * 100) / total)) : null,
-                done: loaded,
-                total,
-                okCount: 0,
-                eventsSoFar: 0,
-                running: [],
-                sites: [],
-                phase: 'download',
-                loadedBytes: loaded,
-                totalBytes: total,
-              })
-            },
-          },
-        )
+        })
 
         if (willScrape) {
           void pollStatus()
@@ -168,17 +206,27 @@ export function useEventsForDate(
         if (cancelled) return
         setData(res)
         setScraping(Boolean(res.scraped))
+        setLoading(false)
+        if (willScrape) {
+          setProgress(null)
+          setScraping(false)
+          return
+        }
+        setProgress(null)
+        if (res.refreshing) {
+          setRefreshing(true)
+          await followBackgroundRefresh()
+        }
       } catch (err) {
         if (cancelled || (err instanceof DOMException && err.name === 'AbortError')) return
         setError(err instanceof Error ? err.message : t('events.loadError'))
         setData(null)
+        setLoading(false)
+        setScraping(false)
+        setRefreshing(false)
+        setProgress(null)
       } finally {
         if (pollTimer !== undefined) window.clearInterval(pollTimer)
-        if (!cancelled) {
-          setLoading(false)
-          setScraping(false)
-          setProgress(null)
-        }
       }
     })()
 
@@ -193,9 +241,11 @@ export function useEventsForDate(
     data,
     loading,
     scraping: scraping && !isCached,
+    refreshing,
     progress: progress?.date === dateKey ? progress : null,
     error,
     reload,
     dateKey,
   }
 }
+

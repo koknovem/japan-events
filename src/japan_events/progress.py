@@ -28,7 +28,7 @@ class JobProgress:
         with self._lock:
             if event == "init":
                 sites = payload.get("sites") or []
-                self._state["phase"] = "scraping"
+                self._state["phase"] = str(payload.get("phase") or "scraping")
                 self._state["total"] = len(sites)
                 self._state["done"] = 0
                 self._state["ok_count"] = 0
@@ -46,7 +46,8 @@ class JobProgress:
                     for site in sites
                 ]
             elif event == "site_start":
-                self._state["phase"] = "scraping"
+                if self._state["phase"] not in {"scanning", "combining", "done"}:
+                    self._state["phase"] = str(payload.get("phase") or self._state["phase"] or "scraping")
                 site_id = payload.get("id")
                 if site_id and site_id not in self._state["running"]:
                     self._state["running"].append(site_id)

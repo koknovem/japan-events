@@ -98,3 +98,56 @@ def test_refresh_due_old_scan_allows_check(monkeypatch):
     monkeypatch.setattr(jobs, "scan_age_seconds", lambda scan: 10 * 3600)
     monkeypatch.setattr(jobs, "scan_ttl_seconds", lambda: 6 * 3600)
     assert jobs._refresh_due(date.today(), Cache()) is True
+
+
+def test_get_or_start_resumes_only_missing_sites(monkeypatch):
+    started = threading.Event()
+    captured: dict[str, str | None] = {}
+
+    def fake_scrape(target, prefecture, progress: JobProgress):
+        captured["prefecture"] = prefecture
+        progress.handle("done", {"ok_count": 1, "event_count": 0})
+        started.set()
+        return []
+
+    monkeypatch.setattr("japan_events.api.jobs._run_scrape_in_thread", fake_scrape)
+    monkeypatch.setattr("japan_events.api.jobs.missing_site_ids", lambda target: ["kyoto"])
+    monkeypatch.setattr("japan_events.api.jobs.site_result_ids", lambda target: {"tokyo"})
+    monkeypatch.setattr("japan_events.api.jobs.load_pending_refresh", lambda target: [])
+    monkeypatch.setattr("japan_events.api.jobs.load_combined", lambda target: object())
+    monkeypatch.setattr("japan_events.api.jobs.live_combined", lambda target: None)
+
+    service = ThreadedScrapeService(max_workers=1)
+    try:
+        combined, busy = service.get_or_start(date(2099, 1, 1))
+        assert combined is None
+        assert busy is True
+        assert started.wait(timeout=2)
+        assert captured["prefecture"] == "kyoto"
+    finally:
+        service._executor.shutdown(wait=True)
+
+
+def test_resume_incomplete_skips_far_dates_but_keeps_pending(monkeypatch):
+    far = date(2099, 1, 1)
+    nearby = date.today()
+    pending_date = date(2099, 12, 1)
+    monkeypatch.setattr("japan_events.api.jobs.list_incomplete_dates", lambda: [far, nearby])
+    monkeypatch.setattr(
+        "japan_events.api.jobs.list_pending_refreshes",
+        lambda: [(pending_date, ["osaka"])],
+    )
+
+    service = ThreadedScrapeService(max_workers=1)
+    started: list[tuple[date, str | None]] = []
+
+    def fake_start(target, *, prefecture=None, force=False):
+        started.append((target, prefecture))
+        return True
+
+    service.start_scrape = fake_start  # type: ignore[method-assign]
+    resumed = service.resume_incomplete()
+    assert nearby.isoformat() in resumed
+    assert far.isoformat() not in resumed
+    assert pending_date.isoformat() in resumed
+    assert any(target == pending_date and prefecture == "osaka" for target, prefecture in started)

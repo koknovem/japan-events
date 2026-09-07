@@ -11,7 +11,20 @@ from japan_events.progress import JobProgress
 from japan_events.registry import load_sites
 from japan_events.scan import cache_age_seconds, load_scan, save_scan, scan_age_seconds, scan_sites
 from japan_events.settings import SCAN_CONCURRENCY, scan_ttl_seconds, site_concurrency
-from japan_events.storage import live_combined, load_combined, rebuild_combined_from_files
+from japan_events.storage import (
+    clear_pending_refresh,
+    list_incomplete_dates,
+    list_pending_refreshes,
+    live_combined,
+    load_combined,
+    load_pending_refresh,
+    missing_site_ids,
+    rebuild_combined_from_files,
+    save_pending_refresh,
+    site_result_ids,
+)
+
+STARTUP_RESUME_DAYS = 14
 
 
 def _run_scrape_in_thread(
@@ -91,6 +104,7 @@ def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
 
     prefecture = ",".join(dirty)
     print(f"[scan] {target.isoformat()} dirty={len(dirty)} -> scrape {prefecture}", flush=True)
+    save_pending_refresh(target, dirty)
 
     def on_progress(event: str, payload: dict[str, Any]) -> None:
         progress.handle(event, payload)
@@ -108,6 +122,8 @@ def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
     except Exception as exc:
         progress.handle("error", {"error": f"{type(exc).__name__}: {exc}"})
         raise
+    else:
+        clear_pending_refresh(target)
 
 
 class ThreadedScrapeService:
@@ -128,8 +144,26 @@ class ThreadedScrapeService:
         with self._guard:
             return key in self._inflight
 
+    def _needs_resume(self, target: date) -> bool:
+        return bool(missing_site_ids(target) or load_pending_refresh(target))
+
+    def _resume_prefecture(self, target: date, *, force: bool = False) -> str | None:
+        """None means scrape every site. A csv means only those ids (crash resume)."""
+        if force:
+            return None
+        missing = missing_site_ids(target)
+        existing = site_result_ids(target)
+        if missing and existing:
+            return ",".join(missing)
+        pending = load_pending_refresh(target)
+        if pending and not missing:
+            return ",".join(pending)
+        return None
+
     def _load_complete_cache(self, target: date) -> CombinedOutput | None:
-        """Serve finished all.json even during a refresh; never rebuild partial files while inflight."""
+        """Serve a finished cache only when every registered site has a file and no refresh is pending."""
+        if self._needs_resume(target):
+            return None
         combined = load_combined(target)
         if combined is not None:
             return combined
@@ -137,18 +171,45 @@ class ThreadedScrapeService:
             return None
         return rebuild_combined_from_files(target)
 
-    def start_scrape(self, target: date) -> bool:
-        """Submit a full scrape if one is not already queued/running. Never waits."""
+    def start_scrape(self, target: date, *, prefecture: str | None = None, force: bool = False) -> bool:
+        """Submit a scrape if one is not already queued/running. Never waits."""
         key = target.isoformat()
+        if prefecture is None:
+            prefecture = self._resume_prefecture(target, force=force)
+        if prefecture:
+            print(f"[scrape] resume {key} sites={prefecture}", flush=True)
+        fut: Future | None = None
         with self._guard:
             if key in self._inflight:
                 return True
             progress = JobProgress(key)
-            fut = self._executor.submit(_run_scrape_in_thread, target, None, progress)
+            fut = self._executor.submit(_run_scrape_in_thread, target, prefecture, progress)
             self._inflight[key] = fut
             self._progress[key] = progress
-            fut.add_done_callback(lambda done, k=key: self._cleanup(k, done))
+        fut.add_done_callback(lambda done, k=key: self._cleanup(k, done))
         return True
+
+    def resume_incomplete(self) -> list[str]:
+        """On process start, continue dates that died mid-scrape or mid-refresh."""
+        today = date.today()
+        resumed: list[str] = []
+        seen: set[str] = set()
+        for target in list_incomplete_dates():
+            if abs((target - today).days) > STARTUP_RESUME_DAYS:
+                continue
+            key = target.isoformat()
+            self.start_scrape(target)
+            seen.add(key)
+            resumed.append(key)
+        for target, ids in list_pending_refreshes():
+            key = target.isoformat()
+            if key in seen:
+                continue
+            self.start_scrape(target, prefecture=",".join(ids))
+            resumed.append(key)
+        if resumed:
+            print(f"[scrape] auto-resume dates={','.join(resumed)}", flush=True)
+        return resumed
 
     def get_or_start(self, target: date, *, force: bool = False) -> tuple[CombinedOutput | None, bool]:
         """
@@ -161,7 +222,7 @@ class ThreadedScrapeService:
             combined = self._load_complete_cache(target)
             if combined is not None:
                 return combined, False
-        self.start_scrape(target)
+        self.start_scrape(target, force=force)
         return live_combined(target), True
 
     def ensure_cached(
@@ -180,16 +241,23 @@ class ThreadedScrapeService:
             fut = self._inflight.get(key)
         if fut is not None:
             fut.result()
-        combined = load_combined(target) or rebuild_combined_from_files(target)
+        combined = load_combined(target)
+        if combined is None and not missing_site_ids(target):
+            combined = rebuild_combined_from_files(target)
         return combined, True
 
     def maybe_refresh(self, target: date) -> bool:
         """Start a background scan/refresh. Never blocks. True if a job is running."""
         key = target.isoformat()
-        combined = load_combined(target) or rebuild_combined_from_files(target)
+        if self._needs_resume(target):
+            return self.start_scrape(target)
+        combined = load_combined(target)
+        if combined is None and not missing_site_ids(target):
+            combined = rebuild_combined_from_files(target)
         if combined is None:
             return False
 
+        fut: Future | None = None
         with self._guard:
             if self._inflight:
                 return key in self._inflight
@@ -199,6 +267,7 @@ class ThreadedScrapeService:
             fut = self._executor.submit(_run_refresh_in_thread, target, progress)
             self._inflight[key] = fut
             self._progress[key] = progress
+        if fut is not None:
             fut.add_done_callback(lambda done, k=key: self._cleanup(k, done))
         return True
 

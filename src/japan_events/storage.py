@@ -5,7 +5,9 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 from japan_events.models import CombinedOutput, SiteResult
-from japan_events.registry import project_root
+from japan_events.registry import load_sites, project_root
+
+_PENDING_REFRESH = "_pending_refresh.json"
 
 
 def output_dir(target: date, root: Path | None = None) -> Path:
@@ -39,14 +41,94 @@ def write_combined(results: list[SiteResult], target: date, root: Path | None = 
     return path
 
 
+def expected_site_ids() -> set[str]:
+    return {site.id for site in load_sites()}
+
+
+def site_result_ids(target: date, root: Path | None = None) -> set[str]:
+    folder = (root or project_root()) / "output" / target.isoformat()
+    if not folder.exists():
+        return set()
+    ids: set[str] = set()
+    for path in folder.glob("*.json"):
+        if path.name == "all.json" or path.name.startswith("_"):
+            continue
+        ids.add(path.stem)
+    return ids
+
+
+def missing_site_ids(target: date, root: Path | None = None) -> list[str]:
+    return sorted(expected_site_ids() - site_result_ids(target, root))
+
+
+def list_output_dates(root: Path | None = None) -> list[date]:
+    base = (root or project_root()) / "output"
+    if not base.exists():
+        return []
+    dates: list[date] = []
+    for child in sorted(base.iterdir()):
+        if not child.is_dir():
+            continue
+        try:
+            dates.append(date.fromisoformat(child.name))
+        except ValueError:
+            continue
+    return dates
+
+
+def list_incomplete_dates(root: Path | None = None) -> list[date]:
+    return [target for target in list_output_dates(root) if missing_site_ids(target, root)]
+
+
+def save_pending_refresh(target: date, site_ids: list[str], root: Path | None = None) -> Path:
+    path = output_dir(target, root) / _PENDING_REFRESH
+    path.write_text(json.dumps({"ids": list(site_ids)}, indent=2) + "\n", encoding="utf-8")
+    return path
+
+
+def load_pending_refresh(target: date, root: Path | None = None) -> list[str]:
+    path = (root or project_root()) / "output" / target.isoformat() / _PENDING_REFRESH
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    ids = data.get("ids") if isinstance(data, dict) else None
+    if not isinstance(ids, list):
+        return []
+    return [str(item) for item in ids if item]
+
+
+def clear_pending_refresh(target: date, root: Path | None = None) -> None:
+    path = (root or project_root()) / "output" / target.isoformat() / _PENDING_REFRESH
+    path.unlink(missing_ok=True)
+
+
+def list_pending_refreshes(root: Path | None = None) -> list[tuple[date, list[str]]]:
+    pending: list[tuple[date, list[str]]] = []
+    for target in list_output_dates(root):
+        ids = load_pending_refresh(target, root)
+        if ids:
+            pending.append((target, ids))
+    return pending
+
+
 def list_cached_dates(root: Path | None = None) -> list[str]:
     base = (root or project_root()) / "output"
     if not base.exists():
         return []
     dates: list[str] = []
     for child in sorted(base.iterdir()):
-        if child.is_dir() and (child / "all.json").exists():
-            dates.append(child.name)
+        if not child.is_dir() or not (child / "all.json").exists():
+            continue
+        try:
+            target = date.fromisoformat(child.name)
+        except ValueError:
+            continue
+        if missing_site_ids(target, root):
+            continue
+        dates.append(child.name)
     return dates
 
 

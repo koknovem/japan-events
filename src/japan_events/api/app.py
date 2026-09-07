@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
 from datetime import date
 
 from fastapi import FastAPI, HTTPException, Query
@@ -94,10 +95,16 @@ def _build_events_response(
 
 
 def create_app() -> FastAPI:
+    @asynccontextmanager
+    async def lifespan(_app: FastAPI):
+        scrape_service.resume_incomplete()
+        yield
+
     app = FastAPI(
         title="Japan Events API",
         description="Prefecture tourism event calendars scraped via Playwright adapters.",
         version="0.4.0",
+        lifespan=lifespan,
     )
     app.add_middleware(
         CORSMiddleware,

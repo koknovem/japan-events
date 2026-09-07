@@ -39,6 +39,7 @@ export function EventsPanelHeader({ date, data, error, loading, scraping, refres
                     : t('events.scrapingChip')}
               </strong>
               {scrapeProgress.percent != null ? ` · ${scrapeProgress.percent}%` : null}
+              {data && data.event_count > 0 ? ` · ${t('events.eventsCount', { count: data.event_count })}` : null}
             </span>
           ) : scraping ? (
             <span className="meta-chip">

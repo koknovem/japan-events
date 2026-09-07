@@ -100,7 +100,7 @@ export default function App() {
             refreshing={refreshing}
             progress={progress}
           />
-          {refreshing && progress && !loading ? (
+          {(scraping || refreshing) && progress && (data?.events.length ?? 0) > 0 ? (
             <div className="refresh-strip" aria-live="polite">
               <div
                 className="refresh-strip-fill"
@@ -110,7 +110,7 @@ export default function App() {
           ) : null}
           <EventList
             events={data?.events ?? []}
-            loading={loading}
+            loading={loading && (data?.events.length ?? 0) === 0}
             scraping={scraping}
             progress={progress}
             dateLabel={format(selected, 'yyyy-MM-dd')}

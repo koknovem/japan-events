@@ -17,7 +17,7 @@ from japan_events.api.schemas import (
 )
 from japan_events.langs import SCRAPE_LANGS, map_ui_lang_to_scrape
 from japan_events.registry import load_sites
-from japan_events.storage import list_cached_dates
+from japan_events.storage import list_cached_dates, load_combined
 
 
 def _filter_events_by_lang(events: list[EventOut], lang: str | None) -> tuple[list[EventOut], str | None]:
@@ -44,6 +44,7 @@ def _build_events_response(
     scraped: bool,
     lang: str | None,
     refreshing: bool = False,
+    scraping: bool = False,
 ) -> EventsResponse:
     site_filter = None
     if prefecture:
@@ -78,7 +79,7 @@ def _build_events_response(
 
     return EventsResponse(
         date=combined.date,
-        cached=not scraped,
+        cached=not scraped and not scraping,
         scraped=scraped,
         generated_at=combined.generated_at,
         site_count=len(sites_out) if site_filter else combined.site_count,
@@ -88,6 +89,7 @@ def _build_events_response(
         sites=sites_out,
         message=msg,
         refreshing=refreshing,
+        scraping=scraping,
     )
 
 
@@ -149,25 +151,38 @@ def create_app() -> FastAPI:
             raise HTTPException(status_code=400, detail="date must be YYYY-MM-DD") from exc
 
         try:
-            combined, scraping = scrape_service.get_or_start(target, force=force)
+            combined, busy = scrape_service.get_or_start(target, force=force)
         except Exception as exc:
             raise HTTPException(
                 status_code=502,
                 detail=f"Scrape failed: {type(exc).__name__}: {exc}",
             ) from exc
 
-        if scraping or combined is None:
-            return EventsResponse(
-                date=date_str,
-                cached=False,
+        if busy:
+            if combined is None:
+                return EventsResponse(
+                    date=date_str,
+                    cached=False,
+                    scraped=False,
+                    scraping=True,
+                    message="Scrape running in a server worker.",
+                )
+            had_complete = load_combined(target) is not None
+            return _build_events_response(
+                combined,
+                prefecture=prefecture,
                 scraped=False,
-                scraping=True,
-                message="Scrape running in a server worker. Poll /api/scrape/status until done.",
+                lang=lang,
+                scraping=not had_complete,
+                refreshing=had_complete,
             )
 
         refreshing = False
         if not force:
             refreshing = scrape_service.maybe_refresh(target)
+
+        if combined is None:
+            raise HTTPException(status_code=502, detail="Scrape finished but no output was written")
 
         return _build_events_response(
             combined,

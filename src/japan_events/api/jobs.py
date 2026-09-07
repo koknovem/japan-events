@@ -11,7 +11,7 @@ from japan_events.progress import JobProgress
 from japan_events.registry import load_sites
 from japan_events.scan import cache_age_seconds, load_scan, save_scan, scan_age_seconds, scan_sites
 from japan_events.settings import SCAN_CONCURRENCY, scan_ttl_seconds, site_concurrency
-from japan_events.storage import load_combined, rebuild_combined_from_files
+from japan_events.storage import live_combined, load_combined, rebuild_combined_from_files
 
 
 def _run_scrape_in_thread(
@@ -152,16 +152,17 @@ class ThreadedScrapeService:
 
     def get_or_start(self, target: date, *, force: bool = False) -> tuple[CombinedOutput | None, bool]:
         """
-        Return (combined, scraping).
-        If cache is ready, combined is set and scraping is False.
-        Otherwise kick off a worker (or join the existing queue) and return immediately.
+        Return (combined, busy).
+        busy True means a scrape/refresh is queued or running.
+        combined may already include prefectures that finished writing to disk.
         """
-        if not force:
+        key = target.isoformat()
+        if not force and not self._is_inflight(key):
             combined = self._load_complete_cache(target)
             if combined is not None:
                 return combined, False
         self.start_scrape(target)
-        return None, True
+        return live_combined(target), True
 
     def ensure_cached(
         self,
@@ -171,8 +172,8 @@ class ThreadedScrapeService:
         force: bool = False,
     ) -> tuple[CombinedOutput | None, bool]:
         """Wait for a scrape when callers truly need the file (tests / CLI)."""
-        combined, scraping = self.get_or_start(target, force=force)
-        if combined is not None:
+        combined, busy = self.get_or_start(target, force=force)
+        if combined is not None and not busy:
             return combined, False
         key = target.isoformat()
         with self._guard:
@@ -180,7 +181,7 @@ class ThreadedScrapeService:
         if fut is not None:
             fut.result()
         combined = load_combined(target) or rebuild_combined_from_files(target)
-        return combined, scraping or combined is not None
+        return combined, True
 
     def maybe_refresh(self, target: date) -> bool:
         """Start a background scan/refresh. Never blocks. True if a job is running."""

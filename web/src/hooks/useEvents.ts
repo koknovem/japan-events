@@ -165,7 +165,20 @@ export function useEventsForDate(
 
     const followJob = async (initial?: ScrapeStatus) => {
       let sawInflight = Boolean(initial?.inflight_dates.includes(dateKey))
+      let lastDone = -1
       if (initial?.job) setProgress(jobToProgress(initial.job, initial))
+
+      const pullPartial = async (job: ScrapeJob | undefined) => {
+        const done = job?.done ?? 0
+        if (done === lastDone || done <= 0) return
+        lastDone = done
+        const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
+        if (cancelled) return
+        if ((latest.events?.length ?? 0) > 0) {
+          setData(latest)
+          setLoading(false)
+        }
+      }
 
       while (!cancelled) {
         try {
@@ -174,6 +187,7 @@ export function useEventsForDate(
           const inFlight = status.inflight_dates.includes(dateKey)
           if (inFlight) sawInflight = true
           if (job) setProgress(jobToProgress(job, status))
+          await pullPartial(job)
 
           if (job?.phase === 'error') {
             throw new Error(job.error || t('events.loadError'))
@@ -190,6 +204,7 @@ export function useEventsForDate(
             }
             setData(latest)
             setScraping(false)
+            setRefreshing(false)
             setLoading(false)
             setProgress(null)
             return
@@ -204,6 +219,7 @@ export function useEventsForDate(
 
     const followBackgroundRefresh = async () => {
       let sawJob = false
+      let lastDone = -1
       const giveUpAt = Date.now() + 20_000
       while (!cancelled) {
         try {
@@ -217,6 +233,15 @@ export function useEventsForDate(
             sawJob = true
             setRefreshing(true)
             if (job) setProgress(jobToProgress(job, status))
+            const done = job?.done ?? 0
+            if (done !== lastDone && done > 0) {
+              lastDone = done
+              const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
+              if (!cancelled && (latest.events?.length ?? 0) > 0) {
+                setData({ ...latest, refreshing: true })
+                setLoading(false)
+              }
+            }
           } else if (sawJob) {
             const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
             if (!cancelled) {
@@ -266,6 +291,10 @@ export function useEventsForDate(
         if (res.scraping) {
           setScraping(true)
           setProgress(scrapeStart(dateKey))
+          if ((res.events?.length ?? 0) > 0) {
+            setData(res)
+            setLoading(false)
+          }
           const status = await api.scrapeStatus(undefined, { signal: controller.signal })
           await followJob(status)
           return

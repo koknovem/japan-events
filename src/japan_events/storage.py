@@ -66,8 +66,8 @@ def load_site_result(target: date, site_id: str, root: Path | None = None) -> Si
     return SiteResult.model_validate(data)
 
 
-def rebuild_combined_from_files(target: date, root: Path | None = None) -> CombinedOutput | None:
-    """Assemble all.json from per-prefecture files when all.json is missing or stale."""
+def assemble_from_files(target: date, root: Path | None = None, *, persist: bool = False) -> CombinedOutput | None:
+    """Build a CombinedOutput from per-prefecture JSON. persist=True writes all.json."""
     folder = (root or project_root()) / "output" / target.isoformat()
     if not folder.exists():
         return None
@@ -81,5 +81,53 @@ def rebuild_combined_from_files(target: date, root: Path | None = None) -> Combi
             continue
     if not results:
         return None
-    write_combined(results, target, root)
-    return load_combined(target, root)
+    if persist:
+        write_combined(results, target, root)
+        return load_combined(target, root)
+    now = datetime.now(timezone.utc).isoformat()
+    return CombinedOutput(
+        date=target.isoformat(),
+        generated_at=now,
+        site_count=len(results),
+        ok_count=sum(1 for item in results if item.ok),
+        event_count=sum(item.event_count for item in results),
+        sites=results,
+    )
+
+
+def live_combined(target: date, root: Path | None = None) -> CombinedOutput | None:
+    """Latest on-disk snapshot. Site files overlay all.json; never writes all.json."""
+    folder = (root or project_root()) / "output" / target.isoformat()
+    from_files: dict[str, SiteResult] = {}
+    if folder.exists():
+        for path in folder.glob("*.json"):
+            if path.name == "all.json" or path.name.startswith("_"):
+                continue
+            try:
+                site = SiteResult.model_validate(json.loads(path.read_text(encoding="utf-8")))
+            except Exception:
+                continue
+            from_files[site.id] = site
+
+    base = load_combined(target, root)
+    if base is None and not from_files:
+        return None
+    merged: dict[str, SiteResult] = {}
+    if base is not None:
+        merged = {site.id: site for site in base.sites}
+    merged.update(from_files)
+    sites = list(merged.values())
+    generated = base.generated_at if base is not None else datetime.now(timezone.utc).isoformat()
+    return CombinedOutput(
+        date=target.isoformat(),
+        generated_at=generated,
+        site_count=len(sites),
+        ok_count=sum(1 for item in sites if item.ok),
+        event_count=sum(item.event_count for item in sites),
+        sites=sites,
+    )
+
+
+def rebuild_combined_from_files(target: date, root: Path | None = None) -> CombinedOutput | None:
+    """Assemble all.json from per-prefecture files when all.json is missing or stale."""
+    return assemble_from_files(target, root, persist=True)

@@ -5,11 +5,11 @@ services:
       dockerfile: Dockerfile
     image: japan-events-api:local
     init: true
-    shm_size: "1gb"
+    shm_size: "2gb"
     environment:
       JAPAN_EVENTS_ROOT: /app
       JAPAN_EVENTS_DOCKER: "1"
-      JAPAN_EVENTS_CONCURRENCY: "4"
+      JAPAN_EVENTS_CONCURRENCY: "16"
       PYTHONUNBUFFERED: "1"
     volumes:
       - ./output:/app/output

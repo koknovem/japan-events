@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { format, parseISO } from 'date-fns'
+import { parseISO } from 'date-fns'
 import { useTranslation } from 'react-i18next'
 import { AppShell } from './components/layout/AppShell'
 import { DateCalendar } from './components/calendar/DateCalendar'
@@ -7,6 +7,7 @@ import { EventList } from './components/events/EventList'
 import { EventsPanelHeader } from './components/events/EventsPanelHeader'
 import { PrefectureFilter } from './components/events/PrefectureFilter'
 import { useCachedDates, useEventsForDate, useScrapeStatus, useSites } from './hooks/useEvents'
+import { eventsOnDate } from './lib/eventOnDate'
 
 function defaultDate(cached: string[]): Date {
   if (cached.includes('2026-09-06')) return parseISO('2026-09-06')
@@ -40,18 +41,20 @@ export default function App() {
   const prevInflight = useRef<string[]>([])
 
   useEffect(() => {
-    if (bootstrapped || dates.length === 0) return
+    if (bootstrapped || !datesReady) return
     const d = defaultDate(dates)
     setSelected(d)
     setMonth(d)
     setBootstrapped(true)
-  }, [dates, bootstrapped])
+  }, [dates, datesReady, bootstrapped])
 
   const { data, loading, scraping, refreshing, progress, error, dateKey } = useEventsForDate(
     selected,
     prefecture,
-    datesReady,
+    datesReady && bootstrapped,
   )
+  const dateData = data?.date === dateKey ? data : null
+  const visibleEvents = eventsOnDate(dateData?.events ?? [], dateKey)
 
   useEffect(() => {
     const current = scrapeStatus?.inflight_dates ?? []
@@ -93,14 +96,14 @@ export default function App() {
         <main className="panel panel-events">
           <EventsPanelHeader
             date={selected}
-            data={data}
+            data={dateData ? { ...dateData, events: visibleEvents, event_count: visibleEvents.length } : null}
             error={error}
             loading={loading}
             scraping={scraping}
             refreshing={refreshing}
             progress={progress}
           />
-          {(scraping || refreshing) && progress && (data?.events.length ?? 0) > 0 ? (
+          {(scraping || refreshing) && progress && visibleEvents.length > 0 ? (
             <div className="refresh-strip" aria-live="polite">
               <div
                 className="refresh-strip-fill"
@@ -109,13 +112,13 @@ export default function App() {
             </div>
           ) : null}
           <EventList
-            events={data?.events ?? []}
-            loading={loading && (data?.events.length ?? 0) === 0}
+            events={visibleEvents}
+            loading={loading}
             scraping={scraping}
             progress={progress}
-            dateLabel={format(selected, 'yyyy-MM-dd')}
+            dateLabel={dateKey}
             emptyMessage={
-              data?.message ?? t('events.emptyMessage', { date: dateKey })
+              dateData?.message ?? t('events.emptyMessage', { date: dateKey })
             }
           />
         </main>

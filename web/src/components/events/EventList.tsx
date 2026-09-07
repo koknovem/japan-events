@@ -23,7 +23,7 @@ export function EventList({
 }: EventListProps) {
   const { t } = useTranslation()
 
-  if (loading) {
+  if (loading && events.length === 0) {
     return (
       <LoadingState
         label={

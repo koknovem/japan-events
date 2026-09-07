@@ -8,7 +8,7 @@ from typing import Any
 from japan_events.browser import close_session, launch_browser, open_session, playwright_runtime
 from japan_events.langs import resolve_lang_urls
 from japan_events.models import Event, SiteConfig, SiteResult
-from japan_events.normalize import dedupe_events
+from japan_events.normalize import dedupe_events, filter_events
 from japan_events.registry import filter_sites, get_adapter, load_sites
 from japan_events.settings import site_concurrency
 from japan_events.storage import rebuild_combined_from_files, write_combined, write_site_result
@@ -60,7 +60,7 @@ async def scrape_site(site: SiteConfig, target: date, session) -> SiteResult:
         if config is not None:
             config.event_url = orig_cfg_event
 
-    events = dedupe_events(collected)
+    events = filter_events(dedupe_events(collected), target)
     notes = "; ".join(note_parts) if note_parts else "no matching events"
     return SiteResult(
         prefecture=site.name,

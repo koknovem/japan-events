@@ -17,6 +17,7 @@ from japan_events.api.schemas import (
     SiteStatusOut,
 )
 from japan_events.langs import SCRAPE_LANGS, map_ui_lang_to_scrape
+from japan_events.normalize import event_overlaps
 from japan_events.registry import load_sites
 from japan_events.storage import list_cached_dates, load_combined
 
@@ -44,31 +45,34 @@ def _build_events_response(
     prefecture: str | None,
     scraped: bool,
     lang: str | None,
+    target: date | None = None,
     refreshing: bool = False,
     scraping: bool = False,
 ) -> EventsResponse:
     site_filter = None
     if prefecture:
         site_filter = {p.strip().lower() for p in prefecture.split(",") if p.strip()}
+    wanted = target or date.fromisoformat(combined.date)
 
     events: list[EventOut] = []
     sites_out: list[SiteStatusOut] = []
     for site in combined.sites:
         if site_filter and site.id.lower() not in site_filter and site.prefecture.lower() not in site_filter:
             continue
+        on_date = [ev for ev in site.events if event_overlaps(ev, wanted)]
         sites_out.append(
             SiteStatusOut(
                 id=site.id,
                 prefecture=site.prefecture,
                 ok=site.ok,
-                event_count=site.event_count,
+                event_count=len(on_date),
                 error=site.error,
                 notes=site.notes,
                 source_url=site.source_url,
                 adapter=site.adapter,
             )
         )
-        for ev in site.events:
+        for ev in on_date:
             payload = ev.model_dump()
             payload.setdefault("lang", "ja")
             events.append(EventOut(**payload, site_id=site.id))
@@ -180,6 +184,7 @@ def create_app() -> FastAPI:
                 prefecture=prefecture,
                 scraped=False,
                 lang=lang,
+                target=target,
                 scraping=not had_complete,
                 refreshing=had_complete,
             )
@@ -196,6 +201,7 @@ def create_app() -> FastAPI:
             prefecture=prefecture,
             scraped=False,
             lang=lang,
+            target=target,
             refreshing=refreshing,
         )
 

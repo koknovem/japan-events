@@ -160,6 +160,7 @@ export function useEventsForDate(
     setRefreshing(false)
     setScraping(false)
     setProgress(downloadStart(dateKey))
+    setData((prev) => (prev?.date === dateKey ? prev : null))
 
     const sleep = (ms: number) => new Promise((resolve) => window.setTimeout(resolve, ms))
 
@@ -173,11 +174,9 @@ export function useEventsForDate(
         if (done === lastDone || done <= 0) return
         lastDone = done
         const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
-        if (cancelled) return
-        if ((latest.events?.length ?? 0) > 0) {
-          setData(latest)
-          setLoading(false)
-        }
+        if (cancelled || latest.date !== dateKey) return
+        setData(latest)
+        if ((latest.events?.length ?? 0) > 0) setLoading(false)
       }
 
       while (!cancelled) {
@@ -196,7 +195,7 @@ export function useEventsForDate(
           const finished = (sawInflight && !inFlight) || job?.phase === 'done'
           if (finished) {
             const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
-            if (cancelled) return
+            if (cancelled || latest.date !== dateKey) return
             if (latest.scraping) {
               sawInflight = true
               await sleep(700)
@@ -237,14 +236,14 @@ export function useEventsForDate(
             if (done !== lastDone && done > 0) {
               lastDone = done
               const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
-              if (!cancelled && (latest.events?.length ?? 0) > 0) {
+              if (!cancelled && latest.date === dateKey) {
                 setData({ ...latest, refreshing: true })
-                setLoading(false)
+                if ((latest.events?.length ?? 0) > 0) setLoading(false)
               }
             }
           } else if (sawJob) {
             const latest = await api.events(dateKey, eventOpts, { signal: controller.signal })
-            if (!cancelled) {
+            if (!cancelled && latest.date === dateKey) {
               setData({ ...latest, refreshing: false })
               setRefreshing(false)
               setProgress(null)
@@ -288,13 +287,13 @@ export function useEventsForDate(
         })
         if (cancelled) return
 
+        if (res.date !== dateKey) return
+
         if (res.scraping) {
           setScraping(true)
           setProgress(scrapeStart(dateKey))
-          if ((res.events?.length ?? 0) > 0) {
-            setData(res)
-            setLoading(false)
-          }
+          setData(res)
+          if ((res.events?.length ?? 0) > 0) setLoading(false)
           const status = await api.scrapeStatus(undefined, { signal: controller.signal })
           await followJob(status)
           return

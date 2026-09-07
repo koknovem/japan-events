@@ -249,6 +249,9 @@ class ThreadedScrapeService:
     def maybe_refresh(self, target: date) -> bool:
         """Start a background scan/refresh. Never blocks. True if a job is running."""
         key = target.isoformat()
+        with self._guard:
+            if self._inflight:
+                return key in self._inflight
         if self._needs_resume(target):
             return self.start_scrape(target)
         combined = load_combined(target)

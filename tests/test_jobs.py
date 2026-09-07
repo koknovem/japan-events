@@ -62,6 +62,8 @@ def test_maybe_refresh_does_not_steal_scrape_workers(monkeypatch):
     monkeypatch.setattr("japan_events.api.jobs._run_scrape_in_thread", fake_scrape)
     monkeypatch.setattr("japan_events.api.jobs.load_combined", lambda target: object())
     monkeypatch.setattr("japan_events.api.jobs._refresh_due", lambda target, combined: True)
+    monkeypatch.setattr("japan_events.api.jobs.missing_site_ids", lambda target: [])
+    monkeypatch.setattr("japan_events.api.jobs.load_pending_refresh", lambda target: [])
 
     service = ThreadedScrapeService(max_workers=1)
     try:

@@ -1,6 +1,11 @@
 id: kanagawa
 strategy: html
 event_url: https://www.kanagawa-kankou.or.jp/event/
+urls_by_lang:
+  en: "https://www.visitkanagawa.jp/en/events/"
+  ja: "https://www.kanagawa-kankou.or.jp/event/"
+  zh-TW: "https://www.visitkanagawa.jp/zh-tw/"
+  zh-CN: "https://www.visitkanagawa.jp/zh-cn/"
 date_picker: true
 wait_ms: 2500
 harvest_fallback: true

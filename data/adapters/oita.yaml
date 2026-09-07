@@ -1,6 +1,11 @@
 id: oita
 strategy: html
 event_url: https://www.visit-oita.jp/events/
+urls_by_lang:
+  en: "https://www.visit-oita.jp/events/"
+  ja: "https://www.visit-oita.jp/ja/events/"
+  zh-TW: "https://oita-tourism.com/zh-TW"
+  zh-CN: "https://oita-tourism.com/zh-CN"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

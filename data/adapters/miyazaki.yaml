@@ -1,6 +1,11 @@
 id: miyazaki
 strategy: html
-event_url: https://www.visit-miyazaki.com/
+event_url: https://www.kanko-miyazaki.jp/event
+urls_by_lang:
+  en: "https://www.kanko-miyazaki.jp/en"
+  ja: "https://www.kanko-miyazaki.jp/event"
+  zh-TW: "https://www.kanko-miyazaki.jp/zh-tw"
+  zh-CN: "https://www.kanko-miyazaki.jp/zh-cn"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

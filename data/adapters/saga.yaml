@@ -1,6 +1,11 @@
 id: saga
 strategy: html
 event_url: https://www.saga-tripgenius.com/
+urls_by_lang:
+  en: "https://www.saga-tripgenius.com/"
+  ja: "https://www.saga-tripgenius.com/ja/"
+  zh-TW: "https://www.saga-tripgenius.com/zh-hant/"
+  zh-CN: "https://www.saga-tripgenius.com/zh-hans/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

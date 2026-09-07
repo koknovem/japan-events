@@ -1,6 +1,11 @@
 id: ishikawa
 strategy: html
 event_url: https://www.hot-ishikawa.jp/event/index.html
+urls_by_lang:
+  en: "https://www.ishikawatravel.jp/en/event/"
+  ja: "https://www.hot-ishikawa.jp/event/index.html"
+  zh-TW: "https://www.ishikawatravel.jp/tw/event/"
+  zh-CN: "https://www.ishikawatravel.jp/cn/event/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

@@ -6,10 +6,10 @@ wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 urls_by_lang:
-  en: https://www.gotokyo.org/en/calendar/index.html
-  ja: https://www.gotokyo.org/jp/calendar/index.html
-  zh-TW: https://www.gotokyo.org/tc/calendar/index.html
-  zh-CN: https://www.gotokyo.org/cn/calendar/index.html
+  en: "https://www.gotokyo.org/en/calendar/index.html"
+  ja: "https://www.gotokyo.org/jp/calendar/index.html"
+  zh-TW: "https://www.gotokyo.org/tc/calendar/index.html"
+  zh-CN: "https://www.gotokyo.org/cn/calendar/index.html"
 listing_urls:
 - https://www.gotokyo.org/en/event-calendar/index.html
 notes: Custom Python adapter preferred; multi-lang calendar paths

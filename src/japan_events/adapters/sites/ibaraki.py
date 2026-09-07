@@ -21,7 +21,7 @@ class IbarakiAdapter(BaseAdapter):
 
     async def scrape(self, target: date, session: BrowserSession) -> list[Event]:
         cfg = load_adapter_yaml("ibaraki")
-        url = (cfg.event_url if cfg else None) or self.site.event_url or "https://www.ibarakiguide.jp/event.php"
+        url = self.site.event_url or (cfg.event_url if cfg else None) or "https://www.ibarakiguide.jp/event.php"
         await session.goto(url)
         notes: list[str] = []
         try:

@@ -1,6 +1,11 @@
 id: hyogo
 strategy: html
 event_url: https://www.hyogo-tourism.jp/event/index.html
+urls_by_lang:
+  en: "https://www.hyogo-tourism.jp/en/event/"
+  ja: "https://www.hyogo-tourism.jp/event/index.html"
+  zh-TW: "https://www.hyogo-tourism.jp/zh-TW/event/"
+  zh-CN: "https://www.hyogo-tourism.jp/zh-CN/event/"
 date_picker: false
 wait_ms: 2500
 harvest_fallback: true

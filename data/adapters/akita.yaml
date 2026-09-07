@@ -1,6 +1,11 @@
 id: akita
 strategy: html
 event_url: https://akita-fun.jp/events
+urls_by_lang:
+  en: "https://akita-fun.jp/en/events"
+  ja: "https://akita-fun.jp/events"
+  zh-TW: "https://stayakita.com/zh-tw/"
+  zh-CN: "https://stayakita.com/zh-cn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

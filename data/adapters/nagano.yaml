@@ -1,6 +1,11 @@
 id: nagano
 strategy: html
 event_url: https://www.go-nagano.net/en/
+urls_by_lang:
+  en: "https://www.go-nagano.net/en/"
+  ja: "https://www.go-nagano.net/"
+  zh-TW: "https://www.go-nagano.net/tc/"
+  zh-CN: "https://www.go-nagano.net/sc/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

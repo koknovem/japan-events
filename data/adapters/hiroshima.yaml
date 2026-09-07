@@ -1,6 +1,11 @@
 id: hiroshima
 strategy: api
 event_url: https://dive-hiroshima.com/en/events/
+urls_by_lang:
+  en: "https://dive-hiroshima.com/en/events/"
+  ja: "https://dive-hiroshima.com/events/"
+  zh-TW: "https://dive-hiroshima.com/tw/events/"
+  zh-CN: "https://dive-hiroshima.com/cn/events/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

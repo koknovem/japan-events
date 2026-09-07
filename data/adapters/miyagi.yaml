@@ -1,6 +1,11 @@
 id: miyagi
 strategy: html
 event_url: https://www.miyagi-kankou.or.jp/calendar/
+urls_by_lang:
+  en: "https://visitmiyagi.com/events/"
+  ja: "https://www.miyagi-kankou.or.jp/calendar/"
+  zh-TW: "https://visitmiyagi.com/zh-hant/events/"
+  zh-CN: "https://visitmiyagi.com/zh-hans/events/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

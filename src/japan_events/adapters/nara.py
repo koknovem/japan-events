@@ -21,6 +21,11 @@ class NaraAdapter(BaseAdapter):
     async def scrape(self, target: date, session: BrowserSession) -> list[Event]:
         listing = self.site.event_url or "https://www.visitnara.jp/event-calendar/"
         notes: list[str] = []
+        if "nara-kankou.or.jp" in listing:
+            await session.goto(listing)
+            events, html_notes = await harvest_events(session, target, source_label=listing)
+            session.page_notes = html_notes  # type: ignore[attr-defined]
+            return events
         try:
             payload = await session.fetch_json(API_URL, target)
         except Exception as exc:

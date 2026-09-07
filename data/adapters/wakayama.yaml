@@ -1,6 +1,11 @@
 id: wakayama
 strategy: html
 event_url: https://visitwakayama.jp/en/events/index.html
+urls_by_lang:
+  en: "https://visitwakayama.jp/en/events/index.html"
+  ja: "https://visitwakayama.jp/events/index.html"
+  zh-TW: "https://visitwakayama.jp/zh-TW/events/index.html"
+  zh-CN: "https://visitwakayama.jp/zh-CN/events/index.html"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

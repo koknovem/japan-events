@@ -1,6 +1,11 @@
 id: kagoshima
 strategy: calendar
 event_url: https://www.kagoshima-kankou.com/for/events
+urls_by_lang:
+  en: "https://www.kagoshima-kankou.com/for/events"
+  ja: "https://www.kagoshima-kankou.com/event"
+  zh-TW: "https://www.kagoshima-kankou.com/tw/events"
+  zh-CN: "https://www.kagoshima-kankou.com/cn/events"
 date_picker: true
 wait_ms: 2000
 harvest_fallback: true

@@ -1,6 +1,11 @@
 id: gunma
 strategy: html
 event_url: https://gunma-kanko.jp/events
+urls_by_lang:
+  en: "https://www.visit-gunma.jp/en/"
+  ja: "https://gunma-kanko.jp/events"
+  zh-TW: "https://www.visit-gunma.jp/tcn/"
+  zh-CN: "https://www.visit-gunma.jp/scn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

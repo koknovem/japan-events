@@ -1,6 +1,11 @@
 id: ehime
 strategy: html
 event_url: https://www.iyokannet.jp/event
+urls_by_lang:
+  en: "https://www.visitehimejapan.com/en/"
+  ja: "https://www.iyokannet.jp/event"
+  zh-TW: "https://www.visitehimejapan.com/zh_TW"
+  zh-CN: "https://www.visitehimejapan.com/zh_CN"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

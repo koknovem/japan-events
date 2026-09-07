@@ -1,6 +1,11 @@
 id: iwate
 strategy: html
 event_url: https://iwatetabi.jp/events/
+urls_by_lang:
+  en: "https://iwatetabi.jp/en/events/"
+  ja: "https://iwatetabi.jp/events/"
+  zh-TW: "https://iwatetabi.jp/tw/events/"
+  zh-CN: "https://iwatetabi.jp/cn/events/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

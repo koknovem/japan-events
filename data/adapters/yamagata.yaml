@@ -1,6 +1,11 @@
 id: yamagata
 strategy: html
 event_url: https://yamagatakanko.com/en/festivals/
+urls_by_lang:
+  en: "https://yamagatakanko.com/en/festivals/"
+  ja: "https://yamagatakanko.com/festivals/"
+  zh-TW: "https://yamagatakanko.com/zh_TW/festivals/"
+  zh-CN: "https://yamagatakanko.com/zh_CN/festivals/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

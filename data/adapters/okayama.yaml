@@ -1,6 +1,11 @@
 id: okayama
 strategy: html
 event_url: https://www.okayama-japan.jp/en/event
+urls_by_lang:
+  en: "https://www.okayama-japan.jp/en/event"
+  ja: "https://www.okayama-japan.jp/event"
+  zh-TW: "https://www.okayama-japan.jp/tw/event"
+  zh-CN: "https://www.okayama-japan.jp/cn/event"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true

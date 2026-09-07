@@ -16,10 +16,11 @@ class TokyoAdapter(BaseAdapter):
     name = "tokyo"
 
     async def scrape(self, target: date, session: BrowserSession) -> list[Event]:
-        urls = [
-            self.site.event_url or "https://www.gotokyo.org/en/event-calendar/index.html",
-            "https://www.gotokyo.org/en/calendar/index.html",
-        ]
+        listing = self.site.event_url or "https://www.gotokyo.org/en/calendar/index.html"
+        alt = listing.replace("/calendar/", "/event-calendar/").replace("/calendar", "/event-calendar")
+        urls = [listing]
+        if alt != listing:
+            urls.append(alt)
         merged: list[Event] = []
         notes: list[str] = []
         seen = set()

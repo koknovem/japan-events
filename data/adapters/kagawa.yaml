@@ -1,6 +1,11 @@
 id: kagawa
 strategy: html
 event_url: https://www.my-kagawa.jp/event/
+urls_by_lang:
+  en: "https://www.my-kagawa.jp/en/event/"
+  ja: "https://www.my-kagawa.jp/event/"
+  zh-TW: "https://www.my-kagawa.jp/zh_TW/event/"
+  zh-CN: "https://www.my-kagawa.jp/zh_CN/event/"
 date_picker: true
 wait_ms: 2500
 harvest_fallback: true

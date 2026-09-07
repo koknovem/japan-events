@@ -6,10 +6,10 @@ wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 urls_by_lang:
-  en: https://osaka-info.jp/en/event/
-  ja: https://osaka-info.jp/event/
-  zh-TW: https://osaka-info.jp/tc/event/
-  zh-CN: https://osaka-info.jp/sc/event/
+  en: "https://osaka-info.jp/en/event/"
+  ja: "https://osaka-info.jp/event/"
+  zh-TW: "https://osaka-info.jp/tc/event/"
+  zh-CN: "https://osaka-info.jp/sc/event/"
 card_selectors:
 - article
 - .event

@@ -1,6 +1,11 @@
 id: niigata
 strategy: html
 event_url: https://discover-niigata.com/events/
+urls_by_lang:
+  en: "https://discover-niigata.com/events/"
+  ja: "https://niigata-kankou.or.jp/event/"
+  zh-TW: "https://enjoyniigata.com/zh-tw/"
+  zh-CN: "https://enjoyniigata.com/zh-cn/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

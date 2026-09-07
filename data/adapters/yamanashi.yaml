@@ -1,6 +1,11 @@
 id: yamanashi
 strategy: html
 event_url: https://www.yamanashi-kankou.jp/search/event.php
+urls_by_lang:
+  en: "https://www.yamanashi-kankou.jp/english/event/"
+  ja: "https://www.yamanashi-kankou.jp/search/event.php"
+  zh-TW: "https://www.yamanashi-kankou.jp/chinese_t/event/"
+  zh-CN: "https://www.yamanashi-kankou.jp/chinese_s/event/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

@@ -114,9 +114,14 @@ class ConfigurableAdapter(BaseAdapter):
 
     def _listing_urls(self) -> list[str]:
         urls: list[str] = []
-        for u in [self.config.event_url, self.site.event_url, *self.config.listing_urls, self.site.home_url]:
-            if u and u not in urls:
-                urls.append(u)
+        primary = self.config.event_url or self.site.event_url
+        if primary:
+            urls.append(primary)
+        # Extra listing_urls are often a single language; skip them during multi-lang scrapes.
+        if not self.config.urls_by_lang:
+            for u in [*self.config.listing_urls, self.site.home_url]:
+                if u and u not in urls:
+                    urls.append(u)
         return urls
 
     async def scrape(self, target: date, session: BrowserSession) -> list[Event]:

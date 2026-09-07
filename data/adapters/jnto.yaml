@@ -1,6 +1,11 @@
 id: jnto
 strategy: html
 event_url: https://www.japan.travel/en/events/
+urls_by_lang:
+  en: "https://www.japan.travel/en/events/"
+  ja: "https://www.japan.travel/jp/"
+  zh-TW: "https://www.japan.travel/tw/see-and-do/festivals-and-events/"
+  zh-CN: "https://www.japan-travel.cn/guide/festivals-and-events/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

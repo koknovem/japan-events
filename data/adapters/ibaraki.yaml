@@ -1,6 +1,11 @@
 id: ibaraki
 strategy: html
 event_url: https://www.ibarakiguide.jp/event.php
+urls_by_lang:
+  en: "https://www.ibarakiguide.jp/en/event.php"
+  ja: "https://www.ibarakiguide.jp/event.php"
+  zh-TW: "https://visit.ibarakiguide.jp/zh-hant/"
+  zh-CN: "https://visit.ibarakiguide.jp/zh-hans/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

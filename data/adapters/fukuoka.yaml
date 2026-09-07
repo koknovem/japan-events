@@ -1,6 +1,11 @@
 id: fukuoka
 strategy: html
 event_url: https://www.crossroadfukuoka.jp/en/event
+urls_by_lang:
+  en: "https://www.crossroadfukuoka.jp/en/event"
+  ja: "https://www.crossroadfukuoka.jp/event"
+  zh-TW: "https://www.crossroadfukuoka.jp/tw/event"
+  zh-CN: "https://www.crossroadfukuoka.jp/cn/event"
 listing_urls:
   - https://www.crossroadfukuoka.jp/en
   - https://www.crossroadfukuoka.jp/event

@@ -1,6 +1,11 @@
 id: tokushima
 strategy: html
 event_url: https://www.awanavi.jp/event-calendar
+urls_by_lang:
+  en: "https://discovertokushima.net/en/events/"
+  ja: "https://www.awanavi.jp/event-calendar"
+  zh-TW: "https://discovertokushima.net/tw/"
+  zh-CN: "https://discovertokushima.net/cn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

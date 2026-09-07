@@ -1,6 +1,11 @@
 id: saitama
 strategy: html
 event_url: https://saitama-supportdesk.com/events/
+urls_by_lang:
+  en: "https://saitama-supportdesk.com/events/"
+  ja: "https://saitama-supportdesk.com/ja/events/"
+  zh-TW: "https://saitama-supportdesk.com/zh-hant/events/"
+  zh-CN: "https://saitama-supportdesk.com/zh-hans/events/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

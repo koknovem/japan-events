@@ -1,6 +1,11 @@
 id: shizuoka
 strategy: html
 event_url: https://www.visit-shizuoka.com/event/index.html
+urls_by_lang:
+  en: "https://www.visit-shizuoka.com/en/event/index.html"
+  ja: "https://www.visit-shizuoka.com/event/index.html"
+  zh-TW: "https://www.visit-shizuoka.com/zh-tw/event/index.html"
+  zh-CN: "https://www.visit-shizuoka.com/zh-cn/event/index.html"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true

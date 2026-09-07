@@ -1,6 +1,11 @@
 id: tottori
 strategy: html
 event_url: https://www.tottori-guide.jp/808/204/2017/36150.html
+urls_by_lang:
+  en: "https://www.tottori-tour.jp/en/event/"
+  ja: "https://www.tottori-guide.jp/event/"
+  zh-TW: "https://www.tottori-tour.jp/zh-tw/event/"
+  zh-CN: "https://www.tottori-tour.jp/zh-cn/event/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

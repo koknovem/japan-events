@@ -1,6 +1,11 @@
 id: shiga
 strategy: html
 event_url: https://www.biwako-visitors.jp/event/
+urls_by_lang:
+  en: "https://en.biwako-visitors.jp/event/"
+  ja: "https://www.biwako-visitors.jp/event/"
+  zh-TW: "https://tw.biwako-visitors.jp/event/"
+  zh-CN: "https://cn.biwako-visitors.jp/event/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

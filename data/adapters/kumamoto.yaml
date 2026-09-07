@@ -1,6 +1,11 @@
 id: kumamoto
 strategy: html
 event_url: https://kumamoto-guide.jp/en/events/
+urls_by_lang:
+  en: "https://kumamoto-guide.jp/en/events/"
+  ja: "https://kumamoto-guide.jp/events/"
+  zh-TW: "https://kumamoto-guide.jp/tw/events/"
+  zh-CN: "https://kumamoto-guide.jp/zh/events/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

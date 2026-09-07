@@ -4,8 +4,8 @@ event_url: https://kyoto.travel/en/events/
 wait_ms: 1500
 harvest_fallback: true
 urls_by_lang:
-  en: https://kyoto.travel/en/events/
-  ja: https://ja.kyoto.travel/events/
-  zh-TW: https://tw.kyoto.travel/events/
-  zh-CN: https://cn.kyoto.travel/events/
+  en: "https://kyoto.travel/en/events/"
+  ja: "https://ja.kyoto.travel/events/"
+  zh-TW: "https://tw.kyoto.travel/events/"
+  zh-CN: "https://cn.kyoto.travel/events/"
 notes: Kyoto Travel multilingual event listings

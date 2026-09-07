@@ -1,6 +1,11 @@
 id: gifu
 strategy: html
 event_url: https://www.kankou-gifu.jp/event/
+urls_by_lang:
+  en: "https://visitgifu.com/en/events/"
+  ja: "https://www.kankou-gifu.jp/event/"
+  zh-TW: "https://visitgifu.com/tw/"
+  zh-CN: "https://visitgifu.com/cn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

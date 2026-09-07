@@ -1,6 +1,11 @@
 id: fukushima
 strategy: html
 event_url: https://www.tif.ne.jp/jp/entry/?type=event
+urls_by_lang:
+  en: "https://fukushima.travel/en/events/"
+  ja: "https://www.tif.ne.jp/jp/entry/?type=event"
+  zh-TW: "https://fukushima.travel/zh-tw/events/"
+  zh-CN: "https://fukushima.travel/zh-cn/events/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

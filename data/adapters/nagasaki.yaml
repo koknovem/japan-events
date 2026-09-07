@@ -1,6 +1,11 @@
 id: nagasaki
 strategy: html
 event_url: https://www.nagasaki-tabinet.com/event
+urls_by_lang:
+  en: "https://www.nagasaki-tabinet.com/en/event"
+  ja: "https://www.nagasaki-tabinet.com/event"
+  zh-TW: "https://www.discover-nagasaki.com/zh-TW"
+  zh-CN: "https://www.discover-nagasaki.com/zh-CN"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true

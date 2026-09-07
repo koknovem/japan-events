@@ -1,6 +1,11 @@
 id: yamaguchi
 strategy: html
 event_url: https://yamaguchi-tourism.jp/event/
+urls_by_lang:
+  en: "https://www.visit-jy.com/en/"
+  ja: "https://yamaguchi-tourism.jp/event/"
+  zh-TW: "https://www.visit-jy.com/zh-tw/"
+  zh-CN: "https://www.visit-jy.com/zh-cn/"
 date_picker: true
 wait_ms: 2500
 harvest_fallback: true

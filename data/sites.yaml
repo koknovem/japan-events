@@ -1,7 +1,6 @@
-# Official / semi-official prefectural tourism sites.
-# Each site has adapter: <id> — custom Python in src/japan_events/adapters/sites/<id>.py
-# and/or declarative model in data/adapters/<id>.yaml (ConfigurableAdapter).
-# event_url / api_url filled from discovery + live probing.
+# Official prefectural 観光協会 / DMO sites.
+# Each prefecture (plus JNTO) has a unique adapter id matching data/adapters/<id>.yaml
+# with urls_by_lang for ja / en / zh-TW / zh-CN.
 
 sites:
 - id: hokkaido
@@ -318,9 +317,11 @@ sites:
 - id: miyazaki
   name: Miyazaki
   region: Kyushu & Okinawa
-  home_url: https://www.visit-miyazaki.com/
+  home_url: https://www.kanko-miyazaki.jp/
+  event_url: https://www.kanko-miyazaki.jp/event
   adapter: miyazaki
-  event_url: https://www.visit-miyazaki.com/
+  source_org: 宮崎県観光協会
+  replaced_from: https://www.visit-miyazaki.com/
 - id: kagoshima
   name: Kagoshima
   region: Kyushu & Okinawa

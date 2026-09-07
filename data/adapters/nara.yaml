@@ -1,6 +1,11 @@
 id: nara
 strategy: api
 event_url: https://www.visitnara.jp/event-calendar/
+urls_by_lang:
+  en: "https://www.visitnara.jp/event-calendar/"
+  ja: "https://www.nara-kankou.or.jp/event/"
+  zh-TW: "https://www.visitnara.jp/zh-tw/event-calendar/"
+  zh-CN: "https://www.visitnara.jp/zh-cn/event-calendar/"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true

@@ -24,6 +24,16 @@ class HiroshimaAdapter(BaseAdapter):
         collected: list[Event] = []
         offset = 0
         notes: list[str] = []
+        path = listing.lower()
+        if "/tw/" in path or "/tc/" in path:
+            site_code = "tw"
+        elif "/cn/" in path:
+            site_code = "cn"
+        elif "/en/" in path:
+            site_code = "en"
+        else:
+            site_code = "ja"
+        api_base = API_BASE.replace("/en/", f"/{site_code}/")
         try:
             await session.goto(listing)
         except Exception as exc:
@@ -36,11 +46,11 @@ class HiroshimaAdapter(BaseAdapter):
                         "start_date": target.isoformat(),
                         "end_date": target.isoformat(),
                         "order": "date",
-                        "site": "en",
+                        "site": site_code,
                         "page_status": "production",
                     }
                 )
-                payload = await session.fetch_json(f"{API_BASE}?{query}")
+                payload = await session.fetch_json(f"{api_base}?{query}")
                 posts = ((payload or {}).get("list_data") or {}).get("posts") or []
                 if not posts:
                     break

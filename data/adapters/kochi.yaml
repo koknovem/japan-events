@@ -1,6 +1,11 @@
 id: kochi
 strategy: html
 event_url: https://kochi-tabi.jp/search_event.html
+urls_by_lang:
+  en: "https://visitkochijapan.com/en/highlights/event"
+  ja: "https://kochi-tabi.jp/search_event.html"
+  zh-TW: "https://visitkochijapan.com/tc/highlights/event"
+  zh-CN: "https://visitkochijapan.com/sc/highlights/event"
 date_picker: true
 wait_ms: 2500
 harvest_fallback: true

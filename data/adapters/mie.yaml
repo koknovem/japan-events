@@ -1,6 +1,11 @@
 id: mie
 strategy: html
 event_url: https://www.kankomie.or.jp/event
+urls_by_lang:
+  en: "https://visitmie-japan.travel/en/events/"
+  ja: "https://www.kankomie.or.jp/event"
+  zh-TW: "https://visitmie-japan.travel/tw/"
+  zh-CN: "https://visitmie-japan.travel/cn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

@@ -1,6 +1,11 @@
 id: aomori
 strategy: html
 event_url: https://aomori-tourism.com/en/event/index.html
+urls_by_lang:
+  en: "https://aomori-tourism.com/en/event/index.html"
+  ja: "https://aomori-tourism.com/event/index.html"
+  zh-TW: "https://aomori-tourism.com/tw/event/index.html"
+  zh-CN: "https://aomori-tourism.com/cn/event/index.html"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true

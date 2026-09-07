@@ -1,6 +1,11 @@
 id: toyama
 strategy: html
 event_url: https://www.info-toyama.com/events
+urls_by_lang:
+  en: "https://visit-toyama-japan.com/en/events/"
+  ja: "https://www.info-toyama.com/events"
+  zh-TW: "https://visit-toyama-japan.com/zh-TW/events/"
+  zh-CN: "https://visit-toyama-japan.com/zh-CN/events/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true

@@ -12,6 +12,8 @@ python -m pip install -e .
 python -m playwright install chromium
 ```
 
+Public site: **https://japan-events.brian-li.com**
+
 ## Docker Compose
 
 Needs Docker Engine with Compose v2. Scrapes persist in `./output`. UI is on port 5173; the API is on 8000.
@@ -22,6 +24,16 @@ docker compose up -d
 ```
 
 Open http://127.0.0.1:5173 and http://127.0.0.1:8000/docs
+
+Point DNS for `japan-events.brian-li.com` at this host, then either:
+
+- **This stack terminates TLS** (ports 80/443 free):
+
+```powershell
+docker compose --profile public up -d
+```
+
+- **Host already has Caddy**: include `deploy/Caddyfile.host` so it reverse-proxies to `127.0.0.1:5173`.
 
 ```powershell
 docker compose run --rm --no-deps api python -m pytest -q

@@ -63,7 +63,7 @@ pipeline {
       }
     }
     success {
-      echo 'Stack is up: UI http://127.0.0.1:5173  API http://127.0.0.1:8000/docs'
+      echo 'Stack is up: https://japan-events.brian-li.com  (local UI http://127.0.0.1:5173  API http://127.0.0.1:8000/docs)'
     }
   }
 }

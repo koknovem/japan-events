@@ -1,0 +1,4 @@
+japan-events.brian-li.com {
+	encode gzip
+	reverse_proxy web:80
+}

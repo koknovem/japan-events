@@ -1,0 +1,7 @@
+# Use this on a host that already terminates TLS (existing Caddy / nginx).
+# Point DNS for japan-events.brian-li.com at that host, then reverse-proxy here.
+
+japan-events.brian-li.com {
+	encode gzip
+	reverse_proxy 127.0.0.1:5173
+}

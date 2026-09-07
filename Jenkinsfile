@@ -32,7 +32,10 @@ pipeline {
 
     stage('Start stack') {
       steps {
-        script { compose('up -d --remove-orphans --wait --wait-timeout 180') }
+        script {
+          compose('down --remove-orphans')
+          compose('up -d --remove-orphans --wait --wait-timeout 180')
+        }
       }
     }
 
@@ -63,7 +66,7 @@ pipeline {
       }
     }
     success {
-      echo 'Stack is up: https://japan-events.brian-li.com  (local UI http://127.0.0.1:5173  API http://127.0.0.1:8000/docs)'
+      echo 'Stack is up: https://japan-events.brian-li.com  (host UI http://127.0.0.1:5173; API is internal, use /api via the UI)'
     }
   }
 }

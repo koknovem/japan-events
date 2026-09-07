@@ -13,8 +13,8 @@ services:
       PYTHONUNBUFFERED: "1"
     volumes:
       - ./output:/app/output
-    ports:
-      - "8000:8000"
+    expose:
+      - "8000"
     restart: unless-stopped
 
   web:
@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile
     image: japan-events-web:local
     ports:
-      - "5173:80"
+      - "127.0.0.1:5173:80"
     depends_on:
       api:
         condition: service_healthy

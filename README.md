@@ -16,14 +16,14 @@ Public site: **https://japan-events.brian-li.com**
 
 ## Docker Compose
 
-Needs Docker Engine with Compose v2. Scrapes persist in `./output`. UI is on port 5173; the API is on 8000.
+Needs Docker Engine with Compose v2. Scrapes persist in `./output`. The UI listens on `127.0.0.1:5173` and proxies `/api` to the API container (the API is not published on host port 8000, so it will not collide with a local uvicorn).
 
 ```powershell
 docker compose build
 docker compose up -d
 ```
 
-Open http://127.0.0.1:5173 and http://127.0.0.1:8000/docs
+Open http://127.0.0.1:5173
 
 Point DNS for `japan-events.brian-li.com` at this host, then either:
 

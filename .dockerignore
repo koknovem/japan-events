@@ -1,0 +1,16 @@
+.git
+.gitignore
+.venv
+venv
+.env
+__pycache__
+*.pyc
+*.egg-info
+.pytest_cache
+.idea
+.vscode
+output
+discoveries
+web/node_modules
+web/dist
+**/__pycache__

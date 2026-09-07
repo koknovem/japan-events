@@ -1,0 +1,30 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: japan-events-api:local
+    init: true
+    shm_size: "1gb"
+    environment:
+      JAPAN_EVENTS_ROOT: /app
+      JAPAN_EVENTS_DOCKER: "1"
+      JAPAN_EVENTS_CONCURRENCY: "4"
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./output:/app/output
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    image: japan-events-web:local
+    ports:
+      - "5173:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

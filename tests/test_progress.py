@@ -115,3 +115,12 @@ def test_site_concurrency_env_and_cap(monkeypatch):
     assert site_concurrency() == MAX_SITE_CONCURRENCY
     assert site_concurrency(2) == 2
     assert site_concurrency(0) == 1
+
+
+def test_chromium_args_relax_sandbox_in_docker(monkeypatch):
+    from japan_events.browser import _chromium_launch_args
+
+    monkeypatch.setenv("JAPAN_EVENTS_DOCKER", "1")
+    args = _chromium_launch_args()
+    assert "--no-sandbox" in args
+    assert "--disable-dev-shm-usage" in args

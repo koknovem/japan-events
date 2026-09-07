@@ -12,6 +12,29 @@ python -m pip install -e .
 python -m playwright install chromium
 ```
 
+## Docker Compose
+
+Needs Docker Engine with Compose v2. Scrapes persist in `./output`. UI is on port 5173; the API is on 8000.
+
+```powershell
+docker compose build
+docker compose up -d
+```
+
+Open http://127.0.0.1:5173 and http://127.0.0.1:8000/docs
+
+```powershell
+docker compose run --rm --no-deps api python -m pytest -q
+docker compose logs -f
+docker compose down
+```
+
+The API image is based on Playwright’s official Chromium image (large first pull). Jenkins uses the same compose file.
+
+## Jenkins
+
+The agent must have Docker (mount `/var/run/docker.sock` if Jenkins itself is a container). Create a Pipeline job with **Pipeline script from SCM** pointing at this repo; it will run `Jenkinsfile`: build images, pytest, `docker compose up -d`, then smoke `/api/health` and the UI.
+
 ## API server (FastAPI)
 
 ```powershell

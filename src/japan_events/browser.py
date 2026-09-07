@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import re
 from dataclasses import dataclass, field
 from datetime import date
@@ -485,10 +486,18 @@ def resolve_url(base: str, maybe: str | None) -> str | None:
     return urljoin(base, maybe)
 
 
+def _chromium_launch_args() -> list[str]:
+    args = ["--disable-blink-features=AutomationControlled"]
+    docker = os.environ.get("JAPAN_EVENTS_DOCKER", "").strip().lower() in {"1", "true", "yes"}
+    if docker or os.path.exists("/.dockerenv"):
+        args.extend(["--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu"])
+    return args
+
+
 async def launch_browser(playwright: Playwright, headed: bool = False) -> Browser:
     return await playwright.chromium.launch(
         headless=not headed,
-        args=["--disable-blink-features=AutomationControlled"],
+        args=_chromium_launch_args(),
     )
 
 

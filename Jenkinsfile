@@ -66,7 +66,7 @@ pipeline {
       }
     }
     success {
-      echo 'Stack is up: https://japan-events.brian-li.com  (host UI http://127.0.0.1:5173; API is internal, use /api via the UI)'
+      echo 'Stack is up: https://japan-events.brian-li.com  (host UI :7010; API stays on the Docker network)'
     }
   }
 }

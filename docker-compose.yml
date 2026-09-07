@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile
     image: japan-events-web:local
     ports:
-      - "127.0.0.1:5173:80"
+      - "7010:80"
     depends_on:
       api:
         condition: service_healthy

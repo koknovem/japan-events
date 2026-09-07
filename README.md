@@ -16,14 +16,14 @@ Public site: **https://japan-events.brian-li.com**
 
 ## Docker Compose
 
-Needs Docker Engine with Compose v2. Scrapes persist in `./output`. The UI listens on `127.0.0.1:5173` and proxies `/api` to the API container (the API is not published on host port 8000, so it will not collide with a local uvicorn).
+Needs Docker Engine with Compose v2. Scrapes persist in `./output`. The UI is published on host **7010** (`llmrp-backend` already owns 8000). `/api` is proxied through that UI; the API is not bound on the host.
 
 ```powershell
 docker compose build
 docker compose up -d
 ```
 
-Open http://127.0.0.1:5173
+Open http://127.0.0.1:7010
 
 Point DNS for `japan-events.brian-li.com` at this host, then either:
 
@@ -33,7 +33,7 @@ Point DNS for `japan-events.brian-li.com` at this host, then either:
 docker compose --profile public up -d
 ```
 
-- **Host already has Caddy**: include `deploy/Caddyfile.host` so it reverse-proxies to `127.0.0.1:5173`.
+- **Host already has Caddy**: include `deploy/Caddyfile.host` so it reverse-proxies to `127.0.0.1:7010`.
 
 ```powershell
 docker compose run --rm --no-deps api python -m pytest -q

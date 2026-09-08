@@ -77,9 +77,9 @@ sites:
   name: Saitama
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://saitama-supportdesk.com/
-  event_url: https://chocotabi-saitama.jp/event/
+  event_url: "https://chocotabi-saitama.jp/event/?post_type=event&start_date={date}&end_date={date}"
   adapter: saitama
-  date_picker: true
+  date_picker: false
 - id: chiba
   name: Chiba
   region: Kanto, Koshinetsu & Hokuriku
@@ -214,9 +214,9 @@ sites:
   name: Wakayama
   region: Tokai & Kansai
   home_url: https://visitwakayama.jp/en/
-  event_url: https://visitwakayama.jp/en/events/index.html
+  event_url: "https://www.wakayama-kanko.or.jp/events/index_1_2____1____.html?days={ymd}"
   adapter: wakayama
-  date_picker: true
+  date_picker: false
 - id: tottori
   name: Tottori
   region: Chugoku & Shikoku
@@ -235,9 +235,9 @@ sites:
   name: Okayama
   region: Chugoku & Shikoku
   home_url: https://www.okayama-japan.jp/en
-  event_url: https://www.okayama-kanko.jp/event/
+  event_url: "https://www.okayama-kanko.jp/event/index_1_2____1______.html?days={ymd}"
   adapter: okayama
-  date_picker: true
+  date_picker: false
 - id: hiroshima
   name: Hiroshima
   region: Chugoku & Shikoku
@@ -249,9 +249,9 @@ sites:
   name: Yamaguchi
   region: Chugoku & Shikoku
   home_url: https://yamaguchi-tourism.jp/
-  event_url: https://yamaguchi-tourism.jp/event/
+  event_url: "https://yamaguchi-tourism.jp/event/index_1_2_____1___________.html?days={ymd}"
   adapter: yamaguchi
-  date_picker: true
+  date_picker: false
   source_org: 山口県観光連盟
   replaced_from: https://visit-jy.com/en/
 - id: tokushima

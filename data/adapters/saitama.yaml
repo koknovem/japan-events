@@ -1,12 +1,12 @@
 id: saitama
 strategy: html
-event_url: https://chocotabi-saitama.jp/event/
+event_url: "https://chocotabi-saitama.jp/event/?post_type=event&start_date={date}&end_date={date}"
 urls_by_lang:
   en: "https://saitama-supportdesk.com/events/"
-  ja: "https://chocotabi-saitama.jp/event/"
+  ja: "https://chocotabi-saitama.jp/event/?post_type=event&start_date={date}&end_date={date}"
   zh-TW: "https://saitama-supportdesk.com/zh-hant/events/"
   zh-CN: "https://saitama-supportdesk.com/zh-hans/events/"
-date_picker: true
+date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
@@ -15,4 +15,4 @@ card_selectors:
 - .event
 - .post
 - li
-notes: chocotabi is the association event list; no from/to URL — inbound support-desk pages are seasonal indexes
+notes: chocotabi GET start_date/end_date ISO (24件 -> 7 on 2026-09-08). EN/zh support-desk indexes have no day filter.

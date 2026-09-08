@@ -1,12 +1,12 @@
 id: wakayama
 strategy: html
-event_url: https://visitwakayama.jp/en/events/index.html
+event_url: "https://www.wakayama-kanko.or.jp/events/index_1_2____1____.html?days={ymd}"
 urls_by_lang:
   en: "https://visitwakayama.jp/en/events/index.html"
-  ja: "https://www.wakayama-kanko.or.jp/events/"
+  ja: "https://www.wakayama-kanko.or.jp/events/index_1_2____1____.html?days={ymd}"
   zh-TW: "https://visitwakayama.jp/zh-TW/events/index.html"
   zh-CN: "https://visitwakayama.jp/zh-CN/"
-date_picker: true
+date_picker: false
 wait_ms: 1500
 harvest_fallback: true
 use_card_text_as_period: true
@@ -27,4 +27,7 @@ fields:
   url:
   - a[href*='detail_']
   - a
-notes: JA wakayama-kanko and EN/zh-TW visitwakayama event pages use searchDay data-ymd calendars (no dated query). zh-CN has no /events/ listing.
+notes: >-
+  Official JA filter is encoded listing index_1_2____1____.html?days=YYYYMMDD
+  (364 unfiltered -> 14 on 2026-09-08). Bare /events/?days= does not filter.
+  EN/zh-TW visitwakayama pages stay unique (searchDay, no dated query). zh-CN has no /events/.

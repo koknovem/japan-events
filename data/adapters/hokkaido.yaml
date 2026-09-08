@@ -1,12 +1,12 @@
 id: hokkaido
-strategy: calendar
-event_url: https://www.visit-hokkaido.jp/en/event/
-date_picker: true
+strategy: html
+event_url: "https://www.visit-hokkaido.jp/en/event/index_1_2____1____.html?days={ymd}"
+date_picker: false
 wait_ms: 1500
 harvest_fallback: true
 urls_by_lang:
-  en: "https://www.visit-hokkaido.jp/en/event/"
-  ja: "https://www.visit-hokkaido.jp/event/"
-  zh-TW: "https://www.visit-hokkaido.jp/tw/event/"
-  zh-CN: "https://www.visit-hokkaido.jp/cn/event/"
-notes: Multi-lang event search with date picker
+  en: "https://www.visit-hokkaido.jp/en/event/index_1_2____1____.html?days={ymd}"
+  ja: "https://www.visit-hokkaido.jp/event/index_1_2____1____.html?days={ymd}"
+  zh-TW: "https://www.visit-hokkaido.jp/tw/event/index_1_2____1____.html?days={ymd}"
+  zh-CN: "https://www.visit-hokkaido.jp/cn/event/index_1_2____1____.html?days={ymd}"
+notes: HOKKAIDO LOVE! commonSearch.js puts selected calendar days in ?days=YYYYMMDD on index_1_2____1____.html, not the unfiltered /event/ index

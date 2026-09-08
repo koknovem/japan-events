@@ -1,15 +1,15 @@
 id: tokyo
 strategy: calendar
-event_url: https://www.gotokyo.org/en/calendar/index.html
-date_picker: true
+event_url: "https://www.gotokyo.org/en/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
+date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 urls_by_lang:
-  en: "https://www.gotokyo.org/en/calendar/index.html"
-  ja: "https://www.gotokyo.org/jp/calendar/index.html"
-  zh-TW: "https://www.gotokyo.org/tc/calendar/index.html"
-  zh-CN: "https://www.gotokyo.org/cn/calendar/index.html"
+  en: "https://www.gotokyo.org/en/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
+  ja: "https://www.gotokyo.org/ja/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
+  zh-TW: "https://www.gotokyo.org/tw/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
+  zh-CN: "https://www.gotokyo.org/cn/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
 listing_urls:
-- https://www.gotokyo.org/en/event-calendar/index.html
-notes: Custom Python adapter preferred; multi-lang calendar paths
+- "https://www.gotokyo.org/en/travel-directory/result/index/event_date_st/{date}/event_date_ed/{date}"
+notes: GO TOKYO travel-directory date path (event_date_st/ed); calendar UI lives at /jp|/en|/tc|/cn/calendar/

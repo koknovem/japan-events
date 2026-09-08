@@ -1,11 +1,11 @@
 id: yamagata
 strategy: html
-event_url: https://yamagatakanko.com/en/festivals/
+event_url: "https://yamagatakanko.com/en/festivals/index_1_2______1____.html?days={ymd}"
 urls_by_lang:
-  en: "https://yamagatakanko.com/en/festivals/"
-  ja: "https://yamagatakanko.com/festivals/"
-  zh-TW: "https://yamagatakanko.com/zh_TW/festivals/"
-  zh-CN: "https://yamagatakanko.com/zh_CN/festivals/"
+  en: "https://yamagatakanko.com/en/festivals/index_1_2______1____.html?days={ymd}"
+  ja: "https://yamagatakanko.com/festivals/index_1_2______1____.html?days={ymd}"
+  zh-TW: "https://yamagatakanko.com/zh_TW/festivals/index_1_2______1____.html?days={ymd}"
+  zh-CN: "https://yamagatakanko.com/zh_CN/festivals/index_1_2______1____.html?days={ymd}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
@@ -15,3 +15,4 @@ card_selectors:
 - .festival
 - .event
 - li
+notes: やまがた観光情報 commonSearch.js puts selected calendar days in ?days=YYYYMMDD on index_1_2______1____.html, not the unfiltered /festivals/ index

@@ -1,24 +1,27 @@
 id: aichi
 strategy: html
-event_url: https://aichinow.pref.aichi.jp/en/events/
+event_url: "https://aichinow.pref.aichi.jp/en/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 urls_by_lang:
-  en: "https://aichinow.pref.aichi.jp/en/events/"
-  ja: "https://aichinow.pref.aichi.jp/events/"
-  zh-TW: "https://aichinow.pref.aichi.jp/tw/events/"
-  zh-CN: "https://aichinow.pref.aichi.jp/cn/events/"
+  en: "https://aichinow.pref.aichi.jp/en/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
+  ja: "https://aichinow.pref.aichi.jp/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
+  zh-TW: "https://aichinow.pref.aichi.jp/tw/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
+  zh-CN: "https://aichinow.pref.aichi.jp/cn/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
 card_selectors:
 - div.list
+- .list-main-result-item
 fields:
   title:
   - h2 a
   - h2
+  - h4
   - a
   period:
   - .left
+  - .list-main-result-item-date
   - div.list
   area:
   - h2 span
@@ -27,5 +30,5 @@ fields:
   - a[href*='/events/detail/']
   image:
   - img
-wait_for: div.list
-notes: Dates sit as text after h2 inside .list (e.g. Sep 2,2026 ～ Sep 6)
+wait_for: .list-main-result-item
+notes: Aichi Now overlap search uses s_term_from/s_term_to ISO dates; calendar is /events/calendar/{date}/

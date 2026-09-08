@@ -1,16 +1,18 @@
 id: saga
 strategy: html
-event_url: https://www.saga-tripgenius.com/
+event_url: "https://www.asobo-saga.jp/events/list?event_start_date={date}&event_end_date={date}"
 urls_by_lang:
-  en: "https://www.saga-tripgenius.com/"
-  ja: "https://www.saga-tripgenius.com/ja/"
-  zh-TW: "https://www.saga-tripgenius.com/zh-hant/"
-  zh-CN: "https://www.saga-tripgenius.com/zh-hans/"
+  en: "https://asobosaga.j-server.com/LUCASBSGP/ns/w1/jaen/https://www.asobo-saga.jp/events/list?event_start_date={date}&event_end_date={date}"
+  ja: "https://www.asobo-saga.jp/events/list?event_start_date={date}&event_end_date={date}"
+  zh-TW: "https://asobosaga.j-server.com/LUCASBSGP/ns/w1/jazhb/https://www.asobo-saga.jp/events/list?event_start_date={date}&event_end_date={date}"
+  zh-CN: "https://asobosaga.j-server.com/LUCASBSGP/ns/w1/jazh/https://www.asobo-saga.jp/events/list?event_start_date={date}&event_end_date={date}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 listing_urls:
-- https://www.saga-tripgenius.com/event/
-- https://www.asobo-saga.jp/event/
-notes: TripGenius portal; dated events often on asobo-saga
+  - https://www.asobo-saga.jp/events/list
+  - https://www.asobo-saga.jp/en/
+notes: >-
+  Official calendar is asobo-saga /events/list?event_start_date=&event_end_date= (3件 on 2026-09-08).
+  saga-tripgenius.com redirected to asobo-saga.jp/en/. EN/zh use official j-server wrappers of the dated list.

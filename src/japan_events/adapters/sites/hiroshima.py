@@ -4,6 +4,7 @@ from datetime import date
 from urllib.parse import urlencode
 
 from japan_events.adapters.base import BaseAdapter
+from japan_events.adapters.configured import _apply_api_date
 from japan_events.adapters.generic import harvest_events
 from japan_events.browser import BrowserSession
 from japan_events.models import Event
@@ -11,6 +12,7 @@ from japan_events.normalize import dedupe_events, dict_to_event, filter_events
 from japan_events.registry import register
 
 API_BASE = "https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/"
+DEFAULT_LISTING = "https://dive-hiroshima.com/en/events/?start_date={date}&end_date={date}"
 
 
 @register("hiroshima")
@@ -20,7 +22,11 @@ class HiroshimaAdapter(BaseAdapter):
     name = "hiroshima"
 
     async def scrape(self, target: date, session: BrowserSession) -> list[Event]:
-        listing = self.site.event_url or "https://dive-hiroshima.com/en/events/"
+        listing = _apply_api_date(
+            self.site.event_url or DEFAULT_LISTING,
+            target,
+            {"start": "start_date", "end": "end_date"},
+        )
         collected: list[Event] = []
         offset = 0
         notes: list[str] = []
@@ -36,6 +42,7 @@ class HiroshimaAdapter(BaseAdapter):
         api_base = API_BASE.replace("/en/", f"/{site_code}/")
         try:
             await session.goto(listing)
+            await session.click_calendar_date(target)
         except Exception as exc:
             notes.append(f"goto_error:{exc}")
         try:
@@ -99,5 +106,9 @@ class HiroshimaAdapter(BaseAdapter):
             return events
 
         matched = filter_events(dedupe_events(collected), target)
+        if not matched:
+            extra, html_notes = await harvest_events(session, target, source_label=listing)
+            notes.append(html_notes)
+            matched = filter_events(dedupe_events(collected + extra), target)
         session.page_notes = "; ".join(notes) if notes else "hiroshima-api"  # type: ignore[attr-defined]
         return matched

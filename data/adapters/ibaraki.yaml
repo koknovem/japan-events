@@ -33,4 +33,4 @@ fields:
   area:
   - .area
 wait_for: .eventSearchBox, .eventList, body
-notes: JP event search with date dropdowns
+notes: 観光いばらき event.php GET search_start_year/month/day + search_end_* (Python adapter, split Y/M/D). EN event.php 404s; visit.ibarakiguide.jp ZH has no day filter.

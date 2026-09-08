@@ -1,11 +1,11 @@
 id: yamanashi
 strategy: html
-event_url: https://www.yamanashi-kankou.jp/search/event.php
+event_url: "https://www.yamanashi-kankou.jp/search/event.php"
 urls_by_lang:
-  en: "https://www.yamanashi-kankou.jp/english/event/"
-  ja: "https://www.yamanashi-kankou.jp/search/event.php"
-  zh-TW: "https://www.yamanashi-kankou.jp/chinese_t/event/"
-  zh-CN: "https://www.yamanashi-kankou.jp/chinese_s/event/"
+  en: "https://www.yamanashi-kankou.jp/search/event.php?y={year}&m={month}&d={day}&mode=event&hl=en"
+  ja: "https://www.yamanashi-kankou.jp/search/event.php?y={year}&m={month}&d={day}&mode=event"
+  zh-TW: "https://www.yamanashi-kankou.jp/search/event.php?y={year}&m={month}&d={day}&mode=event&hl=zh-TW"
+  zh-CN: "https://www.yamanashi-kankou.jp/search/event.php?y={year}&m={month}&d={day}&mode=event&hl=zh-CN"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
@@ -25,4 +25,4 @@ fields:
     - td
   url:
     - a
-notes: やまなし観光推進機構 event search with calendar params
+notes: official day filter is y={year}&m={month}&d={day}&mode=event; inbound /english/event/ and /chinese_*/event/ 404

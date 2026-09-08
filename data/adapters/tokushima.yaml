@@ -1,9 +1,9 @@
 id: tokushima
 strategy: html
-event_url: https://www.awanavi.jp/event-calendar
+event_url: https://www.awanavi.jp/event/
 urls_by_lang:
-  en: "https://discovertokushima.net/en/events/"
-  ja: "https://www.awanavi.jp/event-calendar"
+  en: "https://discovertokushima.net/en/"
+  ja: "https://www.awanavi.jp/event/?event-yearmonth[]={month_underscore}"
   zh-TW: "https://discovertokushima.net/tw/"
   zh-CN: "https://discovertokushima.net/cn/"
 date_picker: false
@@ -25,4 +25,4 @@ fields:
     - time
   url:
     - a
-notes: 徳島県観光協会 阿波ナビ event calendar
+notes: 阿波ナビ /event/ month filter is event-yearmonth[]=YYYY_MM. discovertokushima /en/events 404s.

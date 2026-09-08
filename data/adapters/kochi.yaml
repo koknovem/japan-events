@@ -3,15 +3,16 @@ strategy: html
 event_url: https://kochi-tabi.jp/search_event.html
 urls_by_lang:
   en: "https://visitkochijapan.com/en/highlights/event"
-  ja: "https://kochi-tabi.jp/search_event.html"
+  ja: "https://kochi-tabi.jp/search_event.html?type=event&start_date={date_slash}&end_date={date_slash}"
   zh-TW: "https://visitkochijapan.com/tc/highlights/event"
   zh-CN: "https://visitkochijapan.com/sc/highlights/event"
-date_picker: true
+date_picker: false
 wait_ms: 2500
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
   - ".event-list li"
+  - ".result-list-event li"
   - article
   - ".card"
   - li
@@ -20,10 +21,13 @@ fields:
     - h2
     - h3
     - a
+    - ".title_only"
   period:
     - ".date"
     - time
     - td
   url:
     - a
-notes: 高知県観光コンベンション協会 こうち旅ネット calendar search
+notes: >-
+  Official JA search is GET search_event.html?type=event&start_date=YYYY/MM/DD&end_date=YYYY/MM/DD.
+  EN/zh visitkochijapan highlights have no day filter.

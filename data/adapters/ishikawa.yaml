@@ -1,9 +1,9 @@
 id: ishikawa
 strategy: html
-event_url: https://www.hot-ishikawa.jp/event/index.html
+event_url: "https://www.hot-ishikawa.jp/event/index_1_2____1____.html?days={ymd}"
 urls_by_lang:
   en: "https://www.ishikawatravel.jp/en/event/"
-  ja: "https://www.hot-ishikawa.jp/event/index.html"
+  ja: "https://www.hot-ishikawa.jp/event/index_1_2____1____.html?days={ymd}"
   zh-TW: "https://www.ishikawatravel.jp/tw/event/"
   zh-CN: "https://www.ishikawatravel.jp/cn/event/"
 date_picker: false
@@ -26,4 +26,4 @@ fields:
   url:
     - "a[href*='detail']"
     - a
-notes: 石川県観光連盟 ほっと石川旅ねっと event search
+notes: ほっと石川旅ねっと calendar search uses days=YYYYMMDD on the encoded listing filename

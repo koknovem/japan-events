@@ -1,13 +1,13 @@
 id: kagawa
 strategy: html
-event_url: https://www.my-kagawa.jp/event/
+event_url: "https://www.my-kagawa.jp/event/list?program_date[]={ymd}"
 urls_by_lang:
-  en: "https://www.my-kagawa.jp/en/event/"
-  ja: "https://www.my-kagawa.jp/event/"
-  zh-TW: "https://www.my-kagawa.jp/zh_TW/event/"
-  zh-CN: "https://www.my-kagawa.jp/zh_CN/event/"
-date_picker: true
-wait_ms: 2500
+  en: "https://www.my-kagawa.jp/en/see-and-do"
+  ja: "https://www.my-kagawa.jp/event/list?program_date[]={ymd}"
+  zh-TW: "https://www.my-kagawa.jp/zh-TW"
+  zh-CN: "https://www.my-kagawa.jp/zh_CN/"
+date_picker: false
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
@@ -25,4 +25,4 @@ fields:
     - time
   url:
     - a
-notes: 香川県観光協会 うどん県旅ネット calendar search
+notes: うどん県旅ネット event/list filters with program_date[]=YYYYMMDD. /en/event/ 404s — EN/zh sites have no dated event list.

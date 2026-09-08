@@ -10,4 +10,7 @@ date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
-notes: Often CloudFront-blocked for bots; custom adapter
+notes: >-
+  No working day filter on japan.travel/en/events/ (?from=&to= is a no-op).
+  Page is a monthly highlight guide, not a date-filtered list. CloudFront often
+  geo-serves another locale to automated clients. Left safe listing URLs.

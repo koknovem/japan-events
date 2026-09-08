@@ -25,4 +25,4 @@ fields:
     - time
   url:
     - a
-notes: 栃木県観光物産協会 とちぎ旅ネット event search
+notes: とちぎ旅ネット filter is month=YYYY-MM (no day URL). Python adapter appends month= for tochigiji.or.jp. visit-tochigi.com EN/ZH have no month filter.

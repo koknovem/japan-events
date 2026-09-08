@@ -1,11 +1,11 @@
 id: hiroshima
 strategy: api
-event_url: https://dive-hiroshima.com/en/events/
+event_url: "https://dive-hiroshima.com/en/events/?start_date={date}&end_date={date}"
 urls_by_lang:
-  en: "https://dive-hiroshima.com/en/events/"
-  ja: "https://dive-hiroshima.com/events/"
-  zh-TW: "https://dive-hiroshima.com/tw/events/"
-  zh-CN: "https://dive-hiroshima.com/cn/events/"
+  en: "https://dive-hiroshima.com/en/events/?start_date={date}&end_date={date}"
+  ja: "https://dive-hiroshima.com/events/?start_date={date}&end_date={date}"
+  zh-TW: "https://dive-hiroshima.com/tw/events/?start_date={date}&end_date={date}"
+  zh-CN: "https://dive-hiroshima.com/cn/events/?start_date={date}&end_date={date}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
@@ -14,4 +14,4 @@ api_url: https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/da
 api_date_keys:
   start: start_date
   end: end_date
-notes: Custom Python adapter preferred
+notes: Custom Python adapter navigates to dated listing and queries events-index with start_date/end_date. Unfiltered /events/ defaults to a today window.

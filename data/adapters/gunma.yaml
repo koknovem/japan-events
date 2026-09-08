@@ -1,11 +1,11 @@
 id: gunma
 strategy: html
-event_url: https://gunma-kanko.jp/events
+event_url: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}"
 urls_by_lang:
-  en: "https://www.visit-gunma.jp/en/"
-  ja: "https://gunma-kanko.jp/events"
-  zh-TW: "https://www.visit-gunma.jp/tcn/"
-  zh-CN: "https://www.visit-gunma.jp/scn/"
+  en: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}#en"
+  ja: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}"
+  zh-TW: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}#zh-TW"
+  zh-CN: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}#zh-CN"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
@@ -26,4 +26,4 @@ fields:
   url:
     - "a[href*='/events/']"
     - a
-notes: 群馬県観光物産国際協会 心にググっと観光ぐんま
+notes: gunma-kanko Ransack overlap filter; visit-gunma inbound has no dated calendar

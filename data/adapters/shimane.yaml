@@ -1,13 +1,13 @@
 id: shimane
 strategy: html
-event_url: https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival
+event_url: "https://www.kankou-shimane.com/events/?date_start={date}&date_end={date}"
 urls_by_lang:
   en: "https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival"
-  ja: "https://www.kankou-shimane.com/ja/destinations/?post_type=destinations&destination_spot%5B%5D=festival"
-  zh-TW: "https://www.kankou-shimane.com/zh-tw/activities"
-  zh-CN: "https://www.kankou-shimane.com/zh-cn/activities"
+  ja: "https://www.kankou-shimane.com/events/?date_start={date}&date_end={date}"
+  zh-TW: "https://www.kankou-shimane.com/zh-tw/destinations/?post_type=destinations&destination_spot%5B%5D=festival"
+  zh-CN: "https://www.kankou-shimane.com/zh-cn/destinations/?post_type=destinations&destination_spot%5B%5D=festival"
 date_picker: false
-wait_ms: 1200
+wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
@@ -15,3 +15,4 @@ card_selectors:
 - .destination
 - .card
 - li
+notes: JA events search uses date_start/date_end ISO. EN/zh have no /events/ CPT — festival destinations stay unique but are not date-filtered.

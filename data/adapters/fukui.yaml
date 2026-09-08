@@ -1,11 +1,11 @@
 id: fukui
 strategy: html
-event_url: https://www.fuku-e.com/en/events/index.html
+event_url: "https://www.fuku-e.com/event/index_1_2____1____.html?days={ymd}"
 urls_by_lang:
-  en: "https://www.fuku-e.com/en/events/index.html"
-  ja: "https://www.fuku-e.com/events/index.html"
-  zh-TW: "https://www.fuku-e.com/zh-TW/events/index.html"
-  zh-CN: "https://www.fuku-e.com/zh-CN/events/index.html"
+  en: "https://www.fuku-e.com/en/events/index_1_2____1____.html?days={ymd}"
+  ja: "https://www.fuku-e.com/event/index_1_2____1____.html?days={ymd}"
+  zh-TW: "https://www.fuku-e.com/zh-TW/events/index_1_2____1____.html?days={ymd}"
+  zh-CN: "https://www.fuku-e.com/zh-CN/events/index_1_2____1____.html?days={ymd}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
@@ -15,3 +15,4 @@ card_selectors:
 - article
 - li
 - .list-item
+notes: ふくいドットコム calendar search uses days=YYYYMMDD (JA /event/, other langs /events/)

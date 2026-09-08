@@ -1,14 +1,14 @@
 id: nara
 strategy: api
-event_url: https://www.visitnara.jp/event-calendar/
+event_url: "https://www.visitnara.jp/event-calendar/?from={date}&to={date}"
 urls_by_lang:
-  en: "https://www.visitnara.jp/event-calendar/"
-  ja: "https://www.nara-kankou.or.jp/event/"
-  zh-TW: "https://www.visitnara.jp/zh-tw/event-calendar/"
-  zh-CN: "https://www.visitnara.jp/zh-cn/event-calendar/"
+  en: "https://www.visitnara.jp/event-calendar/?from={date}&to={date}"
+  ja: "https://www.pref.nara.lg.jp/cgi-bin/event_cal_multi/calendar.cgi"
+  zh-TW: "https://www.visitnara.jp/event-calendar/?from={date}&to={date}&lang=zh-TW"
+  zh-CN: "https://www.visitnara.jp/event-calendar/?from={date}&to={date}&lang=zh-CN"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 api_url: https://www.visitnara.jp/travel-directory/api/data/
-notes: Custom Python adapter preferred
+notes: EN calendar SPA accepts from/to ISO; JA prefecture calendar.cgi uses year/month/day (Python adapter). visitnara has no zh event path — unique lang= query keeps scrape langs distinct.

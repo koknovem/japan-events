@@ -6,11 +6,12 @@ urls_by_lang:
   ja: "https://www.biwako-visitors.jp/event/"
   zh-TW: "https://tw.biwako-visitors.jp/event/"
   zh-CN: "https://cn.biwako-visitors.jp/event/"
-date_picker: false
+date_picker: true
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
+  - ".c-event-box"
   - ".event-list li"
   - article
   - ".card"
@@ -20,9 +21,11 @@ fields:
     - h2
     - h3
     - a
+    - ".c-event-box__texts-title"
   period:
     - ".date"
     - time
+    - dd
   url:
     - a
-notes: 滋賀県観光協会 びわ湖ビジターズ dated event index
+notes: Nuxt listing has category ?ec= but no public day GET; date_picker clicks the on-page calendar if present

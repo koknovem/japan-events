@@ -7,26 +7,25 @@ sites:
   name: Hokkaido
   region: Hokkaido & Tohoku
   home_url: https://www.visit-hokkaido.jp/en/
-  event_url: https://www.visit-hokkaido.jp/en/event/
+  event_url: https://www.visit-hokkaido.jp/en/event/index_1_2____1____.html?days={ymd}
   adapter: hokkaido
-  date_picker: true
 - id: aomori
   name: Aomori
   region: Hokkaido & Tohoku
   home_url: https://aomori-tourism.com/en/
-  event_url: https://aomori-tourism.com/en/event/index.html
+  event_url: https://aomori-tourism.com/en/event/index_1_2_____{ymd}____.html
   adapter: aomori
 - id: iwate
   name: Iwate
   region: Hokkaido & Tohoku
   home_url: https://iwatetabi.jp/en/
-  event_url: https://iwatetabi.jp/events/
+  event_url: https://iwatetabi.jp/events/?ondate_start={date}&ondate_end={date}
   adapter: iwate
 - id: miyagi
   name: Miyagi
   region: Hokkaido & Tohoku
   home_url: https://www.miyagi-kankou.or.jp/
-  event_url: https://www.miyagi-kankou.or.jp/calendar/
+  event_url: https://www.miyagi-kankou.or.jp/calendar/?ymd={ymd}
   adapter: miyagi
   source_org: 宮城県観光連盟
   replaced_from: https://visitmiyagi.com/en/
@@ -42,13 +41,13 @@ sites:
   name: Yamagata
   region: Hokkaido & Tohoku
   home_url: https://yamagatakanko.com/en/
-  event_url: https://yamagatakanko.com/en/festivals/
+  event_url: https://yamagatakanko.com/en/festivals/index_1_2______1____.html?days={ymd}
   adapter: yamagata
 - id: fukushima
   name: Fukushima
   region: Hokkaido & Tohoku
   home_url: https://www.tif.ne.jp/
-  event_url: https://www.tif.ne.jp/jp/entry/?type=event
+  event_url: https://www.tif.ne.jp/jp/entry/?type=event&eventStart={date}&eventEnd={date}&search=on
   adapter: fukushima
   source_org: 福島県観光物産交流協会
   replaced_from: https://fukushima.travel/
@@ -70,7 +69,7 @@ sites:
   name: Gunma
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://gunma-kanko.jp/
-  event_url: https://gunma-kanko.jp/events
+  event_url: "https://gunma-kanko.jp/events?q[event_terms_end_date_gteq]={date}&q[event_terms_start_date_lteq]={date}"
   adapter: gunma
   source_org: 群馬県観光物産国際協会
   replaced_from: https://www.visit-gunma.jp/en/
@@ -78,31 +77,32 @@ sites:
   name: Saitama
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://saitama-supportdesk.com/
-  event_url: https://saitama-supportdesk.com/events/
+  event_url: https://chocotabi-saitama.jp/event/
   adapter: saitama
+  date_picker: true
 - id: chiba
   name: Chiba
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://maruchiba.jp/
-  event_url: https://maruchiba.jp/event/index.html
+  event_url: "https://maruchiba.jp/event/index.html?days={ymd}"
   adapter: chiba
-  date_picker: true
+  date_picker: false
   source_org: 千葉県観光物産協会
   replaced_from: https://www.visitchiba.jp/
 - id: tokyo
   name: Tokyo
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.gotokyo.org/en/
-  event_url: https://www.gotokyo.org/en/calendar/index.html
+  event_url: "https://www.gotokyo.org/en/travel-directory/result/index/template/152,153,154,155,156,157,158,159,160,161,222,259/event_date_st/{date}/event_date_ed/{date}"
   adapter: tokyo
-  date_picker: true
+  date_picker: false
 - id: kanagawa
   name: Kanagawa
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.kanagawa-kankou.or.jp/
-  event_url: https://www.kanagawa-kankou.or.jp/event/
+  event_url: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}"
   adapter: kanagawa
-  date_picker: true
+  date_picker: false
   source_org: 神奈川県観光協会
   replaced_from: https://visitkanagawa.jp/
 - id: yamanashi
@@ -111,6 +111,7 @@ sites:
   home_url: https://www.yamanashi-kankou.jp/
   event_url: https://www.yamanashi-kankou.jp/search/event.php
   adapter: yamanashi
+  date_picker: true
   source_org: やまなし観光推進機構
   replaced_from: https://www.yamanashi-kankou.jp/english/
 - id: nagano
@@ -118,18 +119,18 @@ sites:
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.go-nagano.net/en/
   adapter: nagano
-  event_url: https://www.go-nagano.net/en/
+  event_url: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}"
 - id: niigata
   name: Niigata
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://enjoyniigata.com/en/
-  event_url: https://discover-niigata.com/events/
+  event_url: "https://niigata-kankou.or.jp/event/list?program_date[]={ymd}"
   adapter: niigata
 - id: toyama
   name: Toyama
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.info-toyama.com/
-  event_url: https://www.info-toyama.com/events
+  event_url: "https://www.info-toyama.com/events?rte[]={date}"
   adapter: toyama
   source_org: とやま観光推進機構
   replaced_from: https://visit-toyama-japan.com/en/
@@ -137,7 +138,7 @@ sites:
   name: Ishikawa
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.hot-ishikawa.jp/
-  event_url: https://www.hot-ishikawa.jp/event/index.html
+  event_url: "https://www.hot-ishikawa.jp/event/index_1_2____1____.html?days={ymd}"
   adapter: ishikawa
   source_org: 石川県観光連盟
   replaced_from: https://www.ishikawatravel.jp/en/
@@ -145,13 +146,13 @@ sites:
   name: Fukui
   region: Kanto, Koshinetsu & Hokuriku
   home_url: https://www.fuku-e.com/en/
-  event_url: https://www.fuku-e.com/en/events/index.html
+  event_url: "https://www.fuku-e.com/en/events/index_1_2____1____.html?days={ymd}"
   adapter: fukui
 - id: gifu
   name: Gifu
   region: Tokai & Kansai
   home_url: https://www.kankou-gifu.jp/
-  event_url: https://www.kankou-gifu.jp/event/
+  event_url: "https://www.kankou-gifu.jp/event/index_1_2____1__.html?days={ymd}"
   adapter: gifu
   source_org: 岐阜県観光連盟
   replaced_from: https://visitgifu.com/
@@ -159,19 +160,19 @@ sites:
   name: Shizuoka
   region: Tokai & Kansai
   home_url: https://www.visit-shizuoka.com/
-  event_url: https://www.visit-shizuoka.com/event/index.html
+  event_url: "https://www.visit-shizuoka.com/event/index_1_2_____1____.html?days={ymd}"
   adapter: shizuoka
 - id: aichi
   name: Aichi
   region: Tokai & Kansai
   home_url: https://aichinow.pref.aichi.jp/en/
-  event_url: https://aichinow.pref.aichi.jp/en/events/
+  event_url: "https://aichinow.pref.aichi.jp/en/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
   adapter: aichi
 - id: mie
   name: Mie
   region: Tokai & Kansai
   home_url: https://www.kankomie.or.jp/
-  event_url: https://www.kankomie.or.jp/event
+  event_url: "https://www.kankomie.or.jp/event?q%5Bevent_terms_end_date_gteq%5D={date}&q%5Bevent_terms_start_date_lteq%5D={date}"
   adapter: mie
   source_org: 三重県観光連盟
   replaced_from: https://visitmie-japan.travel/en/
@@ -181,31 +182,32 @@ sites:
   home_url: https://www.biwako-visitors.jp/
   event_url: https://www.biwako-visitors.jp/event/
   adapter: shiga
+  date_picker: true
   source_org: 滋賀県観光協会
   replaced_from: https://en.biwako-visitors.jp/
 - id: kyoto
   name: Kyoto
   region: Tokai & Kansai
   home_url: https://kyoto.travel/en/
-  event_url: https://kyoto.travel/en/events/
+  event_url: "https://kyoto.travel/en/events/?period_start={date}&period_end={date}&search_flg=1"
   adapter: kyoto
 - id: osaka
   name: Osaka
   region: Tokai & Kansai
   home_url: https://osaka-info.jp/en/
-  event_url: https://osaka-info.jp/en/event/
+  event_url: "https://osaka-info.jp/en/event/?month={date}"
   adapter: osaka
 - id: hyogo
   name: Hyogo
   region: Tokai & Kansai
   home_url: https://www.hyogo-tourism.jp/
-  event_url: https://www.hyogo-tourism.jp/event/index.html
+  event_url: "https://www.hyogo-tourism.jp/event/index_1_2____1____.html?days={ymd}"
   adapter: hyogo
 - id: nara
   name: Nara
   region: Tokai & Kansai
   home_url: https://www.visitnara.jp/
-  event_url: https://www.visitnara.jp/event-calendar/
+  event_url: "https://www.visitnara.jp/event-calendar/?from={date}&to={date}"
   adapter: nara
   api_url: https://www.visitnara.jp/travel-directory/api/data/
 - id: wakayama
@@ -214,11 +216,12 @@ sites:
   home_url: https://visitwakayama.jp/en/
   event_url: https://visitwakayama.jp/en/events/index.html
   adapter: wakayama
+  date_picker: true
 - id: tottori
   name: Tottori
   region: Chugoku & Shikoku
   home_url: https://www.tottori-guide.jp/
-  event_url: https://www.tottori-guide.jp/808/204/2017/36150.html
+  event_url: https://www.tottori-guide.jp/808/204/2017/
   adapter: tottori
   source_org: 鳥取県観光連盟
   replaced_from: https://www.tottori-tour.jp/en/
@@ -226,21 +229,22 @@ sites:
   name: Shimane
   region: Chugoku & Shikoku
   home_url: https://www.kankou-shimane.com/en/
-  event_url: https://www.kankou-shimane.com/en/destinations/?post_type=destinations&destination_spot%5B%5D=festival
+  event_url: "https://www.kankou-shimane.com/events/?date_start={date}&date_end={date}"
   adapter: shimane
 - id: okayama
   name: Okayama
   region: Chugoku & Shikoku
   home_url: https://www.okayama-japan.jp/en
-  event_url: https://www.okayama-japan.jp/en/event
+  event_url: https://www.okayama-kanko.jp/event/
   adapter: okayama
+  date_picker: true
 - id: hiroshima
   name: Hiroshima
   region: Chugoku & Shikoku
   home_url: https://dive-hiroshima.com/en/
-  event_url: https://dive-hiroshima.com/en/events/
+  event_url: "https://dive-hiroshima.com/en/events/?start_date={date}&end_date={date}"
   adapter: hiroshima
-  api_url: https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date=2026-01-01&end_date=2026-01-01&order=date&site=en&page_status=production
+  api_url: https://cms.dive-hiroshima.com/en/wp-json/api/v1/events-index/filter/data/?offset=0&start_date={date}&end_date={date}&order=date&site=en&page_status=production
 - id: yamaguchi
   name: Yamaguchi
   region: Chugoku & Shikoku
@@ -254,24 +258,24 @@ sites:
   name: Tokushima
   region: Chugoku & Shikoku
   home_url: https://www.awanavi.jp/
-  event_url: https://www.awanavi.jp/event-calendar
+  event_url: https://www.awanavi.jp/event/
   adapter: tokushima
+  date_picker: true
   source_org: 徳島県観光協会
   replaced_from: https://discovertokushima.net/
 - id: kagawa
   name: Kagawa
   region: Chugoku & Shikoku
   home_url: https://www.my-kagawa.jp/
-  event_url: https://www.my-kagawa.jp/event/
+  event_url: "https://www.my-kagawa.jp/event/list?program_date[]={ymd}"
   adapter: kagawa
-  date_picker: true
   source_org: 香川県観光協会
   replaced_from: https://www.my-kagawa.jp/en/
 - id: ehime
   name: Ehime
   region: Chugoku & Shikoku
   home_url: https://www.iyokannet.jp/
-  event_url: https://www.iyokannet.jp/event
+  event_url: "https://www.iyokannet.jp/event/list?program_date[]={ymd}"
   adapter: ehime
   source_org: 愛媛県観光協会
   replaced_from: https://www.visitehimejapan.com/en/

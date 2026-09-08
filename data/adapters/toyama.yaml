@@ -1,11 +1,11 @@
 id: toyama
 strategy: html
-event_url: https://www.info-toyama.com/events
+event_url: "https://www.info-toyama.com/events?rte[]={date}"
 urls_by_lang:
-  en: "https://visit-toyama-japan.com/en/events/"
-  ja: "https://www.info-toyama.com/events"
-  zh-TW: "https://visit-toyama-japan.com/zh-TW/events/"
-  zh-CN: "https://visit-toyama-japan.com/zh-CN/events/"
+  en: "https://www.info-toyama.com/events?rte[]={date}#en"
+  ja: "https://www.info-toyama.com/events?rte[]={date}"
+  zh-TW: "https://www.info-toyama.com/events?rte[]={date}#zh-TW"
+  zh-CN: "https://www.info-toyama.com/events?rte[]={date}#zh-CN"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
@@ -25,4 +25,4 @@ fields:
     - time
   url:
     - a
-notes: とやま観光推進機構 とやま観光ナビ events index
+notes: とやま観光ナビ rte[]=ISO date; visit-toyama-japan.com/en/events 404

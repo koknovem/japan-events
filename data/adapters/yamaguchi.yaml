@@ -2,10 +2,10 @@ id: yamaguchi
 strategy: html
 event_url: https://yamaguchi-tourism.jp/event/
 urls_by_lang:
-  en: "https://www.visit-jy.com/en/"
+  en: "https://www.visit-jy.com/en/spots?category=166"
   ja: "https://yamaguchi-tourism.jp/event/"
-  zh-TW: "https://www.visit-jy.com/zh-tw/"
-  zh-CN: "https://www.visit-jy.com/zh-cn/"
+  zh-TW: "https://www.visit-jy.com/zh-tw/spots?category=166"
+  zh-CN: "https://www.visit-jy.com/zh-cn/spots?category=166"
 date_picker: true
 wait_ms: 2500
 harvest_fallback: true
@@ -26,4 +26,4 @@ fields:
   url:
     - "a[href*='detail_']"
     - a
-notes: 山口県観光連盟 おいでませ山口へ calendar search
+notes: おいでませ山口へ event search uses searchDay data-ymd calendar (days= query does not filter). EN/zh visit-jy spots?category=166 is the event category, not a day calendar.

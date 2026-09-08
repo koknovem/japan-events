@@ -1,11 +1,11 @@
 id: aomori
 strategy: html
-event_url: https://aomori-tourism.com/en/event/index.html
+event_url: "https://aomori-tourism.com/en/event/index_1_2_____{ymd}____.html"
 urls_by_lang:
-  en: "https://aomori-tourism.com/en/event/index.html"
-  ja: "https://aomori-tourism.com/event/index.html"
-  zh-TW: "https://aomori-tourism.com/tw/event/index.html"
-  zh-CN: "https://aomori-tourism.com/cn/event/index.html"
+  en: "https://aomori-tourism.com/en/event/index_1_2_____{ymd}____.html"
+  ja: "https://aomori-tourism.com/event/index_1_2_____{ymd}____.html"
+  zh-TW: "https://aomori-tourism.com/tw/event/index_1_2_____{ymd}____.html"
+  zh-CN: "https://aomori-tourism.com/cn/event/index_1_2_____{ymd}____.html"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true
@@ -34,4 +34,4 @@ fields:
   area:
   - .area
   - .category
-notes: Seasonal/relative dates common; absolute ISO rare
+notes: Amazing AOMORI commonSearch.js encodes the calendar day as YYYYMMDD in the index_1_2_____ filename, not the unfiltered index.html

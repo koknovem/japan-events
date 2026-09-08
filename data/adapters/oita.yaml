@@ -1,17 +1,20 @@
 id: oita
 strategy: html
-event_url: https://www.visit-oita.jp/events/
+event_url: "https://www.visit-oita.jp/events/index/is_search:1/open_date:{date}/close_date:{date}"
 urls_by_lang:
-  en: "https://www.visit-oita.jp/events/"
-  ja: "https://www.visit-oita.jp/ja/events/"
-  zh-TW: "https://oita-tourism.com/zh-TW"
+  en: "https://oita-tourism.com/en/events/index.html"
+  ja: "https://www.visit-oita.jp/events/index/is_search:1/open_date:{date}/close_date:{date}"
+  zh-TW: "https://oita-tourism.com/zh-TW/events/index.html"
   zh-CN: "https://oita-tourism.com/zh-CN"
-date_picker: false
+date_picker: true
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
-- article
-- .event
-- li
-- .card
+  - article
+  - .event
+  - li
+  - .card
+notes: >-
+  JA official filter is /events/index/is_search:1/open_date:{date}/close_date:{date} (14件 on 2026-09-08).
+  /ja/events/ 404. EN/zh-TW oita-tourism calendar uses data-ymd cells (date_picker). zh-CN events path 404.

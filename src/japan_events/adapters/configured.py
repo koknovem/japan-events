@@ -81,11 +81,18 @@ CARD_EXTRACT_JS = r"""
 def _apply_api_date(url: str, target: date, keys: dict[str, str]) -> str:
     iso = target.isoformat()
     compact = target.strftime("%Y%m%d")
+    slash = target.strftime("%Y/%m/%d")
     dated = (
-        url.replace("{date}", iso)
+        url.replace("{date_slash}", slash)
+        .replace("{month_underscore}", target.strftime("%Y_%m"))
+        .replace("{month_ym}", target.strftime("%Y-%m"))
+        .replace("{date}", iso)
         .replace("{start}", iso)
         .replace("{end}", iso)
         .replace("{ymd}", compact)
+        .replace("{year}", f"{target.year:04d}")
+        .replace("{month}", f"{target.month:02d}")
+        .replace("{day}", f"{target.day:02d}")
     )
     if not keys:
         return dated

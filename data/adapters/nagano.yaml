@@ -1,16 +1,15 @@
 id: nagano
 strategy: html
-event_url: https://www.go-nagano.net/en/
+event_url: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}"
 urls_by_lang:
-  en: "https://www.go-nagano.net/en/"
-  ja: "https://www.go-nagano.net/"
-  zh-TW: "https://www.go-nagano.net/tc/"
-  zh-CN: "https://www.go-nagano.net/sc/"
+  en: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}#en"
+  ja: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}"
+  zh-TW: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}#zh-TW"
+  zh-CN: "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}#zh-CN"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 listing_urls:
-- https://www.go-nagano.net/en/events
-- https://www.go-nagano.net/event/
-notes: HubSpot marketing site; dated event feed limited
+- "https://db.go-nagano.net/event/?topics_ext_options_search=1&scope_search_ext_04_from={date}&scope_search_ext_02_to={date}"
+notes: Go NAGANO event DB overlap filter; www.go-nagano.net/{lang}/event/ hreflang targets 404

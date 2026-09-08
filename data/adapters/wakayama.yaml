@@ -3,11 +3,11 @@ strategy: html
 event_url: https://visitwakayama.jp/en/events/index.html
 urls_by_lang:
   en: "https://visitwakayama.jp/en/events/index.html"
-  ja: "https://visitwakayama.jp/events/index.html"
+  ja: "https://www.wakayama-kanko.or.jp/events/"
   zh-TW: "https://visitwakayama.jp/zh-TW/events/index.html"
-  zh-CN: "https://visitwakayama.jp/zh-CN/events/index.html"
-date_picker: false
-wait_ms: 1200
+  zh-CN: "https://visitwakayama.jp/zh-CN/"
+date_picker: true
+wait_ms: 1500
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
@@ -15,6 +15,7 @@ card_selectors:
 - .event
 - li
 - .card
+- a[href*='detail_']
 fields:
   title:
   - a
@@ -24,5 +25,6 @@ fields:
   - time
   - .date
   url:
+  - a[href*='detail_']
   - a
-notes: Many relative dates (Early August / every year)
+notes: JA wakayama-kanko and EN/zh-TW visitwakayama event pages use searchDay data-ymd calendars (no dated query). zh-CN has no /events/ listing.

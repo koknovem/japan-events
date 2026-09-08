@@ -1,12 +1,12 @@
 id: kanagawa
 strategy: html
-event_url: https://www.kanagawa-kankou.or.jp/event/
+event_url: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}"
 urls_by_lang:
-  en: "https://www.visitkanagawa.jp/en/events/"
-  ja: "https://www.kanagawa-kankou.or.jp/event/"
-  zh-TW: "https://www.visitkanagawa.jp/zh-tw/"
-  zh-CN: "https://www.visitkanagawa.jp/zh-cn/"
-date_picker: true
+  en: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}#en"
+  ja: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}"
+  zh-TW: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}#zh-TW"
+  zh-CN: "https://www.kanagawa-kankou.or.jp/event?eventDate={date}#zh-CN"
+date_picker: false
 wait_ms: 2500
 harvest_fallback: true
 use_card_text_as_period: true
@@ -26,4 +26,4 @@ fields:
   url:
     - "a[href*='/event/']"
     - a
-notes: 神奈川県観光協会 観光かながわNOW calendar search
+notes: 観光かながわNOW eventDate=YYYY-MM-DD; visitkanagawa inbound was unreachable here

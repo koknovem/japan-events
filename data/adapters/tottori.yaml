@@ -1,17 +1,17 @@
 id: tottori
 strategy: html
-event_url: https://www.tottori-guide.jp/808/204/2017/36150.html
+event_url: https://www.tottori-guide.jp/808/204/2017/
 urls_by_lang:
-  en: "https://www.tottori-tour.jp/en/event/"
-  ja: "https://www.tottori-guide.jp/event/"
-  zh-TW: "https://www.tottori-tour.jp/zh-tw/event/"
-  zh-CN: "https://www.tottori-tour.jp/zh-cn/event/"
+  en: "https://www.tottori-tour.jp/en/"
+  ja: "https://www.tottori-guide.jp/808/204/2017/"
+  zh-TW: "https://www.tottori-tour.jp/zh-tw/"
+  zh-CN: "https://www.tottori-tour.jp/zh-cn/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 listing_urls:
-  - https://www.tottori-guide.jp/
+  - https://www.tottori-guide.jp/808/204/
 card_selectors:
   - "table tr"
   - article
@@ -26,4 +26,4 @@ fields:
     - time
   url:
     - a
-notes: 鳥取県観光連盟 とっとり旅 monthly event calendar table
+notes: とっとり旅 monthly calendar index (/808/204/2017/) not a single hardcoded month page. Month IDs are opaque; no from/to query. EN tottori-tour has no event listing (homepage).

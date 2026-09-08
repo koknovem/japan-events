@@ -1,18 +1,18 @@
 id: kagoshima
 strategy: calendar
-event_url: https://www.kagoshima-kankou.com/for/events
+event_url: "https://www.kagoshima-kankou.com/event?rte[]={date}"
 urls_by_lang:
-  en: "https://www.kagoshima-kankou.com/for/events"
-  ja: "https://www.kagoshima-kankou.com/event"
-  zh-TW: "https://www.kagoshima-kankou.com/tw/events"
-  zh-CN: "https://www.kagoshima-kankou.com/cn/events"
-date_picker: true
+  en: "https://www.kagoshima-kankou.com/for/events?rte[]={date}"
+  ja: "https://www.kagoshima-kankou.com/event?rte[]={date}"
+  zh-TW: "https://www.kagoshima-kankou.com/tw/events?rte[]={date}"
+  zh-CN: "https://www.kagoshima-kankou.com/cn/events?rte[]={date}"
+date_picker: false
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
-- .event
-- article
-- li
-- .card
-notes: Calendar UI on events page
+  - .event
+  - article
+  - li
+  - .card
+notes: Official calendar checkboxes use rte[]=YYYY-MM-DD (JA 475 unfiltered -> 8 on 2026-09-08). EN/zh catalogs are thinner.

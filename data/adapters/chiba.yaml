@@ -1,12 +1,12 @@
 id: chiba
 strategy: html
-event_url: https://maruchiba.jp/event/index.html
+event_url: "https://maruchiba.jp/event/index.html?days={ymd}"
 urls_by_lang:
-  en: "https://www.visitchiba.jp/en/event/"
-  ja: "https://maruchiba.jp/event/index.html"
-  zh-TW: "https://www.visitchiba.jp/zh-tw/event/"
-  zh-CN: "https://www.visitchiba.jp/zh-cn/event/"
-date_picker: true
+  en: "https://maruchiba.jp/event/index.html?days={ymd}#en"
+  ja: "https://maruchiba.jp/event/index.html?days={ymd}"
+  zh-TW: "https://maruchiba.jp/event/index.html?days={ymd}#zh-TW"
+  zh-CN: "https://maruchiba.jp/event/index.html?days={ymd}#zh-CN"
+date_picker: false
 wait_ms: 2500
 harvest_fallback: true
 use_card_text_as_period: true
@@ -27,4 +27,4 @@ fields:
     - "[class*='date']"
   url:
     - a
-notes: 千葉県観光物産協会 ちば観光ナビ calendar search
+notes: maruchiba calendar search encodes selected days as days=YYYYMMDD; visitchiba /event/ 404s

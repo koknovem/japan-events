@@ -1,9 +1,9 @@
 id: kumamoto
 strategy: html
-event_url: https://kumamoto-guide.jp/en/events/
+event_url: "https://kumamoto-guide.jp/events/search?open_date={date}&close_date={date}"
 urls_by_lang:
   en: "https://kumamoto-guide.jp/en/events/"
-  ja: "https://kumamoto-guide.jp/events/"
+  ja: "https://kumamoto-guide.jp/events/search?open_date={date}&close_date={date}"
   zh-TW: "https://kumamoto-guide.jp/tw/events/"
   zh-CN: "https://kumamoto-guide.jp/zh/events/"
 date_picker: false
@@ -11,20 +11,22 @@ wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
-- .events-list li
-- .events-list a
-- li
-- article
+  - .events-list li
+  - .events-list a
+  - li
+  - article
 fields:
   title:
-  - a
-  - h3
-  - h2
+    - a
+    - h3
+    - h2
   period:
-  - .month
-  - .date
-  - time
-  - li
+    - .month
+    - .date
+    - time
+    - li
   url:
-  - a
-notes: Season-grouped festival lists
+    - a
+notes: >-
+  JA dated search /events/search?open_date=&close_date= (9件 on 2026-09-08).
+  /en/tw/zh/events/search 404; those langs keep unique listing pages.

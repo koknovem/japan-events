@@ -1,12 +1,12 @@
 id: okayama
 strategy: html
-event_url: https://www.okayama-japan.jp/en/event
+event_url: https://www.okayama-kanko.jp/event/
 urls_by_lang:
   en: "https://www.okayama-japan.jp/en/event"
-  ja: "https://www.okayama-japan.jp/event"
+  ja: "https://www.okayama-kanko.jp/event/"
   zh-TW: "https://www.okayama-japan.jp/tw/event"
   zh-CN: "https://www.okayama-japan.jp/cn/event"
-date_picker: false
+date_picker: true
 wait_ms: 1500
 harvest_fallback: true
 use_card_text_as_period: true
@@ -15,6 +15,7 @@ card_selectors:
 - .ejs-tabs-content-item
 - article
 - li
+- a[href*='detail_']
 fields:
   title:
   - a
@@ -28,5 +29,6 @@ fields:
   category:
   - .category
   url:
+  - a[href*='detail_']
   - a
-notes: Month-grouped traditional festivals
+notes: JA okayama-kanko.jp/event uses searchDay data-ymd calendar (okayamajapan.jp/event 404). EN/zh okayama-japan.jp event pages are month-grouped traditional festivals, not a day filter.

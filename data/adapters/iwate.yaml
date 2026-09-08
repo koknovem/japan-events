@@ -1,11 +1,11 @@
 id: iwate
 strategy: html
-event_url: https://iwatetabi.jp/events/
+event_url: "https://iwatetabi.jp/events/?ondate_start={date}&ondate_end={date}"
 urls_by_lang:
-  en: "https://iwatetabi.jp/en/events/"
-  ja: "https://iwatetabi.jp/events/"
-  zh-TW: "https://iwatetabi.jp/tw/events/"
-  zh-CN: "https://iwatetabi.jp/cn/events/"
+  en: "https://iwatetabi.jp/en/events/?ondate_start={date}&ondate_end={date}"
+  ja: "https://iwatetabi.jp/events/?ondate_start={date}&ondate_end={date}"
+  zh-TW: "https://iwatetabi.jp/tw/events/?ondate_start={date}&ondate_end={date}"
+  zh-CN: "https://iwatetabi.jp/cn/events/?ondate_start={date}&ondate_end={date}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
@@ -15,3 +15,4 @@ card_selectors:
 - article
 - .card
 - li
+notes: いわての旅 event search uses ondate_start/ondate_end ISO date inputs, not the unfiltered /events/ index

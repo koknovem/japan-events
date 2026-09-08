@@ -1,17 +1,15 @@
 id: miyagi
 strategy: html
-event_url: https://www.miyagi-kankou.or.jp/calendar/
+event_url: "https://www.miyagi-kankou.or.jp/calendar/?ymd={ymd}"
 urls_by_lang:
   en: "https://visitmiyagi.com/events/"
-  ja: "https://www.miyagi-kankou.or.jp/calendar/"
+  ja: "https://www.miyagi-kankou.or.jp/calendar/?ymd={ymd}"
   zh-TW: "https://visitmiyagi.com/zh-hant/events/"
   zh-CN: "https://visitmiyagi.com/zh-hans/events/"
 date_picker: false
 wait_ms: 2000
 harvest_fallback: true
 use_card_text_as_period: true
-listing_urls:
-  - https://www.miyagi-kankou.or.jp/calendar/?ymd=20260906
 card_selectors:
   - "table tr"
   - article
@@ -26,4 +24,4 @@ fields:
     - time
   url:
     - a
-notes: 宮城県観光連盟 宮城まるごと探訪 calendar search
+notes: 宮城県観光連盟 宮城まるごと探訪 calendar day links use ?ymd=YYYYMMDD. visitmiyagi.com EN/ZH listings have no day filter.

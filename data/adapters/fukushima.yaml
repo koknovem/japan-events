@@ -1,9 +1,9 @@
 id: fukushima
 strategy: html
-event_url: https://www.tif.ne.jp/jp/entry/?type=event
+event_url: "https://www.tif.ne.jp/jp/entry/?type=event&eventStart={date}&eventEnd={date}&search=on"
 urls_by_lang:
   en: "https://fukushima.travel/en/events/"
-  ja: "https://www.tif.ne.jp/jp/entry/?type=event"
+  ja: "https://www.tif.ne.jp/jp/entry/?type=event&eventStart={date}&eventEnd={date}&search=on"
   zh-TW: "https://fukushima.travel/zh-tw/events/"
   zh-CN: "https://fukushima.travel/zh-cn/events/"
 date_picker: false
@@ -26,4 +26,4 @@ fields:
     - "[class*='date']"
   url:
     - a
-notes: 福島県観光物産交流協会 ふくしまの旅 dated event index
+notes: ふくしまの旅 React calendar search uses eventStart/eventEnd ISO dates plus search=on, not the unfiltered ?type=event index. fukushima.travel EN/ZH listings have no day filter.

@@ -1,11 +1,12 @@
 id: kyoto
 strategy: html
-event_url: https://kyoto.travel/en/events/
+event_url: "https://kyoto.travel/en/events/?period_start={date}&period_end={date}&search_flg=1"
+date_picker: false
 wait_ms: 1500
 harvest_fallback: true
 urls_by_lang:
-  en: "https://kyoto.travel/en/events/"
-  ja: "https://ja.kyoto.travel/events/"
-  zh-TW: "https://tw.kyoto.travel/events/"
-  zh-CN: "https://cn.kyoto.travel/events/"
-notes: Kyoto Travel multilingual event listings
+  en: "https://kyoto.travel/en/events/?period_start={date}&period_end={date}&search_flg=1"
+  ja: "https://ja.kyoto.travel/event/?period_start={date}&period_end={date}&search_flg=1"
+  zh-TW: "https://tw.kyoto.travel/event/?period_start={date}&period_end={date}&search_flg=1"
+  zh-CN: "https://cn.kyoto.travel/event/?period_start={date}&period_end={date}&search_flg=1"
+notes: Kyoto Navi JA/ZH filter with period_start/period_end; EN listing accepts the same query

@@ -1,31 +1,31 @@
 id: nagasaki
 strategy: html
-event_url: https://www.nagasaki-tabinet.com/event
+event_url: "https://www.nagasaki-tabinet.com/event?rte[]={date}"
 urls_by_lang:
-  en: "https://www.nagasaki-tabinet.com/en/event"
-  ja: "https://www.nagasaki-tabinet.com/event"
-  zh-TW: "https://www.discover-nagasaki.com/zh-TW"
-  zh-CN: "https://www.discover-nagasaki.com/zh-CN"
+  en: "https://www.discover-nagasaki.com/en/events_multilingual?rte[]={date}"
+  ja: "https://www.nagasaki-tabinet.com/event?rte[]={date}"
+  zh-TW: "https://www.discover-nagasaki.com/zh-TW/events_multilingual?rte[]={date}"
+  zh-CN: "https://www.discover-nagasaki.com/zh-CN/events_multilingual?rte[]={date}"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
-- .o-digest--list__item
-- li
-- article
-- .event
+  - .o-digest--list__item
+  - li
+  - article
+  - .event
 fields:
   title:
-  - a
-  - h2
-  - h3
-  - .title
+    - a
+    - h2
+    - h3
+    - .title
   period:
-  - .o-digest--list__date
-  - time
-  - .date
-  - dl
+    - .o-digest--list__date
+    - time
+    - .date
+    - dl
   url:
-  - a
-notes: JP event index (/en/event 404)
+    - a
+notes: Official day filter is rte[]=YYYY-MM-DD. /en/event 404; EN/zh use discover-nagasaki events_multilingual.

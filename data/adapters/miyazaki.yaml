@@ -1,16 +1,16 @@
 id: miyazaki
 strategy: html
-event_url: https://www.kanko-miyazaki.jp/event
+event_url: "https://www.kanko-miyazaki.jp/event?rte[]={date}"
 urls_by_lang:
   en: "https://www.kanko-miyazaki.jp/en"
-  ja: "https://www.kanko-miyazaki.jp/event"
-  zh-TW: "https://www.kanko-miyazaki.jp/zh-tw"
-  zh-CN: "https://www.kanko-miyazaki.jp/zh-cn"
+  ja: "https://www.kanko-miyazaki.jp/event?rte[]={date}"
+  zh-TW: "https://www.kanko-miyazaki.jp/zh-TW"
+  zh-CN: "https://www.kanko-miyazaki.jp/zh-CN"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
 use_card_text_as_period: true
 listing_urls:
-- https://www.kanko-miyazaki.jp/event/
-- https://www.miyazaki-city.tourism.or.jp/
-notes: English site thin on calendars
+  - https://www.kanko-miyazaki.jp/event/
+  - https://www.miyazaki-city.tourism.or.jp/
+notes: Official JA day filter is rte[]=YYYY-MM-DD (12件 on 2026-09-08). /en/event and /zh-*/event 404.

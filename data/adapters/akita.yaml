@@ -25,4 +25,4 @@ fields:
     - li
   url:
     - a
-notes: 秋田県観光連盟 アキタファン events index
+notes: 秋田県観光連盟 アキタファン date search is form fields q[event_terms_end_date_gteq] / q[event_terms_start_date_lteq]; GET q[] returns 500 so the Python adapter fills those inputs.

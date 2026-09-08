@@ -36,3 +36,85 @@ def test_tokyo_language_urls_are_distinct():
     assert cfg is not None
     urls = list(cfg.urls_by_lang.values())
     assert len(set(urls)) == 4
+
+
+ASSIGNED_DATED_SITES = (
+    "nara",
+    "wakayama",
+    "tottori",
+    "shimane",
+    "okayama",
+    "hiroshima",
+    "yamaguchi",
+    "tokushima",
+    "kagawa",
+    "ehime",
+)
+
+
+def test_assigned_sites_language_urls_are_distinct():
+    for site_id in ASSIGNED_DATED_SITES:
+        cfg = load_adapter_yaml(site_id)
+        assert cfg is not None, site_id
+        urls = list(cfg.urls_by_lang.values())
+        assert len(urls) == 4, site_id
+        assert len(set(urls)) == 4, f"{site_id} duplicate urls_by_lang: {urls}"
+        resolved = resolve_lang_urls(
+            next(s for s in load_sites() if s.id == site_id),
+            cfg,
+        )
+        assert set(SCRAPE_LANGS) <= set(resolved), f"{site_id} collapsed langs: {resolved}"
+
+
+def test_nara_adapter_honors_dated_listing_url():
+    from datetime import date
+
+    from japan_events.adapters.sites.nara import NaraAdapter
+    from japan_events.models import SiteConfig
+
+    site = SiteConfig(
+        id="nara",
+        name="Nara",
+        region="Tokai & Kansai",
+        home_url="https://www.visitnara.jp/",
+        event_url="https://www.visitnara.jp/event-calendar/?from={date}&to={date}",
+        adapter="nara",
+    )
+    adapter = NaraAdapter(site)
+    listing = adapter._listing_url(date(2027, 3, 13))
+    assert listing == "https://www.visitnara.jp/event-calendar/?from=2027-03-13&to=2027-03-13"
+
+    site.event_url = "https://www.pref.nara.lg.jp/cgi-bin/event_cal_multi/calendar.cgi"
+    listing = adapter._listing_url(date(2027, 3, 13))
+    assert "year=2027" in listing
+    assert "month=3" in listing
+    assert "day=13" in listing
+
+
+def test_assigned_sites_dated_placeholders():
+    from datetime import date
+
+    from japan_events.adapters.configured import _apply_api_date
+
+    target = date(2027, 3, 13)
+    kagawa = load_adapter_yaml("kagawa")
+    assert kagawa is not None
+    dated = _apply_api_date(kagawa.urls_by_lang["ja"], target, {})
+    assert "program_date[]=20270313" in dated
+
+    ehime = load_adapter_yaml("ehime")
+    assert ehime is not None
+    dated = _apply_api_date(ehime.urls_by_lang["ja"], target, {})
+    assert "program_date[]=20270313" in dated
+
+    shimane = load_adapter_yaml("shimane")
+    assert shimane is not None
+    dated = _apply_api_date(shimane.urls_by_lang["ja"], target, {})
+    assert "date_start=2027-03-13" in dated
+    assert "date_end=2027-03-13" in dated
+
+    hiroshima = load_adapter_yaml("hiroshima")
+    assert hiroshima is not None
+    dated = _apply_api_date(hiroshima.urls_by_lang["en"], target, hiroshima.api_date_keys)
+    assert "start_date=2027-03-13" in dated
+    assert "end_date=2027-03-13" in dated

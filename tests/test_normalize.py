@@ -73,3 +73,64 @@ def test_apply_api_date_placeholders():
     url = "https://www.okinawastory.jp/event/list?from={date}&to={date}"
     dated = _apply_api_date(url, date(2027, 3, 13), {})
     assert dated == "https://www.okinawastory.jp/event/list?from=2027-03-13&to=2027-03-13"
+
+
+def test_apply_api_date_slash_placeholder():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://kochi-tabi.jp/search_event.html?type=event&start_date={date_slash}&end_date={date_slash}"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == (
+        "https://kochi-tabi.jp/search_event.html?type=event&start_date=2027/03/13&end_date=2027/03/13"
+    )
+
+
+def test_apply_api_date_year_month_day():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://www.yamanashi-kankou.jp/search/event.php?y={year}&m={month}&d={day}&mode=event"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == (
+        "https://www.yamanashi-kankou.jp/search/event.php?y=2027&m=03&d=13&mode=event"
+    )
+
+
+def test_apply_api_date_month_underscore():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://www.awanavi.jp/event/?event-yearmonth[]={month_underscore}"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert "event-yearmonth%5B%5D=2027_03" in dated or "event-yearmonth[]=2027_03" in dated
+
+
+def test_apply_api_date_path_event_date_st_ed():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = (
+        "https://www.gotokyo.org/en/travel-directory/result/index/"
+        "event_date_st/{date}/event_date_ed/{date}"
+    )
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == (
+        "https://www.gotokyo.org/en/travel-directory/result/index/"
+        "event_date_st/2027-03-13/event_date_ed/2027-03-13"
+    )
+
+
+def test_apply_api_date_ymd_days_param():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://www.hot-ishikawa.jp/event/index_1_2____1____.html?days={ymd}"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == "https://www.hot-ishikawa.jp/event/index_1_2____1____.html?days=20270313"
+
+
+def test_apply_api_date_aichi_s_term():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://aichinow.pref.aichi.jp/events/?s_term_from={date}&s_term_to={date}&search_flg=1"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == (
+        "https://aichinow.pref.aichi.jp/events/?s_term_from=2027-03-13"
+        "&s_term_to=2027-03-13&search_flg=1"
+    )

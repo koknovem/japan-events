@@ -1,16 +1,17 @@
 id: fukuoka
 strategy: html
-event_url: https://www.crossroadfukuoka.jp/en/event
+event_url: "https://www.crossroadfukuoka.jp/event?rte[]={date}"
 urls_by_lang:
-  en: "https://www.crossroadfukuoka.jp/en/event"
-  ja: "https://www.crossroadfukuoka.jp/event"
-  zh-TW: "https://www.crossroadfukuoka.jp/tw/event"
-  zh-CN: "https://www.crossroadfukuoka.jp/cn/event"
+  en: "https://www.crossroadfukuoka.jp/en/event?rte[]={date}"
+  ja: "https://www.crossroadfukuoka.jp/event?rte[]={date}"
+  zh-TW: "https://www.crossroadfukuoka.jp/tw/event?rte[]={date}"
+  zh-CN: "https://www.crossroadfukuoka.jp/cn/event?rte[]={date}"
 listing_urls:
   - https://www.crossroadfukuoka.jp/en
   - https://www.crossroadfukuoka.jp/event
 date_picker: false
 wait_ms: 1500
+wait_for: "#search-results"
 harvest_fallback: true
 use_card_text_as_period: true
 card_selectors:
@@ -18,4 +19,4 @@ card_selectors:
   - .event
   - li.event
   - .o-main-special-contents__list-item
-notes: Prefer /en/event listing; follow links if empty
+notes: Official calendar checkboxes use rte[]=YYYY-MM-DD (1933 unfiltered -> 46 on 2026-09-08)

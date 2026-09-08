@@ -1,11 +1,11 @@
 id: shizuoka
 strategy: html
-event_url: https://www.visit-shizuoka.com/event/index.html
+event_url: "https://www.visit-shizuoka.com/event/index_1_2_____1____.html?days={ymd}"
 urls_by_lang:
-  en: "https://www.visit-shizuoka.com/en/event/index.html"
-  ja: "https://www.visit-shizuoka.com/event/index.html"
-  zh-TW: "https://www.visit-shizuoka.com/zh-tw/event/index.html"
-  zh-CN: "https://www.visit-shizuoka.com/zh-cn/event/index.html"
+  en: "https://www.visit-shizuoka.com/en/event/index_1_2_____1____.html?days={ymd}"
+  ja: "https://www.visit-shizuoka.com/event/index_1_2_____1____.html?days={ymd}"
+  zh-TW: "https://www.visit-shizuoka.com/zh-tw/event/index_1_2_____1____.html?days={ymd}"
+  zh-CN: "https://www.visit-shizuoka.com/zh-cn/event/index_1_2_____1____.html?days={ymd}"
 date_picker: false
 wait_ms: 1500
 harvest_fallback: true
@@ -26,3 +26,4 @@ fields:
   - li
   url:
   - a
+notes: しずおか観光ナビ calendar search uses days=YYYYMMDD on the encoded listing filename

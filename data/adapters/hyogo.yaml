@@ -1,9 +1,9 @@
 id: hyogo
 strategy: html
-event_url: https://www.hyogo-tourism.jp/event/index.html
+event_url: "https://www.hyogo-tourism.jp/event/index_1_2____1____.html?days={ymd}"
 urls_by_lang:
   en: "https://www.hyogo-tourism.jp/en/event/"
-  ja: "https://www.hyogo-tourism.jp/event/index.html"
+  ja: "https://www.hyogo-tourism.jp/event/index_1_2____1____.html?days={ymd}"
   zh-TW: "https://www.hyogo-tourism.jp/zh-TW/event/"
   zh-CN: "https://www.hyogo-tourism.jp/zh-CN/event/"
 date_picker: false
@@ -30,4 +30,4 @@ fields:
   url:
     - "a[href*='detail_']"
     - "a"
-notes: JP listing; prefer detail_ anchors over broad li
+notes: 兵庫観光ナビ JA calendar search uses days=YYYYMMDD; EN/ZH paths stay unique (no dated CMS filename)

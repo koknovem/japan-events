@@ -1,11 +1,11 @@
 id: niigata
 strategy: html
-event_url: https://discover-niigata.com/events/
+event_url: "https://niigata-kankou.or.jp/event/list?program_date[]={ymd}"
 urls_by_lang:
-  en: "https://discover-niigata.com/events/"
-  ja: "https://niigata-kankou.or.jp/event/"
-  zh-TW: "https://enjoyniigata.com/zh-tw/"
-  zh-CN: "https://enjoyniigata.com/zh-cn/"
+  en: "https://niigata-kankou.or.jp/event/list?program_date[]={ymd}#en"
+  ja: "https://niigata-kankou.or.jp/event/list?program_date[]={ymd}"
+  zh-TW: "https://enjoyniigata.com/tc/event/list?program_date[]={ymd}"
+  zh-CN: "https://enjoyniigata.com/cn/event/list?program_date[]={ymd}"
 date_picker: false
 wait_ms: 1200
 harvest_fallback: true
@@ -15,3 +15,4 @@ card_selectors:
 - .event
 - .card
 - li
+notes: にいがた観光ナビ program_date[]=YYYYMMDD; discover-niigata English events page has no date filter

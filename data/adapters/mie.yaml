@@ -1,9 +1,9 @@
 id: mie
 strategy: html
-event_url: https://www.kankomie.or.jp/event
+event_url: "https://www.kankomie.or.jp/event?q%5Bevent_terms_end_date_gteq%5D={date}&q%5Bevent_terms_start_date_lteq%5D={date}"
 urls_by_lang:
   en: "https://visitmie-japan.travel/en/events/"
-  ja: "https://www.kankomie.or.jp/event"
+  ja: "https://www.kankomie.or.jp/event?q%5Bevent_terms_end_date_gteq%5D={date}&q%5Bevent_terms_start_date_lteq%5D={date}"
   zh-TW: "https://visitmie-japan.travel/tw/"
   zh-CN: "https://visitmie-japan.travel/cn/"
 date_picker: false
@@ -26,4 +26,4 @@ fields:
   url:
     - "a[href*='/event/']"
     - a
-notes: 三重県観光連盟 観光三重 dated event index
+notes: 観光三重 Ransack overlap filter end_date>=date and start_date<=date

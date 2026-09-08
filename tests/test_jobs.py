@@ -153,3 +153,39 @@ def test_resume_incomplete_skips_far_dates_but_keeps_pending(monkeypatch):
     assert far.isoformat() not in resumed
     assert pending_date.isoformat() in resumed
     assert any(target == pending_date and prefecture == "osaka" for target, prefecture in started)
+
+
+def test_get_or_start_scrapes_only_requested_prefecture(monkeypatch):
+    started: dict[str, str | None] = {}
+
+    def fake_start(target, *, prefecture=None, force=False):
+        started["prefecture"] = prefecture
+        return True
+
+    monkeypatch.setattr("japan_events.api.jobs.site_result_ids", lambda target: set())
+    monkeypatch.setattr("japan_events.api.jobs.live_combined", lambda target: None)
+
+    service = ThreadedScrapeService(max_workers=1)
+    service.start_scrape = fake_start  # type: ignore[method-assign]
+    combined, busy = service.get_or_start(date(2099, 1, 1), prefecture="okinawa")
+    assert combined is None
+    assert busy is True
+    assert started["prefecture"] == "okinawa"
+
+
+def test_get_or_start_reuses_existing_prefecture_file(monkeypatch):
+    started: list[int] = []
+
+    def fake_start(target, *, prefecture=None, force=False):
+        started.append(1)
+        return True
+
+    monkeypatch.setattr("japan_events.api.jobs.site_result_ids", lambda target: {"okinawa"})
+    monkeypatch.setattr("japan_events.api.jobs.live_combined", lambda target: object())
+
+    service = ThreadedScrapeService(max_workers=1)
+    service.start_scrape = fake_start  # type: ignore[method-assign]
+    combined, busy = service.get_or_start(date(2099, 1, 1), prefecture="okinawa")
+    assert busy is False
+    assert combined is not None
+    assert started == []

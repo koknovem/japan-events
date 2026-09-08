@@ -162,7 +162,11 @@ def create_app() -> FastAPI:
             raise HTTPException(status_code=400, detail="date must be YYYY-MM-DD") from exc
 
         try:
-            combined, busy = scrape_service.get_or_start(target, force=force)
+            combined, busy = scrape_service.get_or_start(
+                target,
+                force=force,
+                prefecture=prefecture,
+            )
         except Exception as exc:
             raise HTTPException(
                 status_code=502,
@@ -190,7 +194,7 @@ def create_app() -> FastAPI:
             )
 
         refreshing = False
-        if not force:
+        if not force and not prefecture:
             refreshing = scrape_service.maybe_refresh(target)
 
         if combined is None:

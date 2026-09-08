@@ -8,7 +8,7 @@ from typing import Any
 
 from japan_events.models import CombinedOutput, SiteResult
 from japan_events.progress import JobProgress
-from japan_events.registry import load_sites
+from japan_events.registry import filter_sites, load_sites
 from japan_events.scan import cache_age_seconds, load_scan, save_scan, scan_age_seconds, scan_sites
 from japan_events.settings import SCAN_CONCURRENCY, scan_ttl_seconds, site_concurrency
 from japan_events.storage import (
@@ -147,6 +147,12 @@ class ThreadedScrapeService:
     def _needs_resume(self, target: date) -> bool:
         return bool(missing_site_ids(target) or load_pending_refresh(target))
 
+    def _wanted_site_ids(self, prefecture: str | None) -> list[str] | None:
+        """None means every site. A list is the filter the UI asked for."""
+        if not prefecture or not prefecture.strip():
+            return None
+        return [site.id for site in filter_sites(load_sites(), prefecture)]
+
     def _resume_prefecture(self, target: date, *, force: bool = False) -> str | None:
         """None means scrape every site. A csv means only those ids (crash resume)."""
         if force:
@@ -177,7 +183,7 @@ class ThreadedScrapeService:
         if prefecture is None:
             prefecture = self._resume_prefecture(target, force=force)
         if prefecture:
-            print(f"[scrape] resume {key} sites={prefecture}", flush=True)
+            print(f"[scrape] {key} sites={prefecture}", flush=True)
         fut: Future | None = None
         with self._guard:
             if key in self._inflight:
@@ -211,13 +217,31 @@ class ThreadedScrapeService:
             print(f"[scrape] auto-resume dates={','.join(resumed)}", flush=True)
         return resumed
 
-    def get_or_start(self, target: date, *, force: bool = False) -> tuple[CombinedOutput | None, bool]:
+    def get_or_start(
+        self,
+        target: date,
+        *,
+        force: bool = False,
+        prefecture: str | None = None,
+    ) -> tuple[CombinedOutput | None, bool]:
         """
         Return (combined, busy).
         busy True means a scrape/refresh is queued or running.
         combined may already include prefectures that finished writing to disk.
+        A prefecture filter scrapes only those sites, not the whole country.
         """
         key = target.isoformat()
+        wanted = self._wanted_site_ids(prefecture)
+
+        if wanted is not None and not force:
+            have = site_result_ids(target)
+            missing = [site_id for site_id in wanted if site_id not in have]
+            if not missing:
+                return live_combined(target), False
+            if not self._is_inflight(key):
+                self.start_scrape(target, prefecture=",".join(missing))
+            return live_combined(target), True
+
         if not force and not self._is_inflight(key):
             combined = self._load_complete_cache(target)
             if combined is not None:

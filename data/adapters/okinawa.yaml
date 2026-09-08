@@ -1,21 +1,23 @@
 id: okinawa
 strategy: html
-event_url: https://www.okinawastory.jp/event/
+event_url: "https://www.okinawastory.jp/event/list?from={date}&to={date}"
 listing_urls:
   - https://visitokinawajapan.com/events/
   - https://visitokinawajapan.com/
 date_picker: false
 wait_ms: 1500
+wait_for: ".os-c-list-cmn__title-link"
 harvest_fallback: true
 use_card_text_as_period: true
 urls_by_lang:
-  en: "https://www.okinawastory.jp/en/event/"
-  ja: "https://www.okinawastory.jp/event/"
-  zh-TW: "https://www.okinawastory.jp/zh-tw/event/"
-  zh-CN: "https://www.okinawastory.jp/zh-cn/event/"
+  en: "https://www.okinawastory.jp/en/event/list?from={date}&to={date}"
+  ja: "https://www.okinawastory.jp/event/list?from={date}&to={date}"
+  zh-TW: "https://www.okinawastory.jp/zh-tw/event/list?from={date}&to={date}"
+  zh-CN: "https://www.okinawastory.jp/zh-cn/event/list?from={date}&to={date}"
 card_selectors:
+  - article.os-c-list-cmn
   - article
   - .event
   - .card
   - li.event
-notes: Prefer okinawastory multilingual event index
+notes: okinawastory calendar search uses from/to ISO dates, not the unfiltered /event/ index

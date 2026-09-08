@@ -435,6 +435,8 @@ def rewrite_date_query(url: str, target: date) -> str:
         "startdate",
         "from",
         "from_date",
+        "to",
+        "to_date",
         "ymd1",
         "calendar_date",
     }

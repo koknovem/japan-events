@@ -58,3 +58,18 @@ def test_parse_jp_multi_days():
 def test_rewrite_date_query():
     url = "https://example.com/api?date=2024-01-01&q=fest"
     assert "date=2026-09-06" in rewrite_date_query(url, date(2026, 9, 6))
+
+
+def test_rewrite_date_query_from_to():
+    url = "https://www.okinawastory.jp/event/list?from=2020-01-01&to=2020-01-01"
+    rewritten = rewrite_date_query(url, date(2027, 3, 13))
+    assert "from=2027-03-13" in rewritten
+    assert "to=2027-03-13" in rewritten
+
+
+def test_apply_api_date_placeholders():
+    from japan_events.adapters.configured import _apply_api_date
+
+    url = "https://www.okinawastory.jp/event/list?from={date}&to={date}"
+    dated = _apply_api_date(url, date(2027, 3, 13), {})
+    assert dated == "https://www.okinawastory.jp/event/list?from=2027-03-13&to=2027-03-13"

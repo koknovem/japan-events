@@ -292,10 +292,10 @@ URLS: dict[str, dict[str, str]] = {
         "zh-CN": "https://www.kagoshima-kankou.com/cn/events",
     },
     "okinawa": {
-        "ja": "https://www.okinawastory.jp/event/",
-        "en": "https://www.okinawastory.jp/en/event/",
-        "zh-TW": "https://www.okinawastory.jp/zh-tw/event/",
-        "zh-CN": "https://www.okinawastory.jp/zh-cn/event/",
+        "ja": "https://www.okinawastory.jp/event/list?from={date}&to={date}",
+        "en": "https://www.okinawastory.jp/en/event/list?from={date}&to={date}",
+        "zh-TW": "https://www.okinawastory.jp/zh-tw/event/list?from={date}&to={date}",
+        "zh-CN": "https://www.okinawastory.jp/zh-cn/event/list?from={date}&to={date}",
     },
     "jnto": {
         "en": "https://www.japan.travel/en/events/",

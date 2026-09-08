@@ -79,18 +79,18 @@ CARD_EXTRACT_JS = r"""
 
 
 def _apply_api_date(url: str, target: date, keys: dict[str, str]) -> str:
-    if "{date}" in url or "{start}" in url or "{end}" in url:
-        return (
-            url.replace("{date}", target.isoformat())
-            .replace("{start}", target.isoformat())
-            .replace("{end}", target.isoformat())
-            .replace("{ymd}", target.strftime("%Y%m%d"))
-        )
-    if not keys:
-        return url
-    parts = urlsplit(url)
-    pairs = dict(parse_qsl(parts.query, keep_blank_values=True))
     iso = target.isoformat()
+    compact = target.strftime("%Y%m%d")
+    dated = (
+        url.replace("{date}", iso)
+        .replace("{start}", iso)
+        .replace("{end}", iso)
+        .replace("{ymd}", compact)
+    )
+    if not keys:
+        return dated
+    parts = urlsplit(dated)
+    pairs = dict(parse_qsl(parts.query, keep_blank_values=True))
     for logical, param in keys.items():
         if logical in {"date", "start", "start_date", "from"}:
             pairs[param] = iso
@@ -150,7 +150,8 @@ class ConfigurableAdapter(BaseAdapter):
             except Exception as exc:
                 notes.append(f"api_error:{exc}")
 
-        for url in urls[:4]:
+        dated_urls = [_apply_api_date(url, target, cfg.api_date_keys) for url in urls[:4]]
+        for url in dated_urls:
             try:
                 await session.goto(url)
             except Exception as exc:
@@ -176,13 +177,13 @@ class ConfigurableAdapter(BaseAdapter):
         matched = filter_events(dedupe_events(collected), target)
 
         # Follow event-ish links from the first reachable page when still empty
-        if not matched:
+        if not matched and dated_urls:
             try:
-                await session.goto(urls[0])
+                await session.goto(dated_urls[0])
                 links = await find_event_links(session.page, limit=6)
                 for link in links:
                     href = link.get("href") or ""
-                    if not href or href.rstrip("/") == urls[0].rstrip("/"):
+                    if not href or href.rstrip("/") == dated_urls[0].rstrip("/"):
                         continue
                     try:
                         await session.goto(href)

@@ -334,7 +334,7 @@ sites:
   region: Kyushu & Okinawa
   home_url: https://visitokinawajapan.com/
   adapter: okinawa
-  event_url: https://www.okinawastory.jp/event/
+  event_url: "https://www.okinawastory.jp/event/list?from={date}&to={date}"
 - id: jnto
   name: JNTO
   region: Nationwide

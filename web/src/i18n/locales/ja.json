@@ -15,6 +15,7 @@
     "ariaLabel": "イベント日付カレンダー",
     "prevMonth": "前の月",
     "nextMonth": "次の月",
+    "dateFieldAria": "日付を入力（YYYY-MM-DD）",
     "weekdays": ["日", "月", "火", "水", "木", "金", "土"]
   },
   "filter": {

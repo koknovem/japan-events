@@ -286,10 +286,36 @@ a {
   margin-bottom: 0.85rem;
 }
 
-.calendar-nav h3 {
+.calendar-nav h3,
+.calendar-date-field {
   margin: 0;
+  flex: 1;
+  min-width: 0;
   font-family: var(--font-display);
   font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calendar-date-field {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--mist);
+  padding: 0.28rem 0.45rem;
+  cursor: text;
+}
+
+.calendar-date-field:hover {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.calendar-date-field:focus {
+  outline: none;
+  border-color: rgba(232, 238, 242, 0.35);
+  background: rgba(0, 0, 0, 0.28);
 }
 
 .calendar-weekdays,

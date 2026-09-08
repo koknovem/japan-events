@@ -15,6 +15,7 @@
     "ariaLabel": "Event date calendar",
     "prevMonth": "Previous month",
     "nextMonth": "Next month",
+    "dateFieldAria": "Type a date, YYYY-MM-DD",
     "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
   },
   "filter": {

@@ -221,4 +221,4 @@ A few hostnames historically failed DNS; the registry uses current official doma
 
 ## Limits
 
-Be polite: default concurrency is 16 parallel Playwright browser contexts (not OS threads), capped at 48. Override with `--concurrency` or `JAPAN_EVENTS_CONCURRENCY`. Cached dates are shown immediately; a background HTTP scan checks for updates about every 6 hours and only re-scrapes prefectures that changed. Sites that only publish seasonal festival guides (no day-level calendar for `--date`) correctly return `[]`. Per-site failures never abort the full run.
+Be polite: default concurrency is 5 parallel Playwright browser contexts (not OS threads), capped at 5 so Chromium does not saturate the host CPU. Extra dates queue instead of scraping in parallel. Override with `--concurrency` or `JAPAN_EVENTS_CONCURRENCY`. Cached dates are shown immediately; a background HTTP scan checks for updates about every 6 hours and only re-scrapes prefectures that changed. Sites that only publish seasonal festival guides (no day-level calendar for `--date`) correctly return `[]`. Per-site failures never abort the full run.

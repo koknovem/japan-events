@@ -109,11 +109,12 @@ def test_site_concurrency_env_and_cap(monkeypatch):
 
     monkeypatch.delenv("JAPAN_EVENTS_CONCURRENCY", raising=False)
     assert site_concurrency() == DEFAULT_SITE_CONCURRENCY
-    monkeypatch.setenv("JAPAN_EVENTS_CONCURRENCY", "12")
-    assert site_concurrency() == 12
+    monkeypatch.setenv("JAPAN_EVENTS_CONCURRENCY", "3")
+    assert site_concurrency() == 3
     monkeypatch.setenv("JAPAN_EVENTS_CONCURRENCY", "99")
     assert site_concurrency() == MAX_SITE_CONCURRENCY
     assert site_concurrency(2) == 2
+    assert site_concurrency(8) == MAX_SITE_CONCURRENCY
     assert site_concurrency(0) == 1
 
 

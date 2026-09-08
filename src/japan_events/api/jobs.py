@@ -129,7 +129,7 @@ def _run_refresh_in_thread(target: date, progress: JobProgress) -> None:
 class ThreadedScrapeService:
     """Queue scrapes per date in a small thread pool. HTTP handlers never wait."""
 
-    def __init__(self, max_workers: int = 4) -> None:
+    def __init__(self, max_workers: int = 1) -> None:
         self._executor = ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="japan-scrape")
         self._guard = threading.Lock()
         self._inflight: dict[str, Future] = {}

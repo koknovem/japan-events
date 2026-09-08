@@ -9,7 +9,7 @@ services:
     environment:
       JAPAN_EVENTS_ROOT: /app
       JAPAN_EVENTS_DOCKER: "1"
-      JAPAN_EVENTS_CONCURRENCY: "16"
+      JAPAN_EVENTS_CONCURRENCY: "5"
       PYTHONUNBUFFERED: "1"
     volumes:
       - ./output:/app/output

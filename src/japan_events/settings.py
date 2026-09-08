@@ -2,13 +2,12 @@ from __future__ import annotations
 
 import os
 
-# Parallel Playwright browser contexts per scrape (not OS threads).
-# 48 prefectures; 16 at a time is two-to-three waves and usually finishes much
-# faster than the old default of 8. Cap at all 48 via JAPAN_EVENTS_CONCURRENCY.
-DEFAULT_SITE_CONCURRENCY = 16
-MAX_SITE_CONCURRENCY = 48
-# HTTP freshness checks can be wider; they are short GETs, not browsers.
-SCAN_CONCURRENCY = 16
+# Parallel Playwright browser contexts per scrape. Each context is a Chromium
+# process; more than a handful saturates a typical CPU.
+DEFAULT_SITE_CONCURRENCY = 5
+MAX_SITE_CONCURRENCY = 5
+# HTTP freshness checks share the same cap so a scan cannot pile on extra load.
+SCAN_CONCURRENCY = 5
 DEFAULT_SCAN_TTL_MINUTES = 360
 DEFAULT_DEEP_REFRESH_HOURS = 168
 

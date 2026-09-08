@@ -26,7 +26,7 @@ export function LoadingState({ label = 'Loading…', progress }: LoadingStatePro
     if (queued) {
       detail = t('events.progressQueued', {
         count: otherDates.length,
-        workers: progress.workers ?? 2,
+        workers: progress.workers ?? 1,
       })
     } else if (progress.phase === 'combining') detail = t('events.progressCombining')
     else if (progress.phase === 'starting' || progress.total === 0) detail = t('events.progressStarting')

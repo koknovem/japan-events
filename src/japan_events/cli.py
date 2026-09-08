@@ -24,7 +24,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--date", type=_parse_date, help="Target date YYYY-MM-DD (required for scrape).")
     parser.add_argument("--prefecture", help="Comma-separated site ids (e.g. tokyo,kyoto,hokkaido).")
     parser.add_argument("--headed", action="store_true", help="Show the Chromium window.")
-    parser.add_argument("--concurrency", type=int, default=None, help="Max parallel browser contexts (default 16, env JAPAN_EVENTS_CONCURRENCY, cap 48).")
+    parser.add_argument("--concurrency", type=int, default=None, help="Max parallel browser contexts (default 5, env JAPAN_EVENTS_CONCURRENCY, cap 5).")
 
     sub = parser.add_subparsers(dest="command")
 
